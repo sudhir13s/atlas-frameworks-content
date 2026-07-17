@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theaiatlas.dev/schema/frameworks/framework-category.schema.json",
+  "title": "framework-category",
+  "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
+  "properties": {
+    "type": { "const": "framework-category" },
+    "label": { "type": "string", "minLength": 1, "description": "category name shown as the section heading" },
+    "order": { "type": "integer", "description": "display order on the categories page" },
+    "shortDescription": { "type": "string", "minLength": 1, "description": "one line: what this slice of the ecosystem covers" },
+    "whyItMatters": { "type": "string", "description": "one line: why a builder cares about this category" },
+    "defacto": { "$ref": "_shared.schema.json#/$defs/framework_ref" },
+    "rising": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
+    "alternatives": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
+    "keyConcepts": { "type": "array", "items": { "type": "string" } },
+    "canonicalReading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } },
+    "didYouKnow": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["label", "shortDescription", "defacto"]
+}

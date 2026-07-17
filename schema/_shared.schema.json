@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theaiatlas.dev/schema/frameworks/_shared.schema.json",
+  "title": "Shared definitions for ai-frameworks-content",
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "lowercase, hyphen-separated, ASCII"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+/[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "stable identity of the form <type>/<slug>"
+    },
+    "framework_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "a framework catalog slug (matches an id in the frameworks catalog), e.g. langchain, vllm, pytorch"
+    },
+    "framework_ref": {
+      "type": "object",
+      "required": ["frameworkId", "reason"],
+      "properties": {
+        "frameworkId": { "$ref": "#/$defs/framework_id" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reading_item": {
+      "type": "object",
+      "required": ["title", "url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["url", "title"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "title": { "type": "string" },
+        "trust": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "base": {
+      "type": "object",
+      "required": ["id", "type", "slug", "schema_version", "title", "tags", "updated", "sources"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "type": {
+          "type": "string",
+          "enum": ["use-case", "framework-category"]
+        },
+        "slug": { "$ref": "#/$defs/slug" },
+        "schema_version": { "type": ["string", "number"] },
+        "title": { "type": "string", "minLength": 1 },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}" },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+        "related": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

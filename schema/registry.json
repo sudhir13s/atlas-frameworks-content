@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "shared": "schema/_shared.schema.json",
+  "types": {
+    "use-case": {
+      "folder": "use-cases",
+      "schema": "schema/use-case.schema.json",
+      "id_prefix": "use-case/",
+      "sections": ["Overview", "Why this stack", "Notes"]
+    },
+    "framework-category": {
+      "folder": "categories",
+      "schema": "schema/framework-category.schema.json",
+      "id_prefix": "framework-category/",
+      "sections": ["Overview", "Landscape", "Notes"]
+    }
+  }
+}
