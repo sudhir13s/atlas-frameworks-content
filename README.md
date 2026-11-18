@@ -1,4 +1,4 @@
-# ai-frameworks-content
+# atlas-frameworks-content
 
 Portable, reusable reference knowledge about the **AI framework ecosystem** — authored as Markdown
 with structured YAML frontmatter, validated by JSON Schema, and readable by both humans and AI
@@ -6,9 +6,9 @@ agents. This repo is **content only**: no code, no build step, no framework lock
 vendor it (as a git submodule or a plain checkout) and render it however it likes.
 
 It is the `frameworks` domain of a multi-repo reference library
-(`ai-models-content`, `ai-hardware-content`, `ai-evaluation-content`, `ai-licenses-content`,
-`ai-frameworks-content`), all following the same
-[content-repo standard](https://github.com/sudhir13s/TheAIAtlas/blob/main/docs/standards/content-repo-standard.md).
+(`atlas-models-content`, `atlas-evaluation-content`, `atlas-frameworks-content`,
+`atlas-hardware-content`, `atlas-news-content`, `atlas-practices-content`, `atlas-research-content`), all following the same
+[content-repo standard](https://github.com/sudhir13s/TheAIAtlas/blob/main/docs/content-repo-standard.md).
 
 ## What's inside
 
@@ -25,9 +25,9 @@ are **catalog slugs** — the `id` of a framework in the consuming project's fra
 
 ```bash
 # Vendor it
-git clone https://github.com/sudhir13s/ai-frameworks-content.git
+git clone https://github.com/sudhir13s/atlas-frameworks-content.git
 # or as a submodule of your project
-git submodule add https://github.com/sudhir13s/ai-frameworks-content.git content/frameworks-src
+git submodule add https://github.com/sudhir13s/atlas-frameworks-content.git content/frameworks-src
 ```
 
 Every content file is a Markdown file with YAML frontmatter (the structured fields the UI reads) and

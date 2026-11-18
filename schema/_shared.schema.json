@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://theaiatlas.dev/schema/frameworks/_shared.schema.json",
-  "title": "Shared definitions for ai-frameworks-content",
+  "title": "Shared definitions for atlas-frameworks-content",
   "$defs": {
     "slug": {
       "type": "string",
