@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theaiatlas.dev/schema/frameworks/framework.schema.json",
+  "title": "framework",
+  "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
+  "properties": {
+    "type": { "const": "framework" },
+    "kind": {
+      "type": "string",
+      "enum": ["framework", "library", "tool"],
+      "description": "framework: code you build inside; library: code you call; tool: a program or service you run"
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^framework-category/[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "FK → framework-category/<slug>"
+    },
+    "subcategory": { "type": "string", "description": "finer grouping inside the category, as the source names it" },
+    "tagline": { "type": "string" },
+    "description": { "type": "string", "description": "absent means the record has no prose yet" },
+    "best_for": { "type": "string" },
+    "not_ideal_for": { "type": "string" },
+    "key_features": { "type": "array", "items": { "type": "string" } },
+    "use_cases": { "type": "array", "items": { "type": "string" } },
+    "pros": { "type": "array", "items": { "type": "string" } },
+    "cons": { "type": "array", "items": { "type": "string" } },
+    "language": { "type": "string", "description": "the main implementation language" },
+    "languages_supported": { "type": "array", "items": { "type": "string" } },
+    "maintained_by": { "type": "string" },
+    "first_release": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "license_spdx": {
+      "type": "string",
+      "minLength": 1,
+      "description": "SPDX identifier, when the project has one single known software licence"
+    },
+    "license_note": {
+      "type": "string",
+      "description": "the licence text exactly as the source gives it, when it is compound or proprietary"
+    },
+    "github_url": { "type": "string", "format": "uri" },
+    "docs_url": { "type": "string", "format": "uri" },
+    "website_url": { "type": "string", "format": "uri" },
+    "gpu_support": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nvidia_cuda": { "type": "boolean" },
+        "amd_rocm": { "type": "boolean" },
+        "apple_mps": { "type": "boolean" },
+        "intel_oneapi": { "type": "boolean" },
+        "google_tpu": { "type": "boolean" }
+      }
+    },
+    "learning_curve": {
+      "type": "string",
+      "enum": ["very-low", "low", "low-medium", "medium", "medium-high", "high", "very-high"]
+    },
+    "community_size": {
+      "type": "string",
+      "enum": ["none", "minimal", "small", "small-medium", "medium", "large", "massive"]
+    },
+    "maturity": { "type": "string", "enum": ["experimental", "stable", "production"] },
+    "signal_strength": { "type": "string", "enum": ["high", "medium", "low"] },
+    "backing": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["corporate", "foundation", "community"] },
+        "orgs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "funding_or_parent": { "type": "string" }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "_shared.schema.json#/$defs/framework_id" },
+      "description": "FKs → framework/<slug>; projects that do the same job"
+    },
+    "ecosystem_connections": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "_shared.schema.json#/$defs/framework_id" },
+      "description": "FKs → framework/<slug>; projects this one is commonly used with"
+    },
+    "registry_signals": {
+      "type": "object",
+      "description": "numbers that change, copied from the project's registry and repository; owned by the jobs",
+      "required": ["observed_at", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "github_stars": { "type": "integer", "minimum": 1 },
+        "downloads_monthly": { "type": "integer", "minimum": 1 },
+        "latest_version": { "type": "string", "minLength": 1 },
+        "latest_release_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "observed_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "source": { "type": "string", "format": "uri" }
+      }
+    }
+  },
+  "required": ["kind", "category"],
+  "anyOf": [{ "required": ["license_spdx"] }, { "required": ["license_note"] }]
+}

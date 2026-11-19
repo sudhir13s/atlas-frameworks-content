@@ -2,28 +2,29 @@
 id: framework-category/<slug>
 type: framework-category
 slug: <slug>
-schema_version: 1.0
+schema_version: 1.1
 title: "<Human Readable Title>"
 label: "<Category name for the section heading>"
-order: <int>                       # display order on the categories page
-shortDescription: "<one line: what this slice of the ecosystem covers>"
-whyItMatters: "<one line: why a builder cares>"
-defacto:
-  frameworkId: <catalog-slug>      # the current default choice; must be a frameworks-catalog slug
+order: <int>                       # display order on the categories page; omit for a category the page does not list
+short_description: "<one line: what this slice of the ecosystem covers>"
+why_it_matters: "<one line: why a builder cares>"
+defacto:                           # omit until someone has judged the default choice
+  framework_id: framework/<slug>   # the current default choice; must be a framework record
   reason: "<why it is the default>"
 rising:
-  - frameworkId: <catalog-slug>
+  - framework_id: framework/<slug>
     reason: "<why it is gaining ground>"
 alternatives:
-  - frameworkId: <catalog-slug>
+  - framework_id: framework/<slug>
     reason: "<where it fits / who should pick it>"
-keyConcepts:
+key_concepts:
   - "<concept a reader must know in this category>"
-canonicalReading:
+canonical_reading:
   - title: "<canonical doc/paper title>"
     url: "<url>"
-didYouKnow:
+did_you_know:
   - "<a surprising, true, cited-elsewhere fact>"
+aliases: ["<other written name>"]
 tags: [<tag>]
 updated: <YYYY-MM-DD>
 sources:

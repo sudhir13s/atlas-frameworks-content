@@ -7,14 +7,17 @@
     "type": { "const": "framework-category" },
     "label": { "type": "string", "minLength": 1, "description": "category name shown as the section heading" },
     "order": { "type": "integer", "description": "display order on the categories page" },
-    "shortDescription": { "type": "string", "minLength": 1, "description": "one line: what this slice of the ecosystem covers" },
-    "whyItMatters": { "type": "string", "description": "one line: why a builder cares about this category" },
-    "defacto": { "$ref": "_shared.schema.json#/$defs/framework_ref" },
+    "short_description": { "type": "string", "minLength": 1, "description": "one line: what this slice of the ecosystem covers" },
+    "why_it_matters": { "type": "string", "description": "one line: why a builder cares about this category" },
+    "defacto": {
+      "$ref": "_shared.schema.json#/$defs/framework_ref",
+      "description": "the current default choice; absent while nobody has made that judgement for the category"
+    },
     "rising": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
     "alternatives": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
-    "keyConcepts": { "type": "array", "items": { "type": "string" } },
-    "canonicalReading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } },
-    "didYouKnow": { "type": "array", "items": { "type": "string" } }
+    "key_concepts": { "type": "array", "items": { "type": "string" } },
+    "canonical_reading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } },
+    "did_you_know": { "type": "array", "items": { "type": "string" } }
   },
-  "required": ["label", "shortDescription", "defacto"]
+  "required": ["label", "short_description"]
 }

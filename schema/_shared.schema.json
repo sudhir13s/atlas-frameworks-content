@@ -15,14 +15,14 @@
     },
     "framework_id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-      "description": "a framework catalog slug (matches an id in the frameworks catalog), e.g. langchain, vllm, pytorch"
+      "pattern": "^framework/[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "FK → framework/<slug>: the id of a framework record, e.g. framework/langchain"
     },
     "framework_ref": {
       "type": "object",
-      "required": ["frameworkId", "reason"],
+      "required": ["framework_id", "reason"],
       "properties": {
-        "frameworkId": { "$ref": "#/$defs/framework_id" },
+        "framework_id": { "$ref": "#/$defs/framework_id" },
         "reason": { "type": "string", "minLength": 1 }
       }
     },
@@ -50,7 +50,7 @@
         "id": { "$ref": "#/$defs/id" },
         "type": {
           "type": "string",
-          "enum": ["use-case", "framework-category"]
+          "enum": ["use-case", "framework-category", "framework"]
         },
         "slug": { "$ref": "#/$defs/slug" },
         "schema_version": { "type": ["string", "number"] },
@@ -58,7 +58,19 @@
         "tags": { "type": "array", "items": { "type": "string" } },
         "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}" },
         "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
-        "related": { "type": "array", "items": { "type": "string" } }
+        "related": { "type": "array", "items": { "type": "string" } },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "other written names of the thing (repository owner/name, earlier slugs), so later sources can match it"
+        },
+        "locked": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "field paths (for example `description`, `kind`) no job may change; a human edits them"
+        }
       }
     }
   }

@@ -5,6 +5,26 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 1.1 (migration of the framework snapshot)
+
+- **Added** the `framework` type (`frameworks/`, `framework/<slug>`): `kind` (framework, library,
+  tool), `category` (ID), the authored fields of the snapshot, `license_spdx` or `license_note`,
+  `alternatives` and `ecosystem_connections` (ID lists), and the agent-owned `registry_signals`
+  block (`github_stars`, `downloads_monthly`, `latest_version`, `latest_release_date`,
+  `observed_at`, `source`). Optional body section: Overview.
+- **Added** the shared optional `aliases` and `locked` fields to every type.
+- **Changed** every frontmatter key of `framework-category` and `use-case` to `snake_case`
+  (`shortDescription` → `short_description`, `frameworkId` → `framework_id`, `day1Plan` →
+  `day1_plan`, and so on, at every depth); the 10 category and 8 use-case records were converted.
+- **Changed** framework references (`stack[].framework_id`, `defacto`, `rising[]`,
+  `alternatives[]`) from catalog slugs to `framework/<slug>` IDs that resolve inside this repo.
+- **Changed** `framework-category`: `defacto` is optional, and every body section is now optional
+  (registry `optional_sections`), so a category with no editorial judgement yet needs only
+  `label` and `short_description`.
+- **Added** 92 `framework` records (one per entry of the framework snapshot) and 7
+  `framework-category` records for snapshot categories no existing record covered (automl,
+  computer-vision, distributed-training, edge-mobile, evaluation, nlp, reinforcement-learning).
+
 ### Added
 - Repository scaffold to the content-repo standard: `meta.json`, `schema/registry.json`, the three
   JSON Schemas (`_shared`, `use-case`, `framework-category`), templates, and docs (`README`,
@@ -22,3 +42,5 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 ## Schema versions
 
 - **1.0** — initial schema for the two frameworks content types (`use-case`, `framework-category`).
+- **1.1** — `framework` type, `snake_case` keys, ID references for frameworks, shared `aliases`
+  and `locked`, optional `defacto` and optional category body sections.

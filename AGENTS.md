@@ -32,10 +32,11 @@ separate index is needed and none can fall out of sync.
   it as YAML.
 - **Body** carries prose under `##` headings matching the type's required `sections`. It is for human
   readers; the web pages render from frontmatter, not the body.
-- **Intra-repo links** (`related`, `relatedUseCases`) are **IDs** of the form `<type>/<slug>`.
-- **Framework references** (`stack[].frameworkId`, `defacto.frameworkId`, `rising[]`,
-  `alternatives[]`) are **catalog slugs** — external ids that resolve against the consuming project's
-  frameworks catalog, not files in this repo.
+- **Links** (`related`, `related_use_cases`, a framework's `category`, `alternatives` and
+  `ecosystem_connections`) are **IDs** of the form `<type>/<slug>`.
+- **Framework references** (`stack[].framework_id`, `defacto.framework_id`, `rising[]`,
+  `alternatives[]`) are IDs of `framework` records (`framework/<slug>`), files in this repo.
+- Frontmatter keys are `snake_case`. A framework's `registry_signals` block is owned by the jobs.
 
 ## 4. Validate
 
@@ -50,7 +51,7 @@ separate index is needed and none can fall out of sync.
    to today's date.
 3. Fill the type-specific frontmatter fields (schema `required` first) and every required body
    section in order.
-4. Use catalog slugs for framework references and `<type>/<slug>` IDs for intra-repo links.
+4. Use `framework/<slug>` IDs for framework references and `<type>/<slug>` IDs for every other link.
 5. Validate (step 4 above). Do not introduce code files — this repo is content-only.
 6. Follow open-source-first sourcing: cite official framework docs in `sources[]`; never copy
    paywalled text.
@@ -59,5 +60,5 @@ separate index is needed and none can fall out of sync.
 
 - `id` is immutable; renaming a slug is a breaking change (note it in `CHANGELOG.md`).
 - No `.js` / `.ts` / `.mjs` / `package.json` / build scripts anywhere.
-- Intra-repo links are IDs; framework references are catalog slugs.
+- Every link is an ID that resolves to a record in this repo.
 - Frontmatter must pass the type schema before a change is complete.

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "shared": "schema/_shared.schema.json",
   "types": {
     "use-case": {
@@ -12,7 +12,15 @@
       "folder": "categories",
       "schema": "schema/framework-category.schema.json",
       "id_prefix": "framework-category/",
-      "sections": ["Overview", "Landscape", "Notes"]
+      "sections": [],
+      "optional_sections": ["Overview", "Landscape", "Notes"]
+    },
+    "framework": {
+      "folder": "frameworks",
+      "schema": "schema/framework.schema.json",
+      "id_prefix": "framework/",
+      "sections": [],
+      "optional_sections": ["Overview"]
     }
   }
 }

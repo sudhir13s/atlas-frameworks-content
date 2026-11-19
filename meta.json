@@ -2,8 +2,8 @@
   "name": "atlas-frameworks-content",
   "domain": "frameworks",
   "title": "AI Frameworks — reference knowledge",
-  "schema_version": "1.0",
-  "description": "Portable, reusable reference knowledge for the AI framework ecosystem: task-oriented getting-started use cases (the exact stack, a day-1 plan, starter templates, pitfalls, and what to learn next) and per-category landscapes (the defacto choice, who is rising, key concepts, and canonical reading). Content only — Markdown + JSON Schema + docs, zero code.",
+  "schema_version": "1.1",
+  "description": "Portable, reusable reference knowledge for the AI framework ecosystem: one record per framework, library or tool, task-oriented getting-started use cases (the exact stack, a day-1 plan, starter templates, pitfalls, and what to learn next) and per-category landscapes (the defacto choice, who is rising, key concepts, and canonical reading). Content only — Markdown + JSON Schema + docs, zero code.",
   "entrypoints": {
     "human": "README.md",
     "agent": "AGENTS.md",
@@ -12,7 +12,8 @@
   },
   "types": [
     "use-case",
-    "framework-category"
+    "framework-category",
+    "framework"
   ],
   "license": "CC-BY-4.0",
   "standard": "https://github.com/sudhir13s/TheAIAtlas/blob/main/docs/content-repo-standard.md"

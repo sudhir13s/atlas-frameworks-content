@@ -18,18 +18,18 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["frameworkId", "role", "why"],
+        "required": ["framework_id", "role", "why"],
         "properties": {
-          "frameworkId": { "$ref": "_shared.schema.json#/$defs/framework_id" },
+          "framework_id": { "$ref": "_shared.schema.json#/$defs/framework_id" },
           "role": { "type": "string" },
           "why": { "type": "string" },
           "install": { "type": "string" },
-          "quickstartUrl": { "type": "string", "format": "uri" },
-          "docsUrl": { "type": "string", "format": "uri" }
+          "quickstart_url": { "type": "string", "format": "uri" },
+          "docs_url": { "type": "string", "format": "uri" }
         }
       }
     },
-    "day1Plan": {
+    "day1_plan": {
       "type": "array",
       "items": {
         "type": "object",
@@ -42,7 +42,7 @@
         }
       }
     },
-    "starterTemplates": {
+    "starter_templates": {
       "type": "array",
       "items": {
         "type": "object",
@@ -54,7 +54,7 @@
         }
       }
     },
-    "learnNext": {
+    "learn_next": {
       "type": "array",
       "items": {
         "type": "object",
@@ -67,7 +67,7 @@
       }
     },
     "pitfalls": { "type": "array", "items": { "type": "string" } },
-    "whenToLevelUp": { "type": "string" },
+    "when_to_level_up": { "type": "string" },
     "community": {
       "type": "array",
       "items": {
@@ -79,7 +79,7 @@
         }
       }
     },
-    "dontUse": {
+    "dont_use": {
       "type": "array",
       "items": {
         "type": "object",
@@ -90,11 +90,11 @@
         }
       }
     },
-    "relatedUseCases": {
+    "related_use_cases": {
       "type": "array",
       "items": { "type": "string" },
-      "description": "IDs of related use-case files (use-case/<slug>); the compiler strips the prefix for the web"
+      "description": "IDs of related use-case files (use-case/<slug>); the site reader strips the prefix"
     }
   },
-  "required": ["label", "goal", "languages", "levels", "stack", "day1Plan"]
+  "required": ["label", "goal", "languages", "levels", "stack", "day1_plan"]
 }

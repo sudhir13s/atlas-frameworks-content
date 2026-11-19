@@ -14,12 +14,13 @@ It is the `frameworks` domain of a multi-repo reference library
 
 | Type | Folder | What it captures |
 |------|--------|------------------|
+| `framework` | `frameworks/` | One framework, library or tool: what it is, who it suits, licence, backing, links to alternatives, and a block of numbers that change over time |
 | `use-case` | `use-cases/` | A task-oriented "getting started" path: the exact stack, a day-1 plan, starter templates, pitfalls, what to learn next, community, and what *not* to use |
 | `framework-category` | `categories/` | A per-category landscape: the defacto choice, who is rising, alternatives, key concepts, and canonical reading |
 
-Framework references (`stack[].frameworkId`, `defacto.frameworkId`, `rising[]`, `alternatives[]`)
-are **catalog slugs** — the `id` of a framework in the consuming project's frameworks catalog
-(e.g. `pytorch`, `langchain`, `vllm`, `chromadb`). They resolve at render time, not inside this repo.
+Framework references (`stack[].framework_id`, `defacto.framework_id`, `rising[]`, `alternatives[]`)
+are IDs of `framework` records (`framework/pytorch`, `framework/langchain`) and are checked to
+resolve inside this repo.
 
 ## Quick start
 
@@ -42,7 +43,7 @@ meta.json                 # repo descriptor (machine entrypoint 1)
 schema/registry.json      # type → folder/schema/sections map (machine entrypoint 2)
 schema/*.schema.json      # JSON Schema per content type
 templates/*.template.md   # copy these to author new content
-use-cases/ categories/    # one folder per content type; files are <slug>.md
+frameworks/ use-cases/ categories/   # one folder per content type; files are <slug>.md
 assets/                   # SVG diagrams
 ```
 
@@ -50,7 +51,7 @@ assets/                   # SVG diagrams
 
 See [CONVENTIONS.md](CONVENTIONS.md) for the authoring rules, and [AGENTS.md](AGENTS.md) for the
 machine-navigation guide. In short: copy a template, fill the frontmatter and required sections, use
-catalog slugs for framework references and IDs for intra-repo links, and open a PR. Content must be
+`framework/<slug>` IDs for framework references and IDs for every other link, and open a PR. Content must be
 open-source-sourced and cited (official framework docs first) — never copied from paywalled material.
 
 ## License
