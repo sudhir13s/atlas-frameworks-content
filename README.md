@@ -28,7 +28,7 @@ resolve inside this repo.
 # Vendor it
 git clone https://github.com/sudhir13s/atlas-frameworks-content.git
 # or as a submodule of your project
-git submodule add https://github.com/sudhir13s/atlas-frameworks-content.git content/frameworks-src
+git submodule add https://github.com/sudhir13s/atlas-frameworks-content.git content/atlas-frameworks-content
 ```
 
 Every content file is a Markdown file with YAML frontmatter (the structured fields the UI reads) and
