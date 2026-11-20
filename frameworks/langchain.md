@@ -70,11 +70,11 @@ ecosystem_connections:
 - framework/chromadb
 - framework/pinecone
 registry_signals:
-  github_stars: 100000
-  downloads_monthly: 15000000
-  latest_version: '0.3'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 149964
+  downloads_monthly: 157281980
+  latest_version: 1.5.2
+  latest_release_date: '2026-11-18'
+  observed_at: '2026-11-20'
   source: https://github.com/langchain-ai/langchain
 aliases:
 - langchain-ai/langchain
@@ -84,7 +84,7 @@ tags:
 - rag
 - orchestration
 - integrations
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/langchain-ai/langchain
   title: GitHub repository

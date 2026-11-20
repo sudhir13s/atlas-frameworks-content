@@ -64,11 +64,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/wandb
 registry_signals:
-  github_stars: 9500
-  downloads_monthly: 800000
-  latest_version: '2.4'
-  latest_release_date: '2024-12-01'
-  observed_at: '2026-06-15'
+  github_stars: 14038
+  downloads_monthly: 794567
+  latest_version: 2.9.2
+  latest_release_date: '2026-10-26'
+  observed_at: '2026-11-20'
   source: https://github.com/DLR-RM/stable-baselines3
 aliases:
 - DLR-RM/stable-baselines3
@@ -77,7 +77,7 @@ tags:
 - algorithms
 - pytorch
 - research
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/DLR-RM/stable-baselines3
   title: GitHub repository

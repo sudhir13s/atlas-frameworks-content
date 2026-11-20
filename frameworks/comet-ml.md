@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 400
+  github_stars: 177
   downloads_monthly: 200000
   latest_version: '3.47'
   latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/comet-ml/comet-examples
 aliases:
 - comet-ml/comet-examples
@@ -74,7 +74,7 @@ tags:
 - mlops
 - experiment-tracking
 - monitoring
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/comet-ml/comet-examples
   title: GitHub repository

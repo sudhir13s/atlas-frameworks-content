@@ -59,11 +59,11 @@ alternatives:
 ecosystem_connections:
 - framework/tensorflow
 registry_signals:
-  github_stars: 6200
+  github_stars: 6363
   downloads_monthly: 500000
-  latest_version: '2.18'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: 2.21.0
+  latest_release_date: '2026-09-29'
+  observed_at: '2026-11-20'
   source: https://github.com/tensorflow/serving
 aliases:
 - tensorflow/serving
@@ -72,7 +72,7 @@ tags:
 - tensorflow
 - production
 - high-performance
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/tensorflow/serving
   title: GitHub repository

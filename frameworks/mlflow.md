@@ -69,11 +69,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 19500
-  downloads_monthly: 8000000
-  latest_version: '2.20'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 28905
+  downloads_monthly: 22613805
+  latest_version: 3.18.0
+  latest_release_date: '2026-11-03'
+  observed_at: '2026-11-20'
   source: https://github.com/mlflow/mlflow
 aliases:
 - mlflow/mlflow
@@ -82,7 +82,7 @@ tags:
 - experiment-tracking
 - model-registry
 - deployment
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/mlflow/mlflow
   title: GitHub repository

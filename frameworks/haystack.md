@@ -63,11 +63,11 @@ ecosystem_connections:
 - framework/qdrant
 - framework/weaviate
 registry_signals:
-  github_stars: 18500
+  github_stars: 27060
   downloads_monthly: 1000000
-  latest_version: '2.9'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 3.5.0
+  latest_release_date: '2026-11-10'
+  observed_at: '2026-11-20'
   source: https://github.com/deepset-ai/haystack
 aliases:
 - deepset-ai/haystack
@@ -76,7 +76,7 @@ tags:
 - rag
 - pipeline
 - production
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/deepset-ai/haystack
   title: GitHub repository

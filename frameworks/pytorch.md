@@ -71,11 +71,11 @@ ecosystem_connections:
 - framework/lightning
 - framework/deepspeed
 registry_signals:
-  github_stars: 87000
+  github_stars: 105741
   downloads_monthly: 15000000
-  latest_version: '2.6'
-  latest_release_date: '2025-01-29'
-  observed_at: '2026-06-15'
+  latest_version: 2.15.0
+  latest_release_date: '2026-10-28'
+  observed_at: '2026-11-20'
   source: https://github.com/pytorch/pytorch
 tags:
 - deep-learning
@@ -83,7 +83,7 @@ tags:
 - gpu
 - research
 - production
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/pytorch/pytorch
   title: GitHub repository

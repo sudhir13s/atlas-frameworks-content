@@ -57,11 +57,11 @@ backing:
 alternatives:
 - framework/polars
 registry_signals:
-  github_stars: 12800
-  downloads_monthly: 6000000
-  latest_version: '2025.2'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 13959
+  downloads_monthly: 31722821
+  latest_version: 2026.8.0
+  latest_release_date: '2026-08-24'
+  observed_at: '2026-11-20'
   source: https://github.com/dask/dask
 aliases:
 - dask/dask
@@ -70,7 +70,7 @@ tags:
 - distributed
 - parallel
 - pandas-like
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/dask/dask
   title: GitHub repository

@@ -59,11 +59,11 @@ alternatives:
 ecosystem_connections:
 - framework/pytorch
 registry_signals:
-  github_stars: 16500
-  downloads_monthly: 10000000
-  latest_version: '0.21'
-  latest_release_date: '2025-01-29'
-  observed_at: '2026-06-15'
+  github_stars: 18021
+  downloads_monthly: 18172848
+  latest_version: 0.29.2
+  latest_release_date: '2026-10-28'
+  observed_at: '2026-11-20'
   source: https://github.com/pytorch/vision
 aliases:
 - pytorch/vision
@@ -72,7 +72,7 @@ tags:
 - pytorch
 - models
 - datasets
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/pytorch/vision
   title: GitHub repository

@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/onnx-runtime
 registry_signals:
-  github_stars: 35000
-  downloads_monthly: 5000000
-  latest_version: '8.3'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 63623
+  downloads_monthly: 5154997
+  latest_version: 8.4.216
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/ultralytics/ultralytics
 aliases:
 - ultralytics/ultralytics
@@ -76,7 +76,7 @@ tags:
 - real-time
 - yolo
 - production
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/ultralytics/ultralytics
   title: GitHub repository

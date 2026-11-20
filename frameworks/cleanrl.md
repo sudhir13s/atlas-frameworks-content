@@ -58,11 +58,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/wandb
 registry_signals:
-  github_stars: 5800
+  github_stars: 10704
   downloads_monthly: 100000
   latest_version: '1.2'
   latest_release_date: '2024-06-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/vwxyzjn/cleanrl
 aliases:
 - vwxyzjn/cleanrl
@@ -71,7 +71,7 @@ tags:
 - education
 - clean-code
 - research
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/vwxyzjn/cleanrl
   title: GitHub repository

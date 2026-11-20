@@ -67,11 +67,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 22000
+  github_stars: 35642
   downloads_monthly: 1500000
-  latest_version: '1.13'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 1.20.2
+  latest_release_date: '2026-11-16'
+  observed_at: '2026-11-20'
   source: https://github.com/qdrant/qdrant
 aliases:
 - qdrant/qdrant
@@ -80,7 +80,7 @@ tags:
 - open-source
 - rust
 - high-performance
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/qdrant/qdrant
   title: GitHub repository

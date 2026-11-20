@@ -63,11 +63,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 39000
-  downloads_monthly: 200000
-  latest_version: '0.4'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 41420
+  downloads_monthly: 5593
+  latest_version: 0.5.0
+  latest_release_date: '2025-06-04'
+  observed_at: '2026-11-20'
   source: https://github.com/hpcaitech/ColossalAI
 aliases:
 - hpcaitech/ColossalAI
@@ -76,7 +76,7 @@ tags:
 - large-models
 - accessible
 - memory-optimization
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/hpcaitech/ColossalAI
   title: GitHub repository

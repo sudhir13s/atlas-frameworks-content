@@ -61,11 +61,11 @@ alternatives:
 ecosystem_connections:
 - framework/triton-inference-server
 registry_signals:
-  github_stars: 9500
-  downloads_monthly: 500000
-  latest_version: '0.17'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 15107
+  downloads_monthly: 5720
+  latest_version: 1.3.0
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/NVIDIA/TensorRT-LLM
 aliases:
 - NVIDIA/TensorRT-LLM
@@ -75,7 +75,7 @@ tags:
 - nvidia
 - optimization
 - production
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/NVIDIA/TensorRT-LLM
   title: GitHub repository

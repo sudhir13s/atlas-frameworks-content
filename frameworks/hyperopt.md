@@ -52,11 +52,11 @@ alternatives:
 - framework/optuna
 - framework/ray-tune
 registry_signals:
-  github_stars: 7200
-  downloads_monthly: 1500000
-  latest_version: 0.2.7
-  latest_release_date: '2023-01-01'
-  observed_at: '2026-06-15'
+  github_stars: 7600
+  downloads_monthly: 1720725
+  latest_version: 0.3.0
+  latest_release_date: '2026-07-24'
+  observed_at: '2026-11-20'
   source: https://github.com/hyperopt/hyperopt
 aliases:
 - hyperopt/hyperopt
@@ -64,7 +64,7 @@ tags:
 - automl
 - hyperparameter-tuning
 - bayesian
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/hyperopt/hyperopt
   title: GitHub repository

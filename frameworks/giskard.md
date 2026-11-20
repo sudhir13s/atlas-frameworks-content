@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 3500
-  downloads_monthly: 200000
-  latest_version: '2.16'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 5960
+  downloads_monthly: 11486
+  latest_version: 3.0.1
+  latest_release_date: '2026-10-02'
+  observed_at: '2026-11-20'
   source: https://github.com/Giskard-AI/giskard
 aliases:
 - Giskard-AI/giskard
@@ -76,7 +76,7 @@ tags:
 - bias
 - safety
 - compliance
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/Giskard-AI/giskard
   title: GitHub repository

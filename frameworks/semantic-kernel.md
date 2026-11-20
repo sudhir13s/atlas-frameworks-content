@@ -61,11 +61,11 @@ alternatives:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 23000
-  downloads_monthly: 2000000
-  latest_version: '1.30'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 28790
+  downloads_monthly: 350705
+  latest_version: 1.47.0
+  latest_release_date: '2026-11-05'
+  observed_at: '2026-11-20'
   source: https://github.com/microsoft/semantic-kernel
 aliases:
 - microsoft/semantic-kernel
@@ -75,7 +75,7 @@ tags:
 - microsoft
 - dotnet
 - azure
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/microsoft/semantic-kernel
   title: GitHub repository

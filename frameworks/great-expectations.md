@@ -55,11 +55,11 @@ backing:
   - Superconductive
   funding_or_parent: Series B $40M led by Tiger Global (2022)
 registry_signals:
-  github_stars: 10200
+  github_stars: 11942
   downloads_monthly: 1500000
-  latest_version: '1.3'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 1.25.0
+  latest_release_date: '2026-11-12'
+  observed_at: '2026-11-20'
   source: https://github.com/great-expectations/great_expectations
 aliases:
 - great-expectations/great_expectations
@@ -68,7 +68,7 @@ tags:
 - data-quality
 - validation
 - testing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/great-expectations/great_expectations
   title: GitHub repository

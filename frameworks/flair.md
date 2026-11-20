@@ -58,11 +58,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 14000
-  downloads_monthly: 300000
-  latest_version: '0.14'
-  latest_release_date: '2024-12-01'
-  observed_at: '2026-06-15'
+  github_stars: 14399
+  downloads_monthly: 64424
+  latest_version: 0.15.1
+  latest_release_date: '2025-02-05'
+  observed_at: '2026-11-20'
   source: https://github.com/flairNLP/flair
 aliases:
 - flairNLP/flair
@@ -71,7 +71,7 @@ tags:
 - ner
 - sequence-labeling
 - biomedical
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/flairNLP/flair
   title: GitHub repository

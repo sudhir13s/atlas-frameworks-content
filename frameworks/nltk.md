@@ -57,11 +57,11 @@ alternatives:
 - framework/hugging-face-transformers
 - framework/stanza
 registry_signals:
-  github_stars: 13500
-  downloads_monthly: 10000000
-  latest_version: '3.9'
-  latest_release_date: '2024-06-01'
-  observed_at: '2026-06-15'
+  github_stars: 14775
+  downloads_monthly: 48827217
+  latest_version: 3.10.4
+  latest_release_date: '2026-10-21'
+  observed_at: '2026-11-20'
   source: https://github.com/nltk/nltk
 aliases:
 - nltk/nltk
@@ -70,7 +70,7 @@ tags:
 - education
 - classical-nlp
 - text-processing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/nltk/nltk
   title: GitHub repository

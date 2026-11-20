@@ -61,11 +61,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 11500
-  downloads_monthly: 4000000
-  latest_version: '4.2'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 15069
+  downloads_monthly: 14572648
+  latest_version: 5.1.0
+  latest_release_date: '2026-11-16'
+  observed_at: '2026-11-20'
   source: https://github.com/optuna/optuna
 aliases:
 - optuna/optuna
@@ -74,7 +74,7 @@ tags:
 - hyperparameter-tuning
 - optimization
 - bayesian
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/optuna/optuna
   title: GitHub repository

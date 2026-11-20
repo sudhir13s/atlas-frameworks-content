@@ -59,11 +59,11 @@ backing:
 ecosystem_connections:
 - framework/jax
 registry_signals:
-  github_stars: 6200
-  downloads_monthly: 2000000
-  latest_version: '0.10'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 7368
+  downloads_monthly: 2752480
+  latest_version: 0.12.12
+  latest_release_date: '2026-10-27'
+  observed_at: '2026-11-20'
   source: https://github.com/google/flax
 aliases:
 - google/flax
@@ -72,7 +72,7 @@ tags:
 - jax
 - research
 - functional
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/google/flax
   title: GitHub repository

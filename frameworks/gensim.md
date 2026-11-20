@@ -53,11 +53,11 @@ backing:
 alternatives:
 - framework/sentence-transformers
 registry_signals:
-  github_stars: 15800
+  github_stars: 16516
   downloads_monthly: 3000000
-  latest_version: '4.3'
-  latest_release_date: '2024-01-01'
-  observed_at: '2026-06-15'
+  latest_version: 4.4.0
+  latest_release_date: '2025-10-16'
+  observed_at: '2026-11-20'
   source: https://github.com/piskvorky/gensim
 aliases:
 - piskvorky/gensim
@@ -66,7 +66,7 @@ tags:
 - topic-modeling
 - embeddings
 - unsupervised
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/piskvorky/gensim
   title: GitHub repository

@@ -60,11 +60,11 @@ alternatives:
 ecosystem_connections:
 - framework/pytorch
 registry_signals:
-  github_stars: 29800
+  github_stars: 33045
   downloads_monthly: 200000
   latest_version: '3.3'
   latest_release_date: '2024-06-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/open-mmlab/mmdetection
 aliases:
 - open-mmlab/mmdetection
@@ -73,7 +73,7 @@ tags:
 - object-detection
 - model-zoo
 - research
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/open-mmlab/mmdetection
   title: GitHub repository

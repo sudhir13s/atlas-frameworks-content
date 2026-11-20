@@ -69,11 +69,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 32000
+  github_stars: 46705
   downloads_monthly: 1500000
-  latest_version: '2.5'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: 3.0.6
+  latest_release_date: '2026-11-11'
+  observed_at: '2026-11-20'
   source: https://github.com/milvus-io/milvus
 aliases:
 - milvus-io/milvus
@@ -82,7 +82,7 @@ tags:
 - open-source
 - scalable
 - billion-scale
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/milvus-io/milvus
   title: GitHub repository

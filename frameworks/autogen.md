@@ -60,11 +60,11 @@ backing:
 alternatives:
 - framework/crewai
 registry_signals:
-  github_stars: 38000
+  github_stars: 61951
   downloads_monthly: 2000000
-  latest_version: '0.4'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: python-v0.7.5
+  latest_release_date: '2025-09-30'
+  observed_at: '2026-11-20'
   source: https://github.com/microsoft/autogen
 aliases:
 - microsoft/autogen
@@ -74,7 +74,7 @@ tags:
 - multi-agent
 - research
 - microsoft
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/microsoft/autogen
   title: GitHub repository

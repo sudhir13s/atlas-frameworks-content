@@ -64,11 +64,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/keras-tuner
 registry_signals:
-  github_stars: 62000
-  downloads_monthly: 8000000
-  latest_version: '3.8'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 64442
+  downloads_monthly: 12107636
+  latest_version: 3.15.1
+  latest_release_date: '2026-07-29'
+  observed_at: '2026-11-20'
   source: https://github.com/keras-team/keras
 aliases:
 - keras-team/keras
@@ -77,7 +77,7 @@ tags:
 - high-level
 - beginner-friendly
 - multi-backend
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/keras-team/keras
   title: GitHub repository

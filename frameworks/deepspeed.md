@@ -68,11 +68,11 @@ ecosystem_connections:
 - framework/hugging-face-transformers
 - framework/megatron-lm
 registry_signals:
-  github_stars: 36500
+  github_stars: 43347
   downloads_monthly: 2000000
-  latest_version: '0.16'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 0.20.0
+  latest_release_date: '2026-11-12'
+  observed_at: '2026-11-20'
   source: https://github.com/microsoft/DeepSpeed
 aliases:
 - microsoft/DeepSpeed
@@ -81,7 +81,7 @@ tags:
 - optimization
 - large-models
 - zero
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/microsoft/DeepSpeed
   title: GitHub repository

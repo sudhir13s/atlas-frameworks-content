@@ -65,11 +65,11 @@ ecosystem_connections:
 - framework/pinecone
 - framework/weaviate
 registry_signals:
-  github_stars: 38000
-  downloads_monthly: 5000000
-  latest_version: '0.12'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 52967
+  downloads_monthly: 1787456
+  latest_version: 0.14.26
+  latest_release_date: '2026-11-13'
+  observed_at: '2026-11-20'
   source: https://github.com/run-llama/llama_index
 aliases:
 - run-llama/llama_index
@@ -79,7 +79,7 @@ tags:
 - data-framework
 - indexing
 - retrieval
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/run-llama/llama_index
   title: GitHub repository

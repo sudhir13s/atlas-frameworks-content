@@ -64,11 +64,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/llama-cpp
 registry_signals:
-  github_stars: 2500
-  downloads_monthly: 100000
-  latest_version: '0.5'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 5182
+  downloads_monthly: 69901
+  latest_version: 1.6.0
+  latest_release_date: '2026-11-04'
+  observed_at: '2026-11-20'
   source: https://github.com/pytorch/executorch
 aliases:
 - pytorch/executorch
@@ -77,7 +77,7 @@ tags:
 - pytorch
 - mobile
 - edge
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/pytorch/executorch
   title: GitHub repository

@@ -60,11 +60,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/torchvision
 registry_signals:
-  github_stars: 30500
+  github_stars: 34995
   downloads_monthly: 300000
   latest_version: '0.6'
   latest_release_date: '2023-01-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/facebookresearch/detectron2
 aliases:
 - facebookresearch/detectron2
@@ -73,7 +73,7 @@ tags:
 - object-detection
 - segmentation
 - research
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/facebookresearch/detectron2
   title: GitHub repository

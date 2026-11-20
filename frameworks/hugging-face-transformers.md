@@ -66,11 +66,11 @@ alternatives:
 ecosystem_connections:
 - framework/pytorch
 registry_signals:
-  github_stars: 140000
-  downloads_monthly: 30000000
-  latest_version: '4.48'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 169311
+  downloads_monthly: 120882484
+  latest_version: 5.23.0
+  latest_release_date: '2026-11-13'
+  observed_at: '2026-11-20'
   source: https://github.com/huggingface/transformers
 aliases:
 - huggingface/transformers
@@ -81,7 +81,7 @@ tags:
 - multimodal
 - model-hub
 - fine-tuning
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/huggingface/transformers
   title: GitHub repository

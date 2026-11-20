@@ -56,11 +56,11 @@ ecosystem_connections:
 - framework/keras
 - framework/tensorflow
 registry_signals:
-  github_stars: 2900
-  downloads_monthly: 500000
-  latest_version: '1.4'
-  latest_release_date: '2024-06-01'
-  observed_at: '2026-06-15'
+  github_stars: 2922
+  downloads_monthly: 112252
+  latest_version: 1.4.8
+  latest_release_date: '2025-11-11'
+  observed_at: '2026-11-20'
   source: https://github.com/keras-team/keras-tuner
 aliases:
 - keras-team/keras-tuner
@@ -68,7 +68,7 @@ tags:
 - automl
 - hyperparameter-tuning
 - keras
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/keras-team/keras-tuner
   title: GitHub repository

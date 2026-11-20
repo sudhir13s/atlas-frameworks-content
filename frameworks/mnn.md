@@ -58,11 +58,11 @@ alternatives:
 ecosystem_connections:
 - framework/tensorflow
 registry_signals:
-  github_stars: 8800
-  downloads_monthly: 50000
-  latest_version: '2.9'
-  latest_release_date: '2024-12-01'
-  observed_at: '2026-06-15'
+  github_stars: 16580
+  downloads_monthly: 50680
+  latest_version: 3.6.2
+  latest_release_date: '2026-10-29'
+  observed_at: '2026-11-20'
   source: https://github.com/alibaba/MNN
 aliases:
 - alibaba/MNN
@@ -71,7 +71,7 @@ tags:
 - mobile
 - alibaba
 - multi-platform
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/alibaba/MNN
   title: GitHub repository

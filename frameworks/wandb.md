@@ -68,11 +68,11 @@ ecosystem_connections:
 - framework/hugging-face-transformers
 - framework/keras
 registry_signals:
-  github_stars: 9500
-  downloads_monthly: 5000000
-  latest_version: '0.19'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 11332
+  downloads_monthly: 20057702
+  latest_version: 0.31.1
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/wandb/wandb
 aliases:
 - wandb/wandb
@@ -81,7 +81,7 @@ tags:
 - experiment-tracking
 - visualization
 - collaboration
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/wandb/wandb
   title: GitHub repository

@@ -58,11 +58,11 @@ backing:
   - :probabl.
   funding_or_parent: Originated at INRIA; scikit-learn consortium funded by Microsoft, Nvidia, Hugging Face, Quansight, Dataiku, AXA, BNP Paribas, Chanel, Fujitsu; spin-off :probabl. founded 2024
 registry_signals:
-  github_stars: 60500
-  downloads_monthly: 30000000
-  latest_version: '1.6'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 68264
+  downloads_monthly: 215811559
+  latest_version: 1.9.1
+  latest_release_date: '2026-09-10'
+  observed_at: '2026-11-20'
   source: https://github.com/scikit-learn/scikit-learn
 aliases:
 - scikit-learn/scikit-learn
@@ -71,7 +71,7 @@ tags:
 - tabular
 - education
 - preprocessing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/scikit-learn/scikit-learn
   title: GitHub repository

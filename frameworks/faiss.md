@@ -59,11 +59,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/langchain
 registry_signals:
-  github_stars: 32000
+  github_stars: 41831
   downloads_monthly: 5000000
   latest_version: '1.9'
   latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/facebookresearch/faiss
 aliases:
 - facebookresearch/faiss
@@ -72,7 +72,7 @@ tags:
 - search-library
 - high-performance
 - gpu
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/facebookresearch/faiss
   title: GitHub repository

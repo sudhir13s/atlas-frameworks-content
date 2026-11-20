@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/deepspeed
 - framework/pytorch
 registry_signals:
-  github_stars: 10500
+  github_stars: 18445
   downloads_monthly: 200000
-  latest_version: core-0.10
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: core_v0.20.1
+  latest_release_date: '2026-11-19'
+  observed_at: '2026-11-20'
   source: https://github.com/NVIDIA/Megatron-LM
 aliases:
 - NVIDIA/Megatron-LM
@@ -75,7 +75,7 @@ tags:
 - large-models
 - nvidia
 - transformers
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/NVIDIA/Megatron-LM
   title: GitHub repository

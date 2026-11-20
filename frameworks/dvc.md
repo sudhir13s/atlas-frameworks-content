@@ -57,11 +57,11 @@ backing:
 alternatives:
 - framework/mlflow
 registry_signals:
-  github_stars: 14200
+  github_stars: 15985
   downloads_monthly: 2000000
-  latest_version: '3.58'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 3.67.1
+  latest_release_date: '2026-03-31'
+  observed_at: '2026-11-20'
   source: https://github.com/iterative/dvc
 aliases:
 - iterative/dvc
@@ -70,7 +70,7 @@ tags:
 - data-versioning
 - pipelines
 - reproducibility
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/iterative/dvc
   title: GitHub repository

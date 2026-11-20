@@ -64,10 +64,11 @@ alternatives:
 ecosystem_connections:
 - framework/langchain
 registry_signals:
-  github_stars: 19000
-  latest_version: 1.30.0
-  latest_release_date: '2026-04-13'
-  observed_at: '2026-06-15'
+  github_stars: 22277
+  downloads_monthly: 11094886
+  latest_version: 2.15.0
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/google/adk-python
 aliases:
 - google/adk-python
@@ -78,7 +79,7 @@ tags:
 - google
 - gemini
 - vertex-ai
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/google/adk-python
   title: GitHub repository

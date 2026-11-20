@@ -57,11 +57,11 @@ alternatives:
 - framework/mnn
 - framework/tensorflow-lite
 registry_signals:
-  github_stars: 20800
+  github_stars: 24078
   downloads_monthly: 100000
   latest_version: '20240820'
   latest_release_date: '2024-08-20'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/Tencent/ncnn
 aliases:
 - Tencent/ncnn
@@ -70,7 +70,7 @@ tags:
 - arm
 - lightweight
 - mobile
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/Tencent/ncnn
   title: GitHub repository

@@ -60,11 +60,11 @@ alternatives:
 - framework/bentoml
 - framework/ray-serve
 registry_signals:
-  github_stars: 4300
+  github_stars: 4781
   downloads_monthly: 100000
   latest_version: '2.9'
   latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/SeldonIO/seldon-core
 aliases:
 - SeldonIO/seldon-core
@@ -74,7 +74,7 @@ tags:
 - enterprise
 - monitoring
 - governance
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/SeldonIO/seldon-core
   title: GitHub repository

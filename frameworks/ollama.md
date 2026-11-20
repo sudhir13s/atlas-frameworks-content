@@ -63,11 +63,11 @@ ecosystem_connections:
 - framework/llama-cpp
 - framework/langchain
 registry_signals:
-  github_stars: 115000
+  github_stars: 187727
   downloads_monthly: 5000000
-  latest_version: '0.6'
-  latest_release_date: '2025-03-01'
-  observed_at: '2026-06-15'
+  latest_version: 0.40.16
+  latest_release_date: '2026-11-09'
+  observed_at: '2026-11-20'
   source: https://github.com/ollama/ollama
 aliases:
 - ollama/ollama
@@ -77,7 +77,7 @@ tags:
 - developer-tools
 - inference
 - easy-setup
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/ollama/ollama
   title: GitHub repository

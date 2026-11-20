@@ -57,11 +57,11 @@ ecosystem_connections:
 - framework/rllib
 - framework/cleanrl
 registry_signals:
-  github_stars: 7500
-  downloads_monthly: 5000000
-  latest_version: '1.0'
-  latest_release_date: '2024-10-01'
-  observed_at: '2026-06-15'
+  github_stars: 12842
+  downloads_monthly: 4435816
+  latest_version: 1.4.0
+  latest_release_date: '2026-10-05'
+  observed_at: '2026-11-20'
   source: https://github.com/Farama-Foundation/Gymnasium
 aliases:
 - Farama-Foundation/Gymnasium
@@ -69,7 +69,7 @@ tags:
 - reinforcement-learning
 - environment
 - standard-api
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/Farama-Foundation/Gymnasium
   title: GitHub repository

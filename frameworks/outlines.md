@@ -58,11 +58,11 @@ ecosystem_connections:
 - framework/vllm
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 10500
-  downloads_monthly: 800000
-  latest_version: '0.2'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 16016
+  downloads_monthly: 1409867
+  latest_version: 1.3.3
+  latest_release_date: '2026-08-06'
+  observed_at: '2026-11-20'
   source: https://github.com/dottxt-ai/outlines
 aliases:
 - dottxt-ai/outlines
@@ -71,7 +71,7 @@ tags:
 - structured-generation
 - json
 - constrained-decoding
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/dottxt-ai/outlines
   title: GitHub repository

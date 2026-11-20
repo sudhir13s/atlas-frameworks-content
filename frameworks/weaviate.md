@@ -66,11 +66,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 12500
+  github_stars: 16956
   downloads_monthly: 1000000
-  latest_version: '1.28'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 1.40.6
+  latest_release_date: '2026-11-19'
+  observed_at: '2026-11-20'
   source: https://github.com/weaviate/weaviate
 aliases:
 - weaviate/weaviate
@@ -79,7 +79,7 @@ tags:
 - open-source
 - enterprise
 - hybrid-search
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/weaviate/weaviate
   title: GitHub repository

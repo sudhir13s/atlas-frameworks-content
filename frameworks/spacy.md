@@ -62,11 +62,11 @@ alternatives:
 ecosystem_connections:
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 30500
-  downloads_monthly: 8000000
-  latest_version: '3.8'
-  latest_release_date: '2024-12-01'
-  observed_at: '2026-06-15'
+  github_stars: 34078
+  downloads_monthly: 25230885
+  latest_version: 3.8.18
+  latest_release_date: '2026-10-26'
+  observed_at: '2026-11-20'
   source: https://github.com/explosion/spaCy
 aliases:
 - explosion/spaCy
@@ -75,7 +75,7 @@ tags:
 - ner
 - production
 - text-processing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/explosion/spaCy
   title: GitHub repository

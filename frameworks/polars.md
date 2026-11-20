@@ -61,11 +61,11 @@ backing:
 alternatives:
 - framework/dask
 registry_signals:
-  github_stars: 31000
-  downloads_monthly: 8000000
-  latest_version: '1.20'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 40395
+  downloads_monthly: 69107592
+  latest_version: 2.1.0
+  latest_release_date: '2026-10-25'
+  observed_at: '2026-11-20'
   source: https://github.com/pola-rs/polars
 aliases:
 - pola-rs/polars
@@ -74,7 +74,7 @@ tags:
 - high-performance
 - rust
 - dataframe
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/pola-rs/polars
   title: GitHub repository

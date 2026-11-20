@@ -58,11 +58,11 @@ backing:
   - Apache Software Foundation
   funding_or_parent: Originated at UC Berkeley AMPLab; commercial support via Databricks
 registry_signals:
-  github_stars: 40000
+  github_stars: 44590
   downloads_monthly: 5000000
   latest_version: '3.5'
   latest_release_date: '2024-09-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/apache/spark
 aliases:
 - apache/spark
@@ -71,7 +71,7 @@ tags:
 - distributed
 - classic-ml
 - big-data
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/apache/spark
   title: GitHub repository

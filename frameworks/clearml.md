@@ -61,11 +61,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 6000
+  github_stars: 6943
   downloads_monthly: 500000
-  latest_version: '1.17'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: 2.2.0
+  latest_release_date: '2026-11-03'
+  observed_at: '2026-11-20'
   source: https://github.com/allegroai/clearml
 aliases:
 - allegroai/clearml
@@ -74,7 +74,7 @@ tags:
 - experiment-tracking
 - orchestration
 - self-hosted
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/allegroai/clearml
   title: GitHub repository

@@ -67,11 +67,11 @@ alternatives:
 ecosystem_connections:
 - framework/flax
 registry_signals:
-  github_stars: 32000
-  downloads_monthly: 5000000
-  latest_version: 0.5.0
-  latest_release_date: '2025-02-12'
-  observed_at: '2026-06-15'
+  github_stars: 36656
+  downloads_monthly: 12994367
+  latest_version: 0.12.1
+  latest_release_date: '2026-11-18'
+  observed_at: '2026-11-20'
   source: https://github.com/jax-ml/jax
 aliases:
 - jax-ml/jax
@@ -81,7 +81,7 @@ tags:
 - tpu
 - functional
 - scientific-computing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/jax-ml/jax
   title: GitHub repository

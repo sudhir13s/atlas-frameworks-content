@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 7200
-  downloads_monthly: 400000
-  latest_version: '1.4'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 8943
+  downloads_monthly: 190534
+  latest_version: 1.4.40
+  latest_release_date: '2026-10-23'
+  observed_at: '2026-11-20'
   source: https://github.com/bentoml/BentoML
 aliases:
 - bentoml/BentoML
@@ -75,7 +75,7 @@ tags:
 - python
 - deployment
 - containerization
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/bentoml/BentoML
   title: GitHub repository

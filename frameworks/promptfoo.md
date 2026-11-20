@@ -64,11 +64,11 @@ alternatives:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 5500
-  downloads_monthly: 300000
-  latest_version: '0.100'
+  github_stars: 27485
+  downloads_monthly: 5251379
+  latest_version: 0.126.0
   latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/promptfoo/promptfoo
 aliases:
 - promptfoo/promptfoo
@@ -77,7 +77,7 @@ tags:
 - prompt-testing
 - red-teaming
 - comparison
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/promptfoo/promptfoo
   title: GitHub repository

@@ -63,11 +63,11 @@ alternatives:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 74000
+  github_stars: 135819
   downloads_monthly: 2000000
   latest_version: b4000+
   latest_release_date: '2025-03-01'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/ggerganov/llama.cpp
 aliases:
 - ggerganov/llama.cpp
@@ -78,7 +78,7 @@ tags:
 - cpu
 - quantization
 - edge
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/ggerganov/llama.cpp
   title: GitHub repository

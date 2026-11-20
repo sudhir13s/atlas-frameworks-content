@@ -68,11 +68,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 1000
+  github_stars: 456
   downloads_monthly: 3000000
-  latest_version: '5.0'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: 10.3.0
+  latest_release_date: '2026-11-03'
+  observed_at: '2026-11-20'
   source: https://github.com/pinecone-io/pinecone-python-client
 aliases:
 - pinecone-io/pinecone-python-client
@@ -81,7 +81,7 @@ tags:
 - managed
 - production
 - saas
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/pinecone-io/pinecone-python-client
   title: GitHub repository

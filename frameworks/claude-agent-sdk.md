@@ -62,10 +62,11 @@ alternatives:
 - framework/crewai
 - framework/autogen
 registry_signals:
-  github_stars: 6300
-  latest_version: 0.1.59
-  latest_release_date: '2026-04-13'
-  observed_at: '2026-06-15'
+  github_stars: 8599
+  downloads_monthly: 38330618
+  latest_version: 0.2.186
+  latest_release_date: '2026-11-19'
+  observed_at: '2026-11-20'
   source: https://github.com/anthropics/claude-agent-sdk-python
 aliases:
 - anthropics/claude-agent-sdk-python
@@ -76,7 +77,7 @@ tags:
 - claude
 - computer-use
 - mcp
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/anthropics/claude-agent-sdk-python
   title: GitHub repository

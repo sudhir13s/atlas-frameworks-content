@@ -65,11 +65,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 8500
+  github_stars: 11156
   downloads_monthly: 800000
-  latest_version: '2.52'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 2.75.0
+  latest_release_date: '2026-11-17'
+  observed_at: '2026-11-20'
   source: https://github.com/triton-inference-server/server
 aliases:
 - triton-inference-server/server
@@ -79,7 +79,7 @@ tags:
 - nvidia
 - production
 - enterprise
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/triton-inference-server/server
   title: GitHub repository

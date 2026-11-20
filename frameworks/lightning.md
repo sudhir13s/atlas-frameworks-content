@@ -66,11 +66,11 @@ ecosystem_connections:
 - framework/deepspeed
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 28500
-  downloads_monthly: 8000000
-  latest_version: '2.5'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 31467
+  downloads_monthly: 11733050
+  latest_version: 2.6.6
+  latest_release_date: '2026-09-10'
+  observed_at: '2026-11-20'
   source: https://github.com/Lightning-AI/pytorch-lightning
 aliases:
 - Lightning-AI/pytorch-lightning
@@ -80,7 +80,7 @@ tags:
 - training
 - distributed
 - organized
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/Lightning-AI/pytorch-lightning
   title: GitHub repository

@@ -59,11 +59,11 @@ backing:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 16000
-  downloads_monthly: 5000000
-  latest_version: '1.60'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 63602
+  downloads_monthly: 100162170
+  latest_version: 1.110.2
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/BerriAI/litellm
 aliases:
 - BerriAI/litellm
@@ -72,7 +72,7 @@ tags:
 - gateway
 - multi-provider
 - routing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/BerriAI/litellm
   title: GitHub repository

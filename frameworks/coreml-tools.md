@@ -60,11 +60,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 4500
-  downloads_monthly: 400000
-  latest_version: '8.2'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  github_stars: 5456
+  downloads_monthly: 1470427
+  latest_version: '9.0'
+  latest_release_date: '2025-11-10'
+  observed_at: '2026-11-20'
   source: https://github.com/apple/coremltools
 aliases:
 - apple/coremltools
@@ -74,7 +74,7 @@ tags:
 - ios
 - macos
 - neural-engine
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/apple/coremltools
   title: GitHub repository

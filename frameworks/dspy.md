@@ -63,11 +63,11 @@ alternatives:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 22000
-  downloads_monthly: 1000000
-  latest_version: '2.6'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 39148
+  downloads_monthly: 5976761
+  latest_version: 3.5.0
+  latest_release_date: '2026-11-10'
+  observed_at: '2026-11-20'
   source: https://github.com/stanfordnlp/dspy
 aliases:
 - stanfordnlp/dspy
@@ -76,7 +76,7 @@ tags:
 - prompt-optimization
 - research
 - programming-over-prompting
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/stanfordnlp/dspy
   title: GitHub repository

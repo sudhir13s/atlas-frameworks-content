@@ -59,11 +59,11 @@ alternatives:
 ecosystem_connections:
 - framework/langchain
 registry_signals:
-  github_stars: 25000
-  downloads_monthly: 1500000
-  latest_version: '0.100'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 61123
+  downloads_monthly: 2571825
+  latest_version: 1.15.44
+  latest_release_date: '2026-11-19'
+  observed_at: '2026-11-20'
   source: https://github.com/crewAIInc/crewAI
 aliases:
 - crewAIInc/crewAI
@@ -72,7 +72,7 @@ tags:
 - agents
 - multi-agent
 - orchestration
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/crewAIInc/crewAI
   title: GitHub repository

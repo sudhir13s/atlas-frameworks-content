@@ -62,11 +62,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 8000
+  github_stars: 16389
   downloads_monthly: 1000000
-  latest_version: '0.2'
-  latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  latest_version: 0.4.4
+  latest_release_date: '2026-11-14'
+  observed_at: '2026-11-20'
   source: https://github.com/explodinggradients/ragas
 aliases:
 - explodinggradients/ragas
@@ -75,7 +75,7 @@ tags:
 - rag
 - quality
 - metrics
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/explodinggradients/ragas
   title: GitHub repository

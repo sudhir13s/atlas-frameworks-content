@@ -60,11 +60,11 @@ ecosystem_connections:
 - framework/faiss
 - framework/chromadb
 registry_signals:
-  github_stars: 15800
+  github_stars: 19292
   downloads_monthly: 8000000
-  latest_version: '3.4'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 6.3.0
+  latest_release_date: '2026-11-11'
+  observed_at: '2026-11-20'
   source: https://github.com/UKPLab/sentence-transformers
 aliases:
 - UKPLab/sentence-transformers
@@ -73,7 +73,7 @@ tags:
 - embeddings
 - semantic-search
 - rag
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/UKPLab/sentence-transformers
   title: GitHub repository

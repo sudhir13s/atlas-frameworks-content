@@ -64,11 +64,11 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 5500
+  github_stars: 11952
   downloads_monthly: 500000
-  latest_version: '0.15'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  latest_version: 0.41.0
+  latest_release_date: '2026-10-29'
+  observed_at: '2026-11-20'
   source: https://github.com/lancedb/lancedb
 aliases:
 - lancedb/lancedb
@@ -77,7 +77,7 @@ tags:
 - serverless
 - embedded
 - multi-modal
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/lancedb/lancedb
   title: GitHub repository

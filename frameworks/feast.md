@@ -55,11 +55,11 @@ backing:
   - Tecton
   funding_or_parent: Created at Gojek + Google; stewarded by Tecton (Series C $100M led by Kleiner Perkins 2022)
 registry_signals:
-  github_stars: 5600
-  downloads_monthly: 300000
-  latest_version: '0.41'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 7362
+  downloads_monthly: 285750
+  latest_version: 0.68.0
+  latest_release_date: '2026-11-10'
+  observed_at: '2026-11-20'
   source: https://github.com/feast-dev/feast
 aliases:
 - feast-dev/feast
@@ -67,7 +67,7 @@ tags:
 - data-processing
 - feature-store
 - ml-infrastructure
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/feast-dev/feast
   title: GitHub repository

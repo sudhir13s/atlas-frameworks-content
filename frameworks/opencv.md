@@ -63,11 +63,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 80000
+  github_stars: 91648
   downloads_monthly: 10000000
-  latest_version: '4.10'
-  latest_release_date: '2024-06-01'
-  observed_at: '2026-06-15'
+  latest_version: 5.1.0
+  latest_release_date: '2026-11-06'
+  observed_at: '2026-11-20'
   source: https://github.com/opencv/opencv
 aliases:
 - opencv/opencv
@@ -76,7 +76,7 @@ tags:
 - image-processing
 - video
 - classical-cv
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/opencv/opencv
   title: GitHub repository

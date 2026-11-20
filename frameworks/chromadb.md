@@ -66,11 +66,11 @@ ecosystem_connections:
 - framework/llamaindex
 - framework/sentence-transformers
 registry_signals:
-  github_stars: 17000
-  downloads_monthly: 5000000
-  latest_version: '0.6'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 29715
+  downloads_monthly: 8666293
+  latest_version: 1.5.9
+  latest_release_date: '2026-05-05'
+  observed_at: '2026-11-20'
   source: https://github.com/chroma-core/chroma
 aliases:
 - chroma-core/chroma
@@ -80,7 +80,7 @@ tags:
 - rag
 - simple
 - local
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/chroma-core/chroma
   title: GitHub repository
