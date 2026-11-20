@@ -59,7 +59,6 @@ backing:
   funding_or_parent: Meta (PyTorch on-device successor); launched 2023
 alternatives:
 - framework/tensorflow-lite
-- framework/onnx-runtime-mobile
 ecosystem_connections:
 - framework/pytorch
 - framework/llama-cpp

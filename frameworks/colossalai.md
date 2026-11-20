@@ -39,7 +39,7 @@ maintained_by: HPC-AI Technology
 first_release: '2021-10-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/hpcaitech/ColossalAI
-docs_url: https://colossalai.org/docs/
+docs_url: https://colossalai.org/docs/get_started/installation/
 website_url: https://colossalai.org/
 gpu_support:
   nvidia_cuda: true
@@ -80,7 +80,7 @@ updated: '2026-11-20'
 sources:
 - url: https://github.com/hpcaitech/ColossalAI
   title: GitHub repository
-- url: https://colossalai.org/docs/
+- url: https://colossalai.org/docs/get_started/installation/
   title: Documentation
 ---
 

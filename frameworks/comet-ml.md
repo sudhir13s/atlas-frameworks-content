@@ -57,7 +57,6 @@ backing:
 alternatives:
 - framework/wandb
 - framework/mlflow
-- framework/neptune
 ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow

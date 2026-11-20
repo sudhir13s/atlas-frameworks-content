@@ -38,8 +38,8 @@ maintained_by: Seldon Technologies
 first_release: '2018-01-01'
 license_note: 'Apache-2.0 (v2: BSL)'
 github_url: https://github.com/SeldonIO/seldon-core
-docs_url: https://docs.seldon.io/
-website_url: https://www.seldon.io/
+docs_url: https://docs.seldon.ai/seldon-core-2
+website_url: https://docs.seldon.ai/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: false
@@ -78,7 +78,7 @@ updated: '2026-11-20'
 sources:
 - url: https://github.com/SeldonIO/seldon-core
   title: GitHub repository
-- url: https://docs.seldon.io/
+- url: https://docs.seldon.ai/seldon-core-2
   title: Documentation
 ---
 

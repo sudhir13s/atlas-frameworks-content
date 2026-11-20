@@ -19,8 +19,6 @@ rising:
 alternatives:
 - framework_id: framework/triton-inference-server
   reason: NVIDIA's high-performance server for ONNX/TensorRT/PyTorch with dynamic batching.
-- framework_id: framework/torchserve
-  reason: Straightforward serving for PyTorch models.
 - framework_id: framework/seldon-core
   reason: Kubernetes-native serving with advanced routing and explainability.
 - framework_id: framework/tf-serving
@@ -35,7 +33,7 @@ canonical_reading:
 - title: BentoML — hello world
   url: https://docs.bentoml.com/en/latest/get-started/hello-world.html
 - title: KServe — documentation
-  url: https://kserve.github.io/website/latest/
+  url: https://kserve.github.io/website/docs/intro
 - title: Ray Serve — documentation
   url: https://docs.ray.io/en/latest/serve/index.html
 did_you_know:
@@ -52,7 +50,7 @@ sources:
 - url: https://docs.bentoml.com/
   title: BentoML documentation
   trust: 0.9
-- url: https://kserve.github.io/website/latest/
+- url: https://kserve.github.io/website/docs/intro
   title: KServe documentation
   trust: 0.9
 - url: https://docs.ray.io/en/latest/serve/index.html

@@ -60,7 +60,6 @@ backing:
   - Microsoft
   funding_or_parent: Microsoft Research
 alternatives:
-- framework/pytorch-fsdp
 - framework/colossalai
 - framework/megatron-lm
 ecosystem_connections:

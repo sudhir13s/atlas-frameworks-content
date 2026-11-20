@@ -39,7 +39,7 @@ languages_supported:
 maintained_by: LangChain Inc.
 first_release: '2023-07-01'
 license_note: 'Proprietary (client: MIT)'
-github_url: https://github.com/langchain-ai/langsmith-sdk
+github_url: https://github.com/langchain-ai/langsmith-python
 docs_url: https://docs.smith.langchain.com/
 website_url: https://smith.langchain.com/
 gpu_support:
@@ -68,9 +68,10 @@ registry_signals:
   latest_version: '0.2'
   latest_release_date: '2025-02-01'
   observed_at: '2026-06-15'
-  source: https://github.com/langchain-ai/langsmith-sdk
+  source: https://github.com/langchain-ai/langsmith-python
 aliases:
 - langchain-ai/langsmith-sdk
+- langchain-ai/langsmith-python
 tags:
 - evaluation
 - observability
@@ -78,7 +79,7 @@ tags:
 - langchain
 updated: '2026-11-19'
 sources:
-- url: https://github.com/langchain-ai/langsmith-sdk
+- url: https://github.com/langchain-ai/langsmith-python
   title: GitHub repository
 - url: https://docs.smith.langchain.com/
   title: Documentation

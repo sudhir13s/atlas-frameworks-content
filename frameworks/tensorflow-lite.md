@@ -3,7 +3,7 @@ id: framework/tensorflow-lite
 type: framework
 slug: tensorflow-lite
 schema_version: 1.1
-title: TensorFlow Lite
+title: LiteRT (TensorFlow Lite)
 kind: library
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
@@ -42,9 +42,9 @@ languages_supported:
 maintained_by: Google
 first_release: '2017-11-01'
 license_spdx: Apache-2.0
-github_url: https://github.com/tensorflow/tensorflow
-docs_url: https://www.tensorflow.org/lite
-website_url: https://www.tensorflow.org/lite
+github_url: https://github.com/google-ai-edge/LiteRT
+docs_url: https://developers.google.com/edge/litert
+website_url: https://developers.google.com/edge/litert
 gpu_support:
   nvidia_cuda: false
   amd_rocm: false
@@ -61,7 +61,6 @@ backing:
   - Google
   funding_or_parent: Google (rebranded to LiteRT under Google AI Edge in 2024)
 alternatives:
-- framework/onnx-runtime-mobile
 - framework/coreml-tools
 - framework/executorch
 ecosystem_connections:
@@ -72,7 +71,10 @@ registry_signals:
   latest_version: '2.18'
   latest_release_date: '2025-01-15'
   observed_at: '2026-06-15'
-  source: https://github.com/tensorflow/tensorflow
+  source: https://github.com/google-ai-edge/LiteRT
+aliases:
+- TensorFlow Lite
+- TFLite
 tags:
 - edge-mobile
 - mobile
@@ -80,9 +82,9 @@ tags:
 - deployment
 updated: '2026-11-19'
 sources:
-- url: https://github.com/tensorflow/tensorflow
+- url: https://github.com/google-ai-edge/LiteRT
   title: GitHub repository
-- url: https://www.tensorflow.org/lite
+- url: https://developers.google.com/edge/litert
   title: Documentation
 ---
 

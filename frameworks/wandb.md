@@ -60,7 +60,6 @@ backing:
   funding_or_parent: Series C $135M led by Insight Partners (2021); acquired by CoreWeave announced 2025
 alternatives:
 - framework/mlflow
-- framework/neptune
 - framework/comet-ml
 ecosystem_connections:
 - framework/pytorch

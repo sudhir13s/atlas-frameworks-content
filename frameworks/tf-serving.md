@@ -55,7 +55,6 @@ backing:
   - Google
 alternatives:
 - framework/triton-inference-server
-- framework/torchserve
 ecosystem_connections:
 - framework/tensorflow
 registry_signals:

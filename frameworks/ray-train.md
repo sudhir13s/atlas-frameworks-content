@@ -37,8 +37,8 @@ maintained_by: Anyscale
 first_release: '2021-01-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/ray-project/ray
-docs_url: https://docs.ray.io/en/latest/train/
-website_url: https://www.ray.io/ray-train
+docs_url: https://docs.ray.io/en/latest/train/train.html
+website_url: https://www.ray.io/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: false
@@ -56,7 +56,6 @@ backing:
   funding_or_parent: Anyscale (Ray originated at UC Berkeley RISELab)
 alternatives:
 - framework/deepspeed
-- framework/pytorch-fsdp
 ecosystem_connections:
 - framework/ray-tune
 - framework/ray-serve

@@ -3,7 +3,7 @@ id: framework/albumentations
 type: framework
 slug: albumentations
 schema_version: 1.1
-title: Albumentations
+title: AlbumentationsX
 kind: library
 category: framework-category/computer-vision
 subcategory: augmentation
@@ -33,8 +33,8 @@ languages_supported:
 - Python
 maintained_by: Albumentations team
 first_release: '2018-06-01'
-license_spdx: MIT
-github_url: https://github.com/albumentations-team/albumentations
+license_spdx: AGPL-3.0-only
+github_url: https://github.com/albumentations-team/AlbumentationsX
 docs_url: https://albumentations.ai/docs/
 website_url: https://albumentations.ai/
 gpu_support:
@@ -59,16 +59,17 @@ registry_signals:
   latest_version: '1.4'
   latest_release_date: '2024-12-01'
   observed_at: '2026-06-15'
-  source: https://github.com/albumentations-team/albumentations
+  source: https://github.com/albumentations-team/AlbumentationsX
 aliases:
 - albumentations-team/albumentations
+- Albumentations
 tags:
 - computer-vision
 - augmentation
 - data-processing
 updated: '2026-11-19'
 sources:
-- url: https://github.com/albumentations-team/albumentations
+- url: https://github.com/albumentations-team/AlbumentationsX
   title: GitHub repository
 - url: https://albumentations.ai/docs/
   title: Documentation

@@ -19,8 +19,6 @@ alternatives:
   reason: End-to-end MLOps with orchestration and data management in one open platform.
 - framework_id: framework/dvc
   reason: Git-native data and model versioning; pairs pipelines with your code history.
-- framework_id: framework/neptune
-  reason: Lightweight, scalable metadata store for many runs.
 - framework_id: framework/comet-ml
   reason: Experiment tracking with strong model production monitoring.
 key_concepts:

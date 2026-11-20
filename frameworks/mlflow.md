@@ -63,7 +63,6 @@ backing:
   funding_or_parent: Created at Databricks; donated to Linux Foundation AI & Data in 2020
 alternatives:
 - framework/wandb
-- framework/neptune
 - framework/clearml
 ecosystem_connections:
 - framework/pytorch

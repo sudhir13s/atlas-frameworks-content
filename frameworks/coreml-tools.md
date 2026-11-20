@@ -55,7 +55,6 @@ backing:
   - Apple
 alternatives:
 - framework/tensorflow-lite
-- framework/onnx-runtime-mobile
 ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow

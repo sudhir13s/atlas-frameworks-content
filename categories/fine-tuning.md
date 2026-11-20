@@ -12,8 +12,6 @@ defacto:
   framework_id: framework/hugging-face-transformers
   reason: The Trainer plus the PEFT and TRL libraries make LoRA/QLoRA SFT and DPO a few lines of config on any open model.
 rising:
-- framework_id: framework/pytorch-fsdp
-  reason: Fully Sharded Data Parallel scales fine-tuning across GPUs when a single card is not enough.
 - framework_id: framework/deepspeed
   reason: ZeRO offloading fits large fine-tunes into tight memory and scales multi-GPU.
 alternatives:
