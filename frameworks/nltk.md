@@ -57,7 +57,7 @@ alternatives:
 - framework/hugging-face-transformers
 - framework/stanza
 registry_signals:
-  github_stars: 14775
+  github_stars: 14776
   downloads_monthly: 48827217
   latest_version: 3.10.4
   latest_release_date: '2026-10-21'

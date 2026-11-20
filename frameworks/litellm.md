@@ -59,7 +59,7 @@ backing:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 63602
+  github_stars: 63610
   downloads_monthly: 100162170
   latest_version: 1.110.2
   latest_release_date: '2026-11-20'

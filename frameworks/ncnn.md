@@ -57,7 +57,7 @@ alternatives:
 - framework/mnn
 - framework/tensorflow-lite
 registry_signals:
-  github_stars: 24078
+  github_stars: 24080
   downloads_monthly: 100000
   latest_version: '20240820'
   latest_release_date: '2024-08-20'

@@ -61,7 +61,7 @@ alternatives:
 - framework/triton-inference-server
 - framework/bentoml
 registry_signals:
-  github_stars: 6251
+  github_stars: 6252
   downloads_monthly: 86581
   latest_version: 0.21.0
   latest_release_date: '2026-09-25'

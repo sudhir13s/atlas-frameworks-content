@@ -63,7 +63,7 @@ ecosystem_connections:
 - framework/qdrant
 - framework/weaviate
 registry_signals:
-  github_stars: 27060
+  github_stars: 27062
   downloads_monthly: 1000000
   latest_version: 3.5.0
   latest_release_date: '2026-11-10'

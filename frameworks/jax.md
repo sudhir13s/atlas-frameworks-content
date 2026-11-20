@@ -67,7 +67,7 @@ alternatives:
 ecosystem_connections:
 - framework/flax
 registry_signals:
-  github_stars: 36656
+  github_stars: 36657
   downloads_monthly: 12994367
   latest_version: 0.12.1
   latest_release_date: '2026-11-18'

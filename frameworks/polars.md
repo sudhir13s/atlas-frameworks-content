@@ -61,7 +61,7 @@ backing:
 alternatives:
 - framework/dask
 registry_signals:
-  github_stars: 40395
+  github_stars: 40394
   downloads_monthly: 69107592
   latest_version: 2.1.0
   latest_release_date: '2026-10-25'

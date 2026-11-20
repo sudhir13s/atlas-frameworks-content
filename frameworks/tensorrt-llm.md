@@ -61,7 +61,7 @@ alternatives:
 ecosystem_connections:
 - framework/triton-inference-server
 registry_signals:
-  github_stars: 15107
+  github_stars: 15108
   downloads_monthly: 5720
   latest_version: 1.3.0
   latest_release_date: '2026-11-20'

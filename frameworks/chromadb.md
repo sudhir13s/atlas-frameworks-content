@@ -66,7 +66,7 @@ ecosystem_connections:
 - framework/llamaindex
 - framework/sentence-transformers
 registry_signals:
-  github_stars: 29715
+  github_stars: 29716
   downloads_monthly: 8666293
   latest_version: 1.5.9
   latest_release_date: '2026-05-05'

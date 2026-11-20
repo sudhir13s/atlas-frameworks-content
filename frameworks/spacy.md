@@ -62,7 +62,7 @@ alternatives:
 ecosystem_connections:
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 34078
+  github_stars: 34079
   downloads_monthly: 25230885
   latest_version: 3.8.18
   latest_release_date: '2026-10-26'

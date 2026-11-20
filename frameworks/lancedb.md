@@ -65,7 +65,7 @@ ecosystem_connections:
 - framework/llamaindex
 registry_signals:
   github_stars: 11952
-  downloads_monthly: 500000
+  downloads_monthly: 7013050
   latest_version: 0.41.0
   latest_release_date: '2026-10-29'
   observed_at: '2026-11-20'

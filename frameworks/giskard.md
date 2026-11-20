@@ -62,7 +62,7 @@ ecosystem_connections:
 - framework/pytorch
 - framework/hugging-face-transformers
 registry_signals:
-  github_stars: 5960
+  github_stars: 5962
   downloads_monthly: 11486
   latest_version: 3.0.1
   latest_release_date: '2026-10-02'

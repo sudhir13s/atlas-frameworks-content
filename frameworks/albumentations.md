@@ -54,11 +54,11 @@ ecosystem_connections:
 - framework/pytorch
 - framework/opencv
 registry_signals:
-  github_stars: 14500
-  downloads_monthly: 3000000
-  latest_version: '1.4'
-  latest_release_date: '2024-12-01'
-  observed_at: '2026-06-15'
+  github_stars: 598
+  downloads_monthly: 144070
+  latest_version: 2.6.7
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/albumentations-team/AlbumentationsX
 aliases:
 - albumentations-team/albumentations
@@ -67,7 +67,7 @@ tags:
 - computer-vision
 - augmentation
 - data-processing
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/albumentations-team/AlbumentationsX
   title: GitHub repository

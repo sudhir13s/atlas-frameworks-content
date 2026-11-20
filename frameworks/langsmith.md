@@ -63,11 +63,11 @@ alternatives:
 ecosystem_connections:
 - framework/langchain
 registry_signals:
-  github_stars: 1500
-  downloads_monthly: 5000000
-  latest_version: '0.2'
-  latest_release_date: '2025-02-01'
-  observed_at: '2026-06-15'
+  github_stars: 27
+  downloads_monthly: 96211380
+  latest_version: 0.15.1
+  latest_release_date: '2026-11-20'
+  observed_at: '2026-11-20'
   source: https://github.com/langchain-ai/langsmith-python
 aliases:
 - langchain-ai/langsmith-sdk
@@ -77,7 +77,7 @@ tags:
 - observability
 - debugging
 - langchain
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/langchain-ai/langsmith-python
   title: GitHub repository

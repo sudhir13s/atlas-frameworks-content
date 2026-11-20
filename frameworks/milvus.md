@@ -69,7 +69,7 @@ ecosystem_connections:
 - framework/langchain
 - framework/llamaindex
 registry_signals:
-  github_stars: 46705
+  github_stars: 46707
   downloads_monthly: 1500000
   latest_version: 3.0.6
   latest_release_date: '2026-11-11'

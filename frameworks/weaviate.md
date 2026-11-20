@@ -68,8 +68,8 @@ ecosystem_connections:
 registry_signals:
   github_stars: 16956
   downloads_monthly: 1000000
-  latest_version: 1.40.6
-  latest_release_date: '2026-11-19'
+  latest_version: 1.40.7
+  latest_release_date: '2026-11-20'
   observed_at: '2026-11-20'
   source: https://github.com/weaviate/weaviate
 aliases:

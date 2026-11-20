@@ -72,7 +72,7 @@ ecosystem_connections:
 - framework/tensorflow-lite
 - framework/tf-serving
 registry_signals:
-  github_stars: 201660
+  github_stars: 201661
   downloads_monthly: 12374104
   latest_version: 2.21.0
   latest_release_date: '2026-03-06'

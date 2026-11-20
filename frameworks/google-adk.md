@@ -64,7 +64,7 @@ alternatives:
 ecosystem_connections:
 - framework/langchain
 registry_signals:
-  github_stars: 22277
+  github_stars: 22279
   downloads_monthly: 11094886
   latest_version: 2.15.0
   latest_release_date: '2026-11-20'

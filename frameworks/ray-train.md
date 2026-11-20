@@ -62,18 +62,18 @@ ecosystem_connections:
 - framework/pytorch
 - framework/deepspeed
 registry_signals:
-  github_stars: 35000
-  downloads_monthly: 3000000
-  latest_version: '2.43'
-  latest_release_date: '2025-02-15'
-  observed_at: '2026-06-15'
+  github_stars: 44348
+  downloads_monthly: 15757870
+  latest_version: 2.60.0
+  latest_release_date: '2026-11-04'
+  observed_at: '2026-11-20'
   source: https://github.com/ray-project/ray
 tags:
 - distributed-training
 - ray
 - fault-tolerance
 - scalable
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/ray-project/ray
   title: GitHub repository

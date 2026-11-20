@@ -60,7 +60,7 @@ backing:
 alternatives:
 - framework/crewai
 registry_signals:
-  github_stars: 61951
+  github_stars: 61955
   downloads_monthly: 2000000
   latest_version: python-v0.7.5
   latest_release_date: '2025-09-30'

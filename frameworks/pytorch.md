@@ -71,7 +71,7 @@ ecosystem_connections:
 - framework/lightning
 - framework/deepspeed
 registry_signals:
-  github_stars: 105741
+  github_stars: 105748
   downloads_monthly: 15000000
   latest_version: 2.15.0
   latest_release_date: '2026-10-28'

@@ -70,7 +70,7 @@ ecosystem_connections:
 - framework/chromadb
 - framework/pinecone
 registry_signals:
-  github_stars: 149964
+  github_stars: 149963
   downloads_monthly: 157281980
   latest_version: 1.5.2
   latest_release_date: '2026-11-18'

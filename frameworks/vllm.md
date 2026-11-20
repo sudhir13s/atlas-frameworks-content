@@ -67,7 +67,7 @@ ecosystem_connections:
 - framework/pytorch
 - framework/ray-serve
 registry_signals:
-  github_stars: 97259
+  github_stars: 97264
   downloads_monthly: 2732584
   latest_version: 0.34.0
   latest_release_date: '2026-11-16'

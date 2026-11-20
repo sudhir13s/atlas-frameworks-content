@@ -63,7 +63,7 @@ ecosystem_connections:
 - framework/pytorch
 - framework/llama-cpp
 registry_signals:
-  github_stars: 5182
+  github_stars: 5183
   downloads_monthly: 69901
   latest_version: 1.6.0
   latest_release_date: '2026-11-04'

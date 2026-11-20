@@ -62,7 +62,7 @@ ecosystem_connections:
 - framework/pytorch
 - framework/onnx-runtime
 registry_signals:
-  github_stars: 63623
+  github_stars: 63624
   downloads_monthly: 5154997
   latest_version: 8.4.216
   latest_release_date: '2026-11-20'

@@ -58,7 +58,7 @@ backing:
   - :probabl.
   funding_or_parent: Originated at INRIA; scikit-learn consortium funded by Microsoft, Nvidia, Hugging Face, Quansight, Dataiku, AXA, BNP Paribas, Chanel, Fujitsu; spin-off :probabl. founded 2024
 registry_signals:
-  github_stars: 68264
+  github_stars: 68265
   downloads_monthly: 215811559
   latest_version: 1.9.1
   latest_release_date: '2026-09-10'

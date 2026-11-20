@@ -66,11 +66,11 @@ alternatives:
 ecosystem_connections:
 - framework/tensorflow
 registry_signals:
-  github_stars: 187000
+  github_stars: 3604
   downloads_monthly: 3000000
   latest_version: '2.18'
   latest_release_date: '2025-01-15'
-  observed_at: '2026-06-15'
+  observed_at: '2026-11-20'
   source: https://github.com/google-ai-edge/LiteRT
 aliases:
 - TensorFlow Lite
@@ -80,7 +80,7 @@ tags:
 - mobile
 - quantization
 - deployment
-updated: '2026-11-19'
+updated: '2026-11-20'
 sources:
 - url: https://github.com/google-ai-edge/LiteRT
   title: GitHub repository

@@ -61,7 +61,7 @@ ecosystem_connections:
 - framework/pytorch
 - framework/tensorflow
 registry_signals:
-  github_stars: 15069
+  github_stars: 15070
   downloads_monthly: 14572648
   latest_version: 5.1.0
   latest_release_date: '2026-11-16'

@@ -58,7 +58,7 @@ alternatives:
 ecosystem_connections:
 - framework/tensorflow
 registry_signals:
-  github_stars: 16580
+  github_stars: 16583
   downloads_monthly: 50680
   latest_version: 3.6.2
   latest_release_date: '2026-10-29'

@@ -63,7 +63,7 @@ alternatives:
 ecosystem_connections:
 - framework/ollama
 registry_signals:
-  github_stars: 39148
+  github_stars: 39152
   downloads_monthly: 5976761
   latest_version: 3.5.0
   latest_release_date: '2026-11-10'

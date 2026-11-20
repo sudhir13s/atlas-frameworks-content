@@ -66,7 +66,7 @@ alternatives:
 ecosystem_connections:
 - framework/pytorch
 registry_signals:
-  github_stars: 169311
+  github_stars: 169318
   downloads_monthly: 120882484
   latest_version: 5.23.0
   latest_release_date: '2026-11-13'

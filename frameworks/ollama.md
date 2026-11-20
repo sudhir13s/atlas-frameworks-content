@@ -63,7 +63,7 @@ ecosystem_connections:
 - framework/llama-cpp
 - framework/langchain
 registry_signals:
-  github_stars: 187727
+  github_stars: 187735
   downloads_monthly: 5000000
   latest_version: 0.40.16
   latest_release_date: '2026-11-09'
