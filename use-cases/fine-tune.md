@@ -95,8 +95,7 @@ blocks:
   - record: framework/llamafactory
     choice: default
     when: One Apache-2.0 tool covers full, freeze, LoRA and QLoRA tuning and SFT, reward modelling, PPO, DPO, KTO and ORPO from a CLI or web UI.
-  - name: TRL
-    url: https://huggingface.co/docs/trl/index
+  - record: framework/trl
     choice: alternative
     when: When you write the training script yourself; the Hugging Face library provides SFT, DPO, GRPO and reward-model trainers on top of Transformers.
   - record: framework/unsloth
@@ -152,8 +151,7 @@ blocks:
   name: Evaluation harness
   purpose: Scores the fine-tuned model and the base model on the same tasks so gains and regressions show side by side.
   options:
-  - name: lm-evaluation-harness
-    url: https://github.com/EleutherAI/lm-evaluation-harness
+  - record: framework/lm-evaluation-harness
     choice: default
     when: MIT-licensed few-shot evaluation framework that evaluates PEFT adapters such as LoRA directly and is the backend of the Hugging Face Open LLM Leaderboard.
   - record: framework/deepeval

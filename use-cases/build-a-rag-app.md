@@ -23,8 +23,7 @@ blocks:
   name: Document parsing
   purpose: Turns PDFs, office files and HTML into clean text with headings, tables and reading order preserved, so later steps work on structure rather than raw bytes.
   options:
-  - name: Docling
-    url: https://github.com/docling-project/docling
+  - record: framework/docling
     choice: default
     when: MIT-licensed code hosted by the LF AI & Data Foundation that parses PDF, office, HTML and image files into one document model and exports Markdown or lossless JSON, with integrations for LangChain, LlamaIndex and Haystack.
   - record: framework/marker
@@ -90,8 +89,7 @@ blocks:
   - record: framework/chromadb
     choice: alternative
     when: Pick it for prototypes; it runs in-process in Python with metadata filters and moves to client-server mode later.
-  - name: pgvector
-    url: https://github.com/pgvector/pgvector
+  - record: framework/pgvector
     choice: alternative
     when: Pick it when your data already lives in Postgres; vectors sit next to the rest of your rows with ACID transactions and joins.
   - record: framework/milvus
@@ -240,8 +238,7 @@ blocks:
   - record: model/llama-prompt-guard-2-86m
     choice: alternative
     when: Pick it to scan retrieved chunks and user input for prompt injection and jailbreaks; it is a small multilingual classifier.
-  - name: NeMo Guardrails
-    url: https://github.com/NVIDIA-NeMo/Guardrails
+  - record: framework/nemo-guardrails
     choice: alternative
     when: Pick it for Apache-2.0 programmable input, output and retrieval rails, including filtering retrieved content and checking answers against evidence.
   how_to_choose:
@@ -264,8 +261,7 @@ blocks:
   - record: framework/mlflow
     choice: alternative
     when: Pick it when you already run MLflow; its tracing is OpenTelemetry-compatible and the data stays on your infrastructure.
-  - name: Arize Phoenix
-    url: https://github.com/Arize-ai/phoenix
+  - record: framework/arize-phoenix
     choice: alternative
     when: Pick it for self-hosted OpenTelemetry tracing with retrieval evals; it is licensed under the Elastic License 2.0.
   how_to_choose:
@@ -288,6 +284,7 @@ related_use_cases:
 - use-case/build-an-agent
 - use-case/build-multimodal-app
 - use-case/serve-in-production
+- use-case/make-llm-app-safe-and-accurate
 tags:
 - rag
 - retrieval

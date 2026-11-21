@@ -124,8 +124,7 @@ blocks:
   - record: model/llama-guard-4-12b
     choice: default
     when: Classifies prompts and responses, text and images, against the MLCommons hazard taxonomy; released under the Llama 4 Community License.
-  - name: NeMo Guardrails
-    url: https://github.com/NVIDIA-NeMo/Guardrails
+  - record: framework/nemo-guardrails
     choice: alternative
     when: Pick it for Apache-2.0 programmable input and output rails with jailbreak detection, configured as policy.
   how_to_choose:
@@ -157,8 +156,7 @@ blocks:
   - record: framework/mlflow
     choice: alternative
     when: Pick it when MLflow is already your registry; its tracing is OpenTelemetry-compatible and the data stays on your infrastructure.
-  - name: Arize Phoenix
-    url: https://github.com/Arize-ai/phoenix
+  - record: framework/arize-phoenix
     choice: alternative
     when: Pick it for self-hosted OpenTelemetry tracing; it is licensed under the Elastic License 2.0.
   how_to_choose:
@@ -168,8 +166,7 @@ blocks:
   name: Load and performance testing
   purpose: Measures latency and capacity under realistic traffic before a rollout, so you know the safe operating range.
   options:
-  - name: GuideLLM
-    url: https://github.com/vllm-project/guidellm
+  - record: framework/guidellm
     choice: default
     when: Apache-2.0 tool from the vLLM project that simulates traffic against OpenAI-compatible servers and reports time to first token, inter-token latency and end-to-end latency distributions.
   - name: Locust

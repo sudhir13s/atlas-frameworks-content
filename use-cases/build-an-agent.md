@@ -135,8 +135,7 @@ blocks:
   name: Code execution sandbox
   purpose: Runs code the agent writes in an isolated environment so it cannot touch the host or your data.
   options:
-  - name: E2B
-    url: https://github.com/e2b-dev/E2B
+  - record: framework/e2b
     choice: default
     when: Apache-2.0 infrastructure that runs AI-generated code in isolated cloud sandboxes through Python and JavaScript SDKs, and can be self-hosted.
   - name: gVisor
@@ -172,8 +171,7 @@ blocks:
   name: Prompt-injection defence
   purpose: Screens user input and tool results for instructions that try to take over the agent, and checks tool calls before they run.
   options:
-  - name: NeMo Guardrails
-    url: https://github.com/NVIDIA-NeMo/Guardrails
+  - record: framework/nemo-guardrails
     choice: default
     when: Apache-2.0 library with input, output, tool-call and tool-result rails, so checks run before a tool executes and on what it returns, independent of the agent framework.
   - record: model/llama-prompt-guard-2-86m
@@ -187,8 +185,8 @@ blocks:
   - Mark untrusted content apart from instructions in the prompt.
   - A classifier lowers risk but does not remove it; keep sandboxing and approval in place.
   browse:
-    label: All safety and guard models
-    record: task/safety-and-guard-models
+    label: All guardrail and safety tools
+    record: framework-category/guardrails
 - id: evaluation
   stage: quality
   name: Evaluation
@@ -240,8 +238,7 @@ blocks:
   - record: framework/mlflow
     choice: alternative
     when: Pick it when you already run MLflow; its tracing is OpenTelemetry-compatible and the data stays on your infrastructure.
-  - name: Arize Phoenix
-    url: https://github.com/Arize-ai/phoenix
+  - record: framework/arize-phoenix
     choice: alternative
     when: Pick it for self-hosted OpenTelemetry tracing with evals; it is licensed under the Elastic License 2.0.
   how_to_choose:
@@ -264,6 +261,7 @@ related_use_cases:
 - use-case/build-a-rag-app
 - use-case/build-multimodal-app
 - use-case/serve-in-production
+- use-case/make-llm-app-safe-and-accurate
 tags:
 - agents
 - tool-calling

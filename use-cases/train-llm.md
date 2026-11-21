@@ -68,8 +68,7 @@ blocks:
   name: Tokenizer
   purpose: Learns the subword vocabulary and turns text into token IDs.
   options:
-  - name: SentencePiece
-    url: https://github.com/google/sentencepiece
+  - record: framework/sentencepiece
     choice: default
     when: Apache-2.0 tokenizer that trains byte-pair encoding (BPE) or unigram vocabularies directly from raw sentences with no language-specific preprocessing.
   - name: Hugging Face Tokenizers
@@ -130,8 +129,7 @@ blocks:
   name: Evaluation harness
   purpose: Scores checkpoints on fixed tasks so progress and the final choice of checkpoint rest on numbers.
   options:
-  - name: lm-evaluation-harness
-    url: https://github.com/EleutherAI/lm-evaluation-harness
+  - record: framework/lm-evaluation-harness
     choice: default
     when: MIT-licensed few-shot evaluation framework that reads Hugging Face and Megatron-DeepSpeed models and is the backend of the Hugging Face Open LLM Leaderboard.
   - record: framework/deepeval

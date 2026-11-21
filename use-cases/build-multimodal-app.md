@@ -137,8 +137,7 @@ blocks:
   name: Speech output
   purpose: Turns the text reply into speech when the app talks back.
   options:
-  - name: Kokoro
-    url: https://huggingface.co/hexgrad/Kokoro-82M
+  - record: model/kokoro-82m
     choice: default
     when: Small open-weight text-to-speech model with Apache-licensed weights that its makers state can be deployed in production or personal projects.
   - record: model/qwen2-5-omni-7b
