@@ -4,7 +4,7 @@ type: framework
 slug: langfuse
 schema_version: 1.2
 title: langfuse
-category: framework-category/evaluation
+category: framework-category/observability
 tagline: 'Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.'
 language: TypeScript
 maintained_by: langfuse

@@ -5,7 +5,7 @@ slug: langsmith
 schema_version: 1.1
 title: LangSmith
 kind: tool
-category: framework-category/evaluation
+category: framework-category/observability
 subcategory: llm-observability
 tagline: LangChain's platform for debugging, testing, evaluating, and monitoring LLM applications
 description: LangChain's observability and evaluation platform. Provides tracing, debugging, dataset management, and evaluation for LLM applications. Works with LangChain but also supports any LLM framework via the SDK.
@@ -77,7 +77,7 @@ tags:
 - observability
 - debugging
 - langchain
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/langchain-ai/langsmith-python
   title: GitHub repository

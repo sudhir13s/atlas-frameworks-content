@@ -5,7 +5,7 @@ slug: arize-phoenix
 schema_version: 1.2
 title: Arize Phoenix
 kind: tool
-category: framework-category/evaluation
+category: framework-category/observability
 tagline: Open-source AI observability platform for experimentation, evaluation and troubleshooting, with OpenTelemetry-based tracing of large language model (LLM) applications.
 language: Python
 maintained_by: Arize-ai

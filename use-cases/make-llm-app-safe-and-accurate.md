@@ -195,8 +195,8 @@ blocks:
   - Log every guardrail decision with its trace so a blocked or passed request can be explained.
   - Prefer a tool that accepts OpenTelemetry so you can switch backends later.
   browse:
-    label: All evaluation tools
-    record: framework-category/evaluation
+    label: All observability and tracing tools
+    record: framework-category/observability
 learn_next:
 - title: OWASP LLM01:2025 Prompt Injection
   url: https://genai.owasp.org/llmrisk/llm01-prompt-injection/

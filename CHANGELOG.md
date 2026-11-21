@@ -5,6 +5,13 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Content (observability category)
+
+- **Added** the `observability` category ("Observability & Tracing", layer `operate`).
+- **Changed** `langfuse`, `arize-phoenix` and `langsmith` move from `evaluation` to `observability`:
+  their own documentation describes them first as observability and tracing platforms. The
+  `evaluation` description no longer mentions tracing.
+
 ### Schema 2.1 (category layers)
 
 - **Added (breaking)** `framework-category.layer`, required: `build`, `train`, `data`, `run`,
