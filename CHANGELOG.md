@@ -5,6 +5,14 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 2.1 (category layers)
+
+- **Added (breaking)** `framework-category.layer`, required: `build`, `train`, `data`, `run`,
+  `operate`, `domain` or `other`. The categories page groups categories by it. All 18 category
+  records carry it and `schema_version: 2.1`.
+- **Changed** every category is listed by the site; a category without `defacto` shows no default
+  pick instead of being left out. `order` now sorts within a layer.
+
 ### Schema 2.0 (use cases as building blocks)
 
 - **Changed (breaking)** `use-case` is now "I want to build X: what do I need?". A record carries

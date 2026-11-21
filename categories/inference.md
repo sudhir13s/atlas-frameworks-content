@@ -2,9 +2,10 @@
 id: framework-category/inference
 type: framework-category
 slug: inference
-schema_version: 1.1
+schema_version: 2.1
 title: Inference Engines
 label: Inference
+layer: run
 order: 3
 short_description: Runtimes that make LLM generation fast and cheap — batching, KV-cache management, and quantization.
 why_it_matters: Inference is where most production cost lives; the engine you choose can change throughput per GPU several-fold.

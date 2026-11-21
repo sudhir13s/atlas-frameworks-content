@@ -6,7 +6,11 @@
   "properties": {
     "type": { "const": "framework-category" },
     "label": { "type": "string", "minLength": 1, "description": "category name shown as the section heading" },
-    "order": { "type": "integer", "description": "display order on the categories page" },
+    "layer": {
+      "enum": ["build", "train", "data", "run", "operate", "domain", "other"],
+      "description": "the layer of the AI stack the category belongs to; the categories page groups by it"
+    },
+    "order": { "type": "integer", "description": "display order within the layer" },
     "short_description": { "type": "string", "minLength": 1, "description": "one line: what this slice of the ecosystem covers" },
     "why_it_matters": { "type": "string", "description": "one line: why a builder cares about this category" },
     "defacto": {
@@ -19,5 +23,5 @@
     "canonical_reading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } },
     "did_you_know": { "type": "array", "items": { "type": "string" } }
   },
-  "required": ["label", "short_description"]
+  "required": ["label", "layer", "short_description"]
 }

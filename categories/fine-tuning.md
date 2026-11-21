@@ -2,9 +2,10 @@
 id: framework-category/fine-tuning
 type: framework-category
 slug: fine-tuning
-schema_version: 1.1
+schema_version: 2.1
 title: Fine-tuning & PEFT
 label: Fine-tuning & PEFT
+layer: train
 order: 9
 short_description: Libraries for adapting open base models — supervised fine-tuning, parameter-efficient adapters (LoRA/QLoRA), and preference tuning.
 why_it_matters: Fine-tuning changes a model's behaviour and style cheaply; PEFT brings even 70B adaptation within a single GPU.

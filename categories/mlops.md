@@ -2,9 +2,10 @@
 id: framework-category/mlops
 type: framework-category
 slug: mlops
-schema_version: 1.1
+schema_version: 2.1
 title: Experiment Tracking & MLOps
 label: Experiment Tracking & MLOps
+layer: operate
 order: 7
 short_description: Tools that track experiments, version models and data, and manage the path from a run to a registered model.
 why_it_matters: Without tracking you cannot reproduce results or know which change helped; MLOps turns runs into reliable releases.

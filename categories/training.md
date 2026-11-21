@@ -2,9 +2,10 @@
 id: framework-category/training
 type: framework-category
 slug: training
-schema_version: 1.1
+schema_version: 2.1
 title: Training Frameworks
 label: Training
+layer: train
 order: 2
 short_description: The core libraries you define, train, and differentiate neural networks in.
 why_it_matters: Your training framework decides how you express models, how fast you iterate, and what the ecosystem hands you.

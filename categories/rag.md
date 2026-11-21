@@ -2,9 +2,10 @@
 id: framework-category/rag
 type: framework-category
 slug: rag
-schema_version: 1.1
+schema_version: 2.1
 title: RAG Frameworks
 label: RAG
+layer: build
 order: 4
 short_description: Tooling for retrieval-augmented generation — ingest, chunk, embed, retrieve, and ground the LLM in sources.
 why_it_matters: RAG is how you give a model fresh, private, or domain knowledge without retraining it.

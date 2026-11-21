@@ -37,7 +37,7 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - `tags`: lowercase, hyphen-separated.
 - `updated`: ISO date (`YYYY-MM-DD`).
 - `sources[]`: `{ url, title, trust }` — `trust` in `[0,1]`. Open-source-first; cite, do not copy.
-- `schema_version`: the `major.minor` the file was authored against (currently `2.0`; `framework` and `framework-category` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0`).
+- `schema_version`: the `major.minor` the file was authored against (currently `2.1`; `framework` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0` or newer, a `framework-category` must be `2.1`).
 
 ## Body sections
 
@@ -59,8 +59,10 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - **framework-category** — a per-category landscape. Carries `short_description`, `why_it_matters`,
   an optional single `defacto` framework (absent until someone has judged it), `rising[]`,
   `alternatives[]`, `key_concepts[]`, `canonical_reading[]`, and `did_you_know[]`. `label` is the
-  section heading; `order` controls display order and a category without `order` or `defacto` is
-  not listed by the site. All body sections (Overview → Landscape → Notes) are optional.
+  category name; `layer` (required: `build`, `train`, `data`, `run`, `operate`, `domain` or `other`)
+  files it under a layer of the AI stack and `order` sorts it within the layer. Every category is
+  listed by the site; one without `defacto` simply shows no default pick. All body sections
+  (Overview → Landscape → Notes) are optional.
 - **framework** — one framework, library or tool. `kind` is `framework` (code you build inside),
   `library` (code you call) or `tool` (a program or service you run); it is absent on a record
   copied from GitHub facts alone, because no fact says which it is. `category` is a

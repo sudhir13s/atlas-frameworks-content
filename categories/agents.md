@@ -2,9 +2,10 @@
 id: framework-category/agents
 type: framework-category
 slug: agents
-schema_version: 1.1
+schema_version: 2.1
 title: Agent Frameworks
 label: Agents
+layer: build
 order: 5
 short_description: Frameworks for LLMs that plan and act — calling tools in a loop, alone or as collaborating roles.
 why_it_matters: Agents extend a model from answering to *doing*; the framework decides how reliable and debuggable that loop is.

@@ -2,9 +2,10 @@
 id: framework-category/llm-frameworks
 type: framework-category
 slug: llm-frameworks
-schema_version: 1.1
+schema_version: 2.1
 title: LLM Frameworks
 label: LLM Frameworks
+layer: build
 order: 1
 short_description: Orchestration layers that turn a raw LLM into an application — prompts, chains, retrieval, and tools.
 why_it_matters: They remove the boilerplate between a model call and a working app, and standardize retrieval and tool use.

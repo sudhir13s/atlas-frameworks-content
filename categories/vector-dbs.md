@@ -2,9 +2,10 @@
 id: framework-category/vector-dbs
 type: framework-category
 slug: vector-dbs
-schema_version: 1.1
+schema_version: 2.1
 title: Vector Databases
 label: Vector Databases
+layer: build
 order: 8
 short_description: Stores that index embeddings for fast approximate nearest-neighbour search — the retrieval backbone of RAG and semantic search.
 why_it_matters: They turn embeddings into a queryable index at scale; the wrong choice caps recall, latency, or how far you can grow.

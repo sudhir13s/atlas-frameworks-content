@@ -2,10 +2,11 @@
 id: framework-category/<slug>
 type: framework-category
 slug: <slug>
-schema_version: 1.2
+schema_version: 2.1
 title: "<Human Readable Title>"
 label: "<Category name for the section heading>"
-order: <int>                       # display order on the categories page; omit for a category the page does not list
+layer: <build|train|data|run|operate|domain|other>   # the layer of the AI stack; the categories page groups by it
+order: <int>                       # display order within the layer
 short_description: "<one line: what this slice of the ecosystem covers>"
 why_it_matters: "<one line: why a builder cares>"
 defacto:                           # omit until someone has judged the default choice

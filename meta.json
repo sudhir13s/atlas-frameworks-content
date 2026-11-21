@@ -2,7 +2,7 @@
   "name": "atlas-frameworks-content",
   "domain": "frameworks",
   "title": "AI Frameworks — reference knowledge",
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "description": "Portable, reusable reference knowledge for the AI framework ecosystem: one record per framework, library or tool, goal-oriented use cases (the building blocks a system needs, each with a default choice, alternatives and how to choose) and per-category landscapes (the defacto choice, who is rising, key concepts, and canonical reading). Content only — Markdown + JSON Schema + docs, zero code.",
   "entrypoints": {
     "human": "README.md",

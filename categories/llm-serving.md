@@ -2,9 +2,10 @@
 id: framework-category/llm-serving
 type: framework-category
 slug: llm-serving
-schema_version: 1.1
+schema_version: 2.1
 title: Deployment & Serving
 label: Deployment & Serving
+layer: run
 order: 10
 short_description: Platforms that package, deploy, scale, and observe models as production services — the layer above the raw engine.
 why_it_matters: An inference engine generates tokens; a serving platform turns it into a versioned, autoscaling, observable API.

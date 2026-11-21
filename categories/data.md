@@ -2,9 +2,10 @@
 id: framework-category/data
 type: framework-category
 slug: data
-schema_version: 1.1
+schema_version: 2.1
 title: Data & ETL Frameworks
 label: Data & ETL
+layer: data
 order: 6
 short_description: Tools that move, transform, validate, and serve the data and features models train and infer on.
 why_it_matters: Model quality is capped by data quality; this layer decides whether your features are clean, reproducible, and consistent.
