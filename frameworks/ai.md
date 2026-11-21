@@ -3,7 +3,7 @@ id: framework/ai
 type: framework
 slug: ai
 schema_version: 1.2
-title: ai
+title: AI SDK
 category: framework-category/llm-frameworks
 tagline: 'The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents '
 language: TypeScript
