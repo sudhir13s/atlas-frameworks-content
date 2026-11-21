@@ -15,12 +15,12 @@ It is the `frameworks` domain of a multi-repo reference library
 | Type | Folder | What it captures |
 |------|--------|------------------|
 | `framework` | `frameworks/` | One framework, library or tool: what it is, who it suits, licence, backing, links to alternatives, and a block of numbers that change over time |
-| `use-case` | `use-cases/` | A task-oriented "getting started" path: the exact stack, a day-1 plan, starter templates, pitfalls, what to learn next, community, and what *not* to use |
+| `use-case` | `use-cases/` | A goal ("Build a RAG app") and the building blocks the system needs, ordered by where they sit in it, each with a default choice, alternatives, how to choose and links to the records in the Atlas |
 | `framework-category` | `categories/` | A per-category landscape: the defacto choice, who is rising, alternatives, key concepts, and canonical reading |
 
-Framework references (`stack[].framework_id`, `defacto.framework_id`, `rising[]`, `alternatives[]`)
-are IDs of `framework` records (`framework/pytorch`, `framework/langchain`) and are checked to
-resolve inside this repo.
+Framework references (`defacto.framework_id`, `rising[]`, `alternatives[]`) are IDs of `framework`
+records (`framework/pytorch`, `framework/langchain`) and are checked to resolve. So is every
+`blocks[].options[].record` of a use case, which may also name a model or benchmark record.
 
 ## Quick start
 

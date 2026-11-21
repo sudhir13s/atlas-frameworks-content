@@ -5,6 +5,23 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 2.0 (use cases as building blocks)
+
+- **Changed (breaking)** `use-case` is now "I want to build X: what do I need?". A record carries
+  `goal`, `stages[]` (2 to 4 ordered lanes: `id`, `name`, `note`) and `blocks[]` (`id`, `stage`,
+  `name`, `purpose`, `options[]`, `how_to_choose[]`, optional `browse`). An option is an Atlas record
+  (`record`: `framework/`, `model/` or `benchmark/`) or, until the Atlas has one, `name` + `url`; its
+  `choice` is `default` (exactly one per block) or `alternative`. `browse.record` points at the
+  `framework-category/`, `task-group/` or `task/` record that holds the full list. Body section:
+  Overview only.
+- **Removed** from `use-case`: `languages`, `levels`, `stack`, `day1_plan`, `starter_templates`,
+  `pitfalls`, `when_to_level_up`, `community`, `dont_use`; the body sections "Why this stack" and
+  "Notes". Records authored against 1.x fail the new schema and must be rewritten.
+- **Changed** the loader checks a block's `stage` exists in `stages`, each block has exactly one
+  default option, and block ids are unique; every `record` and `browse.record` is a reference the
+  loader resolves like any other, so a dangling one names the file.
+- `framework` and `framework-category` records are unchanged.
+
 ### Schema 1.2 (framework discovery)
 
 - **Changed** `framework`: `kind` is optional. A record copied from GitHub facts alone cannot say
@@ -49,6 +66,7 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## Schema versions
 
+- **2.0** — `use-case` rebuilt as stages and building blocks with options (breaking).
 - **1.0** — initial schema for the two frameworks content types (`use-case`, `framework-category`).
 - **1.2** — `kind` of a `framework` record is optional; `framework-category/other`.
 - **1.1** — `framework` type, `snake_case` keys, ID references for frameworks, shared `aliases`

@@ -34,8 +34,9 @@ separate index is needed and none can fall out of sync.
   readers; the web pages render from frontmatter, not the body.
 - **Links** (`related`, `related_use_cases`, a framework's `category`, `alternatives` and
   `ecosystem_connections`) are **IDs** of the form `<type>/<slug>`.
-- **Framework references** (`stack[].framework_id`, `defacto.framework_id`, `rising[]`,
-  `alternatives[]`) are IDs of `framework` records (`framework/<slug>`), files in this repo.
+- **Framework references** (`defacto.framework_id`, `rising[]`, `alternatives[]`) are IDs of
+  `framework` records (`framework/<slug>`), files in this repo. A use case's
+  `blocks[].options[].record` and `blocks[].browse.record` are IDs of any record in the corpus.
 - Frontmatter keys are `snake_case`. A framework's `registry_signals` block is owned by the jobs.
 
 ## 4. Validate

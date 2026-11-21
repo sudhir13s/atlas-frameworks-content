@@ -21,8 +21,9 @@ this file is the `frameworks`-domain instance.
 - **Every link is an ID** (`<type>/<slug>`) that must resolve to an existing record. Dangling
   references fail validation. This covers `related`, `related_use_cases`, a framework's `category`,
   `alternatives` and `ecosystem_connections`, and every framework reference in a category or use
-  case (`stack[].framework_id`, `defacto.framework_id`, `rising[].framework_id`,
-  `alternatives[].framework_id`), which is `framework/<slug>`. The site reader strips the
+  case (`defacto.framework_id`, `rising[].framework_id`, `alternatives[].framework_id`), which is
+  `framework/<slug>`, and every `blocks[].options[].record` and `blocks[].browse.record` of a use
+  case (a framework, model, benchmark, category or task record, in any repo). The site reader strips the
   `use-case/` and `framework/` prefixes so the pages receive bare slugs.
 
 ## Frontmatter
@@ -36,7 +37,7 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - `tags`: lowercase, hyphen-separated.
 - `updated`: ISO date (`YYYY-MM-DD`).
 - `sources[]`: `{ url, title, trust }` — `trust` in `[0,1]`. Open-source-first; cite, do not copy.
-- `schema_version`: the `major.minor` the file was authored against (currently `1.2`; a file authored against `1.1` stays valid).
+- `schema_version`: the `major.minor` the file was authored against (currently `2.0`; `framework` and `framework-category` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0`).
 
 ## Body sections
 
@@ -48,10 +49,13 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 
 ## Per-type specifics
 
-- **use-case** — a task-oriented starting path. Carries `goal`, `languages`, `levels`, and the
-  structured `stack[]`, `day1_plan[]`, `starter_templates[]`, `learn_next[]`, `pitfalls[]`,
-  `when_to_level_up`, `community[]`, `dont_use[]`, and `related_use_cases[]` (IDs). `label` is the
-  short card/tab name; `order` controls display order. Body sections: Overview → Why this stack → Notes.
+- **use-case** — "I want to build X: what do I need?". Carries `goal`, `stages[]` (2 to 4 ordered
+  lanes of the system: `id`, `name`, `note`), `blocks[]` (ordered by where they sit in the system:
+  `id`, `stage`, `name`, `purpose`, `options[]`, `how_to_choose[]`, optional `browse`), `learn_next[]`
+  and `related_use_cases[]` (IDs). An option is an Atlas record (`record`) or, until the Atlas has
+  one, `name` + `url`; `choice` is `default` (exactly one per block, listed first) or `alternative`.
+  No install commands or day plans. `label` is the short goal name; `order` controls display order.
+  Body section: Overview.
 - **framework-category** — a per-category landscape. Carries `short_description`, `why_it_matters`,
   an optional single `defacto` framework (absent until someone has judged it), `rising[]`,
   `alternatives[]`, `key_concepts[]`, `canonical_reading[]`, and `did_you_know[]`. `label` is the

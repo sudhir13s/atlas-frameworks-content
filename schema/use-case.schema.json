@@ -2,58 +2,74 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://theaiatlas.dev/schema/frameworks/use-case.schema.json",
   "title": "use-case",
+  "description": "A goal (\"Build a RAG app\") and the building blocks the system needs, by where they sit in it. Checks JSON Schema cannot express (the block's stage exists, one default per block, unique block ids) run in the loader.",
   "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
+  "$defs": {
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "note"],
+      "properties": {
+        "id": { "$ref": "_shared.schema.json#/$defs/slug" },
+        "name": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1, "description": "one sentence: when this part of the system runs" }
+      }
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["choice", "when"],
+      "properties": {
+        "record": {
+          "type": "string",
+          "pattern": "^(framework|model|benchmark)/[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "ID of the Atlas record this option is"
+        },
+        "name": { "type": "string", "minLength": 1, "description": "only when the Atlas has no record yet" },
+        "url": { "type": "string", "format": "uri", "description": "only when the Atlas has no record yet" },
+        "choice": { "type": "string", "enum": ["default", "alternative"] },
+        "when": { "type": "string", "minLength": 1, "description": "one sentence: why it is the default, or when to pick it instead" }
+      },
+      "oneOf": [
+        { "required": ["record"], "not": { "anyOf": [{ "required": ["name"] }, { "required": ["url"] }] } },
+        { "required": ["name", "url"], "not": { "required": ["record"] } }
+      ]
+    },
+    "browse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "record"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "record": {
+          "type": "string",
+          "pattern": "^(framework-category|task-group|task)/[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "the record whose page holds the full list"
+        }
+      }
+    },
+    "block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "stage", "name", "purpose", "options", "how_to_choose"],
+      "properties": {
+        "id": { "$ref": "_shared.schema.json#/$defs/slug" },
+        "stage": { "$ref": "_shared.schema.json#/$defs/slug" },
+        "name": { "type": "string", "minLength": 1 },
+        "purpose": { "type": "string", "minLength": 1, "description": "one sentence: what this block does in this system" },
+        "options": { "type": "array", "minItems": 1, "maxItems": 5, "items": { "$ref": "#/$defs/option" } },
+        "how_to_choose": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "string", "minLength": 1 } },
+        "browse": { "$ref": "#/$defs/browse" }
+      }
+    }
+  },
   "properties": {
     "type": { "const": "use-case" },
-    "label": { "type": "string", "minLength": 1, "description": "short human label shown in tabs/cards" },
+    "label": { "type": "string", "minLength": 1, "description": "short human label shown in the goal list" },
     "order": { "type": "integer", "description": "display order on the getting-started page" },
-    "goal": { "type": "string", "minLength": 1, "description": "one-sentence outcome the reader is trying to achieve" },
-    "languages": { "type": "array", "items": { "type": "string" }, "description": "programming languages this path uses" },
-    "levels": {
-      "type": "array",
-      "items": { "type": "string", "enum": ["beginner", "intermediate", "advanced"] }
-    },
-    "stack": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": ["framework_id", "role", "why"],
-        "properties": {
-          "framework_id": { "$ref": "_shared.schema.json#/$defs/framework_id" },
-          "role": { "type": "string" },
-          "why": { "type": "string" },
-          "install": { "type": "string" },
-          "quickstart_url": { "type": "string", "format": "uri" },
-          "docs_url": { "type": "string", "format": "uri" }
-        }
-      }
-    },
-    "day1_plan": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["step", "task"],
-        "properties": {
-          "step": { "type": "integer", "minimum": 1 },
-          "task": { "type": "string" },
-          "estimate": { "type": "string" },
-          "details": { "type": "string" }
-        }
-      }
-    },
-    "starter_templates": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name", "repo"],
-        "properties": {
-          "name": { "type": "string" },
-          "repo": { "type": "string", "format": "uri" },
-          "why": { "type": "string" }
-        }
-      }
-    },
+    "goal": { "type": "string", "minLength": 1, "description": "one sentence: what the finished system does" },
+    "stages": { "type": "array", "minItems": 2, "maxItems": 4, "items": { "$ref": "#/$defs/stage" } },
+    "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } },
     "learn_next": {
       "type": "array",
       "items": {
@@ -66,35 +82,11 @@
         }
       }
     },
-    "pitfalls": { "type": "array", "items": { "type": "string" } },
-    "when_to_level_up": { "type": "string" },
-    "community": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name", "url"],
-        "properties": {
-          "name": { "type": "string" },
-          "url": { "type": "string", "format": "uri" }
-        }
-      }
-    },
-    "dont_use": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["what", "why"],
-        "properties": {
-          "what": { "type": "string" },
-          "why": { "type": "string" }
-        }
-      }
-    },
     "related_use_cases": {
       "type": "array",
       "items": { "type": "string" },
       "description": "IDs of related use-case files (use-case/<slug>); the site reader strips the prefix"
     }
   },
-  "required": ["label", "goal", "languages", "levels", "stack", "day1_plan"]
+  "required": ["label", "goal", "stages", "blocks"]
 }

@@ -2,42 +2,37 @@
 id: use-case/<slug>
 type: use-case
 slug: <slug>
-schema_version: 1.2
+schema_version: 2.0
 title: "<Human Readable Title>"
-label: "<Short label for tabs/cards>"
+label: "<Short label for the goal list>"
 order: <int>                       # display order on the getting-started page
-goal: "<One sentence: the outcome the reader wants.>"
-languages: [python]                # python | typescript | rust | swift | kotlin | go
-levels: [beginner, intermediate]   # beginner | intermediate | advanced
-stack:
-  - framework_id: framework/<slug> # must be a framework record (e.g. framework/langchain)
-    role: "<what this tool does in the stack>"
-    why: "<why this pick, one line>"
-    install: "<install command>"
-    quickstart_url: "<official quickstart url>"
-    docs_url: "<official docs url>"
-day1_plan:
-  - step: 1
-    task: "<what to do>"
-    estimate: "<time>"
-    details: "<one line of detail>"
-starter_templates:
-  - name: "<template name>"
-    repo: "<github url>"
-    why: "<why this template>"
+goal: "<One sentence: what the finished system does.>"
+stages:                            # 2 to 4 lanes of the system map, in order
+  - id: <stage-slug>
+    name: "<Stage name>"
+    note: "<One sentence: when this part of the system runs.>"
+blocks:                            # ordered by where they sit in the system
+  - id: <block-slug>               # unique in this record
+    stage: <stage-slug>            # one of stages[].id
+    name: "<Block name>"
+    purpose: "<One sentence: what this block does in this system.>"
+    options:                       # 1 to 5; the first is the default, exactly one default
+      - record: framework/<slug>   # an Atlas record: framework/, model/ or benchmark/
+        choice: default            # default | alternative
+        when: "<One sentence: why it is the default.>"
+      - name: "<Tool name>"        # only when the Atlas has no record yet: name + url, no record
+        url: "<maker url>"
+        choice: alternative
+        when: "<One sentence: when to pick this instead.>"
+    how_to_choose:                 # 1 to 4 short bullets
+      - "<How the choice follows from the reader's situation.>"
+    browse:                        # optional: where the full list lives in the Atlas
+      label: "<All vector databases>"
+      record: framework-category/<slug>   # framework-category/, task-group/ or task/
 learn_next:
   - title: "<resource title>"
     url: "<url>"
     kind: doc                      # video | course | paper | doc | docs | blog
-pitfalls:
-  - "<a common mistake and how to avoid it>"
-when_to_level_up: "<the signal that you have outgrown this starter stack>"
-community:
-  - name: "<community name>"
-    url: "<url>"
-dont_use:
-  - what: "<framework or approach to avoid here>"
-    why: "<why it is the wrong tool for this use case>"
 related_use_cases: [use-case/<other-slug>]
 tags: [<tag>]
 updated: <YYYY-MM-DD>
@@ -46,10 +41,4 @@ sources:
 ---
 
 ## Overview
-<2-3 sentences: what you are building and the shape of the solution.>
-
-## Why this stack
-<Why these tools fit together for this goal; the trade-offs behind each pick.>
-
-## Notes
-<Gotchas, scaling notes, and when to revisit the choices.>
+<2-3 sentences: what you are building and the shape of the system.>

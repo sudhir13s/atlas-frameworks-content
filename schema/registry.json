@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "2.0",
   "shared": "schema/_shared.schema.json",
   "types": {
     "use-case": {
       "folder": "use-cases",
       "schema": "schema/use-case.schema.json",
       "id_prefix": "use-case/",
-      "sections": ["Overview", "Why this stack", "Notes"]
+      "sections": ["Overview"]
     },
     "framework-category": {
       "folder": "categories",
