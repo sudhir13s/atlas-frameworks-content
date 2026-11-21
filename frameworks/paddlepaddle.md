@@ -7,40 +7,31 @@ title: PaddlePaddle
 kind: framework
 category: framework-category/training
 subcategory: core-framework
-tagline: PArallel Distributed Deep LEarning — Baidu's industrial-strength framework
-description: Baidu's open-source deep learning platform, widely used in Chinese industry. Strong in NLP and industrial applications with an extensive model zoo. Has its own ecosystem of tools (PaddleNLP, PaddleOCR, PaddleDetection).
-best_for: Chinese enterprise ML, OCR tasks, Chinese NLP
-not_ideal_for: Western teams, projects requiring broad ecosystem interop
+tagline: 'PArallel Distributed Deep LEarning: Machine Learning Framework from Industrial Practice.'
+description: PaddlePaddle (PArallel Distributed Deep LEarning) is a deep learning framework that supports both training and inference. It unifies dynamic and static graphs with automatic parallelism, and includes a neural network compiler, high-order automatic differentiation for scientific computing and a pluggable adaptation layer for multiple hardware types.
+best_for: Deep learning training and inference, Distributed training
 key_features:
-- Large-scale distributed training
-- PaddleNLP for NLP tasks
-- PaddleOCR (leading open-source OCR)
-- PaddleDetection for object detection
-- AutoDL for neural architecture search
-- Industrial deployment tools
+- Distributed training with automatic parallelism
+- Unified dynamic and static graphs
+- Neural network compiler
+- High-order automatic differentiation
+- Inference deployment and model compression
+- Custom device and custom kernel interfaces
 use_cases:
-- Chinese language NLP
-- OCR and document understanding
-- Industrial ML in Chinese enterprises
-- Large-scale recommendation systems
+- Large model training and inference
+- Distributed model training
+- Scientific computing with automatic differentiation
 pros:
-- Strong in Chinese NLP and OCR
-- Extensive pre-trained model zoo
-- Good distributed training performance
-- Active community in China
-cons:
-- English documentation is limited
-- Small community outside China
-- Ecosystem not interoperable with PyTorch/TF
-language: Python
+- Training and inference in the same framework
+- Pluggable support for multiple hardware types
+language: C++
 languages_supported:
 - Python
 - C++
 maintained_by: Baidu
-first_release: '2016-08-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/PaddlePaddle/Paddle
-docs_url: https://www.paddlepaddle.org.cn/documentation/docs/en/
+docs_url: https://www.paddlepaddle.org.cn/documentation/docs/en/guides/index_en.html
 website_url: https://www.paddlepaddle.org.cn/en
 gpu_support:
   nvidia_cuda: true
@@ -48,10 +39,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
@@ -74,14 +62,18 @@ tags:
 - nlp
 - ocr
 - industrial
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/PaddlePaddle/Paddle
   title: GitHub repository
-- url: https://www.paddlepaddle.org.cn/documentation/docs/en/
+- url: https://www.paddlepaddle.org.cn/documentation/docs/en/guides/index_en.html
   title: Documentation
+- url: https://www.paddlepaddle.org.cn/documentation/docs/en/install/pip/linux-pip_en.html
+  title: Install on Linux via PIP
+- url: https://pypi.org/project/paddlepaddle/
+  title: paddlepaddle — PyPI
 ---
 
 ## Overview
 
-Baidu's open-source deep learning platform, widely used in Chinese industry. Strong in NLP and industrial applications with an extensive model zoo. Has its own ecosystem of tools (PaddleNLP, PaddleOCR, PaddleDetection).
+PaddlePaddle (PArallel Distributed Deep LEarning) is a deep learning framework that supports both training and inference. It unifies dynamic and static graphs with automatic parallelism, and includes a neural network compiler, high-order automatic differentiation for scientific computing and a pluggable adaptation layer for multiple hardware types.

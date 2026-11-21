@@ -7,51 +7,43 @@ title: Outlines
 kind: library
 category: framework-category/llm-frameworks
 subcategory: structured-generation
-tagline: Structured text generation with LLMs — guaranteed valid output
-description: Library for structured generation from LLMs using finite-state machine based decoding. Guarantees outputs match a JSON schema, regex, or grammar. Works with any model through logit-level constrained sampling.
-best_for: Production systems requiring guaranteed-format LLM output
-not_ideal_for: Free-form creative generation
+tagline: Outlines guarantees structured outputs during generation, directly from any LLM.
+description: Outlines is a Python library that constrains LLM output during generation to a requested type such as a set of choices, a Pydantic model or JSON schema, a regular expression or a context-free grammar. The same code runs across model providers and inference engines, including transformers, llama.cpp, vLLM, Ollama, OpenAI and Gemini.
+best_for: Structured outputs from LLMs, Extracting typed data from text
 key_features:
-- FSM-based constrained decoding
-- JSON Schema enforcement
+- Constrained decoding through logits processors
+- JSON Schema and Pydantic output types
 - Regex-guided generation
-- Grammar-based generation (EBNF)
+- Context-free grammar generation
 - Integration with vLLM and transformers
+- Prompt templates
 use_cases:
 - Structured data extraction
-- Reliable JSON generation from LLMs
-- Type-safe LLM outputs
+- JSON generation from LLMs
+- Classification into predefined categories
+- Function calling from typed signatures
 pros:
-- Mathematical guarantees on output format
-- Works with vLLM for high-throughput serving
-- Clean API
-cons:
-- Can slow down generation with complex schemas
-- Limited to text generation models
+- Output structure enforced during generation rather than parsed afterwards
+- Same code across model providers and inference engines
 language: Python
 languages_supported:
 - Python
-maintained_by: .txt (formerly Outlines-dev)
-first_release: '2023-07-01'
+maintained_by: .txt
 license_spdx: Apache-2.0
 github_url: https://github.com/dottxt-ai/outlines
 docs_url: https://dottxt-ai.github.io/outlines/
 website_url: https://dottxt.co/
 gpu_support:
-  nvidia_cuda: true
+  nvidia_cuda: false
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: medium
 maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - .txt
-  funding_or_parent: Formerly Outlines-dev; maintained by .txt (dottxt) with seed funding
 alternatives:
 - framework/guidance
 ecosystem_connections:
@@ -71,14 +63,18 @@ tags:
 - structured-generation
 - json
 - constrained-decoding
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/dottxt-ai/outlines
   title: GitHub repository
 - url: https://dottxt-ai.github.io/outlines/
   title: Documentation
+- url: https://dottxt-ai.github.io/outlines/latest/features/models/
+  title: Models
+- url: https://pypi.org/project/outlines/
+  title: outlines — PyPI
 ---
 
 ## Overview
 
-Library for structured generation from LLMs using finite-state machine based decoding. Guarantees outputs match a JSON schema, regex, or grammar. Works with any model through logit-level constrained sampling.
+Outlines is a Python library that constrains LLM output during generation to a requested type such as a set of choices, a Pydantic model or JSON schema, a regular expression or a context-free grammar. The same code runs across model providers and inference engines, including transformers, llama.cpp, vLLM, Ollama, OpenAI and Gemini.

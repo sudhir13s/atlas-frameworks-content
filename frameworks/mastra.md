@@ -3,9 +3,9 @@ id: framework/mastra
 type: framework
 slug: mastra
 schema_version: 1.2
-title: mastra
+title: Mastra
 category: framework-category/agents
-tagline: Mastra is the modern TypeScript framework for AI-powered applications and agents.
+tagline: Mastra is a TypeScript framework for AI-powered applications and agents.
 language: TypeScript
 maintained_by: mastra-ai
 license_note: Other
@@ -19,6 +19,7 @@ registry_signals:
   source: https://github.com/mastra-ai/mastra
 aliases:
 - mastra-ai/mastra
+- mastra
 tags:
 - agents
 - ai

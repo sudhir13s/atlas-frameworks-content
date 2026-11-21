@@ -3,7 +3,7 @@ id: framework/python-sdk
 type: framework
 slug: python-sdk
 schema_version: 1.2
-title: Model Context Protocol Python SDK
+title: MCP Python SDK
 category: framework-category/agents
 tagline: The official Python SDK for Model Context Protocol servers and clients
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/modelcontextprotocol/python-sdk
 aliases:
 - modelcontextprotocol/python-sdk
+- Model Context Protocol Python SDK
 tags:
 - mcp
 - mcp-client

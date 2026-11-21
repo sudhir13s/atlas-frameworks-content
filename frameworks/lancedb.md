@@ -7,56 +7,49 @@ title: LanceDB
 kind: tool
 category: framework-category/vector-dbs
 subcategory: embedded
-tagline: Serverless vector database for AI applications — embedded, open-source
-description: Serverless vector database built on the Lance columnar format. Runs embedded with zero infrastructure. Supports multi-modal data (text, images, video), full-text search, and integrates with data ecosystem tools.
-best_for: Serverless vector search, multi-modal applications
-not_ideal_for: Enterprise-scale production (use Milvus/Qdrant)
+tagline: OSS embedded retrieval library for multimodal AI.
+description: LanceDB is an open-source retrieval library built on the Lance columnar format that runs inside your application, with data on local disk or in object storage. It supports vector similarity search, full-text search and SQL over vectors, metadata and multimodal data such as text, images and video.
+best_for: Retrieval that runs inside the application process, Multimodal search by keyword or vector or SQL
+not_ideal_for: Distributed search and indexing (offered by the separate LanceDB Enterprise product)
 key_features:
-- Serverless — no server process needed
-- Lance columnar format (fast, versioned)
-- Multi-modal support
-- Full-text search + vector search
-- Automatic versioning
-- S3/GCS/Azure storage backends
+- Runs in the application process (LanceDB Embedded)
+- Built on the Lance columnar format
+- Multimodal data support (text, images, videos, point clouds)
+- Vector similarity search, full-text search and SQL
+- Automatic data versioning
+- Object storage backends (S3, Google Cloud Storage, Azure Blob Storage)
+- GPU-accelerated vector index building (CUDA, Apple MPS)
 use_cases:
-- Serverless RAG applications
-- Multi-modal search
-- Data versioning with vector search
+- Multimodal search
+- Retrieval inside an application
+- Pinning and revisiting versions of a dataset
 pros:
-- Zero infrastructure — embedded like SQLite
-- Multi-modal native
-- Data versioning built-in
-- Fast columnar format
+- No separate server process
+- Data versioning built in
+- Python, TypeScript and Rust SDKs
 cons:
-- Newer — less battle-tested
-- Smaller community
-- Scaling story still developing
+- Automatic GPU indexing is available only in LanceDB Enterprise
 language: Rust
 languages_supported:
 - Python
 - JavaScript
 - Rust
-maintained_by: LanceDB Inc.
-first_release: '2023-02-01'
+maintained_by: LanceDB
 license_spdx: Apache-2.0
 github_url: https://github.com/lancedb/lancedb
 docs_url: https://lancedb.github.io/lancedb/
 website_url: https://lancedb.com/
 gpu_support:
-  nvidia_cuda: false
+  nvidia_cuda: true
   amd_rocm: false
-  apple_mps: false
+  apple_mps: true
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: small-medium
-maturity: stable
-signal_strength: medium
+maturity: experimental
 backing:
   type: corporate
   orgs:
-  - LanceDB Inc
-  funding_or_parent: Seed $8M led by CRV (2023)
+  - LanceDB
 alternatives:
 - framework/chromadb
 - framework/qdrant
@@ -77,14 +70,22 @@ tags:
 - serverless
 - embedded
 - multi-modal
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/lancedb/lancedb
   title: GitHub repository
 - url: https://lancedb.github.io/lancedb/
   title: Documentation
+- url: https://docs.lancedb.com/
+  title: Documentation home
+- url: https://docs.lancedb.com/indexing/gpu-indexing
+  title: GPU indexing
+- url: https://docs.lancedb.com/storage
+  title: Storage
+- url: https://pypi.org/project/lancedb/
+  title: lancedb — PyPI
 ---
 
 ## Overview
 
-Serverless vector database built on the Lance columnar format. Runs embedded with zero infrastructure. Supports multi-modal data (text, images, video), full-text search, and integrates with data ecosystem tools.
+LanceDB is an open-source retrieval library built on the Lance columnar format that runs inside your application, with data on local disk or in object storage. It supports vector similarity search, full-text search and SQL over vectors, metadata and multimodal data such as text, images and video.

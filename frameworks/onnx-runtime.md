@@ -7,42 +7,37 @@ title: ONNX Runtime
 kind: library
 category: framework-category/llm-serving
 subcategory: inference-runtime
-tagline: Cross-platform, high-performance ML inference engine
-description: Microsoft's high-performance inference engine for ONNX models. Supports models from PyTorch, TensorFlow, scikit-learn, and more via ONNX format. Runs on CPU, GPU, mobile, and edge with hardware-specific optimizations.
-best_for: Cross-platform model deployment from any training framework
-not_ideal_for: Models with operations not supported in ONNX, training workloads
+tagline: ONNX Runtime is a runtime accelerator for Machine Learning models.
+description: ONNX Runtime is a cross-platform machine-learning model accelerator with an interface for integrating hardware-specific libraries as execution providers. It runs models from PyTorch, TensorFlow/Keras, TFLite, scikit-learn and other frameworks once they are exported to the ONNX format, and it also supports on-device training.
+best_for: Deploying models trained in different frameworks, Running one model across hardware and operating systems
 key_features:
-- Cross-platform inference (cloud, mobile, edge, browser)
-- Hardware-specific optimizations
+- Cross-platform inference on Windows, mobile, web and IoT devices
+- Hardware execution providers such as CUDA, TensorRT, OpenVINO, DirectML and CoreML
 - Quantization and graph optimization
 - Multi-language bindings
 - ONNX model format support
-- Mobile and web runtime
+- On-device training
 use_cases:
 - Cross-platform model deployment
 - Optimized inference across hardware
 - Mobile and edge deployment
-- Converting PyTorch/TF models for production
+- Deploying Python-trained models in C#, C++ or Java apps
 pros:
-- Best cross-platform inference story
-- Wide hardware support
-- Good optimization passes
-- Production-proven at Microsoft scale
+- Execution providers for NVIDIA, AMD, Intel, Apple, Qualcomm and Arm hardware
+- Built-in graph optimizations and quantization tools
 cons:
-- ONNX conversion can lose model features
-- Not all operations supported in ONNX format
-- Less community momentum than native framework serving
+- ROCm execution provider removed; AMD GPUs now use the MIGraphX execution provider
 language: C++
 languages_supported:
 - Python
 - C++
+- C
 - C#
 - Java
 - JavaScript
+- Objective-C
 maintained_by: Microsoft
-first_release: '2019-05-01'
 license_spdx: MIT
-github_url: https://github.com/microsoft/onnxruntime
 docs_url: https://onnxruntime.ai/docs/
 website_url: https://onnxruntime.ai/
 gpu_support:
@@ -51,15 +46,11 @@ gpu_support:
   apple_mps: true
   intel_oneapi: true
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Microsoft
-  funding_or_parent: Microsoft (ONNX format is an LF AI & Data Foundation project)
 alternatives:
 - framework/tensorrt-llm
 - framework/triton-inference-server
@@ -79,14 +70,24 @@ tags:
 - cross-platform
 - optimization
 - onnx
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/microsoft/onnxruntime
-  title: GitHub repository
 - url: https://onnxruntime.ai/docs/
   title: Documentation
+- url: https://onnxruntime.ai/docs/execution-providers/MIGraphX-ExecutionProvider.html
+  title: AMD - MIGraphX execution provider
+- url: https://onnxruntime.ai/docs/execution-providers/ROCm-ExecutionProvider.html
+  title: AMD - ROCm execution provider
+- url: https://onnxruntime.ai/docs/execution-providers/CoreML-ExecutionProvider.html
+  title: Apple - CoreML execution provider
+- url: https://onnxruntime.ai/docs/execution-providers/oneDNN-ExecutionProvider.html
+  title: Intel - oneDNN execution provider
+- url: https://onnxruntime.ai/
+  title: Website
+- url: https://pypi.org/project/onnxruntime/
+  title: onnxruntime — PyPI
 ---
 
 ## Overview
 
-Microsoft's high-performance inference engine for ONNX models. Supports models from PyTorch, TensorFlow, scikit-learn, and more via ONNX format. Runs on CPU, GPU, mobile, and edge with hardware-specific optimizations.
+ONNX Runtime is a cross-platform machine-learning model accelerator with an interface for integrating hardware-specific libraries as execution providers. It runs models from PyTorch, TensorFlow/Keras, TFLite, scikit-learn and other frameworks once they are exported to the ONNX format, and it also supports on-device training.

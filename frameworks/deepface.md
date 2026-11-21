@@ -3,7 +3,7 @@ id: framework/deepface
 type: framework
 slug: deepface
 schema_version: 1.2
-title: deepface
+title: DeepFace
 category: framework-category/computer-vision
 tagline: A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/serengil/deepface
 aliases:
 - serengil/deepface
+- deepface
 tags:
 - age-prediction
 - arcface

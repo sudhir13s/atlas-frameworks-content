@@ -7,33 +7,32 @@ title: Stanza
 kind: library
 category: framework-category/nlp
 subcategory: core-library
-tagline: Stanford NLP library for 70+ languages — neural pipeline for text analysis
-description: Stanford's official NLP library with neural network models for tokenization, POS, NER, dependency parsing, and sentiment analysis. Supports 70+ languages with state-of-the-art accuracy on Universal Dependencies.
-best_for: Multi-lingual NLP, academic linguistic analysis
-not_ideal_for: Production speed requirements, LLM-based tasks
+tagline: Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages.
+description: Stanza is the Stanford NLP Group's official Python library for linguistic analysis of many human languages. Its neural pipeline, built on PyTorch, covers tokenization, multi-word token expansion, lemmatization, part-of-speech and morphological tagging, dependency parsing and named entity recognition using the Universal Dependencies formalism. It also includes the official Python interface to the Java Stanford CoreNLP package.
+best_for: Multilingual linguistic analysis, Universal Dependencies parsing
 key_features:
-- 70+ language support
-- Neural tokenization and POS tagging
-- Dependency parsing
-- NER
+- Pretrained neural models for many languages
+- Tokenization and part-of-speech tagging
+- Dependency and constituency parsing
+- Named entity recognition
 - Sentiment analysis
-- CoreNLP interface
+- Coreference
+- Biomedical and clinical English models
+- Python interface to Stanford CoreNLP
 use_cases:
-- Multi-lingual NLP
+- Multilingual NLP
 - Linguistic analysis
-- Academic NLP research
+- Biomedical and clinical text analysis
 pros:
-- Best multi-lingual coverage
-- High accuracy on linguistic tasks
-- Stanford-backed research quality
+- Native Python implementation
+- One pipeline design across many languages
+- Neural modules trainable on your own annotated data
 cons:
-- Slower than spaCy
-- Less production-oriented
+- Model training not available through the Pipeline interface and runs from a source checkout
 language: Python
 languages_supported:
 - Python
 maintained_by: Stanford NLP Group
-first_release: '2020-03-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/stanfordnlp/stanza
 docs_url: https://stanfordnlp.github.io/stanza/
@@ -44,14 +43,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: medium
-maturity: stable
-signal_strength: medium
-backing:
-  type: foundation
-  orgs:
-  - Stanford NLP Group
+maturity: experimental
 alternatives:
 - framework/spacy
 - framework/flair
@@ -71,14 +63,18 @@ tags:
 - multilingual
 - linguistics
 - stanford
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/stanfordnlp/stanza
   title: GitHub repository
 - url: https://stanfordnlp.github.io/stanza/
   title: Documentation
+- url: https://stanfordnlp.github.io/stanza/getting_started.html
+  title: Getting Started
+- url: https://pypi.org/project/stanza/
+  title: stanza — PyPI
 ---
 
 ## Overview
 
-Stanford's official NLP library with neural network models for tokenization, POS, NER, dependency parsing, and sentiment analysis. Supports 70+ languages with state-of-the-art accuracy on Universal Dependencies.
+Stanza is the Stanford NLP Group's official Python library for linguistic analysis of many human languages. Its neural pipeline, built on PyTorch, covers tokenization, multi-word token expansion, lemmatization, part-of-speech and morphological tagging, dependency parsing and named entity recognition using the Universal Dependencies formalism. It also includes the official Python interface to the Java Stanford CoreNLP package.

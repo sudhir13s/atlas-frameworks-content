@@ -3,9 +3,9 @@ id: framework/marker
 type: framework
 slug: marker
 schema_version: 1.2
-title: marker
+title: Marker
 category: framework-category/computer-vision
-tagline: Convert PDF to markdown + JSON quickly with high accuracy
+tagline: Convert PDF to markdown + JSON.
 language: Python
 maintained_by: datalab-to
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/datalab-to/marker
 aliases:
 - datalab-to/marker
+- marker
 tags:
 - deep-learning
 - document-conversion

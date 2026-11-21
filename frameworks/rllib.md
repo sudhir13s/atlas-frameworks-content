@@ -3,38 +3,34 @@ id: framework/rllib
 type: framework
 slug: rllib
 schema_version: 1.1
-title: RLlib (Ray)
+title: RLlib
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
-tagline: Scalable reinforcement learning on Ray
-description: Scalable RL library in the Ray ecosystem. Supports multi-agent RL, distributed training, and a wide range of algorithms. Designed for production-scale RL workloads.
-best_for: Multi-agent RL, large-scale distributed RL
-not_ideal_for: Simple single-agent RL (use SB3), quick prototyping
+tagline: RLlib is an open source library for reinforcement learning (RL).
+description: RLlib is an open source reinforcement learning library built on Ray. It supports production-grade, scalable and fault-tolerant RL workloads with simple, unified APIs. It covers multi-agent training, learning from historic offline data and externally connected simulators.
+best_for: Multi-agent RL, Offline RL, Distributed RL training
 key_features:
 - Multi-agent reinforcement learning
 - Distributed training on Ray
-- Wide algorithm support
+- On-policy and off-policy algorithms
 - Custom environment support
-- Offline RL
+- Offline RL and behavior cloning
 - Model-based RL
+- Multi-GPU training
+- External environment clients
 use_cases:
 - Multi-agent RL
 - Distributed RL training
 - Production RL systems
 pros:
-- Best for multi-agent RL
-- Scales to large clusters
-- Production-grade
-cons:
-- Complex setup
-- Ray overhead for simple tasks
-- API changes frequently
+- Native multi-agent RL support
+- Fault-tolerant sample collection
+- Supports production-grade workloads
 language: Python
 languages_supported:
 - Python
-maintained_by: Anyscale
-first_release: '2018-01-01'
+maintained_by: The Ray Team
 license_spdx: Apache-2.0
 github_url: https://github.com/ray-project/ray
 docs_url: https://docs.ray.io/en/latest/rllib/
@@ -45,13 +41,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: large
 maturity: production
-signal_strength: medium
 backing:
-  type: corporate
+  type: foundation
   orgs:
+  - LF Projects
   - Anyscale
 alternatives:
 - framework/stable-baselines3
@@ -59,7 +53,6 @@ alternatives:
 ecosystem_connections:
 - framework/gymnasium
 - framework/pytorch
-- framework/tensorflow
 registry_signals:
   github_stars: 44348
   downloads_monthly: 15757870
@@ -72,14 +65,22 @@ tags:
 - multi-agent
 - distributed
 - ray
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/ray-project/ray
   title: GitHub repository
 - url: https://docs.ray.io/en/latest/rllib/
   title: Documentation
+- url: https://docs.ray.io/en/latest/rllib/index.html
+  title: RLlib documentation
+- url: https://docs.ray.io/en/latest/ray-governance/index.html
+  title: Ray governance
+- url: https://www.ray.io/
+  title: Website
+aliases:
+- RLlib (Ray)
 ---
 
 ## Overview
 
-Scalable RL library in the Ray ecosystem. Supports multi-agent RL, distributed training, and a wide range of algorithms. Designed for production-scale RL workloads.
+RLlib is an open source reinforcement learning library built on Ray. It supports production-grade, scalable and fault-tolerant RL workloads with simple, unified APIs. It covers multi-agent training, learning from historic offline data and externally connected simulators.

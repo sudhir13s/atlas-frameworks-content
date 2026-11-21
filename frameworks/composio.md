@@ -3,9 +3,9 @@ id: framework/composio
 type: framework
 slug: composio
 schema_version: 1.2
-title: composio
+title: Composio
 category: framework-category/agents
-tagline: Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action.
+tagline: Composio powers 1000+ toolkits, tool search, context management, authentication and a sandboxed workbench to help you build AI agents.
 language: TypeScript
 maintained_by: ComposioHQ
 license_spdx: MIT
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/ComposioHQ/composio
 aliases:
 - ComposioHQ/composio
+- composio
 tags:
 - agentic-ai
 - agents

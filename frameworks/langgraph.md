@@ -3,9 +3,9 @@ id: framework/langgraph
 type: framework
 slug: langgraph
 schema_version: 1.2
-title: langgraph
+title: LangGraph
 category: framework-category/agents
-tagline: Build resilient agents.
+tagline: Low-level orchestration framework for building, managing, and deploying long-running, stateful agents.
 language: Python
 maintained_by: langchain-ai
 license_spdx: MIT
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/langchain-ai/langgraph
 aliases:
 - langchain-ai/langgraph
+- langgraph
 tags:
 - agents
 - ai

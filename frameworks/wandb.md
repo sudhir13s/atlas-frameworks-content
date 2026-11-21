@@ -7,41 +7,34 @@ title: Weights & Biases
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
-tagline: The AI developer platform — experiment tracking, model evaluation, dataset management
-description: Leading SaaS MLOps platform for experiment tracking, hyperparameter sweeps, artifact management, and collaborative ML. Known for its polished UI, real-time dashboards, and strong integration with PyTorch. Used by most top ML research labs.
-best_for: Research teams and companies wanting the best experiment tracking UX
-not_ideal_for: Air-gapped environments, teams with strict data residency requirements
+tagline: Train and fine-tune models, and manage models from experimentation to production.
+description: Weights & Biases tracks, visualizes and compares machine learning experiments, and W&B Weave traces and evaluates LLM applications alongside it. The wandb Python library and CLI log runs, metrics and hyperparameters to the platform, which also provides sweeps, artifacts, reports and automations. It is available as a managed cloud service or as a self-managed server on your own infrastructure.
+best_for: ML experiment tracking, Tracing and evaluating LLM applications
 key_features:
-- Real-time experiment dashboards
-- Hyperparameter sweep optimization
-- Artifact versioning and lineage
-- Model evaluation and comparison
-- Team collaboration features
-- LLM evaluation (Weave)
-- Report sharing and publishing
+- Experiment tracking and visualization
+- Hyperparameter sweeps
+- Artifact versioning
+- Reports
+- Automations
+- LLM tracing and evaluation with W&B Weave
+- Managed cloud, dedicated cloud and self-managed deployment
 use_cases:
 - ML experiment tracking and comparison
 - Hyperparameter optimization
-- Team collaboration on ML projects
-- Model evaluation and benchmarking
+- Dataset and model versioning
+- LLM application evaluation
 pros:
-- Best-in-class UI and UX
-- Excellent real-time visualization
-- Strong community and research adoption
-- Good free tier
+- Integrations with ML frameworks such as PyTorch, Keras and Hugging Face Transformers
+- Self-managed deployment including air-gapped Kubernetes
 cons:
-- SaaS — data leaves your infrastructure (self-hosted option exists)
-- Can be expensive at scale
-- Vendor lock-in risk
+- Some features require an Enterprise license
 language: Python
 languages_supported:
 - Python
-- JavaScript
-maintained_by: Weights & Biases Inc.
-first_release: '2018-01-01'
-license_note: MIT (client), Proprietary (server)
+maintained_by: Weights & Biases
+license_note: 'wandb Python client: MIT'
 github_url: https://github.com/wandb/wandb
-docs_url: https://docs.wandb.ai/
+docs_url: https://docs.coreweave.com/products/wandb
 website_url: https://wandb.ai/
 gpu_support:
   nvidia_cuda: false
@@ -49,15 +42,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - Weights & Biases Inc
-  funding_or_parent: Series C $135M led by Insight Partners (2021); acquired by CoreWeave announced 2025
+  - Weights & Biases
 alternatives:
 - framework/mlflow
 - framework/comet-ml
@@ -80,14 +69,26 @@ tags:
 - experiment-tracking
 - visualization
 - collaboration
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/wandb/wandb
   title: GitHub repository
-- url: https://docs.wandb.ai/
+- url: https://docs.coreweave.com/products/wandb
   title: Documentation
+- url: https://docs.coreweave.com/products/wandb/platform/hosting
+  title: Deployment options overview
+- url: https://docs.coreweave.com/products/wandb/platform/hosting/self-managed/on-premises-deployments/kubernetes-airgapped
+  title: Deploy on air-gapped Kubernetes
+- url: https://docs.coreweave.com/products/wandb/integrations
+  title: Integrations overview
+- url: https://docs.coreweave.com/products/wandb/integrations/pytorch
+  title: PyTorch integration
+- url: https://docs.coreweave.com/products/wandb/integrations/tensorflow
+  title: TensorFlow integration
+- url: https://pypi.org/project/wandb/
+  title: wandb — PyPI
 ---
 
 ## Overview
 
-Leading SaaS MLOps platform for experiment tracking, hyperparameter sweeps, artifact management, and collaborative ML. Known for its polished UI, real-time dashboards, and strong integration with PyTorch. Used by most top ML research labs.
+Weights & Biases tracks, visualizes and compares machine learning experiments, and W&B Weave traces and evaluates LLM applications alongside it. The wandb Python library and CLI log runs, metrics and hyperparameters to the platform, which also provides sweeps, artifacts, reports and automations. It is available as a managed cloud service or as a self-managed server on your own infrastructure.

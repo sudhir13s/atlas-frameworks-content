@@ -5,7 +5,7 @@ slug: metagpt
 schema_version: 1.2
 title: MetaGPT
 category: framework-category/agents
-tagline: '🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming'
+tagline: 'The Multi-Agent Framework: assign different roles to GPTs to form a collaborative entity for complex tasks.'
 language: Python
 maintained_by: FoundationAgents
 license_spdx: MIT

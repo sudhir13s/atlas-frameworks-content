@@ -7,32 +7,30 @@ title: Gensim
 kind: library
 category: framework-category/nlp
 subcategory: topic-modeling
-tagline: Topic modelling for humans — scalable statistical semantics
-description: Library for unsupervised topic modeling, document similarity, and word embeddings. Implements Word2Vec, Doc2Vec, FastText, LDA, and LSI. Memory-efficient streaming implementations for large corpora.
-best_for: Topic modeling, document similarity on large corpora
-not_ideal_for: Modern text embedding (use SentenceTransformers), any task where transformers excel
+tagline: Topic Modelling for Humans.
+description: Python library for topic modelling, document indexing and similarity retrieval with large corpora, aimed at the natural language processing and information retrieval community. Its algorithms are memory-independent of corpus size and can stream input larger than RAM. Implementations include Latent Semantic Analysis, Latent Dirichlet Allocation, Random Projections, Hierarchical Dirichlet Process and word2vec.
+best_for: Topic modelling on large corpora, Document indexing and similarity retrieval
+not_ideal_for: Projects that need new features (Gensim is in stable maintenance mode)
 key_features:
-- Word2Vec, Doc2Vec, FastText
-- LDA topic modeling
-- LSI/LSA semantic analysis
-- Memory-efficient streaming
+- Word2Vec, Doc2Vec and FastText models
+- Latent Dirichlet Allocation topic modelling
+- Latent Semantic Indexing
+- Streamed out-of-core processing of corpora larger than RAM
 - Document similarity queries
+- Distributed LSA and LDA on a cluster of computers
 use_cases:
-- Topic modeling on large corpora
+- Topic modelling on large corpora
 - Document similarity
-- Word embeddings (pre-transformer era)
+- Training word embeddings
 pros:
-- Memory-efficient for large corpora
-- Good topic modeling implementations
-- Streaming processing
+- Processes corpora larger than RAM by streaming
+- Multicore implementations of its core algorithms
 cons:
-- Pre-transformer era — embeddings outdated for many tasks
-- Less relevant in the LLM era
+- 'In stable maintenance mode: new features are not accepted, only bug and documentation fixes'
 language: Python
 languages_supported:
 - Python
-maintained_by: Radim Rehurek
-first_release: '2009-01-01'
+maintained_by: Gensim open-source community
 license_spdx: LGPL-2.1-only
 github_url: https://github.com/piskvorky/gensim
 docs_url: https://radimrehurek.com/gensim/
@@ -43,13 +41,9 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
 maturity: stable
-signal_strength: low
 backing:
   type: community
-  funding_or_parent: Created by Radim Rehurek (RARE Technologies); community-maintained
 alternatives:
 - framework/sentence-transformers
 registry_signals:
@@ -66,14 +60,18 @@ tags:
 - topic-modeling
 - embeddings
 - unsupervised
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/piskvorky/gensim
   title: GitHub repository
 - url: https://radimrehurek.com/gensim/
   title: Documentation
+- url: https://radimrehurek.com/gensim/apiref.html
+  title: API reference
+- url: https://pypi.org/project/gensim/
+  title: gensim — PyPI
 ---
 
 ## Overview
 
-Library for unsupervised topic modeling, document similarity, and word embeddings. Implements Word2Vec, Doc2Vec, FastText, LDA, and LSI. Memory-efficient streaming implementations for large corpora.
+Python library for topic modelling, document indexing and similarity retrieval with large corpora, aimed at the natural language processing and information retrieval community. Its algorithms are memory-independent of corpus size and can stream input larger than RAM. Implementations include Latent Semantic Analysis, Latent Dirichlet Allocation, Random Projections, Hierarchical Dirichlet Process and word2vec.

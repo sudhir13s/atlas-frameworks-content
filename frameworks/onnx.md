@@ -3,7 +3,7 @@ id: framework/onnx
 type: framework
 slug: onnx
 schema_version: 1.2
-title: onnx
+title: ONNX
 category: framework-category/inference
 tagline: Open standard for machine learning interoperability
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/onnx/onnx
 aliases:
 - onnx/onnx
+- onnx
 tags:
 - ai
 - artificial-intelligence

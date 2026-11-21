@@ -5,7 +5,7 @@ slug: pyrit
 schema_version: 1.2
 title: PyRIT
 category: framework-category/guardrails
-tagline: Open-source toolkit for finding security and safety weaknesses in generative AI systems through automated scans, adaptive multi-turn attacks and human-led testing.
+tagline: Open-source AI red teaming toolkit from Microsoft. Test generative AI systems with automated scans, adaptive multi-turn attacks, and a web UI.
 language: Python
 maintained_by: microsoft
 license_spdx: MIT

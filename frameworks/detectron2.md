@@ -7,33 +7,31 @@ title: Detectron2
 kind: framework
 category: framework-category/computer-vision
 subcategory: detection-segmentation
-tagline: Meta AI's next-generation library for object detection and segmentation
-description: Meta AI's modular object detection and segmentation library built on PyTorch. Provides implementations of state-of-the-art models (Mask R-CNN, RetinaNet, Panoptic FPN) with a flexible configuration system.
+tagline: Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.
+description: Detectron2 is Facebook AI Research's library of detection and segmentation algorithms and the successor of Detectron and maskrcnn-benchmark. It runs on PyTorch and includes panoptic segmentation, DensePose, Cascade R-CNN, rotated bounding boxes and PointRend. Models can be exported to TorchScript or Caffe2 format for deployment.
 best_for: Research on object detection and segmentation
-not_ideal_for: Quick production deployment (use Ultralytics YOLO), beginners
+not_ideal_for: Windows (no official support)
 key_features:
 - Mask R-CNN, RetinaNet, Panoptic FPN
-- Modular design and configuration
+- Yacs and lazy configuration systems
 - Training and evaluation tools
 - Model zoo with pre-trained weights
 - Data augmentation pipelines
+- Export to TorchScript and Caffe2
 use_cases:
 - Object detection and instance segmentation
 - Panoptic segmentation
 - Research on detection architectures
 pros:
-- High-quality implementations
-- Modular and extensible
-- Good pre-trained models
+- Used as a library for building research projects
+- Pre-trained baselines in the Detectron2 Model Zoo
 cons:
-- Development has slowed
-- Complex configuration system
-- Installation can be finicky
+- Pre-built packages are Linux only
+- No official support for Windows
 language: Python
 languages_supported:
 - Python
-maintained_by: Meta AI Research
-first_release: '2019-10-01'
+maintained_by: Facebook AI Research
 license_spdx: Apache-2.0
 github_url: https://github.com/facebookresearch/detectron2
 docs_url: https://detectron2.readthedocs.io/
@@ -44,15 +42,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: large
-maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
-  - Meta
-  funding_or_parent: Meta AI Research (FAIR)
+  - Facebook AI Research
 alternatives:
 - framework/mmdetection
 - framework/ultralytics-yolo
@@ -73,14 +66,18 @@ tags:
 - object-detection
 - segmentation
 - research
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/facebookresearch/detectron2
   title: GitHub repository
 - url: https://detectron2.readthedocs.io/
   title: Documentation
+- url: https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+  title: Documentation — Installation
+- url: https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
+  title: Detectron2 Model Zoo
 ---
 
 ## Overview
 
-Meta AI's modular object detection and segmentation library built on PyTorch. Provides implementations of state-of-the-art models (Mask R-CNN, RetinaNet, Panoptic FPN) with a flexible configuration system.
+Detectron2 is Facebook AI Research's library of detection and segmentation algorithms and the successor of Detectron and maskrcnn-benchmark. It runs on PyTorch and includes panoptic segmentation, DensePose, Cascade R-CNN, rotated bounding boxes and PointRend. Models can be exported to TorchScript or Caffe2 format for deployment.

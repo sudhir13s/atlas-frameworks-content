@@ -3,41 +3,35 @@ id: framework/chromadb
 type: framework
 slug: chromadb
 schema_version: 1.1
-title: ChromaDB
+title: Chroma
 kind: tool
 category: framework-category/vector-dbs
 subcategory: embedded
-tagline: The AI-native open-source embedding database
-description: Lightweight, open-source embedding database designed for AI applications. Runs embedded in Python with no server required. Simple API for storing and querying embeddings. The easiest vector database to get started with.
-best_for: Local development, prototyping RAG apps, personal projects
-not_ideal_for: Large-scale production (millions of vectors), multi-tenant SaaS
+tagline: The open-source data infrastructure for AI.
+description: Chroma is open-source data infrastructure for AI that stores documents with their embeddings and metadata and queries them by similarity. It handles embedding and indexing automatically or accepts your own embeddings. It runs in-memory, with a persistent client, in client-server mode, or as the hosted Chroma Cloud.
+best_for: Prototyping with an in-memory client, Local and self-hosted vector search
 key_features:
-- Embedded mode (no server needed)
-- Client-server mode for production
-- Automatic embedding generation
-- Metadata filtering
-- Multi-modal support
-- Simple Python and JS APIs
+- In-memory and persistent clients
+- Client-server mode
+- Automatic embedding and indexing of documents
+- Metadata and document-content filters
+- Keyword and regex full-text search
+- Indexing of images and audio alongside text
+- Python, TypeScript and Rust clients
 use_cases:
-- Local RAG applications
 - Prototype vector search
-- Personal AI projects
-- Development and testing
+- Similarity search over documents
+- Retrieval store for LangChain and LlamaIndex applications
 pros:
-- Simplest setup — pip install and go
-- Good for prototyping and local development
-- Clean API
-- No infrastructure needed
-cons:
-- Not designed for massive scale
-- Performance limitations vs. dedicated solutions
-- Limited production features compared to Milvus/Qdrant
-language: Python
+- Small core API built around collections
+- Works with any embedding model or with your own embeddings
+- Runs locally, self-hosted or as a managed cloud service
+language: Rust
 languages_supported:
 - Python
-- JavaScript
-maintained_by: Chroma Inc.
-first_release: '2022-10-01'
+- TypeScript
+- Rust
+maintained_by: Chroma
 license_spdx: Apache-2.0
 github_url: https://github.com/chroma-core/chroma
 docs_url: https://docs.trychroma.com/
@@ -48,15 +42,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: very-low
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Chroma
-  funding_or_parent: Seed $18M led by Astasia Myers / Quiet Capital (2023)
 alternatives:
 - framework/qdrant
 - framework/weaviate
@@ -74,20 +63,27 @@ registry_signals:
   source: https://github.com/chroma-core/chroma
 aliases:
 - chroma-core/chroma
+- ChromaDB
 tags:
 - vector-db
 - embedded
 - rag
 - simple
 - local
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/chroma-core/chroma
   title: GitHub repository
 - url: https://docs.trychroma.com/
   title: Documentation
+- url: https://docs.trychroma.com/docs/overview/getting-started
+  title: Getting started
+- url: https://docs.trychroma.com/integrations/chroma-integrations
+  title: Integrations
+- url: https://pypi.org/project/chromadb/
+  title: chromadb — PyPI
 ---
 
 ## Overview
 
-Lightweight, open-source embedding database designed for AI applications. Runs embedded in Python with no server required. Simple API for storing and querying embeddings. The easiest vector database to get started with.
+Chroma is open-source data infrastructure for AI that stores documents with their embeddings and metadata and queries them by similarity. It handles embedding and indexing automatically or accepts your own embeddings. It runs in-memory, with a persistent client, in client-server mode, or as the hosted Chroma Cloud.

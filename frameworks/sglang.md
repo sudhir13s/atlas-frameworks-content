@@ -3,9 +3,9 @@ id: framework/sglang
 type: framework
 slug: sglang
 schema_version: 1.2
-title: sglang
+title: SGLang
 category: framework-category/llm-serving
-tagline: SGLang is a high-performance serving framework for large language models and multimodal models.
+tagline: SGLang is a serving framework for large language models and multimodal models.
 language: Python
 maintained_by: sgl-project
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/sgl-project/sglang
 aliases:
 - sgl-project/sglang
+- sglang
 tags:
 - attention
 - blackwell

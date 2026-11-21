@@ -7,36 +7,33 @@ title: Stable Baselines3
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
-tagline: Reliable implementations of RL algorithms in PyTorch
-description: Reliable PyTorch implementations of popular RL algorithms (PPO, A2C, SAC, TD3, DQN). Clean code, well-documented, and thoroughly tested. The standard starting point for RL research and applications.
-best_for: Standard RL algorithms, research, and education
-not_ideal_for: Multi-agent RL, very large-scale distributed RL
+tagline: PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms.
+description: Stable Baselines3 (SB3) is a set of reliable implementations of reinforcement learning algorithms in PyTorch and the next major version of Stable Baselines. It implements algorithms including PPO, A2C, SAC, TD3, DDPG, DQN and HER behind a common interface. Development now focuses on bug fixes and maintenance, and newer algorithms are added in the separate SB3 Contrib repository.
+best_for: RL baselines, Replicating and comparing RL methods
+not_ideal_for: Users without prior reinforcement learning knowledge
 key_features:
-- PPO, A2C, SAC, TD3, DQN, HER implementations
-- Gymnasium (OpenAI Gym) compatible
-- Clean, tested, documented code
+- PPO, A2C, SAC, TD3, DDPG, DQN, HER implementations
+- Gymnasium environment support
+- Custom environments and policies
 - Callback system for custom training
 - Model saving and loading
-- W&B and TensorBoard integration
+- TensorBoard and Weights & Biases integration
+- Model sharing on the Hugging Face Hub
 use_cases:
 - RL research and experimentation
-- Robotics control
-- Game AI
-- Optimization problems
+- Baselines for comparing new RL methods
+- Training agents on Gymnasium and Atari environments
 pros:
-- Most reliable RL implementations
-- Excellent documentation
-- Clean codebase for learning
-- Active maintenance
+- Performance of each algorithm tested and reported
+- Common sklearn-like interface across algorithms
+- Type hints and high test coverage
 cons:
-- Limited to single-agent RL
-- Not the fastest for large-scale training
-- No multi-agent support
+- Development limited to bug fixes and maintenance
+- Recurrent policies only in SB3 Contrib
 language: Python
 languages_supported:
 - Python
-maintained_by: DLR-RM / Antonin Raffin
-first_release: '2020-06-01'
+maintained_by: DLR-RM (German Aerospace Center, Institute of Robotics and Mechatronics)
 license_spdx: MIT
 github_url: https://github.com/DLR-RM/stable-baselines3
 docs_url: https://stable-baselines3.readthedocs.io/
@@ -47,15 +44,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: high
-backing:
-  type: foundation
-  orgs:
-  - DLR-RM (German Aerospace Center)
-  funding_or_parent: Maintained by DLR Institute of Robotics and Mechatronics (Antonin Raffin)
 alternatives:
 - framework/rllib
 - framework/cleanrl
@@ -77,14 +66,22 @@ tags:
 - algorithms
 - pytorch
 - research
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/DLR-RM/stable-baselines3
   title: GitHub repository
 - url: https://stable-baselines3.readthedocs.io/
   title: Documentation
+- url: https://stable-baselines3.readthedocs.io/en/master/guide/integrations.html
+  title: Integrations
+- url: https://stable-baselines3.readthedocs.io/en/master/guide/install.html
+  title: Installation
+- url: https://pypi.org/project/stable-baselines3/
+  title: stable-baselines3 — PyPI
+- url: https://github.com/DLR-RM
+  title: DLR-RM on GitHub
 ---
 
 ## Overview
 
-Reliable PyTorch implementations of popular RL algorithms (PPO, A2C, SAC, TD3, DQN). Clean code, well-documented, and thoroughly tested. The standard starting point for RL research and applications.
+Stable Baselines3 (SB3) is a set of reliable implementations of reinforcement learning algorithms in PyTorch and the next major version of Stable Baselines. It implements algorithms including PPO, A2C, SAC, TD3, DDPG, DQN and HER behind a common interface. Development now focuses on bug fixes and maintenance, and newer algorithms are added in the separate SB3 Contrib repository.

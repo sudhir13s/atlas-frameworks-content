@@ -7,41 +7,39 @@ title: Weaviate
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
-tagline: Open-source AI-native vector database with built-in modules
-description: Open-source vector database with built-in vectorization modules, hybrid search, and generative modules. Can automatically vectorize data using integrated ML models. Supports both self-hosted and cloud deployment.
-best_for: Enterprise vector search with built-in ML integration
-not_ideal_for: Simple prototyping (use ChromaDB), extremely cost-sensitive projects
+tagline: Open-source vector database that stores both objects and vectors, combining vector search with structured filtering.
+description: Weaviate is an open-source, cloud-native vector database that stores both objects and vectors. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG) and reranking in a single query interface. Vectors can be created at import time by integrated model providers or imported as pre-computed embeddings, and it runs self-hosted with Docker or Kubernetes or as Weaviate Cloud.
+best_for: Semantic and hybrid search, Retrieval-augmented generation backends
 key_features:
-- Built-in vectorization modules
-- Hybrid search (vector + keyword)
-- Generative search (RAG built-in)
-- Multi-tenancy
-- GraphQL and REST APIs
+- Automatic vectorization with integrated model providers
+- Hybrid search combining vectors and BM25 keyword search
+- Generative search (RAG) and reranking
+- Multi-tenancy, replication and role-based access control
 - Horizontal scaling
+- Vector compression
+- REST, gRPC and GraphQL APIs
 use_cases:
-- Semantic search with auto-vectorization
-- Enterprise RAG applications
-- Knowledge management systems
+- Semantic and image search
+- RAG applications
+- Recommendation engines
+- Chatbots
 pros:
-- Built-in vectorization reduces complexity
-- Good hybrid search
-- Strong multi-tenancy support
-- Both self-hosted and cloud
+- Vectorization at import or bring-your-own embeddings
+- Self-hosted or managed cloud deployment
+- Client libraries for several languages
 cons:
-- More complex than ChromaDB for simple use cases
-- Resource-intensive for small deployments
-- Weaviate Cloud can be expensive
+- The GraphQL API is deprecated
+- Code in the wl directory is under a commercial licence and enterprise features need a licence key
 language: Go
 languages_supported:
 - Python
 - JavaScript
 - Go
 - Java
+- C#
 maintained_by: Weaviate B.V.
-first_release: '2019-01-01'
-license_spdx: BSD-3-Clause
 github_url: https://github.com/weaviate/weaviate
-docs_url: https://weaviate.io/developers/weaviate
+docs_url: https://docs.weaviate.io/weaviate
 website_url: https://weaviate.io/
 gpu_support:
   nvidia_cuda: true
@@ -49,15 +47,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Weaviate B.V.
-  funding_or_parent: Series B $50M led by Index Ventures (2023)
 alternatives:
 - framework/qdrant
 - framework/milvus
@@ -79,14 +73,17 @@ tags:
 - open-source
 - enterprise
 - hybrid-search
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/weaviate/weaviate
   title: GitHub repository
-- url: https://weaviate.io/developers/weaviate
+- url: https://docs.weaviate.io/weaviate
   title: Documentation
+- url: https://docs.weaviate.io/weaviate/model-providers/transformers/embeddings
+  title: Locally hosted Transformers embeddings
+license_note: BSD-3-Clause outside the wl directory; code in the wl directory is under a separate Weaviate enterprise licence
 ---
 
 ## Overview
 
-Open-source vector database with built-in vectorization modules, hybrid search, and generative modules. Can automatically vectorize data using integrated ML models. Supports both self-hosted and cloud deployment.
+Weaviate is an open-source, cloud-native vector database that stores both objects and vectors. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG) and reranking in a single query interface. Vectors can be created at import time by integrated model providers or imported as pre-computed embeddings, and it runs self-hosted with Docker or Kubernetes or as Weaviate Cloud.

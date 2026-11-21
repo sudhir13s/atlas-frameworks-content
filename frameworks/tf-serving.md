@@ -7,34 +7,28 @@ title: TensorFlow Serving
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: High-performance serving system for TensorFlow models in production
-description: Google's production-grade serving system for TensorFlow models. Designed for high-throughput, low-latency inference with automatic model versioning and A/B testing. Battle-tested at Google scale.
-best_for: Production TensorFlow model serving at scale
-not_ideal_for: PyTorch models, rapid prototyping, multi-framework serving
+tagline: A flexible serving system for machine learning models.
+description: TensorFlow Serving is a serving system for machine learning models, designed for production environments. It manages trained models and gives clients versioned access over gRPC and HTTP endpoints. It integrates with TensorFlow models out of the box and can be extended to serve other types of models and data.
+best_for: Serving TensorFlow models in production
 key_features:
-- High-performance C++ serving
-- Automatic model versioning
-- gRPC and REST APIs
-- Batching scheduler
-- Model warmup and canary deployment
+- Serves multiple models or multiple versions of a model at once
+- gRPC and HTTP (REST) inference endpoints
+- New model versions deploy without client code changes
+- Canary releases and A/B testing of model versions
+- Request batching scheduler for GPU execution
+- SavedModel warmup
+- Extensible with custom servables and sources
 use_cases:
 - Production TensorFlow model serving
-- High-throughput inference
-- Model versioning and rollback
+- Model version rollout and rollback
 pros:
-- Battle-tested at Google scale
-- Very high performance
-- Automatic model versioning
-cons:
-- TensorFlow-only (no PyTorch support)
-- Complex setup and configuration
-- Less flexible than newer alternatives
+- Out-of-the-box integration with TensorFlow SavedModel
+- Modular architecture that can be extended to new servable types
 language: C++
 languages_supported:
 - C++
 - Python
 maintained_by: Google
-first_release: '2016-02-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/tensorflow/serving
 docs_url: https://www.tensorflow.org/tfx/guide/serving
@@ -44,11 +38,8 @@ gpu_support:
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
-  google_tpu: true
-learning_curve: high
-community_size: medium
+  google_tpu: false
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
@@ -71,14 +62,18 @@ tags:
 - tensorflow
 - production
 - high-performance
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/tensorflow/serving
   title: GitHub repository
 - url: https://www.tensorflow.org/tfx/guide/serving
   title: Documentation
+- url: https://www.tensorflow.org/tfx/serving/docker
+  title: TensorFlow Serving with Docker
+- url: https://pypi.org/project/tensorflow-serving-api/
+  title: tensorflow-serving-api — PyPI
 ---
 
 ## Overview
 
-Google's production-grade serving system for TensorFlow models. Designed for high-throughput, low-latency inference with automatic model versioning and A/B testing. Battle-tested at Google scale.
+TensorFlow Serving is a serving system for machine learning models, designed for production environments. It manages trained models and gives clients versioned access over gRPC and HTTP endpoints. It integrates with TensorFlow models out of the box and can be extended to serve other types of models and data.

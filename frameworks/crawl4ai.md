@@ -3,9 +3,9 @@ id: framework/crawl4ai
 type: framework
 slug: crawl4ai
 schema_version: 1.2
-title: crawl4ai
+title: Crawl4AI
 category: framework-category/rag
-tagline: 'Official Crawl4AI Cloud: a hosted web scraping, extraction, and search API for AI agents. Free API key, 1,000 credits a month, no card. Fully open source: this repo is the Apache-2.0 crawler that powers it, and you can self-host it.'
+tagline: Apache-2.0 web crawler that turns pages into clean Markdown for RAG and extracts structured JSON, as a Python library or a self-hosted server.
 language: Python
 maintained_by: unclecode
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/unclecode/crawl4ai
 aliases:
 - unclecode/crawl4ai
+- crawl4ai
 tags:
 - ai
 - ai-agents

@@ -3,7 +3,7 @@ id: framework/langextract
 type: framework
 slug: langextract
 schema_version: 1.2
-title: langextract
+title: LangExtract
 category: framework-category/nlp
 tagline: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/google/langextract
 aliases:
 - google/langextract
+- langextract
 tags:
 - gemini
 - gemini-ai

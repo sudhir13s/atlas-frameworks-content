@@ -7,34 +7,28 @@ title: ncnn
 kind: framework
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
-tagline: High-performance neural network inference framework for mobile
-description: Tencent's high-performance neural network inference framework optimized for mobile platforms. Written in C++ with no third-party dependencies. Known for exceptional performance on ARM devices.
-best_for: Ultra-lightweight mobile inference on ARM
-not_ideal_for: Western teams needing English documentation
+tagline: ncnn is a neural network inference framework optimized for the mobile platform.
+description: ncnn is a neural network inference framework optimized for mobile, embedded and desktop deployment. It is a pure C++ implementation with no third-party runtime dependencies, runs on CPU and Vulkan GPU backends, and converts PyTorch and ONNX models to ncnn through its pnnx tool.
+best_for: Neural network inference on mobile and embedded devices
 key_features:
-- No third-party dependencies
-- ARM NEON optimization
+- No third-party runtime dependencies
+- ARM NEON optimized CPU inference
 - Vulkan GPU acceleration
-- Quantization support
-- Extremely small binary size
+- int8 quantized inference
+- PyTorch and ONNX model conversion through pnnx
 use_cases:
 - Mobile inference on ARM devices
-- Embedded systems ML
-- Resource-constrained deployment
+- Embedded and edge device inference
 pros:
-- Excellent ARM performance
-- No dependencies
-- Tiny binary size
-cons:
-- Limited model format support
-- Documentation mostly in Chinese
-- Smaller community outside China
+- No third-party runtime dependencies
+- Low memory footprint
+- C API and Python binding alongside C++
 language: C++
 languages_supported:
 - C++
+- C
 - Python
 maintained_by: Tencent
-first_release: '2017-07-01'
 license_spdx: BSD-3-Clause
 github_url: https://github.com/Tencent/ncnn
 docs_url: https://github.com/Tencent/ncnn/wiki
@@ -45,16 +39,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: medium
-maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - Tencent
 alternatives:
-- framework/mnn
 - framework/tensorflow-lite
 registry_signals:
   github_stars: 24080
@@ -70,14 +59,16 @@ tags:
 - arm
 - lightweight
 - mobile
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/Tencent/ncnn
   title: GitHub repository
 - url: https://github.com/Tencent/ncnn/wiki
   title: Documentation
+- url: https://pypi.org/project/ncnn/
+  title: ncnn — PyPI
 ---
 
 ## Overview
 
-Tencent's high-performance neural network inference framework optimized for mobile platforms. Written in C++ with no third-party dependencies. Known for exceptional performance on ARM devices.
+ncnn is a neural network inference framework optimized for mobile, embedded and desktop deployment. It is a pure C++ implementation with no third-party runtime dependencies, runs on CPU and Vulkan GPU backends, and converts PyTorch and ONNX models to ncnn through its pnnx tool.

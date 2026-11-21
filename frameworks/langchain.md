@@ -7,43 +7,32 @@ title: LangChain
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
-tagline: Build context-aware reasoning applications with LLMs
-description: The most widely adopted framework for building LLM-powered applications. Provides abstractions for chains, agents, RAG pipelines, memory, and tool use. Supports 100+ LLM providers and integrations. LangGraph extends it with stateful multi-agent workflows.
-best_for: Rapid prototyping of LLM-powered apps, teams needing many integrations
-not_ideal_for: Simple LLM calls (use the provider SDK directly), performance-critical systems
+tagline: Framework for building agents and LLM-powered applications.
+description: LangChain is a framework for building agents and LLM-powered applications by chaining together interoperable components and third-party integrations. It provides a standard interface for models, embeddings, vector stores and more, and its agents are built on top of LangGraph.
+best_for: Building agents and LLM-powered applications, Applications that swap between model providers
 key_features:
-- Chain and agent abstractions
-- RAG pipeline components
-- 100+ LLM provider integrations
-- Tool use and function calling
-- Memory and conversation management
-- LangGraph for stateful multi-agent workflows
-- LangSmith for observability
+- Agent harness (create_agent) with tools and middleware
+- Standard interface for chat models and embeddings
+- Integrations with model providers, tools, vector stores and retrievers
+- Retrieval building blocks (document loaders, text splitters, vector stores, retrievers)
+- Short-term memory for agents through checkpointers
+- Agents built on LangGraph for durable execution and persistence
 use_cases:
-- RAG applications
-- Chatbots and conversational AI
 - AI agents with tool use
-- Document Q&A systems
-- Multi-step reasoning workflows
+- Retrieval-augmented generation (RAG)
+- LLM-powered applications that connect to external data sources
 pros:
-- Largest ecosystem of integrations
-- Fastest way to prototype LLM apps
-- Active community and rapid development
-- LangGraph adds powerful agent capabilities
-cons:
-- Abstraction overhead can obscure what LLMs actually do
-- Rapid API changes and breaking updates
-- Over-abstraction for simple use cases
-- Performance overhead from chains of chains
+- Model providers can be swapped behind one interface
+- Third-party integrations for providers, tools and vector stores
+- Python and JavaScript/TypeScript libraries
 language: Python
 languages_supported:
 - Python
 - JavaScript/TypeScript
-maintained_by: LangChain Inc.
-first_release: '2022-10-01'
+maintained_by: LangChain
 license_spdx: MIT
 github_url: https://github.com/langchain-ai/langchain
-docs_url: https://python.langchain.com/docs/
+docs_url: https://docs.langchain.com/oss/python/langchain/overview
 website_url: https://www.langchain.com/
 gpu_support:
   nvidia_cuda: false
@@ -51,15 +40,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: massive
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - LangChain Inc
-  funding_or_parent: Series A $25M led by Sequoia (Feb 2024); earlier $10M seed by Benchmark (Apr 2023)
+  - LangChain
 alternatives:
 - framework/llamaindex
 - framework/semantic-kernel
@@ -84,14 +69,22 @@ tags:
 - rag
 - orchestration
 - integrations
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/langchain-ai/langchain
   title: GitHub repository
-- url: https://python.langchain.com/docs/
+- url: https://docs.langchain.com/oss/python/langchain/overview
   title: Documentation
+- url: https://docs.langchain.com/oss/python/langchain/retrieval
+  title: Retrieval
+- url: https://docs.langchain.com/oss/python/langchain/short-term-memory
+  title: Short-term memory
+- url: https://docs.langchain.com/oss/python/integrations/providers/overview
+  title: Integration providers
+- url: https://pypi.org/project/langchain/
+  title: langchain — PyPI
 ---
 
 ## Overview
 
-The most widely adopted framework for building LLM-powered applications. Provides abstractions for chains, agents, RAG pipelines, memory, and tool use. Supports 100+ LLM providers and integrations. LangGraph extends it with stateful multi-agent workflows.
+LangChain is a framework for building agents and LLM-powered applications by chaining together interoperable components and third-party integrations. It provides a standard interface for models, embeddings, vector stores and more, and its agents are built on top of LangGraph.

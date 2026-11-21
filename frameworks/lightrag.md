@@ -5,7 +5,7 @@ slug: lightrag
 schema_version: 1.2
 title: LightRAG
 category: framework-category/rag
-tagline: '[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation'
+tagline: Simple and Fast Retrieval-Augmented Generation (EMNLP 2025).
 language: Python
 maintained_by: HKUDS
 license_spdx: MIT

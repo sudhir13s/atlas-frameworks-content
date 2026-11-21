@@ -3,9 +3,9 @@ id: framework/browser-use
 type: framework
 slug: browser-use
 schema_version: 1.2
-title: browser-use
+title: Browser Use
 category: framework-category/agents
-tagline: 'Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.'
+tagline: Open-source Python library for AI browser agents.
 language: Python
 maintained_by: browser-use
 license_spdx: MIT
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/browser-use/browser-use
 aliases:
 - browser-use/browser-use
+- browser-use
 tags:
 - ai-agents
 - ai-tools

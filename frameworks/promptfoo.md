@@ -7,37 +7,31 @@ title: Promptfoo
 kind: tool
 category: framework-category/evaluation
 subcategory: prompt-testing
-tagline: Test and evaluate LLM outputs — prompt testing framework
-description: Open-source tool for testing and evaluating LLM prompts. Define test cases, run them against multiple models, and compare results. Supports custom assertions, red teaming, and CI/CD integration.
-best_for: Prompt testing, multi-model comparison, LLM red teaming
-not_ideal_for: Deep RAG evaluation (use Ragas), Python-only teams
+tagline: Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Declarative configs with command line and CI/CD integration.
+description: Promptfoo is an open-source CLI and library for evaluating and red-teaming LLM apps. It runs declarative test cases against prompts, models and RAG pipelines, scores outputs with defined metrics, compares models side by side and scans applications for security vulnerabilities, from the command line, a library or CI/CD.
+best_for: Prompt and model evaluation, LLM red teaming
 key_features:
-- YAML-based test definitions
-- Multi-model comparison
-- Custom assertion functions
-- Red teaming and adversarial testing
-- Web UI for result comparison
+- Declarative test case configuration
+- Side-by-side model and prompt comparison
+- Assertions and custom metrics
+- Automated red teaming and vulnerability scanning
+- Web viewer for results
 - CI/CD integration
+- Code scanning for LLM-related security issues
 use_cases:
 - Prompt regression testing
 - Multi-model comparison
 - LLM red teaming
-- Prompt optimization
+- RAG pipeline evaluation
 pros:
-- Easy YAML-based test definitions
-- Good multi-model comparison
-- Red teaming built-in
-- Nice web UI
-cons:
-- TypeScript-native (Python support is secondary)
-- Less focused on RAG-specific metrics than Ragas
+- Evals run locally and call the configured providers
+- Works with any LLM API or programming language
+- Caching, concurrency and live reload for evaluations
 language: TypeScript
 languages_supported:
 - TypeScript
 - Python
-- CLI
-maintained_by: Promptfoo
-first_release: '2023-04-01'
+maintained_by: Promptfoo (part of OpenAI)
 license_spdx: MIT
 github_url: https://github.com/promptfoo/promptfoo
 docs_url: https://www.promptfoo.dev/docs/
@@ -48,15 +42,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: medium
-maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
-  - Promptfoo Inc
-  funding_or_parent: Seed $5M led by Andreessen Horowitz (2024)
+  - OpenAI
 alternatives:
 - framework/deepeval
 - framework/ragas
@@ -77,14 +66,18 @@ tags:
 - prompt-testing
 - red-teaming
 - comparison
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/promptfoo/promptfoo
   title: GitHub repository
 - url: https://www.promptfoo.dev/docs/
   title: Documentation
+- url: https://www.promptfoo.dev/docs/intro/
+  title: Intro
+- url: https://pypi.org/project/promptfoo/
+  title: promptfoo — PyPI
 ---
 
 ## Overview
 
-Open-source tool for testing and evaluating LLM prompts. Define test cases, run them against multiple models, and compare results. Supports custom assertions, red teaming, and CI/CD integration.
+Promptfoo is an open-source CLI and library for evaluating and red-teaming LLM apps. It runs declarative test cases against prompts, models and RAG pipelines, scores outputs with defined metrics, compares models side by side and scans applications for security vulnerabilities, from the command line, a library or CI/CD.

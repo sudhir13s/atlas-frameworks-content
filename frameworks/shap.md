@@ -3,7 +3,7 @@ id: framework/shap
 type: framework
 slug: shap
 schema_version: 1.2
-title: shap
+title: SHAP
 category: framework-category/other
 tagline: A game theoretic approach to explain the output of any machine learning model.
 language: Jupyter Notebook
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/shap/shap
 aliases:
 - shap/shap
+- shap
 tags:
 - deep-learning
 - explainability

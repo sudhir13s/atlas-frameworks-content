@@ -3,44 +3,42 @@ id: framework/tensorflow-lite
 type: framework
 slug: tensorflow-lite
 schema_version: 1.1
-title: LiteRT (TensorFlow Lite)
+title: LiteRT
 kind: library
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
-tagline: Deploy ML models on mobile and edge devices
-description: Google's solution for running ML models on mobile phones, embedded devices, and microcontrollers. Provides model optimization (quantization, pruning), a lightweight runtime, and delegate system for hardware acceleration.
-best_for: Mobile and embedded device ML deployment
-not_ideal_for: Server-side inference, PyTorch-trained models without conversion
+tagline: 'Successor to TensorFlow Lite: Google''s on-device framework for ML and GenAI deployment on edge platforms, via conversion, runtime, and optimization.'
+description: LiteRT is Google's on-device runtime for ML and GenAI deployment on edge platforms and continues TensorFlow Lite. It converts PyTorch, TensorFlow and JAX models to the .tflite format, quantizes them after training, and runs them with CPU, GPU and NPU acceleration on Android, iOS, the web, desktop and IoT devices.
+best_for: On-device ML and GenAI inference, Mobile and embedded deployment
 key_features:
-- Post-training quantization (INT8, FP16)
-- Delegates for GPU, DSP, NPU acceleration
-- Android and iOS SDKs
-- Microcontroller support (TF Lite Micro)
-- Model optimization toolkit
-- On-device training support
+- Conversion from PyTorch, TensorFlow and JAX models
+- Post-training quantization
+- GPU and NPU acceleration through the Compiled Model API
+- Runtimes for Android, iOS, web, desktop and IoT
+- Microcontroller and embedded deployment
+- On-device training
+- LLM inference through LiteRT-LM
 use_cases:
 - On-device ML inference
-- Mobile app AI features
+- On-device LLM and GenAI applications
 - IoT and microcontroller ML
-- Edge computing
+- Browser inference with LiteRT.js
 pros:
-- Gold standard for mobile ML
-- Wide device support
-- Good quantization tools
-- Mature ecosystem
+- Runs on Android, iOS, web, desktop and IoT
+- Built-in post-training quantizer
 cons:
-- TensorFlow model conversion required
-- Some ops not supported on all delegates
-- Future unclear as Google shifts to AI Edge
+- Models must be converted to the .tflite or .litertlm format
+- Not every operator runs on every accelerator
+- Legacy TensorFlow Lite packages are in maintenance mode and receive only critical fixes
 language: C++
 languages_supported:
 - Python
 - C++
 - Java
+- Kotlin
 - Swift
-- Objective-C
+- JavaScript
 maintained_by: Google
-first_release: '2017-11-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/google-ai-edge/LiteRT
 docs_url: https://developers.google.com/edge/litert
@@ -48,18 +46,14 @@ website_url: https://developers.google.com/edge/litert
 gpu_support:
   nvidia_cuda: false
   amd_rocm: false
-  apple_mps: false
+  apple_mps: true
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Google
-  funding_or_parent: Google (rebranded to LiteRT under Google AI Edge in 2024)
 alternatives:
 - framework/coreml-tools
 - framework/executorch
@@ -75,19 +69,24 @@ registry_signals:
 aliases:
 - TensorFlow Lite
 - TFLite
+- LiteRT (TensorFlow Lite)
 tags:
 - edge-mobile
 - mobile
 - quantization
 - deployment
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/google-ai-edge/LiteRT
   title: GitHub repository
 - url: https://developers.google.com/edge/litert
   title: Documentation
+- url: https://developers.google.com/edge/litert/overview
+  title: LiteRT overview
+- url: https://pypi.org/project/ai-edge-litert/
+  title: ai-edge-litert — PyPI
 ---
 
 ## Overview
 
-Google's solution for running ML models on mobile phones, embedded devices, and microcontrollers. Provides model optimization (quantization, pruning), a lightweight runtime, and delegate system for hardware acceleration.
+LiteRT is Google's on-device runtime for ML and GenAI deployment on edge platforms and continues TensorFlow Lite. It converts PyTorch, TensorFlow and JAX models to the .tflite format, quantizes them after training, and runs them with CPU, GPU and NPU acceleration on Android, iOS, the web, desktop and IoT devices.

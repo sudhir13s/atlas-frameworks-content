@@ -3,9 +3,9 @@ id: framework/stagehand
 type: framework
 slug: stagehand
 schema_version: 1.2
-title: stagehand
+title: Stagehand
 category: framework-category/agents
-tagline: The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.
+tagline: The SDK to extract data and interact with any site on the web.
 language: TypeScript
 maintained_by: browserbase
 license_spdx: MIT
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/browserbase/stagehand
 aliases:
 - browserbase/stagehand
+- stagehand
 tags:
 - agents
 - ai

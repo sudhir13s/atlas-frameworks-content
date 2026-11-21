@@ -7,30 +7,28 @@ title: Qdrant
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
-tagline: High-performance vector similarity search engine with filtering
-description: Vector similarity search engine written in Rust for maximum performance. Features advanced filtering, payload storage, and distributed deployment. Good balance of performance, features, and operational simplicity.
-best_for: Production vector search with strong filtering needs
-not_ideal_for: Billion-scale deployments (Milvus may be better)
+tagline: Vector Database and Vector Search Engine.
+description: Qdrant is a vector similarity search engine and vector database written in Rust. It stores points, which are vectors with a JSON payload, and searches them through REST and gRPC APIs with payload filtering, dense, sparse and multivector search, hybrid queries, quantization and distributed deployment. It runs self-hosted, in Qdrant Cloud, or inside an application process as Qdrant Edge.
+best_for: Vector search with payload filtering, Semantic search and recommendations
 key_features:
-- Rust performance
-- Advanced filtering on payload
-- Multi-vector support
-- Distributed deployment
-- Quantization (scalar, product)
-- Hybrid search
-- Single-binary deployment
+- Filtering on JSON payload
+- Dense, sparse and multivector search
+- Hybrid queries with rank fusion
+- Vector quantization and on-disk storage
+- Sharding and replication
+- REST and gRPC APIs
+- Qdrant Edge for in-process search
 use_cases:
-- Production vector search
-- RAG applications with complex filtering
-- Recommendation systems
+- Semantic text and image search
+- Recommendation
+- Faceted search
+- On-device search with Qdrant Edge
 pros:
-- Excellent performance (Rust)
-- Simple deployment (single binary)
-- Good filtering capabilities
-- Active development
+- Official clients for Python, JavaScript/TypeScript, Rust, Go, Java and .NET
+- Self-hosted, managed cloud or embedded deployment
+- GPU-accelerated indexing on NVIDIA and AMD GPUs through Vulkan
 cons:
-- Newer — less battle-tested than Milvus at extreme scale
-- Cloud offering less mature than Pinecone
+- GPU support is not included in the default binary
 language: Rust
 languages_supported:
 - Python
@@ -38,8 +36,8 @@ languages_supported:
 - Rust
 - Go
 - Java
+- C#
 maintained_by: Qdrant Solutions
-first_release: '2021-05-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/qdrant/qdrant
 docs_url: https://qdrant.tech/documentation/
@@ -50,15 +48,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Qdrant Solutions
-  funding_or_parent: Series A $28M led by Spark Capital (2024)
 alternatives:
 - framework/milvus
 - framework/weaviate
@@ -80,14 +74,20 @@ tags:
 - open-source
 - rust
 - high-performance
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/qdrant/qdrant
   title: GitHub repository
 - url: https://qdrant.tech/documentation/
   title: Documentation
+- url: https://qdrant.tech/documentation/ops-configuration/running-with-gpu/
+  title: Running with GPU
+- url: https://qdrant.tech/documentation/ecosystem/
+  title: Ecosystem
+- url: https://qdrant.tech/
+  title: Website
 ---
 
 ## Overview
 
-Vector similarity search engine written in Rust for maximum performance. Features advanced filtering, payload storage, and distributed deployment. Good balance of performance, features, and operational simplicity.
+Qdrant is a vector similarity search engine and vector database written in Rust. It stores points, which are vectors with a JSON payload, and searches them through REST and gRPC APIs with payload filtering, dense, sparse and multivector search, hybrid queries, quantization and distributed deployment. It runs self-hosted, in Qdrant Cloud, or inside an application process as Qdrant Edge.

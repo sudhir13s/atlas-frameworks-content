@@ -3,9 +3,9 @@ id: framework/firecrawl
 type: framework
 slug: firecrawl
 schema_version: 1.2
-title: firecrawl
+title: Firecrawl
 category: framework-category/rag
-tagline: Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.
+tagline: Search, scrape and access 550+ data providers through one API.
 language: TypeScript
 maintained_by: firecrawl
 license_spdx: AGPL-3.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/firecrawl/firecrawl
 aliases:
 - firecrawl/firecrawl
+- firecrawl
 tags:
 - ai
 - ai-agents

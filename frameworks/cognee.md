@@ -3,9 +3,9 @@ id: framework/cognee
 type: framework
 slug: cognee
 schema_version: 1.2
-title: cognee
+title: Cognee
 category: framework-category/rag
-tagline: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free
+tagline: Cognee is the open-source AI memory platform for agents.
 language: Python
 maintained_by: topoteretes
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/topoteretes/cognee
 aliases:
 - topoteretes/cognee
+- cognee
 tags:
 - agent-memory
 - agent-skills

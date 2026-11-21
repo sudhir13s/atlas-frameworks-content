@@ -7,37 +7,35 @@ title: Ragas
 kind: framework
 category: framework-category/evaluation
 subcategory: rag-evaluation
-tagline: Evaluation framework for RAG pipelines — measure retrieval and generation quality
-description: Framework for evaluating Retrieval Augmented Generation (RAG) pipelines. Provides metrics like faithfulness, answer relevancy, context precision, and context recall. Essential for measuring RAG quality without manual evaluation.
-best_for: Evaluating and improving RAG pipeline quality
-not_ideal_for: Non-RAG LLM evaluation, deterministic testing
+tagline: Toolkit for evaluating and optimizing Large Language Model (LLM) applications.
+description: Ragas is a toolkit for evaluating and optimizing LLM applications. It provides LLM-based and traditional metrics for retrieval augmented generation (RAG), agents and tool use, SQL and general-purpose evaluation, and it generates test datasets for RAG and agent scenarios.
+best_for: Evaluating RAG pipelines, Evaluating LLM applications and agents
 key_features:
-- Faithfulness scoring (hallucination detection)
-- Answer relevancy metric
+- Faithfulness metric
+- Response relevancy metric
 - Context precision and recall
 - Synthetic test data generation
-- LLM-as-judge evaluation
+- Aspect critic and rubric-based LLM metrics
+- Agent and tool use metrics
 - Integration with LangChain and LlamaIndex
 use_cases:
 - RAG pipeline quality measurement
-- Hallucination detection
 - Retrieval quality evaluation
-- RAG regression testing
+- Agent evaluation
+- Text-to-SQL evaluation
+- Prompt evaluation
 pros:
-- Purpose-built for RAG evaluation
-- Good metric coverage
-- Synthetic test data generation
+- LLM-based and traditional metrics in one library
+- Test set generation for RAG and agent scenarios
+- Integrations with LLM frameworks and observability tools
 cons:
-- LLM-as-judge can be expensive
-- Metrics are approximations — not ground truth
-- Requires an evaluator LLM
+- Collects anonymized usage data unless RAGAS_DO_NOT_TRACK is set
 language: Python
 languages_supported:
 - Python
-maintained_by: Ragas team (Explodinggradients)
-first_release: '2023-07-01'
+maintained_by: Vibrant Labs
 license_spdx: Apache-2.0
-github_url: https://github.com/explodinggradients/ragas
+github_url: https://github.com/vibrantlabsai/ragas
 docs_url: https://docs.ragas.io/
 website_url: https://ragas.io/
 gpu_support:
@@ -46,15 +44,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: medium
-maturity: stable
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - Exploding Gradients
-  funding_or_parent: YC W24; seed funding from Y Combinator
+  - Vibrant Labs
 alternatives:
 - framework/deepeval
 - framework/langsmith
@@ -70,19 +63,26 @@ registry_signals:
   source: https://github.com/explodinggradients/ragas
 aliases:
 - explodinggradients/ragas
+- vibrantlabsai/ragas
 tags:
 - evaluation
 - rag
 - quality
 - metrics
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/explodinggradients/ragas
+- url: https://github.com/vibrantlabsai/ragas
   title: GitHub repository
 - url: https://docs.ragas.io/
   title: Documentation
+- url: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+  title: List of available metrics
+- url: https://github.com/vibrantlabsai
+  title: Vibrant Labs on GitHub
+- url: https://pypi.org/project/ragas/
+  title: ragas — PyPI
 ---
 
 ## Overview
 
-Framework for evaluating Retrieval Augmented Generation (RAG) pipelines. Provides metrics like faithfulness, answer relevancy, context precision, and context recall. Essential for measuring RAG quality without manual evaluation.
+Ragas is a toolkit for evaluating and optimizing LLM applications. It provides LLM-based and traditional metrics for retrieval augmented generation (RAG), agents and tool use, SQL and general-purpose evaluation, and it generates test datasets for RAG and agent scenarios.

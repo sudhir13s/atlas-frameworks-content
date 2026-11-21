@@ -3,9 +3,9 @@ id: framework/mem0
 type: framework
 slug: mem0
 schema_version: 1.2
-title: mem0
+title: Mem0
 category: framework-category/agents
-tagline: The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.
+tagline: 'The Memory Layer for AI Agents: drop-in memory infrastructure for AI agents and apps.'
 language: Python
 maintained_by: mem0ai
 license_spdx: Apache-2.0
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/mem0ai/mem0
 aliases:
 - mem0ai/mem0
+- mem0
 tags:
 - agentic-memory
 - agentic-memory-system

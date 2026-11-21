@@ -3,9 +3,9 @@ id: framework/rasa
 type: framework
 slug: rasa
 schema_version: 1.2
-title: rasa
+title: Rasa Open Source
 category: framework-category/nlp
-tagline: '💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants'
+tagline: 'Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more.'
 language: Python
 maintained_by: RasaHQ
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/RasaHQ/rasa
 aliases:
 - RasaHQ/rasa
+- rasa
 tags:
 - bot
 - bot-framework

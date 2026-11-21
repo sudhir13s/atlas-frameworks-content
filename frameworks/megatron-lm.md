@@ -7,37 +7,30 @@ title: Megatron-LM
 kind: framework
 category: framework-category/distributed-training
 subcategory: training-framework
-tagline: NVIDIA's framework for training massive transformer models
-description: NVIDIA's library for efficient large-scale transformer training. Implements tensor parallelism, pipeline parallelism, and sequence parallelism. Used to train many of the largest language models including Megatron-Turing NLG.
-best_for: Large-scale LLM pre-training on NVIDIA GPU clusters
-not_ideal_for: Small-scale training, non-NVIDIA hardware, beginners
+tagline: Ongoing research training transformer models at scale.
+description: Megatron-LM is a GPU-optimized library from NVIDIA for training transformer models at scale. The repository contains Megatron Core, a composable library of transformer building blocks, parallelism strategies and mixed precision support for custom training frameworks, and Megatron-LM, a reference example with pre-configured training scripts.
+best_for: Large-scale transformer training on NVIDIA GPUs, Building custom training frameworks from GPU-optimized building blocks
 key_features:
-- 3D parallelism (tensor, pipeline, data)
-- Sequence parallelism
-- Flash attention integration
-- Optimized CUDA kernels
-- Mixed precision training
-- Efficient data loading
+- Tensor, pipeline, data, expert and context parallelism
+- Mixed precision (FP16, BF16, FP8, FP4)
+- Composable transformer building blocks
+- Distributed optimizers and pipeline schedules
+- Distributed checkpoint saving, loading and resharding
+- Dataloaders and dataset utilities
+- Model architectures including LLaMA, Qwen, DeepSeek, GPT and Mamba
 use_cases:
 - Pre-training large language models
 - Multi-node transformer training
-- NVIDIA GPU cluster training
+- Building custom training pipelines
 pros:
-- Best performance on NVIDIA GPU clusters
-- Proven at the largest scales
-- Optimized CUDA kernels
+- Megatron Core is installable on its own from PyPI
+- Pre-configured training scripts for experimentation
 cons:
-- NVIDIA-only
-- Complex codebase
-- Not beginner-friendly
-- Less modular than alternatives
+- Documented hardware requirements cover NVIDIA GPUs only (Turing or later recommended; FP8 needs Hopper, Ada or Blackwell)
 language: Python
 languages_supported:
 - Python
-- CUDA
 maintained_by: NVIDIA
-first_release: '2019-09-01'
-license_spdx: BSD-3-Clause
 github_url: https://github.com/NVIDIA/Megatron-LM
 docs_url: https://github.com/NVIDIA/Megatron-LM
 website_url: https://github.com/NVIDIA/Megatron-LM
@@ -47,10 +40,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: very-high
-community_size: medium
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -59,7 +49,6 @@ alternatives:
 - framework/deepspeed
 - framework/colossalai
 ecosystem_connections:
-- framework/deepspeed
 - framework/pytorch
 registry_signals:
   github_stars: 18445
@@ -75,12 +64,21 @@ tags:
 - large-models
 - nvidia
 - transformers
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/NVIDIA/Megatron-LM
   title: GitHub repository
+- url: https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html
+  title: Megatron Core developer guide
+- url: https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html
+  title: Installation guide
+- url: https://pypi.org/project/megatron-core/
+  title: megatron-core — PyPI
+- url: https://github.com/NVIDIA/Megatron-LM/blob/main/LICENSE
+  title: Megatron-LM LICENSE
+license_note: BSD-3-Clause for NVIDIA code per the LICENSE file, with Apache-2.0 and other licences for included third-party code (the README badge and the megatron-core PyPI licence field say Apache 2.0)
 ---
 
 ## Overview
 
-NVIDIA's library for efficient large-scale transformer training. Implements tensor parallelism, pipeline parallelism, and sequence parallelism. Used to train many of the largest language models including Megatron-Turing NLG.
+Megatron-LM is a GPU-optimized library from NVIDIA for training transformer models at scale. The repository contains Megatron Core, a composable library of transformer building blocks, parallelism strategies and mixed precision support for custom training frameworks, and Megatron-LM, a reference example with pre-configured training scripts.

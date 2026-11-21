@@ -7,36 +7,32 @@ title: Seldon Core
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: Deploy, monitor, and explain ML models on Kubernetes
-description: Kubernetes-native ML serving platform with advanced features for model monitoring, A/B testing, canary deployments, and explainability. Enterprise-focused with strong governance features.
-best_for: Enterprise Kubernetes environments needing ML governance
-not_ideal_for: Small teams, non-Kubernetes environments
+tagline: An MLOps framework to package, deploy, monitor and manage production machine learning models.
+description: Seldon Core 2 is an MLOps and LLMOps framework for deploying, managing and scaling AI systems in Kubernetes, from single models to modular, data-centric applications. Pipelines connect models, processing steps and custom logic, streaming data between components through Kafka. Experiments route traffic between candidate models or pipelines for A/B tests and shadow deployments.
+best_for: Model deployment on Kubernetes, Data-centric ML pipelines
 key_features:
 - Kubernetes-native deployment
-- A/B testing and canary rollouts
-- Model monitoring and drift detection
-- Model explainability
-- Multi-framework support
-- Inference graph pipelines
+- Kafka-based pipelines
+- A/B tests, canary and shadow deployments
+- Multi-model serving and overcommit
+- Autoscaling of models and servers
+- Drift and outlier detection components
+- MLServer and Triton Inference Server runtimes
+- Open Inference Protocol over REST and gRPC
 use_cases:
-- Enterprise ML on Kubernetes
-- Regulated ML deployments
-- Model monitoring and governance
+- ML and LLM deployment on Kubernetes
+- Real-time inference pipelines
+- Model monitoring and experimentation
 pros:
-- Strong governance and monitoring
 - Kubernetes-native
-- A/B testing built-in
+- Operational and data science monitoring in one framework
+- Built-in experiments for A/B tests and shadow deployments
 cons:
-- Complex Kubernetes setup required
-- License changed to BSL for v2
-- Steep learning curve
+- Business Source License allows non-production use only without a commercial licence from Seldon
+- Business Source License is not an open source licence until each version converts to Apache-2.0
 language: Go
-languages_supported:
-- Python
-- Go
 maintained_by: Seldon Technologies
-first_release: '2018-01-01'
-license_note: 'Apache-2.0 (v2: BSL)'
+license_note: Business Source License 1.1 (Seldon Core v2); each version changes to the Apache License 2.0 four years after its release
 github_url: https://github.com/SeldonIO/seldon-core
 docs_url: https://docs.seldon.ai/seldon-core-2
 website_url: https://docs.seldon.ai/
@@ -46,15 +42,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: small-medium
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - Seldon Technologies
-  funding_or_parent: Series B $20M led by Bright Pixel (2022)
 alternatives:
 - framework/kserve
 - framework/bentoml
@@ -74,14 +66,22 @@ tags:
 - enterprise
 - monitoring
 - governance
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/SeldonIO/seldon-core
   title: GitHub repository
 - url: https://docs.seldon.ai/seldon-core-2
   title: Documentation
+- url: https://docs.seldon.ai/seldon-core-2/about/core-features
+  title: Seldon Core Features
+- url: https://docs.seldon.ai/seldon-core-2/user-guide/servers
+  title: Servers
+- url: https://docs.seldon.ai/seldon-core-2/user-guide/servers/resource-allocation/example-serving-models-on-dedicated-gpu-nodes
+  title: Serving models on dedicated GPU nodes
+- url: https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE
+  title: Licence
 ---
 
 ## Overview
 
-Kubernetes-native ML serving platform with advanced features for model monitoring, A/B testing, canary deployments, and explainability. Enterprise-focused with strong governance features.
+Seldon Core 2 is an MLOps and LLMOps framework for deploying, managing and scaling AI systems in Kubernetes, from single models to modular, data-centric applications. Pipelines connect models, processing steps and custom logic, streaming data between components through Kafka. Experiments route traffic between candidate models or pipelines for A/B tests and shadow deployments.

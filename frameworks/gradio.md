@@ -3,9 +3,9 @@ id: framework/gradio
 type: framework
 slug: gradio
 schema_version: 1.2
-title: gradio
+title: Gradio
 category: framework-category/other
-tagline: Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!
+tagline: Build and share machine learning apps, all in Python.
 language: Python
 maintained_by: gradio-app
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/gradio-app/gradio
 aliases:
 - gradio-app/gradio
+- gradio
 tags:
 - data-analysis
 - data-science

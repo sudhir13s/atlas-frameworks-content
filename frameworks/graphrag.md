@@ -3,7 +3,7 @@ id: framework/graphrag
 type: framework
 slug: graphrag
 schema_version: 1.2
-title: graphrag
+title: GraphRAG
 category: framework-category/rag
 tagline: A modular graph-based Retrieval-Augmented Generation (RAG) system
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/microsoft/graphrag
 aliases:
 - microsoft/graphrag
+- graphrag
 tags:
 - gpt
 - gpt-4

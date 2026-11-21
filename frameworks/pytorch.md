@@ -7,69 +7,52 @@ title: PyTorch
 kind: framework
 category: framework-category/training
 subcategory: core-framework
-tagline: Tensors and dynamic neural networks with strong GPU acceleration
-description: Open-source machine learning framework developed by Meta AI. Known for its dynamic computation graph (eager execution), Pythonic API, and strong research community. The most widely used framework for deep learning research and increasingly for production.
-best_for: Research teams and production ML systems needing flexibility and a large ecosystem
-not_ideal_for: Simple ML tasks (use scikit-learn), browser deployment (use TF.js), ultra-low-latency mobile (use TF Lite)
+tagline: Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+description: PyTorch is a Python package that provides tensor computation with GPU acceleration and deep neural networks built on a tape-based autograd system. It executes imperatively, works with Python libraries such as NumPy and SciPy, and includes torch.compile, torch.export and distributed training. The PyTorch Foundation, hosted by the Linux Foundation, supports the project.
+best_for: Deep learning research, GPU-accelerated tensor computation
 key_features:
-- Dynamic computation graphs (eager mode)
-- torch.compile for production optimization
+- Eager execution with tape-based autograd
+- torch.compile compiler
 - Distributed training (DDP, FSDP)
-- TorchScript for deployment
-- Extensive ecosystem (torchvision, torchaudio, torchtext)
-- CUDA integration
-- Automatic differentiation
+- torch.export for model export
+- Domain libraries such as torchvision and torchaudio
+- CUDA, ROCm, MPS and Intel GPU backends
+- C++ extension API
 use_cases:
 - Deep learning research
+- GPU-accelerated scientific computing
 - Computer vision
-- Natural language processing
-- Generative AI model training
-- Production ML systems
+- Distributed model training
 pros:
-- Most popular for research — vast community
-- Intuitive Pythonic API
-- Dynamic graphs make debugging easy
-- Excellent documentation
-- Strong ecosystem of extensions
-cons:
-- Deployment story historically weaker than TF (improving with torch.compile)
-- Mobile/edge support less mature than TF Lite
-- Memory consumption can be high
+- Imperative execution with stack traces that point to user code
+- New layers can be written in Python or C/C++
+- Integrates Intel MKL, cuDNN and NCCL acceleration libraries
 language: Python
 languages_supported:
 - Python
 - C++
-- CUDA
-maintained_by: Meta AI (PyTorch Foundation)
-first_release: '2016-09-01'
+maintained_by: PyTorch Foundation
 license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/pytorch
-docs_url: https://pytorch.org/docs/stable/
+docs_url: https://docs.pytorch.org/docs/stable/
 website_url: https://pytorch.org/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: true
   apple_mps: true
   intel_oneapi: true
-  google_tpu: true
-learning_curve: medium
-community_size: massive
+  google_tpu: false
 maturity: production
-signal_strength: high
 backing:
-  type: corporate
+  type: foundation
   orgs:
-  - Meta
-  - PyTorch Foundation (Linux Foundation)
-  funding_or_parent: Meta (originated at Facebook AI Research); governance transferred to PyTorch Foundation under Linux Foundation in 2022
+  - PyTorch Foundation
+  - Linux Foundation
 alternatives:
 - framework/tensorflow
 - framework/jax
 ecosystem_connections:
 - framework/torchvision
-- framework/hugging-face-transformers
-- framework/lightning
-- framework/deepspeed
 registry_signals:
   github_stars: 105748
   downloads_monthly: 15000000
@@ -83,14 +66,22 @@ tags:
 - gpu
 - research
 - production
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/pytorch/pytorch
   title: GitHub repository
-- url: https://pytorch.org/docs/stable/
+- url: https://docs.pytorch.org/docs/stable/
   title: Documentation
+- url: https://docs.pytorch.org/docs/2.15/notes/mps.html
+  title: MPS backend
+- url: https://pytorch.org/foundation/
+  title: PyTorch Foundation
+- url: https://pytorch.org/domains/
+  title: PyTorch Domains
+- url: https://pypi.org/project/torch/
+  title: torch — PyPI
 ---
 
 ## Overview
 
-Open-source machine learning framework developed by Meta AI. Known for its dynamic computation graph (eager execution), Pythonic API, and strong research community. The most widely used framework for deep learning research and increasingly for production.
+PyTorch is a Python package that provides tensor computation with GPU acceleration and deep neural networks built on a tape-based autograd system. It executes imperatively, works with Python libraries such as NumPy and SciPy, and includes torch.compile, torch.export and distributed training. The PyTorch Foundation, hosted by the Linux Foundation, supports the project.

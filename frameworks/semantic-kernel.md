@@ -7,38 +7,35 @@ title: Semantic Kernel
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
-tagline: Microsoft's SDK for integrating LLMs into applications
-description: Microsoft's open-source SDK for building AI-powered applications. Designed for enterprise integration with strong Azure OpenAI support. Provides plugins, planners, and memory abstractions. Supports C#, Python, and Java.
-best_for: Enterprise .NET teams building on Azure/Microsoft stack
-not_ideal_for: Python-first teams, vendor-agnostic requirements
+tagline: Integrate LLM technology into your apps.
+description: Semantic Kernel is a model-agnostic, open-source SDK from Microsoft for building, orchestrating and deploying AI agents and multi-agent systems in C#, Python or Java. It connects to models from providers such as OpenAI, Azure OpenAI and Hugging Face, and extends agents with plugins built from native code, prompt templates, OpenAPI specs or the Model Context Protocol. Its README names Microsoft Agent Framework as its successor.
+best_for: AI agents, Multi-agent systems, Adding AI models to existing codebases
 key_features:
-- Plugin architecture for extensibility
-- Planner for multi-step reasoning
-- Memory and vector store abstractions
-- Azure OpenAI native integration
-- Multi-language support (C#, Python, Java)
-- Enterprise-ready patterns
+- Plugins from native code, prompt templates, OpenAPI specs or MCP
+- Agents with tools, memory and planning
+- Multi-agent orchestration
+- Model connectors for OpenAI, Azure OpenAI, Hugging Face and NVIDIA
+- Vector store connectors such as Azure AI Search, Elasticsearch and Chroma
+- Local models through Ollama, LM Studio or ONNX
+- Process Framework for business workflows
+- SDKs for C#, Python and Java
 use_cases:
-- Enterprise AI applications on Azure
-- .NET ecosystem AI integration
-- Microsoft 365 Copilot plugins
-- Enterprise automation with LLMs
+- Chatbots and assistants
+- Multi-agent workflows
+- Business process automation
 pros:
-- Best choice for .NET/C# teams
-- Strong Azure/Microsoft ecosystem integration
-- Enterprise-ready patterns out of the box
-- Good documentation
+- Model-agnostic connectors
+- Same concepts across C#, Python and Java SDKs
+- Committed to non-breaking changes in its released APIs
+- Telemetry, hooks and filters
 cons:
-- Python SDK less mature than C#
-- Smaller community than LangChain
-- Tightly coupled to Microsoft ecosystem
+- Succeeded by Microsoft Agent Framework according to its README
 language: C#
 languages_supported:
 - C#
 - Python
 - Java
 maintained_by: Microsoft
-first_release: '2023-03-01'
 license_spdx: MIT
 github_url: https://github.com/microsoft/semantic-kernel
 docs_url: https://learn.microsoft.com/en-us/semantic-kernel/
@@ -49,10 +46,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
 maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
@@ -75,14 +69,18 @@ tags:
 - microsoft
 - dotnet
 - azure
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/microsoft/semantic-kernel
   title: GitHub repository
 - url: https://learn.microsoft.com/en-us/semantic-kernel/
   title: Documentation
+- url: https://learn.microsoft.com/en-us/semantic-kernel/overview/
+  title: Introduction to Semantic Kernel
+- url: https://pypi.org/project/semantic-kernel/
+  title: semantic-kernel — PyPI
 ---
 
 ## Overview
 
-Microsoft's open-source SDK for building AI-powered applications. Designed for enterprise integration with strong Azure OpenAI support. Provides plugins, planners, and memory abstractions. Supports C#, Python, and Java.
+Semantic Kernel is a model-agnostic, open-source SDK from Microsoft for building, orchestrating and deploying AI agents and multi-agent systems in C#, Python or Java. It connects to models from providers such as OpenAI, Azure OpenAI and Hugging Face, and extends agents with plugins built from native code, prompt templates, OpenAPI specs or the Model Context Protocol. Its README names Microsoft Agent Framework as its successor.

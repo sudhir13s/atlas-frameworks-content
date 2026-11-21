@@ -7,52 +7,45 @@ title: torchvision
 kind: library
 category: framework-category/computer-vision
 subcategory: pytorch-ecosystem
-tagline: Datasets, models, and transforms for computer vision in PyTorch
-description: Official PyTorch package for computer vision. Provides pre-trained models (ResNet, VGG, EfficientNet, ViT), standard datasets (ImageNet, COCO, VOC), and image transforms. The go-to starting point for CV in PyTorch.
-best_for: Standard CV tasks in PyTorch, transfer learning starting point
-not_ideal_for: Cutting-edge model architectures (use timm)
+tagline: Datasets, Transforms and Models specific to Computer Vision.
+description: torchvision is the computer vision library of the PyTorch project. It provides popular datasets, model architectures with pre-trained weights, and common image transformations. Its models cover image classification, semantic segmentation, object detection, instance segmentation, keypoint detection, video classification and optical flow.
+best_for: Computer vision with PyTorch, Loading pre-trained vision models
 key_features:
-- Pre-trained models (50+ architectures)
-- Standard CV datasets
-- Image and video transforms
-- Detection and segmentation models
-- Automatic mixed precision support
+- Pre-trained weights for every provided architecture
+- Built-in computer vision datasets
+- Transforms for images, videos and bounding boxes
+- Classification, detection, segmentation, video and optical flow models
+- Quantized models
+- Detection and segmentation operators
 use_cases:
 - Image classification
 - Object detection
-- Transfer learning
-- CV data loading and preprocessing
+- Semantic and instance segmentation
+- Computer vision data loading and preprocessing
 pros:
-- Tight PyTorch integration
-- Comprehensive model zoo
-- Standard datasets built-in
+- Part of the PyTorch project
+- Pre-trained weights for every provided architecture
+- Built-in dataset loaders
 cons:
-- Model zoo less comprehensive than timm
-- Transforms API changed between versions
+- Pre-trained weights may carry their own licence terms (SWAG models are CC-BY-NC)
+- The image decoding and encoding module is deprecated
 language: Python
 languages_supported:
 - Python
-- C++
 maintained_by: PyTorch Foundation
-first_release: '2017-01-01'
 license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/vision
-docs_url: https://pytorch.org/vision/stable/
-website_url: https://pytorch.org/vision/
+docs_url: https://docs.pytorch.org/vision/stable/
+website_url: https://docs.pytorch.org/vision/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: true
-  apple_mps: true
+  apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: massive
-maturity: production
-signal_strength: high
 backing:
-  type: corporate
+  type: foundation
   orgs:
-  - Meta
   - PyTorch Foundation
 alternatives:
 - framework/albumentations
@@ -72,14 +65,20 @@ tags:
 - pytorch
 - models
 - datasets
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/pytorch/vision
   title: GitHub repository
-- url: https://pytorch.org/vision/stable/
+- url: https://docs.pytorch.org/vision/stable/
   title: Documentation
+- url: https://docs.pytorch.org/vision/stable/models.html
+  title: Models and pre-trained weights
+- url: https://pytorch.org/get-started/locally/
+  title: PyTorch install guide
+- url: https://pypi.org/project/torchvision/
+  title: torchvision — PyPI
 ---
 
 ## Overview
 
-Official PyTorch package for computer vision. Provides pre-trained models (ResNet, VGG, EfficientNet, ViT), standard datasets (ImageNet, COCO, VOC), and image transforms. The go-to starting point for CV in PyTorch.
+torchvision is the computer vision library of the PyTorch project. It provides popular datasets, model architectures with pre-trained weights, and common image transformations. Its models cover image classification, semantic segmentation, object detection, instance segmentation, keypoint detection, video classification and optical flow.

@@ -7,57 +7,46 @@ title: Keras
 kind: framework
 category: framework-category/training
 subcategory: high-level-api
-tagline: Deep learning for humans — simple, consistent, high-level API
-description: High-level neural network API that now supports multiple backends (TensorFlow, JAX, PyTorch). Keras 3 is backend-agnostic, letting users write models once and run on any framework. Known for the fastest path from idea to working model.
-best_for: Rapid prototyping, education, teams wanting backend portability
-not_ideal_for: Highly custom architectures requiring low-level control
+tagline: Multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only).
+description: Multi-backend deep learning framework that runs on JAX, TensorFlow and PyTorch, with OpenVINO as an inference-only backend. It is used to build and train models for computer vision, natural language processing, audio processing, timeseries forecasting and recommender systems. It is intended as a drop-in replacement for tf.keras when using the TensorFlow backend.
+best_for: Building and training deep learning models, Writing backend-agnostic model code
+not_ideal_for: Native Windows (the project recommends WSL2)
 key_features:
-- Multi-backend support (TF, JAX, PyTorch)
-- Sequential, Functional, and Subclassing APIs
-- Pre-built layers and model zoo
-- Built-in training loops with callbacks
-- Automatic mixed precision
-- Model serialization and export
+- JAX, TensorFlow and PyTorch backends
+- OpenVINO backend for inference
+- Keras models usable inside native PyTorch modules or JAX functions
+- Custom layers, models and metrics usable in low-level workflows of any backend
+- Training from tf.data pipelines or PyTorch DataLoaders
+- Training on GPUs or TPUs from a laptop to large clusters
 use_cases:
-- Rapid prototyping
-- Teaching and learning deep learning
-- Standard architectures (CNNs, RNNs, Transformers)
-- Transfer learning
-- Backend-agnostic model development
+- Computer vision
+- Natural language processing
+- Audio processing
+- Timeseries forecasting
+- Recommender systems
+- Moving tf.keras code to other backends
 pros:
-- Simplest API in deep learning
-- Excellent documentation and tutorials
-- Backend-agnostic in Keras 3
-- Large community and ecosystem
-- Great for beginners and production alike
+- One model codebase runs on several backends
+- Drop-in replacement for tf.keras on the TensorFlow backend
+- Works with existing tf.data and PyTorch data pipelines
 cons:
-- Less flexibility for highly custom research
-- Debugging can be opaque when backend abstractions leak
-- Some advanced features require dropping to backend-specific code
+- The backend must be set before importing Keras and cannot be changed afterwards
+- The OpenVINO backend supports inference only
+- Supported on Linux and macOS, with WSL2 recommended on Windows
 language: Python
 languages_supported:
 - Python
-maintained_by: Google (Francois Chollet)
-first_release: '2015-03-27'
+maintained_by: Keras team (keras-team)
 license_spdx: Apache-2.0
 github_url: https://github.com/keras-team/keras
 docs_url: https://keras.io/api/
 website_url: https://keras.io/
 gpu_support:
   nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
+  amd_rocm: false
+  apple_mps: false
+  intel_oneapi: false
   google_tpu: true
-learning_curve: low
-community_size: massive
-maturity: production
-signal_strength: high
-backing:
-  type: corporate
-  orgs:
-  - Google
-  funding_or_parent: Google (created by Francois Chollet)
 ecosystem_connections:
 - framework/tensorflow
 - framework/jax
@@ -77,14 +66,20 @@ tags:
 - high-level
 - beginner-friendly
 - multi-backend
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/keras-team/keras
   title: GitHub repository
 - url: https://keras.io/api/
   title: Documentation
+- url: https://keras.io/
+  title: Keras website
+- url: https://keras.io/getting_started/
+  title: Getting started
+- url: https://pypi.org/project/keras/
+  title: keras — PyPI
 ---
 
 ## Overview
 
-High-level neural network API that now supports multiple backends (TensorFlow, JAX, PyTorch). Keras 3 is backend-agnostic, letting users write models once and run on any framework. Known for the fastest path from idea to working model.
+Multi-backend deep learning framework that runs on JAX, TensorFlow and PyTorch, with OpenVINO as an inference-only backend. It is used to build and train models for computer vision, natural language processing, audio processing, timeseries forecasting and recommender systems. It is intended as a drop-in replacement for tf.keras when using the TensorFlow backend.

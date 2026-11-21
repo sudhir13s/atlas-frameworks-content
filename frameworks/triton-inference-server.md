@@ -3,40 +3,37 @@ id: framework/triton-inference-server
 type: framework
 slug: triton-inference-server
 schema_version: 1.1
-title: NVIDIA Triton Inference Server
+title: Triton Inference Server
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: Multi-framework model serving for any AI model on any GPU or CPU
-description: NVIDIA's multi-framework inference serving solution. Supports PyTorch, TensorFlow, ONNX, TensorRT, and more in a single server. Provides advanced features like model ensembles, dynamic batching, and multi-GPU serving.
-best_for: Enterprise multi-framework serving on NVIDIA GPUs
-not_ideal_for: Simple single-model serving, non-NVIDIA environments
+tagline: Open source inference serving software that streamlines AI inferencing.
+description: Triton Inference Server is open source inference serving software from NVIDIA. It deploys models from multiple deep learning and machine learning frameworks, including TensorRT, PyTorch, ONNX, OpenVINO, Python and RAPIDS FIL, across cloud, data center, edge and embedded devices on NVIDIA GPUs, x86 and ARM CPUs, or AWS Inferentia.
+best_for: Serving models from multiple frameworks in one server
 key_features:
-- Multi-framework support (PyTorch, TF, ONNX, TensorRT)
-- Model ensembles and pipelines
-- Dynamic batching
+- Backends for TensorRT, PyTorch, ONNX Runtime, OpenVINO, Python and more
+- Dynamic batching and sequence batching
 - Concurrent model execution
-- Multi-GPU and multi-node serving
-- Metrics and health checks
+- Model pipelines with ensembles and Business Logic Scripting
+- HTTP/REST and gRPC inference protocols based on the KServe protocol
+- C and Java APIs for in-process use
+- Metrics for GPU utilization, throughput and latency
 use_cases:
 - Multi-framework production serving
-- Complex inference pipelines
-- High-throughput GPU serving
+- Inference pipelines with ensembles
+- Real-time, batched and audio/video streaming inference
 pros:
-- Supports all major frameworks
-- Excellent performance on NVIDIA GPUs
-- Model ensemble pipelines
-- Production-grade reliability
+- Supports multiple frameworks through backends
+- Custom backends in C/C++ or Python
+- Runs on GPUs and CPUs
 cons:
-- Complex configuration
-- NVIDIA GPU focused
-- Steep learning curve
+- Not every backend is supported on every platform
 language: C++
 languages_supported:
 - C++
 - Python
+- Java
 maintained_by: NVIDIA
-first_release: '2018-08-01'
 license_spdx: BSD-3-Clause
 github_url: https://github.com/triton-inference-server/server
 docs_url: https://docs.nvidia.com/deeplearning/triton-inference-server/
@@ -47,10 +44,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: medium
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -73,20 +67,27 @@ registry_signals:
   source: https://github.com/triton-inference-server/server
 aliases:
 - triton-inference-server/server
+- NVIDIA Triton Inference Server
 tags:
 - serving
 - multi-framework
 - nvidia
 - production
 - enterprise
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/triton-inference-server/server
   title: GitHub repository
 - url: https://docs.nvidia.com/deeplearning/triton-inference-server/
   title: Documentation
+- url: https://developer.nvidia.com/dynamo-triton
+  title: NVIDIA Dynamo-Triton product page
+- url: https://github.com/triton-inference-server/backend
+  title: Triton backends
+- url: https://pypi.org/project/tritonclient/
+  title: tritonclient — PyPI
 ---
 
 ## Overview
 
-NVIDIA's multi-framework inference serving solution. Supports PyTorch, TensorFlow, ONNX, TensorRT, and more in a single server. Provides advanced features like model ensembles, dynamic batching, and multi-GPU serving.
+Triton Inference Server is open source inference serving software from NVIDIA. It deploys models from multiple deep learning and machine learning frameworks, including TensorRT, PyTorch, ONNX, OpenVINO, Python and RAPIDS FIL, across cloud, data center, edge and embedded devices on NVIDIA GPUs, x86 and ARM CPUs, or AWS Inferentia.

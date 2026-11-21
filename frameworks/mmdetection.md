@@ -7,34 +7,29 @@ title: MMDetection
 kind: framework
 category: framework-category/computer-vision
 subcategory: detection-segmentation
-tagline: OpenMMLab's comprehensive object detection toolbox
-description: Part of OpenMMLab, a comprehensive detection toolbox containing 300+ pre-trained models and 80+ algorithms. Covers 2D/3D object detection, instance segmentation, and panoptic segmentation with a unified config system.
-best_for: Detection research requiring comparison across many algorithms
-not_ideal_for: Simple deployment (use YOLO), teams not familiar with OpenMMLab
+tagline: OpenMMLab Detection Toolbox and Benchmark.
+description: MMDetection is an open source object detection toolbox based on PyTorch and part of the OpenMMLab project. Its modular design decomposes the detection framework into components that can be combined into customized detectors, and it supports object detection, instance segmentation, panoptic segmentation and semi-supervised object detection, with pre-trained models in a model zoo.
+best_for: Detection research that reimplements and compares methods, Building customized detectors from modular components
 key_features:
-- 80+ detection algorithms
-- 300+ pre-trained models
-- Unified config system
-- Rich data augmentation
-- Multi-GPU training
-- ONNX export support
+- Modular design for building customized detection frameworks
+- Object detection, instance segmentation, panoptic segmentation and semi-supervised detection
+- Model zoo with pre-trained models
+- Config system for defining models and training
+- Bounding box and mask operations on GPUs
+- Built on MMEngine and MMCV
 use_cases:
 - Object detection research and benchmarking
-- Production detection models
-- Detection algorithm comparison
+- Training detectors on custom datasets
+- Finetuning pre-trained detection models
 pros:
-- Most comprehensive detection model zoo
-- Unified framework for comparing algorithms
-- Active development
+- Many detection methods in one codebase
+- Runs on Linux, Windows and macOS
 cons:
-- OpenMMLab ecosystem adds learning overhead
-- Config system is powerful but complex
-- Documentation can lag behind code
+- CPU-only builds lack some operations (deformable convolution, ROI pooling, CARAFE, SyncBatchNorm)
 language: Python
 languages_supported:
 - Python
-maintained_by: OpenMMLab / Shanghai AI Lab
-first_release: '2018-09-01'
+maintained_by: OpenMMLab
 license_spdx: Apache-2.0
 github_url: https://github.com/open-mmlab/mmdetection
 docs_url: https://mmdetection.readthedocs.io/
@@ -45,15 +40,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: large
 maturity: production
-signal_strength: medium
-backing:
-  type: foundation
-  orgs:
-  - OpenMMLab
-  - Shanghai AI Laboratory
 alternatives:
 - framework/detectron2
 - framework/ultralytics-yolo
@@ -73,14 +60,18 @@ tags:
 - object-detection
 - model-zoo
 - research
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/open-mmlab/mmdetection
   title: GitHub repository
 - url: https://mmdetection.readthedocs.io/
   title: Documentation
+- url: https://mmdetection.readthedocs.io/en/latest/get_started.html
+  title: Get started
+- url: https://pypi.org/project/mmdet/
+  title: mmdet — PyPI
 ---
 
 ## Overview
 
-Part of OpenMMLab, a comprehensive detection toolbox containing 300+ pre-trained models and 80+ algorithms. Covers 2D/3D object detection, instance segmentation, and panoptic segmentation with a unified config system.
+MMDetection is an open source object detection toolbox based on PyTorch and part of the OpenMMLab project. Its modular design decomposes the detection framework into components that can be combined into customized detectors, and it supports object detection, instance segmentation, panoptic segmentation and semi-supervised object detection, with pre-trained models in a model zoo.

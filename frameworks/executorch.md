@@ -7,61 +7,49 @@ title: ExecuTorch
 kind: framework
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
-tagline: PyTorch's on-device inference framework for mobile and edge
-description: PyTorch's official solution for deploying models on mobile and edge devices. End-to-end from PyTorch model to on-device execution with operator-level customization and hardware delegation. Successor to PyTorch Mobile.
-best_for: PyTorch teams wanting native edge deployment
-not_ideal_for: Production mobile apps needing mature tooling (use TF Lite for now)
+tagline: On-device AI across mobile, embedded and edge for PyTorch.
+description: ExecuTorch is PyTorch's end-to-end solution for on-device inference on mobile and edge devices, including wearables, embedded devices and microcontrollers. It is part of the PyTorch Edge ecosystem and uses the same toolchain and SDK from PyTorch model authoring and conversion to debugging and deployment. Backends delegate execution to CPUs, GPUs, NPUs and DSPs.
+best_for: Deploying PyTorch models on mobile and edge devices
 key_features:
 - Native PyTorch model export
-- Operator-level customization
-- Hardware delegation (Qualcomm, Apple, ARM)
-- Quantization via PyTorch
-- Minimal runtime footprint
+- Custom kernel registration
+- Hardware delegation (Qualcomm, Apple, Arm)
+- Quantization
+- Lightweight C++ runtime
 use_cases:
 - PyTorch model deployment on mobile
 - Edge AI with PyTorch
 - On-device LLM inference
 pros:
-- Native PyTorch integration
-- Growing hardware delegate ecosystem
-- Official PyTorch edge solution
+- Same toolchain and SDK from PyTorch model authoring to deployment
+- Part of the PyTorch Edge ecosystem
 cons:
-- Still early — less mature than TF Lite
-- Limited hardware delegate coverage
-- Documentation is still growing
+- Some backends such as WebGPU are experimental
 language: C++
 languages_supported:
 - Python
 - C++
 - Java
-- Swift
-maintained_by: Meta AI (PyTorch Foundation)
-first_release: '2023-10-01'
+maintained_by: PyTorch
 license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/executorch
-docs_url: https://pytorch.org/executorch/
-website_url: https://pytorch.org/executorch/
+docs_url: https://docs.pytorch.org/executorch/
+website_url: https://docs.pytorch.org/executorch/
 gpu_support:
-  nvidia_cuda: false
+  nvidia_cuda: true
   amd_rocm: false
   apple_mps: true
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium-high
-community_size: small-medium
 maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - Meta
-  - PyTorch Foundation
-  funding_or_parent: Meta (PyTorch on-device successor); launched 2023
 alternatives:
 - framework/tensorflow-lite
 ecosystem_connections:
 - framework/pytorch
-- framework/llama-cpp
 registry_signals:
   github_stars: 5183
   downloads_monthly: 69901
@@ -76,14 +64,20 @@ tags:
 - pytorch
 - mobile
 - edge
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/pytorch/executorch
   title: GitHub repository
-- url: https://pytorch.org/executorch/
+- url: https://docs.pytorch.org/executorch/
   title: Documentation
+- url: https://docs.pytorch.org/executorch/stable/backends-overview.html
+  title: Documentation — Backends overview
+- url: https://github.com/pytorch/executorch/blob/main/LICENSE
+  title: Licence file
+- url: https://pypi.org/project/executorch/
+  title: executorch — PyPI
 ---
 
 ## Overview
 
-PyTorch's official solution for deploying models on mobile and edge devices. End-to-end from PyTorch model to on-device execution with operator-level customization and hardware delegation. Successor to PyTorch Mobile.
+ExecuTorch is PyTorch's end-to-end solution for on-device inference on mobile and edge devices, including wearables, embedded devices and microcontrollers. It is part of the PyTorch Edge ecosystem and uses the same toolchain and SDK from PyTorch model authoring and conversion to debugging and deployment. Backends delegate execution to CPUs, GPUs, NPUs and DSPs.

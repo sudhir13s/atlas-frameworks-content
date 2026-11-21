@@ -5,7 +5,7 @@ slug: openhands
 schema_version: 1.2
 title: OpenHands
 category: framework-category/agents
-tagline: '🙌 OpenHands: AI-Driven Development'
+tagline: The self-hosted developer control center for coding agents and automations.
 language: TypeScript
 maintained_by: OpenHands
 license_spdx: MIT

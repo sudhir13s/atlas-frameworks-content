@@ -7,39 +7,32 @@ title: OpenCV
 kind: library
 category: framework-category/computer-vision
 subcategory: core-library
-tagline: Open-source computer vision and image processing library
-description: The foundational computer vision library with 2500+ algorithms for image processing, object detection, video analysis, and camera calibration. Available in multiple languages. Used in robotics, autonomous vehicles, medical imaging, and more.
-best_for: Classical computer vision, image processing, video analysis
-not_ideal_for: Training deep learning models (use PyTorch + torchvision)
+tagline: Open Source Computer Vision Library.
+description: OpenCV is an open-source computer vision and machine learning software library with both classic and modern algorithms. They detect and recognise faces, identify objects, classify human actions in video, track camera and object motion, extract 3D models and stitch images into panoramas. It has interfaces for C++, Python, Java and JavaScript and runs on Windows, Linux, macOS, Android and iOS.
+best_for: Computer vision applications, Image processing, Real-time vision applications
 key_features:
-- 2500+ CV algorithms
+- Image processing
 - Image and video I/O
 - Object detection and tracking
-- Camera calibration
+- Camera calibration and 3D reconstruction
 - DNN module for inference
 - CUDA acceleration
 use_cases:
 - Image processing pipelines
 - Real-time video analysis
-- Robotics and autonomous vehicles
-- Medical image processing
+- Face detection and recognition
+- Image stitching and 3D reconstruction
 pros:
-- Most comprehensive CV library
-- Massive community and resources
-- Multi-language support
-- Battle-tested in production
-cons:
-- API can be inconsistent across modules
-- Deep learning support is basic (use PyTorch for training)
-- Large dependency
+- Interfaces for C++ Python Java and JavaScript
+- CPU SIMD, CUDA, OpenCL and Vulkan acceleration
+- Apache-2.0 licence permits commercial use and modification
 language: C++
 languages_supported:
 - C++
 - Python
 - Java
 - JavaScript
-maintained_by: OpenCV Foundation / Intel
-first_release: '2000-06-01'
+maintained_by: Open Source Vision Foundation
 license_spdx: Apache-2.0
 github_url: https://github.com/opencv/opencv
 docs_url: https://docs.opencv.org/
@@ -48,20 +41,13 @@ gpu_support:
   nvidia_cuda: true
   amd_rocm: false
   apple_mps: false
-  intel_oneapi: true
+  intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: massive
 maturity: production
-signal_strength: high
 backing:
   type: foundation
   orgs:
-  - OpenCV Foundation
-  funding_or_parent: Originated at Intel; now a nonprofit foundation with corporate sponsors (Intel, Huawei, Xperi)
-ecosystem_connections:
-- framework/pytorch
-- framework/tensorflow
+  - Open Source Vision Foundation
 registry_signals:
   github_stars: 91652
   downloads_monthly: 10000000
@@ -76,14 +62,22 @@ tags:
 - image-processing
 - video
 - classical-cv
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/opencv/opencv
   title: GitHub repository
 - url: https://docs.opencv.org/
   title: Documentation
+- url: https://docs.opencv.org/5.x/
+  title: OpenCV documentation
+- url: https://docs.opencv.org/4.x/
+  title: OpenCV modules
+- url: https://opencv.org/about/
+  title: About OpenCV
+- url: https://pypi.org/project/opencv-python/
+  title: opencv-python — PyPI
 ---
 
 ## Overview
 
-The foundational computer vision library with 2500+ algorithms for image processing, object detection, video analysis, and camera calibration. Available in multiple languages. Used in robotics, autonomous vehicles, medical imaging, and more.
+OpenCV is an open-source computer vision and machine learning software library with both classic and modern algorithms. They detect and recognise faces, identify objects, classify human actions in video, track camera and object motion, extract 3D models and stitch images into panoramas. It has interfaces for C++, Python, Java and JavaScript and runs on Windows, Linux, macOS, Android and iOS.

@@ -7,38 +7,33 @@ title: Polars
 kind: library
 category: framework-category/data
 subcategory: dataframe
-tagline: Lightning-fast DataFrame library implemented in Rust
-description: High-performance DataFrame library written in Rust with a Python API. Significantly faster than pandas for most operations. Uses Apache Arrow columnar format, lazy evaluation, and automatic query optimization.
-best_for: High-performance data processing, teams willing to learn a new API
-not_ideal_for: Teams heavily invested in pandas ecosystem, rapid prototyping by pandas experts
+tagline: Query engine for DataFrames, written in Rust.
+description: Polars is an analytical query engine for DataFrames written in Rust, with APIs for Python, Rust, Node.js and R. Queries written with the DataFrame API or in SQL run through the same optimizer and engine, with multi-threaded vectorized execution, a streaming API for data that does not fit in memory and optional NVIDIA GPU acceleration.
+best_for: Structured data manipulation, Analytical queries over DataFrames and SQL
 key_features:
-- Rust-powered performance (10-100x faster than pandas)
+- Multi-threaded vectorized execution in Rust
 - Lazy evaluation with query optimization
-- Apache Arrow columnar format
-- Streaming for out-of-memory datasets
+- Apache Arrow interoperability with zero-copy sharing
+- Streaming for larger-than-memory datasets
 - SQL interface
 - Expression-based API
 use_cases:
-- High-performance data processing
-- ML data preprocessing
-- ETL pipelines
-- Data analysis replacing pandas
+- Data processing and analysis
+- Reading and writing data across files, cloud storage and databases
+- Migrating DataFrame code from pandas
 pros:
-- Dramatically faster than pandas
-- Memory efficient
-- Elegant expression API
-- Growing rapidly
+- DataFrame and SQL queries share one optimizer and engine
+- Operations that exceed available RAM can spill to disk
+- Expression and I/O plugins for custom code
 cons:
-- API differs from pandas — learning curve
-- Ecosystem still growing (fewer integrations)
-- Some edge cases less polished than pandas
+- GPU support is in open beta
 language: Rust
 languages_supported:
 - Python
 - Rust
 - Node.js
-maintained_by: Polars Inc. (Ritchie Vink)
-first_release: '2020-05-01'
+- R
+maintained_by: Polars B.V.
 license_spdx: MIT
 github_url: https://github.com/pola-rs/polars
 docs_url: https://docs.pola.rs/
@@ -49,15 +44,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - Polars Inc
-  funding_or_parent: Seed $4M led by Bain Capital Ventures (2023); created by Ritchie Vink
+  - Polars B.V.
 alternatives:
 - framework/dask
 registry_signals:
@@ -74,14 +65,18 @@ tags:
 - high-performance
 - rust
 - dataframe
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/pola-rs/polars
   title: GitHub repository
 - url: https://docs.pola.rs/
   title: Documentation
+- url: https://pola.rs/
+  title: Website
+- url: https://pypi.org/project/polars/
+  title: polars — PyPI
 ---
 
 ## Overview
 
-High-performance DataFrame library written in Rust with a Python API. Significantly faster than pandas for most operations. Uses Apache Arrow columnar format, lazy evaluation, and automatic query optimization.
+Polars is an analytical query engine for DataFrames written in Rust, with APIs for Python, Rust, Node.js and R. Queries written with the DataFrame API or in SQL run through the same optimizer and engine, with multi-threaded vectorized execution, a streaming API for data that does not fit in memory and optional NVIDIA GPU acceleration.

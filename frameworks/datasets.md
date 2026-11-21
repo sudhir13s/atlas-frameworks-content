@@ -3,9 +3,9 @@ id: framework/datasets
 type: framework
 slug: datasets
 schema_version: 1.2
-title: datasets
+title: Hugging Face Datasets
 category: framework-category/data
-tagline: 🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools
+tagline: Lightweight library with one-line dataloaders for public datasets on the Hugging Face Hub and efficient data pre-processing.
 language: Python
 maintained_by: huggingface
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/huggingface/datasets
 aliases:
 - huggingface/datasets
+- datasets
 tags:
 - ai
 - arrow

@@ -3,9 +3,9 @@ id: framework/face-recognition
 type: framework
 slug: face-recognition
 schema_version: 1.2
-title: face_recognition
+title: Face Recognition
 category: framework-category/computer-vision
-tagline: The world's simplest facial recognition api for Python and the command line
+tagline: Facial recognition API for Python and the command line.
 language: Python
 maintained_by: ageitgey
 license_spdx: MIT
@@ -19,6 +19,7 @@ registry_signals:
   source: https://github.com/ageitgey/face_recognition
 aliases:
 - ageitgey/face_recognition
+- face_recognition
 tags:
 - face-detection
 - face-recognition

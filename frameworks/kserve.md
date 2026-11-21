@@ -7,38 +7,39 @@ title: KServe
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: Standardized serverless ML inference on Kubernetes
-description: Kubernetes-native serverless ML inference platform (formerly KFServing). Part of Kubeflow ecosystem. Provides standardized inference protocol, autoscaling, canary rollouts, and multi-framework support.
-best_for: Kubernetes teams wanting serverless ML inference with autoscaling
-not_ideal_for: Teams without Kubernetes expertise, latency-sensitive applications
+tagline: Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes.
+description: Standardized distributed inference platform for generative and predictive AI models on Kubernetes. It serves LLMs through vLLM and llm-d backends with an OpenAI-compatible protocol, and predictive models from TensorFlow, PyTorch, scikit-learn, XGBoost, ONNX and other frameworks. It provides request-based autoscaling, scale-to-zero, canary rollouts and inference pipelines with InferenceGraph, and is a CNCF incubating project.
+best_for: Serving generative and predictive models on Kubernetes, Autoscaled inference with scale-to-zero
+not_ideal_for: Environments without Kubernetes
 key_features:
-- Serverless autoscaling (Knative)
-- Standardized V2 inference protocol
-- Multi-framework support
-- Canary rollouts
-- Inference graph for pipelines
-- GPU sharing
+- vLLM and llm-d backends for LLM serving
+- OpenAI-compatible inference protocol
+- Request-based autoscaling with scale-to-zero
+- Multi-framework serving for predictive models
+- Canary rollouts, pipelines and ensembles with InferenceGraph
+- Model caching and KV cache offloading
+- Model explanations, payload logging, outlier and drift detection
+- Optional ModelMesh for high-density model serving
 use_cases:
+- LLM serving on Kubernetes
 - Kubernetes ML serving with autoscaling
 - Standardized inference APIs
 - Serverless ML endpoints
 pros:
-- Serverless autoscaling including scale-to-zero
-- Standardized inference protocol
-- CNCF backed
+- Scale-to-zero frees expensive resources when idle
+- One platform for generative and predictive inference
+- Available as a Kubeflow add-on component
 cons:
-- Requires Kubernetes + Knative/Istio stack
-- Complex infrastructure requirements
-- Slower cold starts due to serverless
+- Requires Kubernetes
+- The standard Kubernetes installation lacks canary deployment and request-based autoscaling with scale-to-zero (these need the Knative serverless installation)
 language: Go
 languages_supported:
 - Python
 - Go
-maintained_by: CNCF / Kubeflow
-first_release: '2019-06-01'
+maintained_by: KServe community (CNCF incubating project)
 license_spdx: Apache-2.0
 github_url: https://github.com/kserve/kserve
-docs_url: https://kserve.github.io/kserve/
+docs_url: https://kserve.github.io/website/
 website_url: https://kserve.github.io/kserve/
 gpu_support:
   nvidia_cuda: true
@@ -46,16 +47,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: medium
-maturity: production
-signal_strength: medium
 backing:
   type: foundation
   orgs:
   - CNCF
-  - Kubeflow
-  funding_or_parent: CNCF incubating project (spun out of KFServing)
 alternatives:
 - framework/seldon-core
 - framework/triton-inference-server
@@ -74,14 +69,18 @@ tags:
 - kubernetes
 - serverless
 - autoscaling
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/kserve/kserve
   title: GitHub repository
-- url: https://kserve.github.io/kserve/
+- url: https://kserve.github.io/website/
   title: Documentation
+- url: https://kserve.github.io/kserve/
+  title: KServe landing page
+- url: https://pypi.org/project/kserve/
+  title: kserve — PyPI
 ---
 
 ## Overview
 
-Kubernetes-native serverless ML inference platform (formerly KFServing). Part of Kubeflow ecosystem. Provides standardized inference protocol, autoscaling, canary rollouts, and multi-framework support.
+Standardized distributed inference platform for generative and predictive AI models on Kubernetes. It serves LLMs through vLLM and llm-d backends with an OpenAI-compatible protocol, and predictive models from TensorFlow, PyTorch, scikit-learn, XGBoost, ONNX and other frameworks. It provides request-based autoscaling, scale-to-zero, canary rollouts and inference pipelines with InferenceGraph, and is a CNCF incubating project.

@@ -3,52 +3,41 @@ id: framework/keras-tuner
 type: framework
 slug: keras-tuner
 schema_version: 1.1
-title: Keras Tuner
+title: KerasTuner
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
-tagline: Hyperparameter tuning for Keras models
-description: Google's hyperparameter tuning library specifically designed for Keras models. Simple API for defining search spaces within model building functions. Supports random search, Bayesian optimization, and Hyperband.
-best_for: Keras users wanting simple hyperparameter tuning
-not_ideal_for: Non-Keras frameworks, complex optimization needs
+tagline: A Hyperparameter Tuning Library for Keras.
+description: Hyperparameter optimization framework for Keras models. Search spaces are configured with a define-by-run syntax inside the function that builds the model. It includes Bayesian Optimization, Hyperband and Random Search and is designed to be extended with new search algorithms.
+best_for: Hyperparameter tuning of Keras models
 key_features:
-- Tight Keras integration
-- HyperBand, Bayesian, Random search
-- Custom search spaces
-- Oracle API for custom algorithms
+- Define-by-run search spaces
+- Bayesian Optimization, Hyperband and Random Search tuners
+- Extensible with new search algorithms
+- Distributed tuning with a chief-worker model
+- TensorBoard visualization of the tuning process
 use_cases:
 - Tuning Keras neural networks
-- Neural architecture search for Keras
+- Distributed hyperparameter search across GPUs and machines
 pros:
-- Simplest HPO for Keras users
-- Good integration with TensorBoard
+- Scales from a single local process to many parallel workers without code changes
+- Tuning runs can be inspected in TensorBoard
 cons:
-- Keras-only
-- Less powerful than Optuna for general use
+- Requires TensorFlow to be installed
 language: Python
 languages_supported:
 - Python
-maintained_by: Google / Keras team
-first_release: '2019-10-01'
+maintained_by: Keras team (keras-team)
 license_spdx: Apache-2.0
 github_url: https://github.com/keras-team/keras-tuner
 docs_url: https://keras.io/keras_tuner/
 website_url: https://keras.io/keras_tuner/
 gpu_support:
-  nvidia_cuda: true
+  nvidia_cuda: false
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
   google_tpu: true
-learning_curve: low
-community_size: medium
-maturity: stable
-signal_strength: low
-backing:
-  type: corporate
-  orgs:
-  - Google
-  funding_or_parent: Google / Keras team
 alternatives:
 - framework/optuna
 - framework/ray-tune
@@ -64,18 +53,25 @@ registry_signals:
   source: https://github.com/keras-team/keras-tuner
 aliases:
 - keras-team/keras-tuner
+- Keras Tuner
 tags:
 - automl
 - hyperparameter-tuning
 - keras
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/keras-team/keras-tuner
   title: GitHub repository
 - url: https://keras.io/keras_tuner/
   title: Documentation
+- url: https://raw.githubusercontent.com/keras-team/keras-io/master/guides/keras_tuner/distributed_tuning.py
+  title: Distributed hyperparameter tuning guide
+- url: https://raw.githubusercontent.com/keras-team/keras-io/master/guides/keras_tuner/visualize_tuning.py
+  title: Visualize the hyperparameter tuning process guide
+- url: https://pypi.org/project/keras-tuner/
+  title: keras-tuner — PyPI
 ---
 
 ## Overview
 
-Google's hyperparameter tuning library specifically designed for Keras models. Simple API for defining search spaces within model building functions. Supports random search, Bayesian optimization, and Hyperband.
+Hyperparameter optimization framework for Keras models. Search spaces are configured with a define-by-run syntax inside the function that builds the model. It includes Bayesian Optimization, Hyperband and Random Search and is designed to be extended with new search algorithms.

@@ -5,7 +5,7 @@ slug: docling
 schema_version: 1.2
 title: Docling
 category: framework-category/rag
-tagline: SDK and command-line tool for parsing PDF, DOCX, HTML and other formats into a unified document representation for generative AI applications.
+tagline: Document processing that parses diverse formats, including advanced PDF understanding, with integrations for the generative AI ecosystem.
 language: Python
 maintained_by: docling-project
 license_spdx: MIT

@@ -7,55 +7,40 @@ title: Flax
 kind: library
 category: framework-category/training
 subcategory: high-level-api
-tagline: A neural network library for JAX designed for flexibility
-description: Google DeepMind's neural network library built on JAX. Provides the nn.Module abstraction and training utilities while maintaining JAX's functional purity. The recommended high-level API for JAX-based ML research.
-best_for: JAX-based research projects, TPU training
-not_ideal_for: Teams unfamiliar with functional programming, rapid prototyping
+tagline: Flax is a neural network library for JAX that is designed for flexibility.
+description: Flax is a neural network library and ecosystem for JAX designed for flexibility, developed in close collaboration with the JAX team. Its current API, Flax NNX, adds first class support for Python reference semantics so models are regular Python objects, and it evolved from the Flax Linen API, which is not being deprecated. It ships a neural network API, utilities for replicated training, serialization, checkpointing and metrics, and educational examples.
+best_for: Neural network research in JAX
 key_features:
-- Functional nn.Module with explicit state
-- NNX API for more Pythonic development
-- Linen API for pure-functional style
+- NNX API with Python reference semantics
+- Linen API for existing codebases
 - Serialization and checkpointing
-- Tight JAX integration
+- Integration with regular JAX code
 - Pre-built layers and attention mechanisms
 use_cases:
 - ML research on JAX
-- Large language model training
-- TPU-optimized research
 - Custom architecture development
 pros:
-- Clean functional design
-- Official JAX neural network library
-- Growing adoption in research
-- NNX API reduces boilerplate
-cons:
-- Smaller ecosystem than PyTorch nn
-- Learning curve for functional paradigm
-- Fewer pre-built models than torchvision/timm
+- Developed in close collaboration with the JAX team
+- Models are written as regular Python objects in Flax NNX
 language: Python
 languages_supported:
 - Python
 maintained_by: Google DeepMind
-first_release: '2020-03-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/google/flax
 docs_url: https://flax.readthedocs.io/
 website_url: https://flax.readthedocs.io/
 gpu_support:
-  nvidia_cuda: true
+  nvidia_cuda: false
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
   google_tpu: true
-learning_curve: high
-community_size: medium
-maturity: stable
-signal_strength: medium
+maturity: experimental
 backing:
   type: corporate
   orgs:
-  - Google
-  funding_or_parent: Google DeepMind
+  - Google DeepMind
 ecosystem_connections:
 - framework/jax
 registry_signals:
@@ -72,14 +57,16 @@ tags:
 - jax
 - research
 - functional
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/google/flax
   title: GitHub repository
 - url: https://flax.readthedocs.io/
   title: Documentation
+- url: https://pypi.org/project/flax/
+  title: flax — PyPI
 ---
 
 ## Overview
 
-Google DeepMind's neural network library built on JAX. Provides the nn.Module abstraction and training utilities while maintaining JAX's functional purity. The recommended high-level API for JAX-based ML research.
+Flax is a neural network library and ecosystem for JAX designed for flexibility, developed in close collaboration with the JAX team. Its current API, Flax NNX, adds first class support for Python reference semantics so models are regular Python objects, and it evolved from the Flax Linen API, which is not being deprecated. It ships a neural network API, utilities for replicated training, serialization, checkpointing and metrics, and educational examples.

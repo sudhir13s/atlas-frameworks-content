@@ -7,44 +7,38 @@ title: TensorFlow
 kind: framework
 category: framework-category/training
 subcategory: core-framework
-tagline: End-to-end open-source platform for machine learning
-description: Google's comprehensive ML platform with production-grade tooling. Supports everything from training to serving to mobile deployment. TF 2.x brought eager execution by default and tighter Keras integration. Still dominant in production/enterprise deployments.
-best_for: Production ML systems, mobile deployment, enterprise teams with existing TF infrastructure
-not_ideal_for: New research projects (PyTorch preferred), teams wanting cutting-edge flexibility
+tagline: An Open Source Machine Learning Framework for Everyone.
+description: TensorFlow is an end-to-end open source platform for machine learning. It provides stable Python and C++ APIs and the high-level Keras API for building and training models, with TensorFlow Lite for mobile and edge devices, TensorFlow.js for JavaScript environments and TFX for production ML pipelines.
+best_for: Building and deploying ML models end to end, Deployment to mobile and edge devices, ML in JavaScript environments
 key_features:
-- Production-ready serving (TF Serving)
-- TensorFlow Lite for mobile/edge
-- TensorFlow.js for browser ML
-- TensorBoard visualization
+- Keras as the high-level API
+- Eager execution and tf.function graphs
+- Distribution Strategy API for distributed training
+- XLA compilation
 - SavedModel format for deployment
-- XLA compiler for accelerators
-- Keras as high-level API
+- TensorBoard visualization
+- TensorFlow Lite for mobile and edge devices
+- TensorFlow.js for JavaScript environments
+- TensorFlow Serving for model serving
 use_cases:
-- Enterprise ML pipelines
-- Mobile/edge deployment
-- Browser-based ML (TF.js)
-- Production serving at scale
-- TPU-optimized training
+- Production ML pipelines with TFX
+- Mobile and edge deployment
+- Browser-based ML with TensorFlow.js
+- Model serving
+- Training on TPUs
 pros:
-- Best-in-class deployment ecosystem
-- TF Lite is the gold standard for mobile ML
 - TensorBoard for experiment visualization
-- Strong enterprise adoption
-- TPU native support
+- TPU support
+- Stable Python and C++ APIs
 cons:
-- API complexity and frequent breaking changes historically
-- Research community has largely migrated to PyTorch
-- Eager mode performance can lag behind PyTorch
-- Google's commitment post-JAX is unclear
-language: Python
+- APIs in languages other than Python are not covered by the API stability promises
+language: C++
 languages_supported:
 - Python
 - C++
 - JavaScript
 - Java
-- Swift
-maintained_by: Google Brain / DeepMind
-first_release: '2015-11-09'
+maintained_by: Google
 license_spdx: Apache-2.0
 github_url: https://github.com/tensorflow/tensorflow
 docs_url: https://www.tensorflow.org/api_docs
@@ -52,18 +46,14 @@ website_url: https://www.tensorflow.org/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: false
-  apple_mps: false
+  apple_mps: true
   intel_oneapi: true
   google_tpu: true
-learning_curve: medium-high
-community_size: massive
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Google
-  funding_or_parent: Google Brain / DeepMind
 alternatives:
 - framework/pytorch
 - framework/jax
@@ -85,14 +75,30 @@ tags:
 - production
 - mobile
 - enterprise
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/tensorflow/tensorflow
   title: GitHub repository
 - url: https://www.tensorflow.org/api_docs
   title: Documentation
+- url: https://www.tensorflow.org/about
+  title: Why TensorFlow
+- url: https://www.tensorflow.org/install/pip
+  title: Install TensorFlow with pip
+- url: https://www.tensorflow.org/install/gpu_plugins
+  title: GPU device plugins
+- url: https://www.tensorflow.org/guide/tpu
+  title: Use TPUs
+- url: https://openxla.org/xla/tf2xla
+  title: Use XLA in TensorFlow
+- url: https://www.tensorflow.org/guide/saved_model
+  title: SavedModel format
+- url: https://www.tensorflow.org/tensorboard
+  title: TensorBoard
+- url: https://pypi.org/project/tensorflow/
+  title: tensorflow — PyPI
 ---
 
 ## Overview
 
-Google's comprehensive ML platform with production-grade tooling. Supports everything from training to serving to mobile deployment. TF 2.x brought eager execution by default and tighter Keras integration. Still dominant in production/enterprise deployments.
+TensorFlow is an end-to-end open source platform for machine learning. It provides stable Python and C++ APIs and the high-level Keras API for building and training models, with TensorFlow Lite for mobile and edge devices, TensorFlow.js for JavaScript environments and TFX for production ML pipelines.

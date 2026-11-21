@@ -7,60 +7,43 @@ title: JAX
 kind: library
 category: framework-category/training
 subcategory: core-framework
-tagline: 'Composable transformations of NumPy programs: differentiate, vectorize, JIT, parallelize'
-description: Google's functional numerical computing library that combines NumPy's API with automatic differentiation and XLA compilation. Designed for high-performance ML research with composable function transformations (grad, jit, vmap, pmap). Powers cutting-edge research at Google DeepMind.
-best_for: Research labs needing maximum performance and mathematical elegance, TPU users
-not_ideal_for: Teams new to ML, rapid prototyping, projects needing large third-party ecosystem
+tagline: 'Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more.'
+description: Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning. It automatically differentiates native Python and NumPy functions and uses XLA to compile programs for TPUs, GPUs and other accelerators. Its transformations, including grad, jit and vmap, compose arbitrarily.
+best_for: High-performance numerical computing, Large-scale machine learning on GPUs and TPUs
+not_ideal_for: GPU work on native Windows (NVIDIA and AMD GPUs are not supported there)
 key_features:
-- Composable function transformations (grad, jit, vmap, pmap)
-- XLA compilation for accelerators
-- NumPy-compatible API
-- Automatic vectorization (vmap)
-- Multi-device parallelism (pmap/pjit)
-- Functional programming paradigm
-- Reproducible PRNG system
+- Composable function transformations (grad, jit, vmap)
+- Forward- and reverse-mode automatic differentiation to any order
+- XLA compilation for TPUs and GPUs
+- NumPy-compatible API (jax.numpy)
+- Compiler-based automatic parallelization across devices
+- Explicit sharding and manual per-device programming with collectives
 use_cases:
-- Cutting-edge ML research
+- Machine learning research
 - Large-scale distributed training
-- Scientific computing
-- TPU-optimized workloads
-- Custom neural network architectures
+- Numerical and scientific computing
+- TPU workloads
 pros:
-- Best performance on TPUs
-- Elegant composable transformations
-- Excellent for custom research
-- Growing ecosystem (Flax, Optax, Orbax)
-- Pure functional approach eliminates side-effect bugs
+- Transformations compose with each other and with Python control flow
+- The same code runs on CPU, GPU and TPU backends
+- Ecosystem libraries such as Flax, Optax and Orbax
 cons:
-- Steep learning curve — functional paradigm is different
-- Smaller community than PyTorch
-- Debugging JIT-compiled code is challenging
-- Ecosystem still maturing compared to PyTorch
+- The README calls it a research project, not an official Google product, and warns of sharp edges
+- Code under jax.jit is limited in the Python control flow it can use
 language: Python
 languages_supported:
 - Python
-- C++
-maintained_by: Google DeepMind
-first_release: '2018-12-01'
+maintained_by: JAX team (jax-ml)
 license_spdx: Apache-2.0
 github_url: https://github.com/jax-ml/jax
-docs_url: https://jax.readthedocs.io/
+docs_url: https://docs.jax.dev/en/latest/
 website_url: https://github.com/jax-ml/jax
 gpu_support:
   nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
+  amd_rocm: true
+  apple_mps: true
+  intel_oneapi: true
   google_tpu: true
-learning_curve: high
-community_size: large
-maturity: production
-signal_strength: high
-backing:
-  type: corporate
-  orgs:
-  - Google
-  funding_or_parent: Google DeepMind
 alternatives:
 - framework/pytorch
 - framework/tensorflow
@@ -81,14 +64,16 @@ tags:
 - tpu
 - functional
 - scientific-computing
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/jax-ml/jax
   title: GitHub repository
-- url: https://jax.readthedocs.io/
+- url: https://docs.jax.dev/en/latest/
   title: Documentation
+- url: https://pypi.org/project/jax/
+  title: jax — PyPI
 ---
 
 ## Overview
 
-Google's functional numerical computing library that combines NumPy's API with automatic differentiation and XLA compilation. Designed for high-performance ML research with composable function transformations (grad, jit, vmap, pmap). Powers cutting-edge research at Google DeepMind.
+Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning. It automatically differentiates native Python and NumPy functions and uses XLA to compile programs for TPUs, GPUs and other accelerators. Its transformations, including grad, jit and vmap, compose arbitrarily.

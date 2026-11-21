@@ -3,9 +3,9 @@ id: framework/peft
 type: framework
 slug: peft
 schema_version: 1.2
-title: peft
+title: PEFT
 category: framework-category/fine-tuning
-tagline: '🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.'
+tagline: Parameter-Efficient Fine-Tuning (PEFT) methods adapt large pretrained models to downstream applications by fine-tuning only a small number of (extra) model parameters.
 language: Python
 maintained_by: huggingface
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/huggingface/peft
 aliases:
 - huggingface/peft
+- peft
 tags:
 - adapter
 - diffusion

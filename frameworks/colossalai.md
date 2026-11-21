@@ -3,40 +3,41 @@ id: framework/colossalai
 type: framework
 slug: colossalai
 schema_version: 1.1
-title: ColossalAI
+title: Colossal-AI
 kind: framework
 category: framework-category/distributed-training
 subcategory: training-framework
-tagline: Making large AI models cheaper, faster, and more accessible
-description: Open-source system for large model training with focus on efficiency and accessibility. Provides various parallelism strategies, memory optimization, and heterogeneous training support. Aims to lower the barrier for training large models.
-best_for: Teams wanting accessible large model training without NVIDIA-specific tooling
-not_ideal_for: Extreme-scale training (use Megatron-LM), production systems
+tagline: Making large AI models cheaper, faster and more accessible.
+description: Colossal-AI is a unified system that provides an integrated set of training skills and utilities for large models. It offers data, pipeline, tensor and sequence parallelism, the Zero Redundancy Optimizer (ZeRO), auto-parallelism and heterogeneous memory management, and injects these features into a PyTorch model and optimizer through its Booster.
+best_for: Scaling PyTorch training of large models across NVIDIA GPUs and nodes
+not_ideal_for: Non-Linux systems (only Linux is supported), Hardware without NVIDIA CUDA GPUs
 key_features:
-- Multiple parallelism strategies
-- Heterogeneous training (CPU + GPU)
-- Gemini memory manager
-- RLHF training support
-- Low-rank adaptation (LoRA) support
-- Automatic parallelism
+- Data and pipeline parallelism
+- Multi-dimensional tensor parallelism
+- Sequence parallelism
+- Zero Redundancy Optimizer (ZeRO) with CPU offload
+- Auto-parallelism
+- Gemini plugin with chunk-based heterogeneous memory management
+- Booster plugins including wrappers for PyTorch DDP and FSDP
+- Mixed precision training and gradient accumulation
+- RLHF pipeline in the ColossalChat application
 use_cases:
-- Large model training with limited resources
-- RLHF for LLM alignment
-- Accessible large-scale training
+- Large model pretraining and fine-tuning
+- RLHF training with ColossalChat
+- Training video generation models such as Open-Sora
 pros:
-- More accessible than Megatron-LM
-- Good memory optimization
-- Active development
+- Parallelism configured from a configuration file
+- Parallel strategies can be picked and combined in one plugin
+- Docker images published on Docker Hub
 cons:
-- Less battle-tested than DeepSpeed/Megatron at extreme scale
-- Documentation gaps
-- Smaller enterprise adoption
+- Only Linux is supported
+- Requires CUDA and an NVIDIA GPU
+- The Hybrid Parallel plugin works only with the Hugging Face Transformers models that Shardformer supports
+- The Torch FSDP plugin does not support saving or loading sharded checkpoints
 language: Python
 languages_supported:
 - Python
-- C++
-- CUDA
-maintained_by: HPC-AI Technology
-first_release: '2021-10-01'
+maintained_by: HPC-AI Tech
 license_spdx: Apache-2.0
 github_url: https://github.com/hpcaitech/ColossalAI
 docs_url: https://colossalai.org/docs/get_started/installation/
@@ -47,15 +48,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: medium
-maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - HPC-AI Tech
-  funding_or_parent: Series A $19M led by Bluerun Ventures (2022)
 alternatives:
 - framework/deepspeed
 - framework/megatron-lm
@@ -71,19 +67,26 @@ registry_signals:
   source: https://github.com/hpcaitech/ColossalAI
 aliases:
 - hpcaitech/ColossalAI
+- ColossalAI
 tags:
 - distributed-training
 - large-models
 - accessible
 - memory-optimization
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/hpcaitech/ColossalAI
   title: GitHub repository
 - url: https://colossalai.org/docs/get_started/installation/
   title: Documentation
+- url: https://colossalai.org/docs/concepts/colossalai_overview
+  title: Colossal-AI overview
+- url: https://colossalai.org/docs/basics/booster_plugins
+  title: Booster plugins
+- url: https://pypi.org/project/colossalai/
+  title: colossalai — PyPI
 ---
 
 ## Overview
 
-Open-source system for large model training with focus on efficiency and accessibility. Provides various parallelism strategies, memory optimization, and heterogeneous training support. Aims to lower the barrier for training large models.
+Colossal-AI is a unified system that provides an integrated set of training skills and utilities for large models. It offers data, pipeline, tensor and sequence parallelism, the Zero Redundancy Optimizer (ZeRO), auto-parallelism and heterogeneous memory management, and injects these features into a PyTorch model and optimizer through its Booster.

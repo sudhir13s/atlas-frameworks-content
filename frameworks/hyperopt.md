@@ -7,30 +7,30 @@ title: Hyperopt
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
-tagline: Distributed hyperparameter optimization using TPE and random search
-description: One of the earliest Bayesian hyperparameter optimization libraries. Uses Tree-structured Parzen Estimators (TPE). Still widely used but Optuna has largely superseded it for new projects.
-best_for: Legacy projects using Hyperopt, Spark-based HPO
-not_ideal_for: New projects — use Optuna instead
+tagline: Distributed Asynchronous Hyperparameter Optimization in Python.
+description: Python library for serial and parallel optimization over awkward search spaces, which may include real-valued, discrete and conditional dimensions. It implements Random Search, Tree of Parzen Estimators (TPE) and Adaptive TPE. All algorithms can be parallelized with Apache Spark or MongoDB.
+best_for: Hyperparameter optimization over conditional search spaces, Parallel hyperparameter search on Spark or MongoDB
+not_ideal_for: Gaussian-process Bayesian optimization (not implemented)
 key_features:
-- TPE sampler
 - Random search
-- MongoDB-based distributed optimization
-- Spark integration (SparkTrials)
+- Tree of Parzen Estimators (TPE)
+- Adaptive TPE
+- Real-valued, discrete and conditional search spaces
+- Parallel search on Apache Spark (SparkTrials)
+- Parallel search with MongoDB (MongoTrials)
 use_cases:
 - Hyperparameter optimization
-- Distributed HPO on Spark
+- Distributed hyperparameter search on Spark
 pros:
-- Established and well-understood
-- Spark integration
+- Supports conditional search spaces
+- Parallelization through Spark or MongoDB
 cons:
-- Largely superseded by Optuna
-- Less active development
-- API is less ergonomic
+- Bayesian optimization based on Gaussian processes or regression trees is not implemented
+- Documentation is partly still hosted on the GitHub wiki
 language: Python
 languages_supported:
 - Python
-maintained_by: James Bergstra + community
-first_release: '2013-01-01'
+maintained_by: Hyperopt project (hyperopt GitHub organization)
 license_spdx: BSD-3-Clause
 github_url: https://github.com/hyperopt/hyperopt
 docs_url: http://hyperopt.github.io/hyperopt/
@@ -41,13 +41,9 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
-maturity: stable
-signal_strength: low
+maturity: experimental
 backing:
   type: community
-  funding_or_parent: Created by James Bergstra; community-maintained, limited active development
 alternatives:
 - framework/optuna
 - framework/ray-tune
@@ -64,14 +60,16 @@ tags:
 - automl
 - hyperparameter-tuning
 - bayesian
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/hyperopt/hyperopt
   title: GitHub repository
 - url: http://hyperopt.github.io/hyperopt/
   title: Documentation
+- url: https://pypi.org/project/hyperopt/
+  title: hyperopt — PyPI
 ---
 
 ## Overview
 
-One of the earliest Bayesian hyperparameter optimization libraries. Uses Tree-structured Parzen Estimators (TPE). Still widely used but Optuna has largely superseded it for new projects.
+Python library for serial and parallel optimization over awkward search spaces, which may include real-valued, discrete and conditional dimensions. It implements Random Search, Tree of Parzen Estimators (TPE) and Adaptive TPE. All algorithms can be parallelized with Apache Spark or MongoDB.

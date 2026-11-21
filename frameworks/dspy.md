@@ -7,39 +7,31 @@ title: DSPy
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: prompt-optimization
-tagline: Programming—not prompting—foundation models
-description: Stanford research framework that replaces manual prompt engineering with programmatic optimization. Defines LLM modules as typed signatures, then automatically optimizes prompts and few-shot examples using a compiler. A paradigm shift from manual prompting.
-best_for: Teams wanting systematic prompt optimization over manual engineering
-not_ideal_for: Simple LLM calls, teams wanting quick prototypes without learning new paradigm
+tagline: The framework for programming—not prompting—language models.
+description: DSPy is a Python framework for programming, rather than prompting, language models. Tasks are declared as signatures with typed inputs and outputs, modules control how a signature executes, and optimizers tune prompts and weights against a metric. It is used to build modular AI systems from simple classifiers to RAG pipelines and agent loops.
+best_for: Building modular AI systems, Optimizing prompts and weights against a metric
 key_features:
 - Typed signatures for LLM modules
 - Automatic prompt optimization (compile)
 - Few-shot example bootstrapping
 - Chain-of-thought and ReAct patterns as composable modules
 - Metric-driven optimization
-- Model-agnostic — works with any LLM
+- Connects to multiple LM providers through dspy.LM
 use_cases:
 - Systematic prompt optimization
 - LLM pipeline development
-- Research on LLM programming
-- Building reliable LLM systems
+- RAG pipelines and agent loops
 pros:
-- Eliminates manual prompt engineering
-- Reproducible LLM behavior
-- Composable modular design
-- Research-backed optimization
-cons:
-- Steep conceptual learning curve
-- Optimization can be slow and expensive
-- Smaller community than LangChain
+- Tasks declared as signatures instead of prompt strings
+- Modules compose with plain Python control flow
+- Optimizers such as GEPA and MIPROv2 come from published papers
 language: Python
 languages_supported:
 - Python
-maintained_by: Stanford NLP (Omar Khattab)
-first_release: '2023-08-01'
+maintained_by: Stanford NLP
 license_spdx: MIT
 github_url: https://github.com/stanfordnlp/dspy
-docs_url: https://dspy-docs.vercel.app/
+docs_url: https://dspy.ai/
 website_url: https://dspy-docs.vercel.app/
 gpu_support:
   nvidia_cuda: false
@@ -47,15 +39,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: medium
-maturity: stable
-signal_strength: high
-backing:
-  type: foundation
-  orgs:
-  - Stanford NLP
-  funding_or_parent: Stanford NLP (led by Omar Khattab)
+maturity: experimental
 alternatives:
 - framework/langchain
 - framework/guidance
@@ -76,14 +60,18 @@ tags:
 - prompt-optimization
 - research
 - programming-over-prompting
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/stanfordnlp/dspy
   title: GitHub repository
-- url: https://dspy-docs.vercel.app/
+- url: https://dspy.ai/
   title: Documentation
+- url: https://dspy.ai/current/getting-started/installation/
+  title: Documentation — Setting up DSPy
+- url: https://pypi.org/project/dspy/
+  title: dspy — PyPI
 ---
 
 ## Overview
 
-Stanford research framework that replaces manual prompt engineering with programmatic optimization. Defines LLM modules as typed signatures, then automatically optimizes prompts and few-shot examples using a compiler. A paradigm shift from manual prompting.
+DSPy is a Python framework for programming, rather than prompting, language models. Tasks are declared as signatures with typed inputs and outputs, modules control how a signature executes, and optimizers tune prompts and weights against a metric. It is used to build modular AI systems from simple classifiers to RAG pipelines and agent loops.

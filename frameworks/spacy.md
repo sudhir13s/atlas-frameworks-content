@@ -7,36 +7,33 @@ title: spaCy
 kind: library
 category: framework-category/nlp
 subcategory: core-library
-tagline: Industrial-strength natural language processing in Python
-description: Production-ready NLP library designed for real-world applications. Provides tokenization, NER, POS tagging, dependency parsing, and text classification with pre-trained pipelines for 25+ languages. Fast and memory-efficient.
-best_for: Production NLP pipelines, NER, text preprocessing
-not_ideal_for: State-of-the-art accuracy on NLU benchmarks (use HF Transformers)
+tagline: Industrial-strength Natural Language Processing (NLP) in Python.
+description: spaCy is a library for natural language processing in Python and Cython, designed to be used in real products. It provides trained pipelines and components for tokenization, part-of-speech tagging, dependency parsing, named entity recognition, text classification and more. It includes a training system, model packaging and multi-task learning with pretrained transformers such as BERT.
+best_for: NLP in real products, Named entity recognition, Text classification
 key_features:
-- Tokenization and linguistic annotations
+- Linguistically-motivated tokenization
 - Named entity recognition (NER)
-- Dependency parsing
+- Part-of-speech tagging and dependency parsing
 - Text classification
-- 25+ language pipelines
-- Custom training pipelines
-- spaCy-LLM integration
+- Entity linking and lemmatization
+- Trained pipelines for many languages
+- Training system and model packaging
+- LLM components in pipelines
+- Visualizers for syntax and NER
 use_cases:
 - Named entity recognition
-- Text preprocessing for ML
-- Information extraction
-- Production NLP pipelines
+- Text classification
+- Dependency parsing
+- Entity linking
 pros:
-- Fast and memory-efficient
-- Production-ready out of the box
-- Excellent documentation
-- Good training framework
-cons:
-- Less flexible than Hugging Face for custom models
-- Model quality behind transformer-based alternatives for some tasks
+- Trained pipelines install as Python packages
+- Built-in training system
+- Extensible with custom components and attributes
+- Custom models in PyTorch and TensorFlow
 language: Python
 languages_supported:
 - Python
 maintained_by: Explosion AI
-first_release: '2015-02-01'
 license_spdx: MIT
 github_url: https://github.com/explosion/spaCy
 docs_url: https://spacy.io/api
@@ -47,10 +44,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -75,14 +69,20 @@ tags:
 - ner
 - production
 - text-processing
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/explosion/spaCy
   title: GitHub repository
 - url: https://spacy.io/api
   title: Documentation
+- url: https://spacy.io/usage
+  title: Install spaCy
+- url: https://spacy.io/usage/embeddings-transformers
+  title: Embeddings, Transformers and Transfer Learning
+- url: https://pypi.org/project/spacy/
+  title: spacy — PyPI
 ---
 
 ## Overview
 
-Production-ready NLP library designed for real-world applications. Provides tokenization, NER, POS tagging, dependency parsing, and text classification with pre-trained pipelines for 25+ languages. Fast and memory-efficient.
+spaCy is a library for natural language processing in Python and Cython, designed to be used in real products. It provides trained pipelines and components for tokenization, part-of-speech tagging, dependency parsing, named entity recognition, text classification and more. It includes a training system, model packaging and multi-task learning with pretrained transformers such as BERT.

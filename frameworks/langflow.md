@@ -3,9 +3,9 @@ id: framework/langflow
 type: framework
 slug: langflow
 schema_version: 1.2
-title: langflow
+title: Langflow
 category: framework-category/llm-frameworks
-tagline: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
+tagline: Langflow is a tool for building and deploying AI-powered agents and workflows.
 language: Python
 maintained_by: langflow-ai
 license_spdx: MIT
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/langflow-ai/langflow
 aliases:
 - langflow-ai/langflow
+- langflow
 tags:
 - agents
 - chatgpt

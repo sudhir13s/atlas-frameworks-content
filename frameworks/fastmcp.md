@@ -3,9 +3,9 @@ id: framework/fastmcp
 type: framework
 slug: fastmcp
 schema_version: 1.2
-title: fastmcp
+title: FastMCP
 category: framework-category/agents
-tagline: 🚀 The fast, Pythonic way to build MCP servers and clients.
+tagline: The fast, Pythonic way to build MCP servers and clients.
 language: Python
 maintained_by: PrefectHQ
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/PrefectHQ/fastmcp
 aliases:
 - PrefectHQ/fastmcp
+- fastmcp
 tags:
 - agents
 - fastmcp

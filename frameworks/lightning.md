@@ -7,55 +7,43 @@ title: PyTorch Lightning
 kind: framework
 category: framework-category/training
 subcategory: training-framework
-tagline: The deep learning framework for professional AI researchers and machine learning engineers
-description: High-level PyTorch wrapper that decouples research code from engineering boilerplate. Provides distributed training, mixed precision, logging, checkpointing, and hardware abstraction with minimal code changes. Industry standard for structured PyTorch projects.
-best_for: Structured PyTorch projects needing distributed training and reproducibility
-not_ideal_for: Very simple models, teams wanting full control over training loop
+tagline: Organizes PyTorch code to automate training infrastructure such as backpropagation, mixed precision, multi-GPU and distributed training, while keeping full control over model logic.
+description: PyTorch Lightning is a deep learning framework to pretrain and finetune AI models that organizes PyTorch code to decouple the science from the engineering. It automates backpropagation, mixed precision, multi-GPU and distributed training while keeping full control over model logic, and scales from CPU to multi-node GPUs without changes to the core code. Lightning Fabric offers expert-level control over the training loop and scaling strategy.
+best_for: Pretraining and finetuning PyTorch models, Scaling PyTorch training from CPU to multi-node GPUs
 key_features:
 - LightningModule for organized training code
-- Automatic distributed training (DDP, FSDP, DeepSpeed)
+- Distributed training strategies (DDP, FSDP, DeepSpeed)
 - Mixed precision training
-- Callback system
-- Logger integrations (W&B, TensorBoard, MLflow)
-- Automatic checkpointing
+- Callbacks such as early stopping and checkpointing
+- Logger integrations (TensorBoard, Weights & Biases, Comet, MLflow)
+- Export to TorchScript and ONNX
+- Lightning Fabric for custom training loops
 use_cases:
 - Organized PyTorch training code
-- Multi-GPU/TPU training with minimal code
-- Reproducible ML research
-- Production PyTorch pipelines
+- Multi-GPU and TPU training without code changes
+- Finetuning models for classification, segmentation and summarization
 pros:
-- Reduces PyTorch boilerplate significantly
-- Easy distributed training
-- Forces good code organization
-- Large ecosystem of integrations
-cons:
-- Abstraction can hide important details
-- Extra layer of complexity for simple projects
-- Some edge cases require dropping to raw PyTorch
+- Same code runs on CPU, GPU and TPU
+- LightningModules remain PyTorch modules
+- Choice of abstraction level between Trainer and Fabric
 language: Python
 languages_supported:
 - Python
 maintained_by: Lightning AI
-first_release: '2019-03-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/Lightning-AI/pytorch-lightning
 docs_url: https://lightning.ai/docs/pytorch/stable/
 website_url: https://lightning.ai/
 gpu_support:
   nvidia_cuda: true
-  amd_rocm: true
+  amd_rocm: false
   apple_mps: true
   intel_oneapi: false
   google_tpu: true
-learning_curve: medium
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Lightning AI
-  funding_or_parent: Series B $40M led by Coatue (2022)
 alternatives:
 - framework/pytorch
 - framework/keras
@@ -64,7 +52,6 @@ ecosystem_connections:
 - framework/wandb
 - framework/mlflow
 - framework/deepspeed
-- framework/hugging-face-transformers
 registry_signals:
   github_stars: 31467
   downloads_monthly: 11733050
@@ -80,14 +67,20 @@ tags:
 - training
 - distributed
 - organized
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/Lightning-AI/pytorch-lightning
   title: GitHub repository
 - url: https://lightning.ai/docs/pytorch/stable/
   title: Documentation
+- url: https://lightning.ai/docs/pytorch/stable/extensions/accelerator.html
+  title: Accelerator
+- url: https://lightning.ai/docs/pytorch/stable/accelerators/gpu_basic.html
+  title: GPU training (basic)
+- url: https://pypi.org/project/pytorch-lightning/
+  title: pytorch-lightning — PyPI
 ---
 
 ## Overview
 
-High-level PyTorch wrapper that decouples research code from engineering boilerplate. Provides distributed training, mixed precision, logging, checkpointing, and hardware abstraction with minimal code changes. Industry standard for structured PyTorch projects.
+PyTorch Lightning is a deep learning framework to pretrain and finetune AI models that organizes PyTorch code to decouple the science from the engineering. It automates backpropagation, mixed precision, multi-GPU and distributed training while keeping full control over model logic, and scales from CPU to multi-node GPUs without changes to the core code. Lightning Fabric offers expert-level control over the training loop and scaling strategy.

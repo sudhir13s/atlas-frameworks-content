@@ -7,41 +7,31 @@ title: Ollama
 kind: tool
 category: framework-category/llm-frameworks
 subcategory: inference-runtime
-tagline: Get up and running with large language models locally
-description: User-friendly runtime for running LLMs locally. Wraps llama.cpp with a simple CLI and REST API. One-command model pulling and serving. The easiest way to run open-source LLMs on a local machine.
-best_for: Developers wanting the easiest path to local LLM inference
-not_ideal_for: Production serving at scale, fine-tuning, custom inference optimization
+tagline: Start building with open models, locally or in the cloud.
+description: Ollama runs open models on your own computer or through Ollama's cloud models, from a CLI, a REST API and official Python and JavaScript libraries. It uses llama.cpp as its supported backend and can connect models to desktop apps and coding agents.
+best_for: Running open models locally, Building applications on open models
 key_features:
-- One-command model download and run
-- REST API for local serving
+- Download and run models from the CLI
+- REST API for running and managing models
 - Modelfile for custom models
-- Multi-model concurrency
-- Automatic GPU detection
-- OpenAI-compatible API
+- Concurrent model loading
+- OpenAI and Anthropic compatible APIs
+- Cloud models without a local GPU
 use_cases:
-- Local AI development and testing
-- Privacy-preserving AI applications
-- Developer tooling integration
-- Offline AI assistants
+- Running open models on a local machine
+- Connecting coding agents to open models
+- Building applications on local or cloud models
 pros:
-- Simplest setup for local LLMs
-- Large model library
-- Great developer experience
-- Active development
-cons:
-- Not designed for production serving at scale
-- Limited customization compared to raw llama.cpp
-- No distributed serving
+- Installers for macOS Windows and Linux plus an official Docker image
+- Official Python and JavaScript libraries
 language: Go
 languages_supported:
-- Go
 - Python
 - JavaScript
-maintained_by: Ollama Inc.
-first_release: '2023-08-01'
+maintained_by: Ollama
 license_spdx: MIT
 github_url: https://github.com/ollama/ollama
-docs_url: https://ollama.com/docs
+docs_url: https://docs.ollama.com/
 website_url: https://ollama.com/
 gpu_support:
   nvidia_cuda: true
@@ -49,14 +39,10 @@ gpu_support:
   apple_mps: true
   intel_oneapi: false
   google_tpu: false
-learning_curve: very-low
-community_size: massive
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - Ollama Inc
+  - Ollama
 alternatives:
 - framework/llama-cpp
 ecosystem_connections:
@@ -77,14 +63,20 @@ tags:
 - developer-tools
 - inference
 - easy-setup
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/ollama/ollama
   title: GitHub repository
-- url: https://ollama.com/docs
+- url: https://docs.ollama.com/
   title: Documentation
+- url: https://docs.ollama.com/gpu
+  title: Hardware support
+- url: https://docs.ollama.com/faq
+  title: Local FAQ
+- url: https://docs.ollama.com/api/openai-compatibility
+  title: OpenAI compatibility
 ---
 
 ## Overview
 
-User-friendly runtime for running LLMs locally. Wraps llama.cpp with a simple CLI and REST API. One-command model pulling and serving. The easiest way to run open-source LLMs on a local machine.
+Ollama runs open models on your own computer or through Ollama's cloud models, from a CLI, a REST API and official Python and JavaScript libraries. It uses llama.cpp as its supported backend and can connect models to desktop apps and coding agents.

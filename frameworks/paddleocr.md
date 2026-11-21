@@ -5,7 +5,7 @@ slug: paddleocr
 schema_version: 1.2
 title: PaddleOCR
 category: framework-category/computer-vision
-tagline: Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
+tagline: Turn any PDF or image document into structured data for your AI. A lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 language: Python
 maintained_by: PaddlePaddle
 license_spdx: Apache-2.0

@@ -7,32 +7,24 @@ title: Pinecone
 kind: tool
 category: framework-category/vector-dbs
 subcategory: managed-service
-tagline: Fully managed vector database for production AI
-description: Fully managed vector database designed for production AI workloads. No infrastructure to manage — just an API. Known for low-latency queries and serverless pricing. The most popular managed vector database.
-best_for: Production vector search with zero infrastructure management
-not_ideal_for: Self-hosted requirements, air-gapped environments, cost-sensitive projects
+tagline: Pinecone Database is a search engine for AI agents and applications. It serves full-text, semantic, and sparse-vector search and retrieval from one index.
+description: Pinecone Database is a search engine for AI agents and applications that serves full-text, semantic, sparse-vector and hybrid search from one index. Applications write JSON documents through its Documents API, and Pinecone can generate embeddings from text server-side. The Pinecone Python SDK creates and manages indexes, upserts and queries records, and runs inference operations.
+best_for: Retrieval for AI agents and applications, Semantic and hybrid search
 key_features:
-- Fully managed — no infrastructure
-- Serverless pricing model
+- Full-text, semantic, sparse-vector and hybrid search in one index
+- Integrated embedding and reranking
 - Metadata filtering
 - Namespaces for multi-tenancy
-- Hybrid search (sparse + dense)
-- Low-latency queries
+- Managed indexes or Bring Your Own Cloud deployment
+- MCP server for agents
 use_cases:
-- Production RAG applications
-- Semantic search at scale
-- Recommendation systems
-- Enterprise AI applications
+- Semantic search
+- Recommendations
+- Long-term memory for AI agents
+- Knowledge retrieval agents
 pros:
-- Zero infrastructure management
-- Very low query latency
-- Good serverless pricing
-- Easy to use
-cons:
-- Proprietary — vendor lock-in
-- Can be expensive at scale
-- Limited control over infrastructure
-- No self-hosting option
+- Official SDKs for Python, Node.js, Java and Go
+- One API for text, vectors and metadata
 language: Python
 languages_supported:
 - Python
@@ -40,10 +32,9 @@ languages_supported:
 - Java
 - Go
 maintained_by: Pinecone Systems
-first_release: '2021-01-01'
-license_note: Proprietary
-github_url: https://github.com/pinecone-io/pinecone-python-client
-docs_url: https://docs.pinecone.io/
+license_note: 'Pinecone Python SDK: Apache-2.0'
+github_url: https://github.com/pinecone-io/python-sdk
+docs_url: https://docs.pinecone.io/guides/get-started/overview
 website_url: https://www.pinecone.io/
 gpu_support:
   nvidia_cuda: false
@@ -51,15 +42,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: very-low
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Pinecone Systems
-  funding_or_parent: Series B $100M led by Andreessen Horowitz (2023)
 alternatives:
 - framework/weaviate
 - framework/qdrant
@@ -76,19 +63,24 @@ registry_signals:
   source: https://github.com/pinecone-io/pinecone-python-client
 aliases:
 - pinecone-io/pinecone-python-client
+- pinecone-io/python-sdk
 tags:
 - vector-db
 - managed
 - production
 - saas
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/pinecone-io/pinecone-python-client
+- url: https://github.com/pinecone-io/python-sdk
   title: GitHub repository
-- url: https://docs.pinecone.io/
+- url: https://docs.pinecone.io/guides/get-started/overview
   title: Documentation
+- url: https://docs.pinecone.io/reference/pinecone-sdks
+  title: Pinecone SDKs overview
+- url: https://pypi.org/project/pinecone/
+  title: pinecone — PyPI
 ---
 
 ## Overview
 
-Fully managed vector database designed for production AI workloads. No infrastructure to manage — just an API. Known for low-latency queries and serverless pricing. The most popular managed vector database.
+Pinecone Database is a search engine for AI agents and applications that serves full-text, semantic, sparse-vector and hybrid search from one index. Applications write JSON documents through its Documents API, and Pinecone can generate embeddings from text server-side. The Pinecone Python SDK creates and manages indexes, upserts and queries records, and runs inference operations.

@@ -3,61 +3,45 @@ id: framework/faiss
 type: framework
 slug: faiss
 schema_version: 1.1
-title: FAISS
+title: Faiss
 kind: library
 category: framework-category/vector-dbs
 subcategory: search-library
-tagline: Facebook AI Similarity Search — efficient similarity search and clustering of dense vectors
-description: Meta AI's library for efficient similarity search and clustering of dense vectors. Not a database but a search library. Provides the fastest vector search algorithms available, often used as the engine inside other vector databases.
-best_for: Building custom high-performance vector search systems
-not_ideal_for: Applications needing a full database with persistence and filtering
+tagline: A library for efficient similarity search and clustering of dense vectors.
+description: Faiss is a library for efficient similarity search and clustering of dense vectors, including vector sets that may not fit in RAM. It is written in C++ with complete wrappers for Python/numpy, and some of its algorithms are implemented on the GPU. It is developed primarily at Meta's Fundamental AI Research group.
+best_for: Similarity search over dense vectors, Clustering dense vectors
 key_features:
 - Multiple index types (flat, IVF, HNSW, PQ)
 - GPU-accelerated search
-- Billion-scale indexing
+- Search in vector sets that may not fit in RAM
 - Product quantization for compression
 - Composable index factory
 use_cases:
-- High-performance vector search
+- Vector similarity search
 - Embedding similarity search
-- Building custom vector search systems
+- Clustering dense vectors
 pros:
-- Fastest vector search library
-- GPU acceleration
-- Battle-tested at Meta scale
-- Highly configurable index types
-cons:
-- Library, not a database — no persistence, CRUD, or filtering
-- Complex to tune for optimal performance
-- No built-in metadata handling
+- Optional GPU support through CUDA or AMD ROCm
+- Index types trade off search time, search quality and memory
 language: C++
 languages_supported:
 - C++
 - Python
-maintained_by: Meta AI Research
-first_release: '2017-03-01'
+maintained_by: Meta Fundamental AI Research
 license_spdx: MIT
 github_url: https://github.com/facebookresearch/faiss
 docs_url: https://faiss.ai/
 website_url: https://faiss.ai/
 gpu_support:
   nvidia_cuda: true
-  amd_rocm: false
+  amd_rocm: true
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium-high
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
   - Meta
-  funding_or_parent: Meta AI Research (FAIR)
-ecosystem_connections:
-- framework/pytorch
-- framework/langchain
 registry_signals:
   github_stars: 41831
   downloads_monthly: 5000000
@@ -67,19 +51,24 @@ registry_signals:
   source: https://github.com/facebookresearch/faiss
 aliases:
 - facebookresearch/faiss
+- FAISS
 tags:
 - vector-db
 - search-library
 - high-performance
 - gpu
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/facebookresearch/faiss
   title: GitHub repository
 - url: https://faiss.ai/
   title: Documentation
+- url: https://github.com/facebookresearch/faiss/wiki/The-index-factory
+  title: Faiss wiki — The index factory
+- url: https://pypi.org/project/faiss-cpu/
+  title: faiss-cpu — PyPI
 ---
 
 ## Overview
 
-Meta AI's library for efficient similarity search and clustering of dense vectors. Not a database but a search library. Provides the fastest vector search algorithms available, often used as the engine inside other vector databases.
+Faiss is a library for efficient similarity search and clustering of dense vectors, including vector sets that may not fit in RAM. It is written in C++ with complete wrappers for Python/numpy, and some of its algorithms are implemented on the GPU. It is developed primarily at Meta's Fundamental AI Research group.

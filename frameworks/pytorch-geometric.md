@@ -3,7 +3,7 @@ id: framework/pytorch-geometric
 type: framework
 slug: pytorch-geometric
 schema_version: 1.2
-title: pytorch_geometric
+title: PyG (PyTorch Geometric)
 category: framework-category/training
 tagline: Graph Neural Network Library for PyTorch
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/pyg-team/pytorch_geometric
 aliases:
 - pyg-team/pytorch_geometric
+- pytorch_geometric
 tags:
 - deep-learning
 - geometric-deep-learning

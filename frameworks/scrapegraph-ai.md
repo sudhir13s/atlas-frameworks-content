@@ -3,7 +3,7 @@ id: framework/scrapegraph-ai
 type: framework
 slug: scrapegraph-ai
 schema_version: 1.2
-title: Scrapegraph-ai
+title: ScrapeGraphAI
 category: framework-category/rag
 tagline: Python scraper based on AI
 language: Python
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/ScrapeGraphAI/Scrapegraph-ai
 aliases:
 - ScrapeGraphAI/Scrapegraph-ai
+- Scrapegraph-ai
 tags:
 - ai-crawler
 - ai-scraping

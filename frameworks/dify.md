@@ -3,9 +3,9 @@ id: framework/dify
 type: framework
 slug: dify
 schema_version: 1.2
-title: dify
+title: Dify
 category: framework-category/llm-frameworks
-tagline: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
+tagline: Build agentic workflows and RAG pipelines, with AI model and tool support, on one collaborative workspace. Deploy on cloud, VPC, or self-hosted.
 language: Python
 maintained_by: langgenius
 license_note: Other
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/langgenius/dify
 aliases:
 - langgenius/dify
+- dify
 tags:
 - agent
 - agentic-ai

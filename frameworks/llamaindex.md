@@ -7,40 +7,37 @@ title: LlamaIndex
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
-tagline: Data framework for LLM applications — connect custom data to large language models
-description: Framework focused on connecting LLMs with external data. Excels at data ingestion, indexing, and retrieval for RAG applications. Provides data connectors for 160+ sources and sophisticated query engines. More data-centric than LangChain.
-best_for: RAG applications with complex data sources, enterprise document search
-not_ideal_for: Simple chatbots, non-retrieval agent workflows
+tagline: Open-source framework of orchestration tools for building RAG and agent applications.
+description: LlamaIndex Framework is an open-source Python toolkit for building LLM-powered agents and applications over your own data. It provides data connectors, indexes, query and chat engines, agents and event-driven workflows, built from a core package and separate integration packages for LLM, embedding and vector store providers. The company behind it says its primary focus has shifted to LlamaParse, while the framework remains available as an open toolkit.
+best_for: Retrieval-augmented generation over private data, Agents and workflows over documents
 key_features:
-- 160+ data connectors (LlamaHub)
-- Advanced indexing strategies (vector, keyword, knowledge graph)
+- Data connectors for APIs, PDFs, documents and SQL
+- Indexes and vector store integrations
 - Query engines and chat engines
-- Agentic RAG workflows
-- Document parsing and chunking
-- Evaluation framework for RAG quality
+- Agents and tools
+- Event-driven workflows with branching, retries and human review
+- Evaluation and observability modules
+- Core package with separate integration packages
 use_cases:
-- Enterprise document Q&A
-- Knowledge base search
-- Structured data querying with natural language
-- Multi-document synthesis
+- Question answering over documents (RAG)
+- Chatbots
+- Structured data extraction
+- Text-to-SQL and querying CSVs
+- Multi-modal applications over text, images and tables
 pros:
-- Best-in-class data ingestion and indexing
-- More focused than LangChain (data-first)
-- Excellent for enterprise RAG
-- Good evaluation tools
+- Install only the integrations an application needs
+- High-level API for beginners and lower-level APIs for customization
+- Python and TypeScript frameworks
 cons:
-- Less flexible for non-RAG use cases
-- Agent capabilities less mature than LangGraph
-- Can be complex for simple retrieval tasks
+- The company's primary focus has shifted to LlamaParse; the OSS framework remains available as an open toolkit
 language: Python
 languages_supported:
 - Python
 - TypeScript
-maintained_by: LlamaIndex Inc. (formerly GPT Index)
-first_release: '2022-11-01'
+maintained_by: LlamaIndex
 license_spdx: MIT
 github_url: https://github.com/run-llama/llama_index
-docs_url: https://docs.llamaindex.ai/
+docs_url: https://developers.llamaindex.ai/python/framework/
 website_url: https://www.llamaindex.ai/
 gpu_support:
   nvidia_cuda: false
@@ -48,15 +45,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - LlamaIndex Inc
-  funding_or_parent: Series A $19M led by Norwest Venture Partners (2024); seed from Greylock
+  - LlamaIndex
 alternatives:
 - framework/langchain
 - framework/haystack
@@ -79,14 +71,20 @@ tags:
 - data-framework
 - indexing
 - retrieval
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/run-llama/llama_index
   title: GitHub repository
-- url: https://docs.llamaindex.ai/
+- url: https://developers.llamaindex.ai/python/framework/
   title: Documentation
+- url: https://developers.llamaindex.ai/python/framework/community/integrations
+  title: Integrations
+- url: https://developers.llamaindex.ai/typescript/framework/
+  title: LlamaIndex.TS documentation
+- url: https://pypi.org/project/llama-index-core/
+  title: llama-index-core — PyPI
 ---
 
 ## Overview
 
-Framework focused on connecting LLMs with external data. Excels at data ingestion, indexing, and retrieval for RAG applications. Provides data connectors for 160+ sources and sophisticated query engines. More data-centric than LangChain.
+LlamaIndex Framework is an open-source Python toolkit for building LLM-powered agents and applications over your own data. It provides data connectors, indexes, query and chat engines, agents and event-driven workflows, built from a core package and separate integration packages for LLM, embedding and vector store providers. The company behind it says its primary focus has shifted to LlamaParse, while the framework remains available as an open toolkit.

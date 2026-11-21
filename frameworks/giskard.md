@@ -7,37 +7,35 @@ title: Giskard
 kind: library
 category: framework-category/evaluation
 subcategory: ml-testing
-tagline: Testing framework for ML models — detect bias, performance issues, and vulnerabilities
-description: Open-source testing framework for ML and LLM models. Automatically generates test suites to detect bias, data leakage, performance regressions, and adversarial vulnerabilities. Supports both traditional ML and LLM evaluation.
-best_for: ML model testing with focus on bias, safety, and compliance
-not_ideal_for: Simple LLM prompt testing (use Promptfoo)
+tagline: Open-Source Evaluation & Testing library for LLM Agents.
+description: Open-source Python library for testing and evaluating agentic systems, from a single LLM to a black-box agent or a multi-step pipeline. It ships as modular packages, with giskard-checks for evals that range from simple assertions to LLM-as-judge checks and giskard-scan for red teaming, vulnerability scanning and RAG quality evaluation. The automatic scan for tabular ML models exists only in the previous major version, which is no longer actively maintained.
+best_for: Testing and evaluating LLM-based agents, Red teaming agentic systems, RAG quality evaluation
+not_ideal_for: Automatic scanning of tabular ML models (only in the previous major version)
 key_features:
-- Automatic test generation
-- Bias detection
-- LLM hallucination testing
-- Data leakage detection
-- Model debugging
-- Regulatory compliance checks
+- Scenario API with built-in checks and test suites
+- LLM-as-judge checks such as Groundedness and Conformity
+- Multi-turn agent evaluation
+- Vulnerability scan for prompt injection, jailbreaks and harmful content
+- Adversarial test suites generated from a plain-language agent description
+- Knowledge-base quality scan for RAG systems
 use_cases:
-- ML model quality assurance
-- Bias and fairness testing
-- LLM safety testing
-- Regulatory compliance for AI
+- Regression testing of LLM-based systems
+- Red teaming AI agents
+- Checking that RAG answers are grounded in retrieved context
+- Enforcing content policies on model outputs
 pros:
-- Automatic test generation saves time
-- Covers bias and fairness
-- Works with traditional ML and LLMs
+- Modular packages that each carry only the dependencies they need
+- Wraps any sync or async callable as the system under test
 cons:
-- Smaller community
-- Auto-generated tests need manual curation
-- Some features require paid plan
+- The automatic tabular ML scan exists only in the previous major version, which is no longer actively maintained
+- LLM judges and scan generators need an LLM provider and API key
+- Team collaboration and continuous red teaming are in the separate enterprise Giskard Hub
 language: Python
 languages_supported:
 - Python
 maintained_by: Giskard AI
-first_release: '2022-01-01'
 license_spdx: Apache-2.0
-github_url: https://github.com/Giskard-AI/giskard
+github_url: https://github.com/Giskard-AI/giskard-oss
 docs_url: https://docs.giskard.ai/
 website_url: https://giskard.ai/
 gpu_support:
@@ -46,21 +44,13 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: small
-maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - Giskard AI
-  funding_or_parent: Seed €3M led by Elaia Partners (2023)
 alternatives:
 - framework/deepeval
 - framework/ragas
-ecosystem_connections:
-- framework/pytorch
-- framework/hugging-face-transformers
 registry_signals:
   github_stars: 5962
   downloads_monthly: 11486
@@ -70,20 +60,25 @@ registry_signals:
   source: https://github.com/Giskard-AI/giskard
 aliases:
 - Giskard-AI/giskard
+- Giskard-AI/giskard-oss
 tags:
 - evaluation
 - testing
 - bias
 - safety
 - compliance
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/Giskard-AI/giskard
+- url: https://github.com/Giskard-AI/giskard-oss
   title: GitHub repository
 - url: https://docs.giskard.ai/
   title: Documentation
+- url: https://docs.giskard.ai/oss
+  title: Giskard Open Source documentation
+- url: https://pypi.org/project/giskard/
+  title: giskard — PyPI
 ---
 
 ## Overview
 
-Open-source testing framework for ML and LLM models. Automatically generates test suites to detect bias, data leakage, performance regressions, and adversarial vulnerabilities. Supports both traditional ML and LLM evaluation.
+Open-source Python library for testing and evaluating agentic systems, from a single LLM to a black-box agent or a multi-step pipeline. It ships as modular packages, with giskard-checks for evals that range from simple assertions to LLM-as-judge checks and giskard-scan for red teaming, vulnerability scanning and RAG quality evaluation. The automatic scan for tabular ML models exists only in the previous major version, which is no longer actively maintained.

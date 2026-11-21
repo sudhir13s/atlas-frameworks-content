@@ -5,7 +5,7 @@ slug: copilotkit
 schema_version: 1.2
 title: CopilotKit
 category: framework-category/agents
-tagline: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol
+tagline: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.
 language: TypeScript
 maintained_by: CopilotKit
 license_spdx: MIT

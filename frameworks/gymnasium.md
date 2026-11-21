@@ -7,32 +7,27 @@ title: Gymnasium
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: environment
-tagline: Standard API for reinforcement learning environments
-description: Maintained fork of OpenAI Gym. Provides the standard API for RL environments used by virtually all RL libraries. Includes classic control, Atari, MuJoCo, and box2d environments.
-best_for: Defining RL environments, benchmarking RL algorithms
-not_ideal_for: Complex simulation environments (use Unity ML-Agents, MuJoCo directly)
+tagline: A standard API for single-agent reinforcement learning environments, with reference environments and related utilities (formerly Gym).
+description: Open-source Python library for developing and comparing reinforcement learning algorithms. It provides a standard API between learning algorithms and environments and a set of reference environments compliant with that API. It is a maintained fork of OpenAI's Gym.
+best_for: Defining reinforcement learning environments, Developing and comparing RL algorithms
 key_features:
-- Standard RL environment API (reset, step, render)
-- Classic control environments
-- Atari game environments
+- Standard environment API built on reset and step
+- Classic Control, Box2D and Toy Text environments
+- Atari environments
 - MuJoCo physics environments
-- Environment wrappers and vectorization
+- Environment wrappers and vectorized environments
+- Versioned environments for reproducibility
 use_cases:
 - RL environment definition
-- RL algorithm benchmarking
+- Comparing RL algorithms
 - Custom RL environment creation
 pros:
-- Industry standard API
-- Used by all major RL libraries
-- Good built-in environments
-cons:
-- Environments are simple — real-world RL needs custom envs
-- Some legacy API complexity
+- Environments are strictly versioned for reproducibility
+- Third-party environments built on the same API
 language: Python
 languages_supported:
 - Python
 maintained_by: Farama Foundation
-first_release: '2022-10-01'
 license_spdx: MIT
 github_url: https://github.com/Farama-Foundation/Gymnasium
 docs_url: https://gymnasium.farama.org/
@@ -43,18 +38,12 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: foundation
   orgs:
   - Farama Foundation
-  funding_or_parent: Nonprofit that took over OpenAI Gym maintenance in 2022
 ecosystem_connections:
-- framework/stable-baselines3
-- framework/rllib
 - framework/cleanrl
 registry_signals:
   github_stars: 12842
@@ -69,14 +58,16 @@ tags:
 - reinforcement-learning
 - environment
 - standard-api
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/Farama-Foundation/Gymnasium
   title: GitHub repository
 - url: https://gymnasium.farama.org/
   title: Documentation
+- url: https://pypi.org/project/gymnasium/
+  title: gymnasium — PyPI
 ---
 
 ## Overview
 
-Maintained fork of OpenAI Gym. Provides the standard API for RL environments used by virtually all RL libraries. Includes classic control, Atari, MuJoCo, and box2d environments.
+Open-source Python library for developing and comparing reinforcement learning algorithms. It provides a standard API between learning algorithms and environments and a set of reference environments compliant with that API. It is a maintained fork of OpenAI's Gym.

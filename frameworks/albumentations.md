@@ -7,32 +7,31 @@ title: AlbumentationsX
 kind: library
 category: framework-category/computer-vision
 subcategory: augmentation
-tagline: Fast image augmentation library for deep learning
-description: High-performance image augmentation library optimized for deep learning. Provides 70+ augmentation transforms that work with images, masks, bounding boxes, and keypoints simultaneously. Built on OpenCV for speed.
-best_for: CV model training data augmentation
-not_ideal_for: Non-image data, GPU-only augmentation pipelines
+tagline: Image augmentation for computer vision.
+description: AlbumentationsX is a Python library for image augmentation, which creates new training samples from existing data. One consistent interface covers RGB, grayscale and multispectral images, masks, bounding boxes and keypoints, and the library also has 3D and medical-imaging transforms.
+best_for: Training data augmentation for computer vision models
 key_features:
-- 70+ augmentation transforms
-- Simultaneous image + mask + bbox augmentation
-- Fast (OpenCV backend)
+- One interface for images, masks, bounding boxes and keypoints
+- Pixel-level and spatial-level transforms
+- 3D volume and medical-imaging transforms
 - Serialization of augmentation pipelines
-- Integration with PyTorch and TF data loaders
+- Works with PyTorch, TensorFlow and other frameworks
 use_cases:
-- Training data augmentation for CV models
+- Training data augmentation for classification and segmentation
 - Object detection data augmentation
 - Medical image augmentation
 pros:
-- Very fast augmentations
-- Handles bboxes and masks correctly
-- Wide range of transforms
+- Applies the same transform to an image and its annotations
+- Broad transform catalog
+- Works with any OpenCV package variant
 cons:
-- Image-only (no text/audio augmentation)
-- Some transforms are CPU-only
+- Free use is under AGPL-3.0-only terms; a commercial license is sold separately
+- Collects usage statistics by default (opt-out documented)
+- Importing the library requires a separately installed PyTorch build
 language: Python
 languages_supported:
 - Python
 maintained_by: Albumentations team
-first_release: '2018-06-01'
 license_spdx: AGPL-3.0-only
 github_url: https://github.com/albumentations-team/AlbumentationsX
 docs_url: https://albumentations.ai/docs/
@@ -43,13 +42,9 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: large
 maturity: production
-signal_strength: medium
 backing:
   type: community
-  funding_or_parent: Community-maintained by a team of Kaggle Grandmasters
 ecosystem_connections:
 - framework/pytorch
 - framework/opencv
@@ -67,14 +62,16 @@ tags:
 - computer-vision
 - augmentation
 - data-processing
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/albumentations-team/AlbumentationsX
   title: GitHub repository
 - url: https://albumentations.ai/docs/
   title: Documentation
+- url: https://pypi.org/project/albumentationsx/
+  title: albumentationsx — PyPI
 ---
 
 ## Overview
 
-High-performance image augmentation library optimized for deep learning. Provides 70+ augmentation transforms that work with images, masks, bounding boxes, and keypoints simultaneously. Built on OpenCV for speed.
+AlbumentationsX is a Python library for image augmentation, which creates new training samples from existing data. One consistent interface covers RGB, grayscale and multispectral images, masks, bounding boxes and keypoints, and the library also has 3D and medical-imaging transforms.

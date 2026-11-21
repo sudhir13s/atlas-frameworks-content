@@ -7,40 +7,36 @@ title: Milvus
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
-tagline: Cloud-native vector database for scalable similarity search
-description: Open-source vector database built for billion-scale vector similarity search. Cloud-native architecture with separation of storage and compute. Supports multiple index types (HNSW, IVF, DiskANN) and GPU-accelerated search.
-best_for: Billion-scale vector search, enterprise deployments
-not_ideal_for: Small projects, simple prototyping, lightweight deployments
+tagline: Milvus is a cloud-native vector database built for scalable vector ANN search.
+description: Milvus is an open-source vector database written in Go and C++ for organizing and searching unstructured data such as text, images and multi-modal information. It has a distributed, Kubernetes-native architecture that separates compute and storage, and also runs as a single-machine Standalone server or as Milvus Lite, a Python library. The project is hosted by the LF AI & Data Foundation, with Zilliz as its major contributor.
+best_for: Vector search at scale on Kubernetes, Hybrid search combining dense vectors and full-text search
 key_features:
-- Billion-scale vector search
-- Multiple index types (HNSW, IVF, DiskANN)
-- GPU-accelerated search
-- Cloud-native architecture
-- Hybrid search (vector + scalar)
-- Multi-vector search
-- Milvus Lite for embedded use
+- Distributed architecture with separate compute and storage
+- Deployment modes (Milvus Lite, Standalone, Distributed)
+- Index types including HNSW, IVF, FLAT, SCANN and DiskANN
+- GPU indexing such as NVIDIA CAGRA
+- Metadata filtering and range search
+- Full-text search with BM25 and sparse vectors
+- Hybrid search with reranking
+- Multi-tenancy and hot/cold storage
+- Authentication, TLS encryption and role-based access control
 use_cases:
-- Billion-scale similarity search
-- Enterprise RAG at scale
+- Retrieval-augmented generation (RAG)
+- Text and image search
 - Recommendation systems
-- Image/video similarity search
+- Hybrid search
 pros:
-- Best scale — handles billions of vectors
-- Multiple index types for different tradeoffs
-- GPU acceleration for search
-- Milvus Lite for development
-cons:
-- Complex deployment (requires etcd, MinIO, Pulsar)
-- Heavy infrastructure for small use cases
-- Steeper learning curve
+- Same client API from Milvus Lite to a distributed cluster
+- Choice of index types for different scenarios
+- Official SDKs in several languages
 language: Go
 languages_supported:
 - Python
 - Go
 - Java
 - Node.js
-maintained_by: Zilliz
-first_release: '2019-10-01'
+- C++
+maintained_by: LF AI & Data Foundation (Zilliz is the major contributor)
 license_spdx: Apache-2.0
 github_url: https://github.com/milvus-io/milvus
 docs_url: https://milvus.io/docs
@@ -51,16 +47,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: high
-community_size: large
-maturity: production
-signal_strength: high
 backing:
-  type: corporate
+  type: foundation
   orgs:
-  - Zilliz
   - LF AI & Data Foundation
-  funding_or_parent: Created by Zilliz (Series B $60M led by Hillhouse 2022); graduated LF AI & Data project
+  - Zilliz
 alternatives:
 - framework/qdrant
 - framework/weaviate
@@ -82,14 +73,18 @@ tags:
 - open-source
 - scalable
 - billion-scale
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/milvus-io/milvus
   title: GitHub repository
 - url: https://milvus.io/docs
   title: Documentation
+- url: https://milvus.io/docs/overview.md
+  title: What is Milvus
+- url: https://pypi.org/project/pymilvus/
+  title: pymilvus — PyPI
 ---
 
 ## Overview
 
-Open-source vector database built for billion-scale vector similarity search. Cloud-native architecture with separation of storage and compute. Supports multiple index types (HNSW, IVF, DiskANN) and GPU-accelerated search.
+Milvus is an open-source vector database written in Go and C++ for organizing and searching unstructured data such as text, images and multi-modal information. It has a distributed, Kubernetes-native architecture that separates compute and storage, and also runs as a single-machine Standalone server or as Milvus Lite, a Python library. The project is hosted by the LF AI & Data Foundation, with Zilliz as its major contributor.

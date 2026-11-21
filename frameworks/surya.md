@@ -3,7 +3,7 @@ id: framework/surya
 type: framework
 slug: surya
 schema_version: 1.2
-title: surya
+title: Surya
 category: framework-category/computer-vision
 tagline: OCR, layout analysis, reading order, table recognition in 90+ languages
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/datalab-to/surya
 aliases:
 - datalab-to/surya
+- surya
 tags:
 - deep-learning
 - document-ai

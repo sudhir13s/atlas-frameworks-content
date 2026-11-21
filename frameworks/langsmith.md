@@ -7,40 +7,35 @@ title: LangSmith
 kind: tool
 category: framework-category/observability
 subcategory: llm-observability
-tagline: LangChain's platform for debugging, testing, evaluating, and monitoring LLM applications
-description: LangChain's observability and evaluation platform. Provides tracing, debugging, dataset management, and evaluation for LLM applications. Works with LangChain but also supports any LLM framework via the SDK.
-best_for: LangChain teams wanting integrated observability and evaluation
-not_ideal_for: Teams not using LangChain, self-hosted requirements
+tagline: Instrument your LLM application, investigate traces, and monitor performance in production.
+description: LangSmith is a platform from LangChain for observability, evaluation, prompt engineering and deployment of LLM applications and agents. It records traces of what an application did, supports datasets and evaluations built from those traces, and works with many frameworks and providers, with or without LangChain code.
+best_for: Tracing and debugging LLM applications and agents, Evaluating LLM applications against datasets
 key_features:
-- LLM call tracing and debugging
-- Evaluation datasets and experiments
-- Online evaluation in production
-- Annotation queues for human feedback
-- Prompt playground
-- Integration with LangChain and LangGraph
+- Tracing of LLM calls and application steps
+- Evaluation datasets and online evaluation rules
+- Annotation queues and inline annotation for human feedback
+- Dashboards and alerts for monitoring
+- Prompt playground with prompt versioning
+- Pytest plugin for datasets and evaluations as test cases
+- Cloud, hybrid or self-hosted setup
 use_cases:
 - LLM application debugging
 - Production LLM monitoring
 - Evaluation experiment management
 - Human feedback collection
 pros:
-- Tight LangChain integration
-- Good tracing UI
-- Evaluation experiment management
-- Free tier available
-cons:
-- SaaS dependency
-- Best experience requires LangChain
-- Can be expensive at scale
+- Works with or without LangChain code
+- Integrates with LangChain and LangGraph
+- Self-hosted option alongside the cloud service
 language: Python
 languages_supported:
 - Python
 - TypeScript
-maintained_by: LangChain Inc.
-first_release: '2023-07-01'
-license_note: 'Proprietary (client: MIT)'
+- Java
+maintained_by: LangChain
+license_note: 'LangSmith Python client: MIT'
 github_url: https://github.com/langchain-ai/langsmith-python
-docs_url: https://docs.smith.langchain.com/
+docs_url: https://docs.langchain.com/langsmith/observability
 website_url: https://smith.langchain.com/
 gpu_support:
   nvidia_cuda: false
@@ -48,15 +43,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - LangChain Inc
-  funding_or_parent: Part of LangChain (Series A $25M Sequoia 2024)
+  - LangChain
 alternatives:
 - framework/promptfoo
 - framework/deepeval
@@ -81,10 +71,18 @@ updated: '2026-11-21'
 sources:
 - url: https://github.com/langchain-ai/langsmith-python
   title: GitHub repository
-- url: https://docs.smith.langchain.com/
+- url: https://docs.langchain.com/langsmith/observability
   title: Documentation
+- url: https://docs.langchain.com/langsmith/home
+  title: LangSmith Observability - Docs by LangChain
+- url: https://docs.langchain.com/langsmith/observability-quickstart
+  title: Tracing quickstart
+- url: https://docs.langchain.com/langsmith/prompt-engineering
+  title: Prompt engineering
+- url: https://pypi.org/project/langsmith/
+  title: langsmith — PyPI
 ---
 
 ## Overview
 
-LangChain's observability and evaluation platform. Provides tracing, debugging, dataset management, and evaluation for LLM applications. Works with LangChain but also supports any LLM framework via the SDK.
+LangSmith is a platform from LangChain for observability, evaluation, prompt engineering and deployment of LLM applications and agents. It records traces of what an application did, supports datasets and evaluations built from those traces, and works with many frameworks and providers, with or without LangChain code.

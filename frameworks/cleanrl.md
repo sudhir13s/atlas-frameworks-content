@@ -7,32 +7,34 @@ title: CleanRL
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
-tagline: Single-file implementations of deep RL algorithms for educational clarity
-description: Single-file, self-contained implementations of popular RL algorithms. Designed for understanding — each algorithm is one Python file with no abstraction layers. Excellent for learning RL implementation details.
-best_for: Learning RL implementation details, reproducible research
-not_ideal_for: Production RL, complex environments
+tagline: Single-file implementation of deep reinforcement learning algorithms with research-friendly features (PPO, DQN, C51, DDPG, TD3, SAC, PPG).
+description: CleanRL is a deep reinforcement learning library that provides single-file implementations with research-friendly features, putting every detail of an algorithm variant into one standalone file. It is not a modular library and is not meant to be imported. Its implementations are benchmarked and support TensorBoard logging, seeding for local reproducibility and experiment tracking with Weights and Biases.
+best_for: Understanding every implementation detail of an RL algorithm variant, Prototyping features that modular RL libraries do not support
+not_ideal_for: Use as an importable library (the docs state it is not meant to be imported)
 key_features:
 - Single-file algorithm implementations
-- PPO, DQN, SAC, TD3, and more
-- W&B integration for tracking
-- Reproducible benchmarks
-- Educational design
+- PPO, DQN, C51, SAC, DDPG, TD3, PPG, RND and Qdagger variants
+- PyTorch implementations with JAX variants for several algorithms
+- Benchmarked implementations
+- TensorBoard logging
+- Local reproducibility via seeding
+- Gameplay video capture
+- Experiment management with Weights and Biases
+- Cloud integration with Docker and AWS
 use_cases:
-- Learning RL implementations
+- Learning how RL algorithms are implemented
 - Reproducible RL research
-- Algorithm comparison
+- Comparing tracked experiments through Open RL Benchmark
 pros:
-- Best for understanding RL code
-- No hidden abstractions
-- Good benchmarks and reproducibility
+- No subclassing or modular abstractions to trace
+- Benchmarked implementations with tracked experiments
 cons:
-- Not designed for production use
-- Limited algorithm variants
+- Not meant to be imported as a library
+- Duplicates code across files by design
 language: Python
 languages_supported:
 - Python
-maintained_by: CleanRL team (Costa Huang)
-first_release: '2020-07-01'
+maintained_by: CleanRL contributors
 license_spdx: MIT
 github_url: https://github.com/vwxyzjn/cleanrl
 docs_url: https://docs.cleanrl.dev/
@@ -43,13 +45,8 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
-maturity: stable
-signal_strength: medium
 backing:
   type: community
-  funding_or_parent: Maintained by Costa Huang (Hugging Face) and community
 alternatives:
 - framework/stable-baselines3
 - framework/rllib
@@ -71,14 +68,18 @@ tags:
 - education
 - clean-code
 - research
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/vwxyzjn/cleanrl
   title: GitHub repository
 - url: https://docs.cleanrl.dev/
   title: Documentation
+- url: https://docs.cleanrl.dev/rl-algorithms/ppo/
+  title: PPO documentation
+- url: https://pypi.org/project/cleanrl/
+  title: cleanrl — PyPI
 ---
 
 ## Overview
 
-Single-file, self-contained implementations of popular RL algorithms. Designed for understanding — each algorithm is one Python file with no abstraction layers. Excellent for learning RL implementation details.
+CleanRL is a deep reinforcement learning library that provides single-file implementations with research-friendly features, putting every detail of an algorithm variant into one standalone file. It is not a modular library and is not meant to be imported. Its implementations are benchmarked and support TensorBoard logging, seeding for local reproducibility and experiment tracking with Weights and Biases.

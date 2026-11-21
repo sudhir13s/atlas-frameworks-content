@@ -7,33 +7,30 @@ title: Guidance
 kind: library
 category: framework-category/llm-frameworks
 subcategory: structured-generation
-tagline: A guidance language for controlling LLMs — constrained generation
-description: Microsoft Research library for constrained LLM generation. Interleaves generation with Python control flow, enforcing output structure with grammar-based constraints. Produces guaranteed-valid JSON, regex-matching strings, and structured data.
-best_for: Applications requiring guaranteed structured output from LLMs
-not_ideal_for: Free-form generation, chat applications
+tagline: A guidance language for controlling large language models.
+description: Python programming paradigm for steering language models. It constrains generation with regular expressions, context-free grammars and JSON schemas, and interleaves generation with control flow such as conditionals, loops and tool use. Backends include Transformers, llama.cpp and OpenAI.
+best_for: Constraining LLM output to a regex or grammar, Generating JSON that matches a schema
 key_features:
-- Grammar-based constrained generation
-- Guaranteed valid JSON output
-- Interleaved Python control flow
-- Token-level healing
-- Regex and CFG constraints
+- Regular expression and context-free grammar constraints
+- JSON generation from a JSON schema or Pydantic model
+- Selection from a fixed list of options
+- Generation interleaved with Python control flow
+- Fast-forwarding of tokens fixed by the grammar
+- Offline grammar testing with a mock model
+- Jupyter notebook widget
 use_cases:
-- Structured data extraction from LLMs
-- Guaranteed-format output generation
-- Template-based LLM applications
+- Structured JSON output from LLMs
+- Multiple-choice answer selection
+- Composing grammars for formats such as HTML
 pros:
-- Guarantees output format compliance
-- Fast — works at token generation level
-- Elegant template syntax
+- Inserts tokens fixed by the grammar without a model forward pass
+- Grammars can be tested locally without model API calls
 cons:
-- Requires model-specific integration
-- Not all models supported equally
-- Smaller ecosystem than alternatives
+- Full context-free grammar constraints need a backend with full Guidance support
 language: Python
 languages_supported:
 - Python
-maintained_by: Microsoft Research
-first_release: '2023-03-01'
+maintained_by: Guidance maintainers (guidance-ai)
 license_spdx: MIT
 github_url: https://github.com/guidance-ai/guidance
 docs_url: https://github.com/guidance-ai/guidance
@@ -44,15 +41,6 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
-maturity: stable
-signal_strength: medium
-backing:
-  type: corporate
-  orgs:
-  - Microsoft
-  funding_or_parent: Microsoft Research
 alternatives:
 - framework/outlines
 - framework/dspy
@@ -72,12 +60,14 @@ tags:
 - llm
 - structured-generation
 - constrained-decoding
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/guidance-ai/guidance
   title: GitHub repository
+- url: https://pypi.org/project/guidance/
+  title: guidance — PyPI
 ---
 
 ## Overview
 
-Microsoft Research library for constrained LLM generation. Interleaves generation with Python control flow, enforcing output structure with grammar-based constraints. Produces guaranteed-valid JSON, regex-matching strings, and structured data.
+Python programming paradigm for steering language models. It constrains generation with regular expressions, context-free grammars and JSON schemas, and interleaves generation with control flow such as conditionals, loops and tool use. Backends include Transformers, llama.cpp and OpenAI.

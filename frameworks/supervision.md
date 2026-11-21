@@ -5,7 +5,7 @@ slug: supervision
 schema_version: 1.2
 title: supervision
 category: framework-category/computer-vision
-tagline: We write your reusable computer vision tools. 💜
+tagline: We write your reusable computer vision tools.
 language: Python
 maintained_by: roboflow
 license_spdx: MIT

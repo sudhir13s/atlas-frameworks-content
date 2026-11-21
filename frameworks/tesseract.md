@@ -3,7 +3,7 @@ id: framework/tesseract
 type: framework
 slug: tesseract
 schema_version: 1.2
-title: tesseract
+title: Tesseract OCR
 category: framework-category/computer-vision
 tagline: Tesseract Open Source OCR Engine (main repository)
 language: C++
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/tesseract-ocr/tesseract
 aliases:
 - tesseract-ocr/tesseract
+- tesseract
 tags:
 - hacktoberfest
 - lstm

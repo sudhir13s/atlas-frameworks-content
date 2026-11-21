@@ -7,61 +7,46 @@ title: llama.cpp
 kind: library
 category: framework-category/llm-frameworks
 subcategory: inference-engine
-tagline: LLM inference in pure C/C++ — run models on consumer hardware
-description: Minimal C/C++ implementation for running LLMs on consumer hardware including CPUs, Apple Silicon, and modest GPUs. Pioneered the GGUF quantization format. Enables running 7B-70B parameter models on laptops and desktops.
-best_for: Running LLMs locally on consumer hardware, privacy-focused applications
-not_ideal_for: High-throughput production serving, training
+tagline: LLM inference in C/C++.
+description: llama.cpp is a C/C++ project for LLM and multimodal LLM inference with minimal setup on a wide range of hardware, locally and in the cloud. It is built on the ggml library, runs models in the GGUF format, and includes a command-line tool and an HTTP server with OpenAI-compatible routes.
+best_for: LLM inference with minimal setup on local hardware, Running GGUF models on CPU or GPU
 key_features:
-- CPU inference with AVX/ARM NEON optimization
-- GGUF quantization format (2-8 bit)
-- Apple Metal GPU acceleration
-- CUDA and Vulkan GPU backends
-- OpenAI-compatible server mode
-- Supports 100+ model architectures
-- Low memory footprint
+- GGUF model format with quantization tool (llama-quantize)
+- CPU inference with optional BLAS acceleration
+- Metal GPU acceleration on macOS (enabled by default)
+- CUDA, HIP (ROCm), SYCL, Vulkan, MUSA and CANN backends
+- llama-server HTTP server with OpenAI-compatible chat completions and embeddings routes
+- Multimodal input
+- Multi-GPU usage
+- GBNF grammars for constrained output
 use_cases:
-- Local LLM inference on consumer hardware
-- Privacy-preserving on-device AI
-- Offline AI applications
-- Edge deployment
+- Local LLM inference
+- Self-hosted OpenAI-compatible API server
+- On-device inference (Android and Apple platforms)
 pros:
-- Runs on consumer hardware without GPU
-- Excellent Apple Silicon performance
-- Active community and rapid model support
-- Very low resource requirements with quantization
-cons:
-- Lower throughput than GPU-optimized solutions
-- Quality degrades with aggressive quantization
-- C++ codebase harder to contribute to
+- Runs on CPU without a GPU
+- Pre-built binaries and Docker images
+- Wide range of hardware backends
 language: C++
 languages_supported:
 - C
 - C++
-- Python
-maintained_by: Georgi Gerganov + community
-first_release: '2023-03-10'
+maintained_by: ggml
 license_spdx: MIT
-github_url: https://github.com/ggerganov/llama.cpp
-docs_url: https://github.com/ggerganov/llama.cpp/blob/master/README.md
-website_url: https://github.com/ggerganov/llama.cpp
+github_url: https://github.com/ggml-org/llama.cpp
+docs_url: https://github.com/ggml-org/llama.cpp/blob/master/README.md
+website_url: https://github.com/ggml-org/llama.cpp
 gpu_support:
   nvidia_cuda: true
   amd_rocm: true
   apple_mps: true
   intel_oneapi: true
   google_tpu: false
-learning_curve: low
-community_size: large
-maturity: production
-signal_strength: high
 backing:
   type: community
-  funding_or_parent: Created by Georgi Gerganov; community-driven (ggml.ai ecosystem)
 alternatives:
 - framework/ollama
 - framework/vllm
-ecosystem_connections:
-- framework/ollama
 registry_signals:
   github_stars: 135826
   downloads_monthly: 2000000
@@ -71,6 +56,7 @@ registry_signals:
   source: https://github.com/ggerganov/llama.cpp
 aliases:
 - ggerganov/llama.cpp
+- ggml-org/llama.cpp
 tags:
 - llm
 - inference
@@ -78,14 +64,22 @@ tags:
 - cpu
 - quantization
 - edge
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/ggerganov/llama.cpp
+- url: https://github.com/ggml-org/llama.cpp
   title: GitHub repository
-- url: https://github.com/ggerganov/llama.cpp/blob/master/README.md
+- url: https://github.com/ggml-org/llama.cpp/blob/master/README.md
   title: Documentation
+- url: https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md
+  title: How to build
+- url: https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md
+  title: llama-server
+- url: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md
+  title: llama-quantize
+- url: https://github.com/ggml-org
+  title: ggml organisation
 ---
 
 ## Overview
 
-Minimal C/C++ implementation for running LLMs on consumer hardware including CPUs, Apple Silicon, and modest GPUs. Pioneered the GGUF quantization format. Enables running 7B-70B parameter models on laptops and desktops.
+llama.cpp is a C/C++ project for LLM and multimodal LLM inference with minimal setup on a wide range of hardware, locally and in the cloud. It is built on the ggml library, runs models in the GGUF format, and includes a command-line tool and an HTTP server with OpenAI-compatible routes.

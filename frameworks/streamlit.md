@@ -3,9 +3,9 @@ id: framework/streamlit
 type: framework
 slug: streamlit
 schema_version: 1.2
-title: streamlit
+title: Streamlit
 category: framework-category/other
-tagline: Streamlit — The agent-native framework for data apps and dashboards.
+tagline: The agent-native framework for data apps and dashboards.
 language: Python
 maintained_by: streamlit
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/streamlit/streamlit
 aliases:
 - streamlit/streamlit
+- streamlit
 tags:
 - agents
 - business-intelligence

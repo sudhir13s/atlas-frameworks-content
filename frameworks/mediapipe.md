@@ -3,7 +3,7 @@ id: framework/mediapipe
 type: framework
 slug: mediapipe
 schema_version: 1.2
-title: mediapipe
+title: MediaPipe
 category: framework-category/edge-mobile
 tagline: Cross-platform, customizable ML solutions for live and streaming media.
 language: C++
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/google-ai-edge/mediapipe
 aliases:
 - google-ai-edge/mediapipe
+- mediapipe
 tags:
 - android
 - audio-processing

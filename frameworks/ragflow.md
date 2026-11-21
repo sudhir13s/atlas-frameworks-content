@@ -3,7 +3,7 @@ id: framework/ragflow
 type: framework
 slug: ragflow
 schema_version: 1.2
-title: ragflow
+title: RAGFlow
 category: framework-category/rag
 tagline: 'RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.'
 language: Go
@@ -17,6 +17,7 @@ registry_signals:
   source: https://github.com/infiniflow/ragflow
 aliases:
 - infiniflow/ragflow
+- ragflow
 tags:
 - agent-harness
 - agent-native-database

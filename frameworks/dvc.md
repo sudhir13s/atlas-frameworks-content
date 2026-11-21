@@ -7,10 +7,10 @@ title: DVC (Data Version Control)
 kind: tool
 category: framework-category/mlops
 subcategory: data-versioning
-tagline: Git for data and ML pipelines — version control for datasets and experiments
-description: Version control system for ML projects that extends Git to handle large files, datasets, and ML pipelines. Stores data in remote storage while keeping lightweight pointers in Git. Enables reproducible ML experiments.
-best_for: Teams wanting Git-native data versioning and reproducible pipelines
-not_ideal_for: Teams needing rich experiment visualization (use W&B), very large-scale data lakes
+tagline: Data Versioning and ML Experiments.
+description: DVC is a command line tool and VS Code extension for developing reproducible machine learning projects. It stores data and models in cloud or on-premise storage while keeping their version information in a Git repository. DVC pipelines connect code and data, and experiments are tracked in the local Git repo and compared by parameters and metrics.
+best_for: Versioning data and models alongside Git, Reproducible ML pipelines
+not_ideal_for: Petabyte-scale data lakes (the docs point to lakeFS)
 key_features:
 - Git-like data versioning
 - ML pipeline definition (dvc.yaml)
@@ -22,22 +22,16 @@ use_cases:
 - Reproducible ML pipelines
 - Data and model sharing across teams
 pros:
-- Git-native workflow — familiar for developers
-- Storage-agnostic
-- Open source and self-hostable
-- Good for data-heavy ML projects
-cons:
-- Learning curve for non-Git users
-- Pipeline definition less flexible than Airflow/Prefect
-- Experiment tracking less polished than W&B
+- Version information is kept in the Git repository
+- Supports cloud and on-premise remote storage
+- Experiment tracking without servers
 language: Python
 languages_supported:
 - Python
-maintained_by: Iterative.ai
-first_release: '2017-05-01'
+maintained_by: Treeverse
 license_spdx: Apache-2.0
-github_url: https://github.com/iterative/dvc
-docs_url: https://dvc.org/doc
+github_url: https://github.com/treeverse/dvc
+docs_url: https://doc.dvc.org/
 website_url: https://dvc.org/
 gpu_support:
   nvidia_cuda: false
@@ -45,15 +39,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
-maturity: production
-signal_strength: medium
+maturity: experimental
 backing:
   type: corporate
   orgs:
-  - Iterative.ai
-  funding_or_parent: Series A $20M led by 468 Capital (2022)
+  - Treeverse
 alternatives:
 - framework/mlflow
 registry_signals:
@@ -65,19 +55,26 @@ registry_signals:
   source: https://github.com/iterative/dvc
 aliases:
 - iterative/dvc
+- treeverse/dvc
 tags:
 - mlops
 - data-versioning
 - pipelines
 - reproducibility
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/iterative/dvc
+- url: https://github.com/treeverse/dvc
   title: GitHub repository
-- url: https://dvc.org/doc
+- url: https://doc.dvc.org/
   title: Documentation
+- url: https://github.com/treeverse
+  title: lakeFS by Treeverse — GitHub organisation
+- url: https://dvc.org/
+  title: DVC website
+- url: https://pypi.org/project/dvc/
+  title: dvc — PyPI
 ---
 
 ## Overview
 
-Version control system for ML projects that extends Git to handle large files, datasets, and ML pipelines. Stores data in remote storage while keeping lightweight pointers in Git. Enables reproducible ML experiments.
+DVC is a command line tool and VS Code extension for developing reproducible machine learning projects. It stores data and models in cloud or on-premise storage while keeping their version information in a Git repository. DVC pipelines connect code and data, and experiments are tracked in the local Git repo and compared by parameters and metrics.

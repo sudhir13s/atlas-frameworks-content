@@ -3,7 +3,7 @@ id: framework/label-studio
 type: framework
 slug: label-studio
 schema_version: 1.2
-title: label-studio
+title: Label Studio
 category: framework-category/data
 tagline: Label Studio is a multi-type data labeling and annotation tool with standardized output format
 language: TypeScript
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/HumanSignal/label-studio
 aliases:
 - HumanSignal/label-studio
+- label-studio
 tags:
 - annotation
 - annotation-tool

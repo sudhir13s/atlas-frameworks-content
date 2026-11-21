@@ -3,7 +3,7 @@ id: framework/agentscope
 type: framework
 slug: agentscope
 schema_version: 1.2
-title: agentscope
+title: AgentScope
 category: framework-category/agents
 tagline: Build and run agents you can see, understand and trust.
 language: Python
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/agentscope-ai/agentscope
 aliases:
 - agentscope-ai/agentscope
+- agentscope
 tags:
 - agent
 - chatbot

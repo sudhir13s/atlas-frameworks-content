@@ -3,37 +3,32 @@ id: framework/auto-sklearn
 type: framework
 slug: auto-sklearn
 schema_version: 1.1
-title: Auto-sklearn
+title: auto-sklearn
 kind: library
 category: framework-category/automl
 subcategory: automl-framework
-tagline: Automated machine learning for scikit-learn — finds the best pipeline
-description: AutoML system built on scikit-learn. Automatically selects the best ML algorithm, preprocessor, and hyperparameters for tabular data. Uses Bayesian optimization and meta-learning.
-best_for: Quick automated baselines for tabular ML tasks
-not_ideal_for: Deep learning, very large datasets, production systems
+tagline: Automated Machine Learning with scikit-learn.
+description: auto-sklearn is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator. It takes algorithm selection and hyperparameter tuning off the user, using Bayesian optimization, meta-learning and ensemble construction.
+best_for: Automating algorithm selection and hyperparameter tuning for scikit-learn models
+not_ideal_for: Windows machines, macOS (support not confirmed by the docs)
 key_features:
 - Automatic algorithm selection
 - Automatic hyperparameter tuning
-- Meta-learning for warm-starting
+- Bayesian optimization
+- Meta-learning
 - Ensemble construction
-- scikit-learn compatible API
+- Drop-in replacement for a scikit-learn estimator
 use_cases:
-- Quick baseline models for tabular data
-- Automated pipeline selection
-- ML competition baselines
+- Automated classification with scikit-learn estimators
 pros:
-- Fully automated ML pipeline selection
-- scikit-learn compatible
-- Good for baselines
+- Removes manual algorithm selection and hyperparameter tuning
+- Same estimator interface as scikit-learn
 cons:
-- Only for tabular/classic ML (no deep learning)
-- Can be slow for large datasets
-- Development has slowed
+- Requires Linux; the docs state it cannot run on Windows
 language: Python
 languages_supported:
 - Python
-maintained_by: AutoML Freiburg
-first_release: '2015-01-01'
+maintained_by: AutoML-Freiburg-Hannover
 license_spdx: BSD-3-Clause
 github_url: https://github.com/automl/auto-sklearn
 docs_url: https://automl.github.io/auto-sklearn/
@@ -44,15 +39,6 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: small-medium
-maturity: stable
-signal_strength: low
-backing:
-  type: foundation
-  orgs:
-  - AutoML Freiburg-Hannover
-  funding_or_parent: Academic research group (University of Freiburg)
 alternatives:
 - framework/flaml
 registry_signals:
@@ -64,18 +50,25 @@ registry_signals:
   source: https://github.com/automl/auto-sklearn
 aliases:
 - automl/auto-sklearn
+- Auto-sklearn
 tags:
 - automl
 - sklearn
 - tabular
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/automl/auto-sklearn
   title: GitHub repository
 - url: https://automl.github.io/auto-sklearn/
   title: Documentation
+- url: https://automl.github.io/auto-sklearn/master/installation.html
+  title: Installation
+- url: https://github.com/automl
+  title: AutoML-Freiburg-Hannover on GitHub
+- url: https://pypi.org/project/auto-sklearn/
+  title: auto-sklearn — PyPI
 ---
 
 ## Overview
 
-AutoML system built on scikit-learn. Automatically selects the best ML algorithm, preprocessor, and hyperparameters for tabular data. Uses Bayesian optimization and meta-learning.
+auto-sklearn is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator. It takes algorithm selection and hyperparameter tuning off the user, using Bayesian optimization, meta-learning and ensemble construction.

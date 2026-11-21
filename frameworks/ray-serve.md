@@ -7,35 +7,33 @@ title: Ray Serve
 kind: library
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: Scalable model serving built on Ray — compose ML models and business logic
-description: Scalable model serving framework built on Ray. Excels at composing multiple models and business logic into serving pipelines. Native Python, supports any ML framework, and scales from laptop to cluster.
-best_for: Complex multi-model serving with business logic, teams already using Ray
-not_ideal_for: Simple single-model serving, teams not using Ray
+tagline: Ray Serve is a scalable model serving library for building online inference APIs.
+description: Ray Serve is a framework-agnostic model serving library built on top of Ray. It supports model composition and multi-model serving, combining multiple ML models and business logic in Python code. For large language models it offers response streaming, dynamic request batching and multi-node, multi-GPU serving.
+best_for: Model composition, Multi-model serving
+not_ideal_for: Model lifecycle management, Model-specific optimizations
 key_features:
-- Python-native model composition
-- Multi-model serving graphs
+- Python model composition API
+- Multi-model serving
 - Dynamic request batching
-- Horizontal autoscaling
-- Built on Ray distributed runtime
+- Replica autoscaling
+- FastAPI integration
+- Fractional GPU allocation
 - Framework-agnostic
 use_cases:
 - Multi-model serving pipelines
-- LLM serving with business logic
-- Scalable inference APIs
+- LLM serving
+- Online inference APIs
 pros:
-- Flexible Python-native composition
-- Scales from laptop to cluster
-- Good for complex serving graphs
-- Integration with Ray ecosystem
+- Models and business logic composed in one Python program
+- Same code runs on a laptop or a cluster
+- Not tied to a specific ML framework
 cons:
-- Ray cluster overhead for simple serving
-- Less optimized than Triton for raw throughput
-- Debugging distributed serving is hard
+- No model-specific optimizations
+- No model lifecycle management or performance visualization
 language: Python
 languages_supported:
 - Python
-maintained_by: Anyscale
-first_release: '2020-01-01'
+maintained_by: The Ray Team
 license_spdx: Apache-2.0
 github_url: https://github.com/ray-project/ray
 docs_url: https://docs.ray.io/en/latest/serve/
@@ -46,20 +44,15 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
-maturity: production
-signal_strength: high
 backing:
-  type: corporate
+  type: foundation
   orgs:
+  - LF Projects
   - Anyscale
-  funding_or_parent: Anyscale Series C $99M led by Andreessen Horowitz (2021); total raised >$250M
 alternatives:
 - framework/bentoml
 - framework/triton-inference-server
 ecosystem_connections:
-- framework/ray-train
 - framework/vllm
 - framework/pytorch
 - framework/tensorflow
@@ -75,14 +68,22 @@ tags:
 - distributed
 - scalable
 - multi-model
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/ray-project/ray
   title: GitHub repository
 - url: https://docs.ray.io/en/latest/serve/
   title: Documentation
+- url: https://docs.ray.io/en/latest/serve/index.html
+  title: Ray Serve documentation
+- url: https://docs.ray.io/en/latest/ray-core/scheduling/accelerators.html
+  title: Ray accelerator support
+- url: https://docs.ray.io/en/latest/ray-governance/index.html
+  title: Ray governance
+- url: https://www.ray.io/
+  title: Website
 ---
 
 ## Overview
 
-Scalable model serving framework built on Ray. Excels at composing multiple models and business logic into serving pipelines. Native Python, supports any ML framework, and scales from laptop to cluster.
+Ray Serve is a framework-agnostic model serving library built on top of Ray. It supports model composition and multi-model serving, combining multiple ML models and business logic in Python code. For large language models it offers response streaming, dynamic request batching and multi-node, multi-GPU serving.

@@ -3,9 +3,9 @@ id: framework/airllm
 type: framework
 slug: airllm
 schema_version: 1.2
-title: airllm
+title: AirLLM
 category: framework-category/inference
-tagline: AirLLM 2.8T LLM inference with single 4GB GPU
+tagline: Reduces inference memory usage so that 70B large language models run on a single 4GB GPU card, without quantization, distillation or pruning.
 language: Jupyter Notebook
 maintained_by: lyogavin
 license_spdx: Apache-2.0
@@ -19,6 +19,7 @@ registry_signals:
   source: https://github.com/lyogavin/airllm
 aliases:
 - lyogavin/airllm
+- airllm
 tags:
 - chinese-llm
 - chinese-nlp

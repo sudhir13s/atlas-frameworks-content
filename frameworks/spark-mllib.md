@@ -7,37 +7,34 @@ title: Apache Spark MLlib
 kind: library
 category: framework-category/data
 subcategory: distributed-ml
-tagline: Distributed ML algorithms on Apache Spark
-description: Machine learning library built on Apache Spark for scalable ML on large datasets. Provides classic ML algorithms (classification, regression, clustering) that run distributed across a Spark cluster. Not for deep learning.
-best_for: Classic ML on very large datasets already in Spark
-not_ideal_for: Deep learning, small datasets, rapid prototyping
+tagline: MLlib is Spark's machine learning (ML) library.
+description: MLlib is Apache Spark's machine learning library, built to make practical machine learning scalable. It provides common learning algorithms for classification, regression, clustering and collaborative filtering, together with featurization, ML Pipelines, model persistence and utilities. Its primary API is DataFrame-based; the older RDD-based API is in maintenance mode.
+best_for: Scalable machine learning on Spark, ML pipelines on Spark DataFrames
 key_features:
-- Distributed ML algorithms
-- Pipeline API for feature engineering
-- Feature transformers library
+- Classification, regression, clustering and collaborative filtering
+- Feature extraction, transformation and selection
+- ML Pipelines for constructing, evaluating and tuning
 - Model selection and tuning
+- Saving and loading models and Pipelines
+- Frequent pattern mining
 - DataFrame-based API
-- Integration with Spark ecosystem
 use_cases:
-- ML on very large datasets (TB+)
-- Feature engineering at scale
-- Classic ML (not deep learning)
+- Machine learning on large-scale data in Spark
+- Feature engineering
+- Recommendation with collaborative filtering
 pros:
-- Scales to massive datasets
-- Integrates with Spark data pipelines
-- Supports multiple languages
+- Uniform API across algorithms and languages
+- Works on Spark DataFrames with Spark data sources and SQL queries
 cons:
-- No deep learning support
-- Algorithm selection limited compared to sklearn
-- Spark cluster overhead
+- RDD-based API is in maintenance mode
+- R API is deprecated
 language: Scala
 languages_supported:
 - Python
 - Scala
 - Java
 - R
-maintained_by: Apache Foundation / Databricks
-first_release: '2014-09-01'
+maintained_by: Apache Software Foundation
 license_spdx: Apache-2.0
 github_url: https://github.com/apache/spark
 docs_url: https://spark.apache.org/docs/latest/ml-guide.html
@@ -48,15 +45,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium-high
-community_size: large
 maturity: production
-signal_strength: medium
 backing:
   type: foundation
   orgs:
   - Apache Software Foundation
-  funding_or_parent: Originated at UC Berkeley AMPLab; commercial support via Databricks
 registry_signals:
   github_stars: 44590
   downloads_monthly: 5000000
@@ -71,14 +64,16 @@ tags:
 - distributed
 - classic-ml
 - big-data
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/apache/spark
   title: GitHub repository
 - url: https://spark.apache.org/docs/latest/ml-guide.html
   title: Documentation
+- url: https://pypi.org/project/pyspark/
+  title: pyspark — PyPI
 ---
 
 ## Overview
 
-Machine learning library built on Apache Spark for scalable ML on large datasets. Provides classic ML algorithms (classification, regression, clustering) that run distributed across a Spark cluster. Not for deep learning.
+MLlib is Apache Spark's machine learning library, built to make practical machine learning scalable. It provides common learning algorithms for classification, regression, clustering and collaborative filtering, together with featurization, ML Pipelines, model persistence and utilities. Its primary API is DataFrame-based; the older RDD-based API is in maintenance mode.

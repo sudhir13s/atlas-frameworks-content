@@ -7,53 +7,45 @@ title: BentoML
 kind: framework
 category: framework-category/llm-serving
 subcategory: model-serving
-tagline: Build, ship, and scale AI applications with Python
-description: Python-first framework for building production ML serving applications. Packages models and serving logic into 'Bentos' that can be deployed as containers. Developer-friendly with good abstractions for common serving patterns.
-best_for: Python teams wanting flexible, developer-friendly model serving
-not_ideal_for: Maximum raw throughput on NVIDIA GPUs (use Triton)
+tagline: 'Serve AI apps and models: build model inference APIs, job queues, LLM apps, multi-model pipelines, and more.'
+description: BentoML is a Python library for building online serving systems for AI apps and model inference. It turns a model inference script into a REST API server, packages code, models and dependency configs into a Bento as the deployable artifact, and generates Docker images for deployment with Docker or Kubernetes.
+best_for: Building model inference APIs and multi-model serving systems in Python
 key_features:
-- Python-native model serving
-- Bento packaging format
+- REST API servers defined with Python type hints
+- Bento packaging of code, models and dependencies
+- Automatic Docker image generation
 - Adaptive batching
-- Multi-model composition
-- Docker and Kubernetes deployment
-- Built-in API documentation
+- Workers and model parallelization
+- Multi-model composition and task queues
+- Deployment with Docker containers or Kubernetes
 use_cases:
-- Custom ML API endpoints
+- Custom model inference API endpoints
 - Multi-model serving pipelines
-- Containerized ML deployment
+- Containerized model deployment
+- Serving LLMs, image generation, embedding and audio models
 pros:
-- Python-first, developer-friendly
-- Flexible serving logic
-- Good packaging and deployment story
+- Supports any ML framework, modality and inference runtime
+- Develop, run and debug services locally
 cons:
-- Less performant than Triton for raw throughput
-- Smaller community
-- BentoCloud adds vendor lock-in
+- Collects anonymous usage data by default (opt-out documented)
 language: Python
 languages_supported:
 - Python
-maintained_by: BentoML Inc.
-first_release: '2019-01-01'
+maintained_by: BentoML
 license_spdx: Apache-2.0
 github_url: https://github.com/bentoml/BentoML
 docs_url: https://docs.bentoml.com/
-website_url: https://www.bentoml.com/
 gpu_support:
   nvidia_cuda: true
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: medium
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
-  - BentoML Inc
-  funding_or_parent: Seed funding from DCM Ventures and others
+  - BentoML
 alternatives:
 - framework/ray-serve
 - framework/triton-inference-server
@@ -75,14 +67,18 @@ tags:
 - python
 - deployment
 - containerization
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/bentoml/BentoML
   title: GitHub repository
 - url: https://docs.bentoml.com/
   title: Documentation
+- url: https://docs.bentoml.com/en/latest/build-with-bentoml/gpu-inference.html
+  title: GPU inference
+- url: https://pypi.org/project/bentoml/
+  title: bentoml — PyPI
 ---
 
 ## Overview
 
-Python-first framework for building production ML serving applications. Packages models and serving logic into 'Bentos' that can be deployed as containers. Developer-friendly with good abstractions for common serving patterns.
+BentoML is a Python library for building online serving systems for AI apps and model inference. It turns a model inference script into a REST API server, packages code, models and dependency configs into a Bento as the deployable artifact, and generates Docker images for deployment with Docker or Kubernetes.

@@ -7,34 +7,29 @@ title: Dask
 kind: library
 category: framework-category/data
 subcategory: distributed-computing
-tagline: Parallel and distributed computing in Python — scale pandas, numpy, scikit-learn
-description: Parallel computing library that scales Python analytics. Provides familiar APIs (DataFrame, Array) that mirror pandas and NumPy but execute in parallel across cores or clusters. Good for data too large for memory.
-best_for: Python teams processing data too large for memory
-not_ideal_for: Data that fits in memory (use pandas/polars), deep learning
+tagline: Parallel computing with task scheduling.
+description: Dask is a Python library for parallel and distributed computing. Dask DataFrames and Dask Arrays parallelize pandas and NumPy, Dask Bags process Python objects in parallel, and Dask Futures parallelize arbitrary Python code. It runs on a single machine, including larger-than-memory data, or on distributed clusters.
+best_for: Data larger than available RAM, Parallelizing pandas and NumPy code
+not_ideal_for: Data that fits in RAM
 key_features:
 - Parallel pandas-like DataFrames
 - Parallel NumPy-like arrays
 - Task graph scheduling
 - Distributed computing on clusters
-- Dask-ML for scalable ML
 - Dashboard for monitoring
 use_cases:
 - Processing datasets larger than memory
 - Parallelizing pandas workflows
-- Distributed data preprocessing for ML
+- Hyperparameter optimization and batch prediction for ML
 pros:
-- Familiar pandas/numpy API
-- Scales from laptop to cluster
-- Good for data preprocessing pipelines
+- Uses the pandas and NumPy APIs
+- Runs on a single machine or a distributed cluster
 cons:
-- Not a full pandas replacement — some operations differ
-- Overhead for small datasets
-- Debugging distributed tasks is hard
+- For data that fits in RAM the docs recommend pandas as faster and easier
 language: Python
 languages_supported:
 - Python
-maintained_by: Dask community / Coiled
-first_release: '2015-01-01'
+maintained_by: Dask core developers
 license_spdx: BSD-3-Clause
 github_url: https://github.com/dask/dask
 docs_url: https://docs.dask.org/
@@ -45,15 +40,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low-medium
-community_size: large
 maturity: production
-signal_strength: medium
 backing:
-  type: community
+  type: foundation
   orgs:
-  - Coiled
-  funding_or_parent: Community-driven; commercial support from Coiled (Series A $21M led by Bessemer 2022)
+  - NumFOCUS
 alternatives:
 - framework/polars
 registry_signals:
@@ -70,14 +61,26 @@ tags:
 - distributed
 - parallel
 - pandas-like
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/dask/dask
   title: GitHub repository
 - url: https://docs.dask.org/
   title: Documentation
+- url: https://docs.dask.org/en/stable/gpu.html
+  title: Documentation — GPUs
+- url: https://docs.dask.org/en/stable/ml.html
+  title: Documentation — Machine Learning
+- url: https://docs.dask.org/en/stable/dashboard.html
+  title: Documentation — Dashboard
+- url: https://docs.dask.org/en/stable/dataframe-best-practices.html
+  title: Documentation — DataFrame best practices
+- url: https://dask.org/powered-by/
+  title: Dask — Powered By
+- url: https://pypi.org/project/dask/
+  title: dask — PyPI
 ---
 
 ## Overview
 
-Parallel computing library that scales Python analytics. Provides familiar APIs (DataFrame, Array) that mirror pandas and NumPy but execute in parallel across cores or clusters. Good for data too large for memory.
+Dask is a Python library for parallel and distributed computing. Dask DataFrames and Dask Arrays parallelize pandas and NumPy, Dask Bags process Python objects in parallel, and Dask Futures parallelize arbitrary Python code. It runs on a single machine, including larger-than-memory data, or on distributed clusters.

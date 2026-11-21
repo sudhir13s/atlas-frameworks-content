@@ -7,34 +7,28 @@ title: Optuna
 kind: framework
 category: framework-category/automl
 subcategory: hyperparameter-tuning
-tagline: Automatic hyperparameter optimization framework
-description: State-of-the-art hyperparameter optimization framework using Bayesian optimization (Tree-structured Parzen Estimators). Define-by-run API, pruning of unpromising trials, and visualization dashboards. The most popular open-source HPO tool.
-best_for: Hyperparameter optimization for any ML framework
-not_ideal_for: Neural architecture search, very large search spaces
+tagline: A hyperparameter optimization framework.
+description: Optuna is an automatic hyperparameter optimization software framework designed for machine learning. Its define-by-run API lets users construct search spaces dynamically with Python conditionals and loops, and it provides sampling algorithms, pruning of unpromising trials, parallel studies and visualization.
+best_for: Hyperparameter optimization for machine learning
 key_features:
-- Define-by-run API (flexible search space)
-- TPE and CMA-ES samplers
-- Early stopping (pruning) of bad trials
-- Visualization dashboard
+- Define-by-run API with dynamic search spaces
+- TPE, CMA-ES, NSGA-II and Gaussian process samplers
+- Pruning of unpromising trials
+- Visualization functions and Optuna Dashboard
 - Distributed optimization
-- Integration with PyTorch, TF, sklearn
+- Integrations with PyTorch, TensorFlow, scikit-learn and other ML frameworks
 use_cases:
-- Neural network hyperparameter tuning
-- ML pipeline optimization
+- Hyperparameter tuning for ML models
 - Multi-objective optimization
+- Constrained optimization
 pros:
-- Most popular HPO tool
-- Clean define-by-run API
-- Good pruning algorithms
-- Excellent visualizations
-cons:
-- Limited to hyperparameter optimization (not NAS)
-- Bayesian optimization can be slow with many parameters
+- Search spaces written in plain Python
+- Simple installation with few requirements
+- Scales studies to many workers with little code change
 language: Python
 languages_supported:
 - Python
 maintained_by: Preferred Networks
-first_release: '2018-11-01'
 license_spdx: MIT
 github_url: https://github.com/optuna/optuna
 docs_url: https://optuna.readthedocs.io/
@@ -45,10 +39,7 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -74,14 +65,20 @@ tags:
 - hyperparameter-tuning
 - optimization
 - bayesian
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/optuna/optuna
   title: GitHub repository
 - url: https://optuna.readthedocs.io/
   title: Documentation
+- url: https://optuna.readthedocs.io/en/stable/reference/samplers/index.html
+  title: optuna.samplers
+- url: https://optuna.readthedocs.io/en/stable/reference/integration.html
+  title: optuna.integration
+- url: https://pypi.org/project/optuna/
+  title: optuna — PyPI
 ---
 
 ## Overview
 
-State-of-the-art hyperparameter optimization framework using Bayesian optimization (Tree-structured Parzen Estimators). Define-by-run API, pruning of unpromising trials, and visualization dashboards. The most popular open-source HPO tool.
+Optuna is an automatic hyperparameter optimization software framework designed for machine learning. Its define-by-run API lets users construct search spaces dynamically with Python conditionals and loops, and it provides sampling algorithms, pruning of unpromising trials, parallel studies and visualization.

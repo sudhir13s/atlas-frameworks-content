@@ -7,50 +7,41 @@ title: Ultralytics YOLO
 kind: library
 category: framework-category/computer-vision
 subcategory: detection-segmentation
-tagline: YOLO for everyone — real-time object detection, segmentation, classification, and tracking
-description: The most popular real-time object detection framework. YOLOv8/v11 provides state-of-the-art accuracy with exceptional speed. Simple CLI and Python API for training, inference, and export to multiple formats.
-best_for: Production real-time detection, fastest path to working detection system
-not_ideal_for: Novel architecture research, AGPL-averse commercial projects
+tagline: YOLO models for object detection, instance segmentation, semantic segmentation, image classification, pose estimation and object tracking.
+description: Ultralytics YOLO is a family of real-time computer vision models available through one Python package and CLI. It covers object detection, instance and semantic segmentation, depth estimation, classification, pose estimation and oriented bounding boxes, and can track detected objects across video frames. Models can be trained, validated, run and exported to deployment formats such as ONNX, TensorRT and OpenVINO.
+best_for: Real-time object detection and segmentation, Training and exporting YOLO models
 key_features:
-- Real-time detection, segmentation, classification
-- Object tracking (BoT-SORT, ByteTrack)
-- Pose estimation
-- One-line training and inference
-- Export to ONNX, TensorRT, CoreML, TF Lite
-- Active learning and data management
+- Detection, instance and semantic segmentation, classification and depth estimation
+- Pose estimation and oriented bounding boxes
+- Multi-object tracking (BoT-SORT, ByteTrack and others)
+- Python API and yolo CLI for training, validation, prediction and export
+- Export to ONNX, TensorRT, OpenVINO, CoreML, LiteRT and other formats
+- Training on NVIDIA and AMD GPUs, Apple silicon and Intel XPU
 use_cases:
 - Real-time object detection
-- Security and surveillance
-- Industrial quality inspection
-- Sports analytics
+- Object tracking in video
+- Edge deployment of exported models
 pros:
-- Best speed/accuracy tradeoff
-- Simplest API in detection
-- Excellent export and deployment support
-- Very active development
+- Same API across tasks in Python and CLI
+- Wide choice of export formats
 cons:
-- AGPL license (commercial use requires license purchase)
-- Less flexible for research on novel architectures
-- Opinionated design
+- AGPL-3.0 licence; commercial use outside its terms needs an Ultralytics Enterprise License
+- Multi-GPU training does not work on Windows with official PyTorch wheels
 language: Python
 languages_supported:
 - Python
 maintained_by: Ultralytics
-first_release: '2023-01-10'
 license_spdx: AGPL-3.0-only
 github_url: https://github.com/ultralytics/ultralytics
 docs_url: https://docs.ultralytics.com/
 website_url: https://ultralytics.com/
 gpu_support:
   nvidia_cuda: true
-  amd_rocm: false
+  amd_rocm: true
   apple_mps: true
   intel_oneapi: true
   google_tpu: false
-learning_curve: very-low
-community_size: massive
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -76,14 +67,20 @@ tags:
 - real-time
 - yolo
 - production
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/ultralytics/ultralytics
   title: GitHub repository
 - url: https://docs.ultralytics.com/
   title: Documentation
+- url: https://docs.ultralytics.com/modes/export/
+  title: Export mode
+- url: https://docs.ultralytics.com/modes/train/
+  title: Train mode
+- url: https://pypi.org/project/ultralytics/
+  title: ultralytics — PyPI
 ---
 
 ## Overview
 
-The most popular real-time object detection framework. YOLOv8/v11 provides state-of-the-art accuracy with exceptional speed. Simple CLI and Python API for training, inference, and export to multiple formats.
+Ultralytics YOLO is a family of real-time computer vision models available through one Python package and CLI. It covers object detection, instance and semantic segmentation, depth estimation, classification, pose estimation and oriented bounding boxes, and can track detected objects across video frames. Models can be trained, validated, run and exported to deployment formats such as ONNX, TensorRT and OpenVINO.

@@ -7,34 +7,27 @@ title: Core ML Tools
 kind: library
 category: framework-category/edge-mobile
 subcategory: apple-ecosystem
-tagline: Convert and optimize ML models for Apple devices
-description: Apple's toolkit for converting ML models from PyTorch, TensorFlow, and other frameworks to Core ML format. Optimized for Apple Neural Engine, GPU, and CPU on iPhone, iPad, Mac, and Apple Watch.
-best_for: ML deployment on Apple devices
-not_ideal_for: Cross-platform deployment, Android
+tagline: Core ML tools contain supporting tools for Core ML model conversion, editing, and validation.
+description: Core ML Tools (coremltools) is a Python package that converts machine learning models from third-party libraries such as TensorFlow, PyTorch, scikit-learn, XGBoost and LibSVM to the Core ML format. It also reads, writes and optimizes Core ML models, and verifies conversions on macOS by making predictions with Core ML. Converted models are integrated into apps with Xcode.
+best_for: Converting trained models for apps that use Apple's Core ML
 key_features:
-- PyTorch and TF model conversion
-- Apple Neural Engine optimization
-- Quantization and compression
-- On-device model fine-tuning
-- Model visualization
+- Conversion from PyTorch and TensorFlow
+- Conversion from scikit-learn, XGBoost and LibSVM
+- Reading and writing Core ML models
+- Palettization, linear quantization and pruning
+- Conversion verification through Core ML predictions on macOS
 use_cases:
-- iOS/macOS ML deployment
-- Apple Neural Engine optimization
-- On-device Apple ML features
+- Preparing models for Core ML apps built in Xcode
+- Compressing models for the Neural Engine and GPU
 pros:
-- Best performance on Apple devices
-- Neural Engine acceleration
-- Tight Apple ecosystem integration
+- Converts both neural network and non-neural network models
+- Converted models run on device through Core ML on the CPU, GPU and Neural Engine
 cons:
-- Apple-only
-- Some operations not supported in conversion
-- Debugging conversion issues is difficult
+- Output targets Apple's Core ML framework only
 language: Python
 languages_supported:
 - Python
-- Swift
 maintained_by: Apple
-first_release: '2017-06-01'
 license_spdx: BSD-3-Clause
 github_url: https://github.com/apple/coremltools
 docs_url: https://coremltools.readme.io/
@@ -45,10 +38,7 @@ gpu_support:
   apple_mps: true
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
@@ -73,14 +63,20 @@ tags:
 - ios
 - macos
 - neural-engine
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/apple/coremltools
   title: GitHub repository
 - url: https://coremltools.readme.io/
   title: Documentation
+- url: https://apple.github.io/coremltools/docs-guides/source/overview-coremltools.html
+  title: Core ML Tools overview
+- url: https://apple.github.io/coremltools/docs-guides/source/opt-overview.html
+  title: Model compression overview
+- url: https://pypi.org/project/coremltools/
+  title: coremltools — PyPI
 ---
 
 ## Overview
 
-Apple's toolkit for converting ML models from PyTorch, TensorFlow, and other frameworks to Core ML format. Optimized for Apple Neural Engine, GPU, and CPU on iPhone, iPad, Mac, and Apple Watch.
+Core ML Tools (coremltools) is a Python package that converts machine learning models from third-party libraries such as TensorFlow, PyTorch, scikit-learn, XGBoost and LibSVM to the Core ML format. It also reads, writes and optimizes Core ML models, and verifies conversions on macOS by making predictions with Core ML. Converted models are integrated into apps with Xcode.

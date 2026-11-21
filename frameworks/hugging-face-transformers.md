@@ -7,41 +7,36 @@ title: Hugging Face Transformers
 kind: library
 category: framework-category/llm-frameworks
 subcategory: model-library
-tagline: State-of-the-art pretrained models for NLP, vision, audio, and multimodal tasks
-description: The de facto standard library for accessing and fine-tuning pretrained transformer models. Provides a unified API across 200,000+ models on the Hugging Face Hub. Supports PyTorch, TensorFlow, and JAX backends with AutoModel/AutoTokenizer abstractions.
-best_for: Accessing pretrained models, fine-tuning, research prototyping
-not_ideal_for: High-throughput production serving (use vLLM), edge deployment (use ONNX RT or llama.cpp)
+tagline: The model-definition framework for machine learning models in text, vision, audio, and multimodal models, for both inference and training.
+description: Model-definition framework from Hugging Face for machine learning models in text, computer vision, audio, video and multimodal tasks, for both inference and training. It centralizes model definitions so that they work across training frameworks, inference engines and adjacent modeling libraries. It runs on PyTorch and loads Transformers model checkpoints from the Hugging Face Hub.
+best_for: Inference with pretrained models, Fine-tuning pretrained models, Research iteration on model architectures
+not_ideal_for: Building networks from modular building blocks, Generic training loops for models outside Transformers (the docs point to Accelerate)
 key_features:
-- 200,000+ pretrained models on the Hub
-- AutoModel/AutoTokenizer auto-detection
-- Pipeline API for zero-code inference
-- Trainer for fine-tuning
-- Multi-backend (PyTorch, TF, JAX)
-- PEFT/LoRA integration for efficient fine-tuning
-- Quantization support (GPTQ, AWQ, bitsandbytes)
+- Pretrained model checkpoints on the Hugging Face Hub
+- Pipeline API for text, audio, vision and multimodal inference
+- Trainer with mixed precision, torch.compile, FlashAttention and distributed training
+- generate for LLM and VLM text generation with streaming
+- Every model built from a configuration, a model and a preprocessor class
+- Quantization methods including bitsandbytes and GGUF
+- PEFT integration for training LoRA adapters
 use_cases:
 - LLM inference and fine-tuning
-- Text classification and NER
-- Image classification and generation
-- Audio transcription and generation
-- Multimodal AI tasks
+- Text classification and named entity recognition
+- Image classification and object detection
+- Speech recognition and text to speech
+- Multimodal tasks such as visual question answering
 pros:
-- Largest model hub in the world
-- Unified API across model architectures
-- Excellent documentation
-- Active community and frequent updates
-- Supports latest models within days of release
+- One API across all its pretrained models
+- Model files can be used independently of the library
+- Examples reproduce the results published by each architecture's original authors
+- Runs on many PyTorch hardware backends
 cons:
-- Can be heavy — lots of dependencies
-- Abstraction layers can hide performance issues
-- Not optimized for production serving (use vLLM/TGI for that)
+- Model files deliberately avoid shared abstractions so it is not a modular building-block toolbox
+- The training API is optimized for PyTorch models provided by Transformers
 language: Python
 languages_supported:
 - Python
-- JavaScript
-- Rust
 maintained_by: Hugging Face
-first_release: '2018-10-01'
 license_spdx: Apache-2.0
 github_url: https://github.com/huggingface/transformers
 docs_url: https://huggingface.co/docs/transformers/
@@ -52,10 +47,7 @@ gpu_support:
   apple_mps: true
   intel_oneapi: true
   google_tpu: true
-learning_curve: low-medium
-community_size: massive
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
@@ -81,14 +73,22 @@ tags:
 - multimodal
 - model-hub
 - fine-tuning
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/huggingface/transformers
   title: GitHub repository
 - url: https://huggingface.co/docs/transformers/
   title: Documentation
+- url: https://huggingface.co/docs/transformers/installation
+  title: Installation
+- url: https://huggingface.co/docs/transformers/accelerator_selection
+  title: Hardware
+- url: https://huggingface.co/docs/transformers/perf_train_special
+  title: Apple Silicon
+- url: https://pypi.org/project/transformers/
+  title: transformers — PyPI
 ---
 
 ## Overview
 
-The de facto standard library for accessing and fine-tuning pretrained transformer models. Provides a unified API across 200,000+ models on the Hugging Face Hub. Supports PyTorch, TensorFlow, and JAX backends with AutoModel/AutoTokenizer abstractions.
+Model-definition framework from Hugging Face for machine learning models in text, computer vision, audio, video and multimodal tasks, for both inference and training. It centralizes model definitions so that they work across training frameworks, inference engines and adjacent modeling libraries. It runs on PyTorch and loads Transformers model checkpoints from the Hugging Face Hub.

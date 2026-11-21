@@ -7,34 +7,28 @@ title: Ray Tune
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
-tagline: Scalable hyperparameter tuning on Ray — any framework, any scale
-description: Scalable hyperparameter tuning library in the Ray ecosystem. Supports multiple search algorithms (Bayesian, Population-Based Training, HyperBand) and integrates with all major ML frameworks. Scales from laptop to cluster.
-best_for: Large-scale distributed hyperparameter tuning, teams using Ray
-not_ideal_for: Simple single-machine tuning (use Optuna)
+tagline: Tune is a Python library for experiment execution and hyperparameter tuning at any scale.
+description: Ray Tune is a Python library for experiment execution and hyperparameter tuning, part of Ray. It runs algorithms such as Population Based Training and HyperBand/ASHA and integrates with hyperparameter optimization tools including Ax, BayesOpt, BOHB, Nevergrad and Optuna. It parallelizes tuning across multiple GPUs and multiple nodes.
+best_for: Hyperparameter tuning, Experiment execution
 key_features:
-- Multiple search algorithms (BO, PBT, HyperBand)
-- Distributed tuning across clusters
+- Population Based Training and HyperBand/ASHA
+- Parallel tuning across GPUs and nodes
 - Integration with Optuna, HyperOpt, Ax
-- Population-Based Training
+- Early stopping of trials
 - Fault tolerance
-- TensorBoard integration
+- Logging to MLflow and TensorBoard
 use_cases:
-- Large-scale hyperparameter tuning
+- Distributed hyperparameter tuning
 - Population-based training
 - Distributed ML experiments
 pros:
-- Scales to large clusters
-- Multiple search algorithm backends
-- Good fault tolerance
-cons:
-- Ray cluster overhead
-- More complex than Optuna for simple tasks
-- Configuration can be verbose
+- Parallelizes tuning across GPUs and nodes
+- Plugs in external search libraries
+- Built-in fault tolerance
 language: Python
 languages_supported:
 - Python
-maintained_by: Anyscale
-first_release: '2018-01-01'
+maintained_by: The Ray Team
 license_spdx: Apache-2.0
 github_url: https://github.com/ray-project/ray
 docs_url: https://docs.ray.io/en/latest/tune/
@@ -45,13 +39,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: large
-maturity: production
-signal_strength: medium
 backing:
-  type: corporate
+  type: foundation
   orgs:
+  - LF Projects
   - Anyscale
 alternatives:
 - framework/optuna
@@ -73,14 +64,22 @@ tags:
 - hyperparameter-tuning
 - distributed
 - ray
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/ray-project/ray
   title: GitHub repository
 - url: https://docs.ray.io/en/latest/tune/
   title: Documentation
+- url: https://docs.ray.io/en/latest/tune/index.html
+  title: Ray Tune documentation
+- url: https://docs.ray.io/en/latest/train/user-guides/hyperparameter-optimization.html
+  title: Ray Train hyperparameter optimization
+- url: https://docs.ray.io/en/latest/ray-governance/index.html
+  title: Ray governance
+- url: https://www.ray.io/
+  title: Website
 ---
 
 ## Overview
 
-Scalable hyperparameter tuning library in the Ray ecosystem. Supports multiple search algorithms (Bayesian, Population-Based Training, HyperBand) and integrates with all major ML frameworks. Scales from laptop to cluster.
+Ray Tune is a Python library for experiment execution and hyperparameter tuning, part of Ray. It runs algorithms such as Population Based Training and HyperBand/ASHA and integrates with hyperparameter optimization tools including Ax, BayesOpt, BOHB, Nevergrad and Optuna. It parallelizes tuning across multiple GPUs and multiple nodes.

@@ -7,37 +7,33 @@ title: LiteLLM
 kind: library
 category: framework-category/llm-frameworks
 subcategory: llm-gateway
-tagline: Call all LLM APIs using the OpenAI format — unified interface for 100+ providers
-description: Unified interface for calling 100+ LLM providers (OpenAI, Anthropic, Cohere, local models) using the OpenAI API format. Provides load balancing, fallbacks, spend tracking, and rate limiting. The universal LLM gateway.
-best_for: Applications needing to support multiple LLM providers with one API
-not_ideal_for: Single-provider applications, provider-specific feature needs
+tagline: AI Gateway with a Rust core and Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging.
+description: LiteLLM is an open source AI gateway that gives a single, unified interface to call LLM providers such as OpenAI, Anthropic, Gemini, Bedrock and Azure using the OpenAI format. It can be used as a Python SDK inside an application or deployed as an AI Gateway (proxy server) for a team or organization, with virtual keys, spend tracking, guardrails and load balancing.
+best_for: Calling multiple LLM providers through one OpenAI-format API, Central LLM gateway for ML platform teams
 key_features:
-- Unified OpenAI-format API for 100+ providers
-- Load balancing and fallback routing
-- Spend tracking and budgeting
-- Rate limiting
-- Proxy server mode
+- Unified OpenAI-format API across LLM providers
+- Router with retry and fallback logic across deployments
+- Load balancing
+- Virtual keys with budgets and rate limits
+- Spend tracking per project and user
+- Proxy server (AI Gateway) with admin dashboard
 - Streaming support
+- MCP gateway and A2A agent support
 use_cases:
 - Multi-provider LLM routing
-- Cost optimization across LLM providers
+- Cost tracking across LLM providers
 - LLM gateway for applications
 - Provider failover and load balancing
 pros:
-- Simplest way to support multiple LLM providers
-- Drop-in OpenAI replacement
-- Good cost tracking
-- Active development
+- OpenAI-compatible interface across providers
+- Usable as a Python library or as a self-hosted gateway
+- Per-request cost tracking
 cons:
-- Another abstraction layer
-- Provider-specific features may not be fully supported
-- Proxy mode adds latency
+- Features under litellm/enterprise/ require the LiteLLM Commercial License
 language: Python
 languages_supported:
 - Python
-maintained_by: BerriAI
-first_release: '2023-08-01'
-license_spdx: MIT
+maintained_by: Berri AI
 github_url: https://github.com/BerriAI/litellm
 docs_url: https://docs.litellm.ai/
 website_url: https://www.litellm.ai/
@@ -47,15 +43,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: very-low
-community_size: large
 maturity: production
-signal_strength: high
 backing:
   type: corporate
   orgs:
-  - BerriAI
-  funding_or_parent: Seed $1.6M led by Gravity Fund + YC W23
+  - Berri AI
 ecosystem_connections:
 - framework/ollama
 registry_signals:
@@ -72,14 +64,17 @@ tags:
 - gateway
 - multi-provider
 - routing
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/BerriAI/litellm
   title: GitHub repository
 - url: https://docs.litellm.ai/
   title: Documentation
+- url: https://pypi.org/project/litellm/
+  title: litellm — PyPI
+license_note: MIT, except content under litellm/enterprise/, which is under the licence in litellm/enterprise/LICENSE
 ---
 
 ## Overview
 
-Unified interface for calling 100+ LLM providers (OpenAI, Anthropic, Cohere, local models) using the OpenAI API format. Provides load balancing, fallbacks, spend tracking, and rate limiting. The universal LLM gateway.
+LiteLLM is an open source AI gateway that gives a single, unified interface to call LLM providers such as OpenAI, Anthropic, Gemini, Bedrock and Azure using the OpenAI format. It can be used as a Python SDK inside an application or deployed as an AI Gateway (proxy server) for a team or organization, with virtual keys, spend tracking, guardrails and load balancing.

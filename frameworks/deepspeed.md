@@ -7,39 +7,30 @@ title: DeepSpeed
 kind: library
 category: framework-category/distributed-training
 subcategory: training-optimization
-tagline: Deep learning optimization library for distributed training and inference at scale
-description: Microsoft's library for efficient distributed training and inference of large models. Pioneered ZeRO (Zero Redundancy Optimizer) for memory-efficient training. Enables training models with trillions of parameters across hundreds of GPUs.
-best_for: Training very large models with limited GPU memory
-not_ideal_for: Small models on single GPU, non-PyTorch frameworks
+tagline: Deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
+description: DeepSpeed is a deep learning optimization library for distributed training and inference. Its API is a lightweight wrapper on PyTorch, and its system innovations include ZeRO, ZeRO-Infinity, 3D-Parallelism, Ulysses Sequence Parallelism and DeepSpeed-MoE. DeepSpeed-Inference serves transformer-based PyTorch models with model parallelism and inference-customized kernels.
+best_for: Large model training with limited GPU memory
+not_ideal_for: Models outside PyTorch
 key_features:
-- ZeRO stages 1-3 for memory optimization
-- ZeRO-Infinity for NVMe offloading
+- ZeRO memory optimizations
+- ZeRO-Offload and ZeRO-Infinity
 - Mixed precision training
 - Pipeline parallelism
-- Sparse attention
-- DeepSpeed-Inference for optimized serving
-- DeepSpeed-Chat for RLHF training
+- Mixture of experts with DeepSpeed-MoE
+- DeepSpeed-Inference for transformer models
 use_cases:
-- Training billion+ parameter models
+- Training large models
 - Memory-efficient distributed training
-- RLHF training for LLMs
-- Large-scale model fine-tuning
+- Large model fine-tuning
 pros:
-- Best memory efficiency for large model training
-- ZeRO is widely adopted and proven
-- Good Hugging Face integration
-- Active development
+- Enabled on a PyTorch model with a few lines of code changes
+- Integrated with Hugging Face Transformers and Accelerate
 cons:
-- Configuration complexity
-- Can conflict with other distributed training libraries
-- Documentation could be better
+- Async I/O and GDS are not supported on Windows
 language: Python
 languages_supported:
 - Python
-- C++
-- CUDA
-maintained_by: Microsoft Research
-first_release: '2020-02-01'
+maintained_by: DeepSpeed Team
 license_spdx: Apache-2.0
 github_url: https://github.com/deepspeedai/DeepSpeed
 docs_url: https://www.deepspeed.ai/getting-started/
@@ -50,15 +41,10 @@ gpu_support:
   apple_mps: false
   intel_oneapi: true
   google_tpu: false
-learning_curve: high
-community_size: large
-maturity: production
-signal_strength: high
 backing:
-  type: corporate
+  type: foundation
   orgs:
-  - Microsoft
-  funding_or_parent: Microsoft Research
+  - LF AI & Data
 alternatives:
 - framework/colossalai
 - framework/megatron-lm
@@ -86,8 +72,16 @@ sources:
   title: GitHub repository
 - url: https://www.deepspeed.ai/getting-started/
   title: Documentation
+- url: https://www.deepspeed.ai/training/
+  title: Documentation — Training overview and features
+- url: https://www.deepspeed.ai/inference/
+  title: Documentation — Inference overview and features
+- url: https://github.com/deepspeedai/DeepSpeed/blob/master/GOVERNANCE.md
+  title: DeepSpeed governance charter
+- url: https://pypi.org/project/deepspeed/
+  title: deepspeed — PyPI
 ---
 
 ## Overview
 
-Microsoft's library for efficient distributed training and inference of large models. Pioneered ZeRO (Zero Redundancy Optimizer) for memory-efficient training. Enables training models with trillions of parameters across hundreds of GPUs.
+DeepSpeed is a deep learning optimization library for distributed training and inference. Its API is a lightweight wrapper on PyTorch, and its system innovations include ZeRO, ZeRO-Infinity, 3D-Parallelism, Ulysses Sequence Parallelism and DeepSpeed-MoE. DeepSpeed-Inference serves transformer-based PyTorch models with model parallelism and inference-customized kernels.

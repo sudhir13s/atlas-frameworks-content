@@ -3,9 +3,9 @@ id: framework/unsloth
 type: framework
 slug: unsloth
 schema_version: 1.2
-title: unsloth
+title: Unsloth
 category: framework-category/fine-tuning
-tagline: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
+tagline: Local UI to run and train LLMs and diffusion models.
 language: Python
 maintained_by: unslothai
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/unslothai/unsloth
 aliases:
 - unslothai/unsloth
+- unsloth
 tags:
 - agent
 - ai

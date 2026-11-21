@@ -7,34 +7,35 @@ title: CrewAI
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: agent-framework
-tagline: Framework for orchestrating role-playing autonomous AI agents
-description: Multi-agent orchestration framework where agents take on roles (researcher, writer, analyst) and collaborate to complete tasks. Emphasizes simplicity and role-based agent design. Built on top of LangChain.
-best_for: Quick multi-agent prototypes, role-based collaboration workflows
-not_ideal_for: Production systems requiring deterministic behavior, complex state machines
+tagline: Framework for orchestrating role-playing, autonomous AI agents.
+description: CrewAI is an open-source Python framework with high-level abstractions and low-level APIs for building multi-agent workflows. Crews are teams of role-based AI agents that collaborate and delegate tasks, and Flows are event-driven workflows with state, branching and routing for precise control. It is a standalone framework with its own primitives for agents, tasks, crews, flows, tools and orchestration.
+best_for: Role-based multi-agent collaboration, Event-driven agent workflows that combine autonomy with explicit business logic
 key_features:
-- Role-based agent design
-- Task delegation and collaboration
-- Tool integration for agents
-- Sequential and hierarchical process flows
-- Memory and context sharing between agents
+- Role-based agents with goals, backstories and tools
+- Task delegation and collaboration between agents
+- Sequential and hierarchical processes
+- Event-driven Flows with state, branching and routing
+- Memory, knowledge and checkpointing
+- MCP and A2A support
+- Human input and structured outputs
+- CrewAI Toolkit and LangChain Tools for agents
 use_cases:
-- Multi-agent research workflows
-- Content generation pipelines
-- Data analysis with specialized agents
-- Automated business processes
+- Trip planning
+- Stock analysis
+- Writing job descriptions
+- Landing page generation
+- Multi-step automations that combine agents with deterministic steps
 pros:
-- Simple and intuitive API
-- Good for role-based multi-agent setups
-- Active development
+- Combines autonomous Crews with event-driven Flows
+- Standalone framework with its own primitives
+- Uses the OpenAI API by default and supports local models through Ollama
 cons:
-- Limited control over agent internals
-- Can be unpredictable with complex workflows
-- LangChain dependency
+- Collects anonymous telemetry by default (disabled with the OTEL_SDK_DISABLED variable)
+- Managed deployment and the tracing control plane are part of the commercial CrewAI AMP Suite
 language: Python
 languages_supported:
 - Python
 maintained_by: CrewAI Inc.
-first_release: '2023-12-01'
 license_spdx: MIT
 github_url: https://github.com/crewAIInc/crewAI
 docs_url: https://docs.crewai.com/
@@ -45,15 +46,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: low
-community_size: medium
 maturity: stable
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - CrewAI Inc
-  funding_or_parent: Seed $18M led by Insight Partners (Oct 2024)
 alternatives:
 - framework/autogen
 ecosystem_connections:
@@ -72,14 +69,18 @@ tags:
 - agents
 - multi-agent
 - orchestration
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/crewAIInc/crewAI
   title: GitHub repository
 - url: https://docs.crewai.com/
   title: Documentation
+- url: https://docs.crewai.com/en/concepts/tools
+  title: Tools
+- url: https://pypi.org/project/crewai/
+  title: crewai — PyPI
 ---
 
 ## Overview
 
-Multi-agent orchestration framework where agents take on roles (researcher, writer, analyst) and collaborate to complete tasks. Emphasizes simplicity and role-based agent design. Built on top of LangChain.
+CrewAI is an open-source Python framework with high-level abstractions and low-level APIs for building multi-agent workflows. Crews are teams of role-based AI agents that collaborate and delegate tasks, and Flows are event-driven workflows with state, branching and routing for precise control. It is a standalone framework with its own primitives for agents, tasks, crews, flows, tools and orchestration.

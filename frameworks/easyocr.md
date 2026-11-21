@@ -5,7 +5,7 @@ slug: easyocr
 schema_version: 1.2
 title: EasyOCR
 category: framework-category/computer-vision
-tagline: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.
+tagline: Ready-to-use OCR with 80+ supported languages and writing scripts including Latin, Chinese, Arabic, Devanagari and Cyrillic.
 language: Python
 maintained_by: JaidedAI
 license_spdx: Apache-2.0

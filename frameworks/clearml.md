@@ -7,36 +7,33 @@ title: ClearML
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
-tagline: End-to-end MLOps platform — from experiment to production
-description: Open-source MLOps platform covering experiment tracking, data management, orchestration, and model serving. Self-hostable with an optional SaaS tier. Provides a more complete platform than individual tools.
-best_for: Teams wanting an all-in-one self-hosted MLOps platform
-not_ideal_for: Teams wanting best-of-breed individual tools
+tagline: Experiment management, data management, pipelines, orchestration, scheduling and serving in one MLOps/LLMOps solution.
+description: ClearML is an ML/DL development and production suite with modules for experiment management, MLOps and LLMOps orchestration and pipelines, data management and version control on object storage, model serving, and reports. The ClearML Server stores experiment, model and workflow data and is available as a hosted service or as open source to deploy yourself.
+best_for: Running experiment tracking and orchestration and data management in one platform
 key_features:
-- Automatic experiment logging
-- Pipeline orchestration
-- Data management and versioning
-- Model serving
+- Automatic experiment logging from two lines of code
+- Orchestration agent for Kubernetes and cloud and bare-metal jobs
+- Automation pipelines built from existing experiments
+- Dataset management and versioning on object storage
+- Model serving backed by NVIDIA Triton
 - Hyperparameter optimization
-- Resource management
+- Resource monitoring of CPU and GPU utilization
+- Reports and orchestration dashboard
 use_cases:
-- Full MLOps lifecycle management
+- Experiment tracking and comparison
 - Self-hosted experiment tracking
 - ML pipeline orchestration
+- Dataset versioning on S3, Google Cloud Storage, Azure or NAS
 pros:
-- Complete MLOps platform in one tool
-- Good self-hosted option
-- Auto-logging with minimal code changes
-cons:
-- Smaller community than MLflow or W&B
-- UI less polished than W&B
-- Documentation could be better
+- Open-source server for self-hosting or a hosted service
+- Logging added with two lines of code
+- Integrations with PyTorch, TensorFlow, Keras, XGBoost, scikit-learn and other frameworks
 language: Python
 languages_supported:
 - Python
-maintained_by: ClearML (formerly Allegro AI)
-first_release: '2019-01-01'
+maintained_by: ClearML
 license_spdx: Apache-2.0
-github_url: https://github.com/allegroai/clearml
+github_url: https://github.com/clearml/clearml
 docs_url: https://clear.ml/docs/
 website_url: https://clear.ml/
 gpu_support:
@@ -45,15 +42,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: small-medium
 maturity: production
-signal_strength: medium
 backing:
   type: corporate
   orgs:
   - ClearML
-  funding_or_parent: Formerly Allegro AI; Series A $10M led by Bright Pixel (2022)
 alternatives:
 - framework/mlflow
 - framework/wandb
@@ -69,19 +62,24 @@ registry_signals:
   source: https://github.com/allegroai/clearml
 aliases:
 - allegroai/clearml
+- clearml/clearml
 tags:
 - mlops
 - experiment-tracking
 - orchestration
 - self-hosted
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/allegroai/clearml
+- url: https://github.com/clearml/clearml
   title: GitHub repository
 - url: https://clear.ml/docs/
   title: Documentation
+- url: https://github.com/clearml
+  title: ClearML on GitHub
+- url: https://pypi.org/project/clearml/
+  title: clearml — PyPI
 ---
 
 ## Overview
 
-Open-source MLOps platform covering experiment tracking, data management, orchestration, and model serving. Self-hostable with an optional SaaS tier. Provides a more complete platform than individual tools.
+ClearML is an ML/DL development and production suite with modules for experiment management, MLOps and LLMOps orchestration and pipelines, data management and version control on object storage, model serving, and reports. The ClearML Server stores experiment, model and workflow data and is available as a hosted service or as open source to deploy yourself.

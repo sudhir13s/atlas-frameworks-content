@@ -7,56 +7,52 @@ title: Claude Agent SDK
 kind: library
 category: framework-category/llm-frameworks
 subcategory: agent-framework
-tagline: Anthropic's SDK for building production agents on Claude with tool use, sub-agents, memory, and computer use.
-description: 'Agent-building SDK from Anthropic, formerly the Claude Code SDK. Provides the primitives used internally for Claude Code: tool use, parallel tool calls, sub-agents, memory management, and the computer-use action set. Python is the primary implementation; a TypeScript variant is also available at anthropics/claude-agent-sdk-typescript.'
-best_for: Teams building agents on Claude who want Anthropic's own primitives and computer-use support
-not_ideal_for: Multi-provider routing (use LiteLLM/LangChain), teams not committed to Claude
+tagline: Build production AI agents with Claude Code as a library.
+description: The Claude Agent SDK gives you the same tools, agent loop and context management that power Claude Code, programmable in Python and TypeScript. It is a library that runs the Claude Code binary inside your own application, with built-in tools, permissions, sessions and hooks. It replaces the earlier Claude Code SDK packages.
+best_for: Embedding Claude Code's agent in your own Python or TypeScript application
+not_ideal_for: Languages other than Python or TypeScript (the docs suggest running the CLI as a subprocess), Calling the Claude API directly (the docs point to the Client SDK)
 key_features:
-- Tool use with parallel tool calls
-- Sub-agent orchestration
-- Memory management primitives
-- Computer-use action set
-- Custom tools, hooks, and MCP server support
-- Powers Claude Code internally
+- Built-in tools to read, write and edit files, run commands and search the web
+- Hooks at key points in the agent lifecycle
+- Subagents for focused subtasks
+- MCP servers, including in-process SDK MCP servers for custom tools
+- Permissions that control which tools run automatically
+- Sessions that can be resumed or forked
+- Skills, commands and memory loaded from .claude directories
+- Plugins loaded by local path
+- Claude Code CLI bundled with the Python package
 use_cases:
-- Claude-native production agents
-- Coding agents (the Claude Code pattern)
-- Computer-use automation
-- MCP-integrated agent systems
+- Agents that find and fix bugs in existing code
+- Agents with custom tools exposed through MCP
+- Embedding the Claude Code agent loop in your own application
 pros:
-- Production-tested (powers Claude Code)
-- First-party from Anthropic
-- Native computer-use and MCP support
-- Python and TypeScript available
+- Same tools and agent loop as Claude Code
+- First-party SDK from Anthropic
+- Custom tools run in-process as Python functions
+- Python and TypeScript SDKs
 cons:
-- Claude-specific — not a universal LLM abstraction
-- Smaller ecosystem than LangChain
-- Pre-1.0 versioning (0.1.x)
+- Use is governed by Anthropic's Commercial Terms of Service
+- Third-party products may not offer claude.ai login or rate limits unless previously approved
+- Marked Alpha in its PyPI development status
 language: Python
 languages_supported:
 - Python
 - TypeScript
 maintained_by: Anthropic
-first_release: '2025-06-11'
-license_spdx: MIT
 github_url: https://github.com/anthropics/claude-agent-sdk-python
-docs_url: https://docs.claude.com/en/docs/claude-code/sdk
-website_url: https://docs.claude.com/en/docs/claude-code/sdk
+docs_url: https://code.claude.com/docs/en/agent-sdk/overview
+website_url: https://code.claude.com/docs/en/agent-sdk/overview
 gpu_support:
   nvidia_cuda: false
   amd_rocm: false
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium
-community_size: medium
-maturity: stable
-signal_strength: high
+maturity: experimental
 backing:
   type: corporate
   orgs:
   - Anthropic
-  funding_or_parent: Anthropic — production-tested as the backbone of Claude Code
 alternatives:
 - framework/langchain
 - framework/crewai
@@ -77,14 +73,17 @@ tags:
 - claude
 - computer-use
 - mcp
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/anthropics/claude-agent-sdk-python
   title: GitHub repository
-- url: https://docs.claude.com/en/docs/claude-code/sdk
-  title: Documentation
+- url: https://code.claude.com/docs/en/agent-sdk/overview
+  title: Agent SDK overview - Claude Code Docs
+- url: https://pypi.org/project/claude-agent-sdk/
+  title: claude-agent-sdk — PyPI
+license_note: Use is governed by Anthropic's Commercial Terms of Service, except components covered by their own LICENSE file (the repository LICENSE file is MIT)
 ---
 
 ## Overview
 
-Agent-building SDK from Anthropic, formerly the Claude Code SDK. Provides the primitives used internally for Claude Code: tool use, parallel tool calls, sub-agents, memory management, and the computer-use action set. Python is the primary implementation; a TypeScript variant is also available at anthropics/claude-agent-sdk-typescript.
+The Claude Agent SDK gives you the same tools, agent loop and context management that power Claude Code, programmable in Python and TypeScript. It is a library that runs the Claude Code binary inside your own application, with built-in tools, permissions, sessions and hooks. It replaces the earlier Claude Code SDK packages.

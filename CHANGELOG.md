@@ -22,6 +22,26 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
   LangChain, LlamaIndex, vLLM, PyTorch, JAX, Lightning, Weights & Biases), and set `sources` to the
   pages each record now relies on.
 
+### Content (framework accuracy pass)
+
+- **Changed** 54 framework titles to the name each project gives itself in its README or
+  documentation (for example `firecrawl` to Firecrawl, `pytorch_geometric` to PyG (PyTorch
+  Geometric), `FAISS` to Faiss); the previous spelling is kept in `aliases`.
+- **Changed** 124 taglines to the project's own one-line description, without emoji, calls to
+  action, superlatives or marketing fragments; hand-written taglines of the older records were
+  replaced by the project's wording.
+- **Changed** the editorial fields of the 85 hand-written records (description and Overview,
+  best and not-ideal fits, features, use cases, pros, cons, languages, maintainer, backing, GPU
+  support, maturity, ecosystem links): only statements the project's README, documentation, licence
+  file or registry page supports remain. Rankings, comparisons, adoption claims, opinion and every
+  number outside `registry_signals` are gone; documented limitations such as archived status stay.
+- **Removed** `first_release`, `learning_curve`, `community_size`, `signal_strength` and
+  `backing.funding_or_parent` from those records: no primary source supported them.
+- **Changed** licences found to differ from the repository's licence file (Weaviate, LiteLLM,
+  Seldon Core, Megatron-LM, Claude Agent SDK, Pinecone, Comet, LangSmith, Weights & Biases),
+  maintainers of moved repositories (DVC to Treeverse, Great Expectations to Fivetran, Ragas to
+  Vibrant Labs), and moved GitHub and documentation addresses; dead ones were removed.
+
 ### Schema 2.2 (fine-tuning methods as options)
 
 - **Changed** `use-case` option `record` also accepts `fine-tuning-method/<slug>` (a record of the

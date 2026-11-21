@@ -3,9 +3,9 @@ id: framework/graphiti
 type: framework
 slug: graphiti
 schema_version: 1.2
-title: graphiti
+title: Graphiti
 category: framework-category/rag
-tagline: Build Real-Time Knowledge Graphs for AI Agents
+tagline: Build real-time knowledge graphs for AI agents.
 language: Python
 maintained_by: getzep
 license_spdx: Apache-2.0
@@ -20,6 +20,7 @@ registry_signals:
   source: https://github.com/getzep/graphiti
 aliases:
 - getzep/graphiti
+- graphiti
 tags:
 - agents
 - graph

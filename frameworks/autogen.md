@@ -7,37 +7,35 @@ title: AutoGen
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: agent-framework
-tagline: Multi-agent conversation framework by Microsoft Research
-description: Microsoft Research framework for building multi-agent systems where agents communicate through conversations. Supports human-in-the-loop, code execution, and complex multi-agent topologies. AutoGen v0.4 is a complete rewrite with an event-driven architecture.
-best_for: Research teams exploring multi-agent architectures, Microsoft ecosystem
-not_ideal_for: Production systems needing stability, simple single-agent tasks
+tagline: A programming framework for agentic AI.
+description: AutoGen is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans. Its layered design has a Core API for message passing and event-driven agents, an AgentChat API for common multi-agent patterns, and an Extensions API for LLM clients and capabilities such as code execution. The project has been archived and is no longer actively maintained by Microsoft, which points new users to Microsoft Agent Framework.
+best_for: Research and experimentation with multi-agent orchestration patterns
+not_ideal_for: Production use (Microsoft advises against it), New projects (Microsoft recommends Microsoft Agent Framework)
 key_features:
-- Conversational multi-agent framework
-- Human-in-the-loop patterns
-- Code execution sandboxing
-- Group chat topologies
-- Event-driven architecture (v0.4)
-- Flexible agent communication patterns
+- Agents that act autonomously or alongside humans
+- Event-driven Core API with local and distributed runtimes
+- AgentChat API for two-agent chat and group chats
+- Extensions for LLM clients and code execution
+- MCP server tools through McpWorkbench
+- AutoGen Studio no-code GUI for multi-agent workflows
+- AutoGen Bench benchmarking suite for agent performance
 use_cases:
-- Multi-agent code generation
-- Research assistant systems
-- Human-AI collaborative workflows
-- Complex reasoning chains
+- Multi-agent prototypes for research
+- Web browsing agents that use MCP servers
+- No-code prototyping of multi-agent workflows in AutoGen Studio
 pros:
-- Flexible agent communication patterns
-- Good for research and experimentation
-- Microsoft Research backing
-- v0.4 event-driven rewrite is promising
+- Layered APIs from high-level AgentChat to low-level Core
+- Python and .NET packages
 cons:
-- Major API changes between versions
-- Complex setup for production use
-- Agent behavior can be unpredictable
+- This project has been archived and is no longer actively maintained by Microsoft
+- Microsoft is not providing bug fixes, security fixes, new features, or support for this project
+- AutoGen was developed for research and experimentation and Microsoft advises against production use
+- AutoGen Studio is not meant to be a production-ready app
 language: Python
 languages_supported:
 - Python
 - .NET
-maintained_by: Microsoft Research
-first_release: '2023-09-01'
+maintained_by: Microsoft (archived, now community-managed)
 license_spdx: MIT
 github_url: https://github.com/microsoft/autogen
 docs_url: https://microsoft.github.io/autogen/
@@ -48,15 +46,11 @@ gpu_support:
   apple_mps: false
   intel_oneapi: false
   google_tpu: false
-learning_curve: medium-high
-community_size: large
-maturity: stable
-signal_strength: high
+maturity: experimental
 backing:
   type: corporate
   orgs:
   - Microsoft
-  funding_or_parent: Microsoft Research
 alternatives:
 - framework/crewai
 registry_signals:
@@ -74,14 +68,20 @@ tags:
 - multi-agent
 - research
 - microsoft
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
 - url: https://github.com/microsoft/autogen
   title: GitHub repository
 - url: https://microsoft.github.io/autogen/
   title: Documentation
+- url: https://microsoft.github.io/autogen/stable/
+  title: AutoGen documentation (stable)
+- url: https://github.com/microsoft/autogen/blob/main/LICENSE-CODE
+  title: AutoGen LICENSE-CODE
+- url: https://pypi.org/project/autogen-agentchat/
+  title: autogen-agentchat — PyPI
 ---
 
 ## Overview
 
-Microsoft Research framework for building multi-agent systems where agents communicate through conversations. Supports human-in-the-loop, code execution, and complex multi-agent topologies. AutoGen v0.4 is a complete rewrite with an event-driven architecture.
+AutoGen is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans. Its layered design has a Core API for message passing and event-driven agents, an AgentChat API for common multi-agent patterns, and an Extensions API for LLM clients and capabilities such as code execution. The project has been archived and is no longer actively maintained by Microsoft, which points new users to Microsoft Agent Framework.
