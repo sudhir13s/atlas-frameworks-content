@@ -8,22 +8,22 @@ label: LLM Frameworks
 layer: build
 order: 1
 short_description: Orchestration layers that turn a raw LLM into an application — prompts, chains, retrieval, and tools.
-why_it_matters: They remove the boilerplate between a model call and a working app, and standardize retrieval and tool use.
+why_it_matters: They provide the prompt, retrieval and tool-calling code that sits between a model call and a working application.
 defacto:
   framework_id: framework/langchain
-  reason: The most-adopted orchestration framework; broad integrations and the LangGraph runtime for stateful apps.
+  reason: Framework for building agents and LLM applications by chaining interoperable components and third-party integrations, with LangGraph for controllable agent workflows.
 rising:
 - framework_id: framework/llamaindex
-  reason: Data-first framework that leads on ingestion, indexing, and retrieval-centric applications.
+  reason: Open-source framework for agentic and RAG applications over your data, with data connectors, indices, retrievers and query engines.
 - framework_id: framework/dspy
-  reason: Compiles and optimizes prompts programmatically instead of hand-tuning them.
+  reason: Programs language models in Python code instead of prompts, with algorithms that optimize the prompts and weights.
 alternatives:
 - framework_id: framework/haystack
-  reason: Production-oriented pipelines from deepset, strong for search and RAG.
+  reason: Open-source orchestration framework for production LLM applications, built from modular pipelines with explicit retrieval, routing, memory and generation.
 - framework_id: framework/semantic-kernel
-  reason: Microsoft's SDK, popular in .NET/enterprise stacks.
+  reason: Microsoft's model-agnostic SDK for building agents and multi-agent systems; its README names Microsoft Agent Framework as the successor.
 - framework_id: framework/litellm
-  reason: Not an orchestrator but the common gateway underneath — one API across 100+ model providers.
+  reason: Gateway that calls 100+ LLM providers through one OpenAI-format interface, as a Python SDK or a proxy server.
 key_concepts:
 - prompt templating
 - chains and graphs
@@ -31,48 +31,34 @@ key_concepts:
 - retrieval
 - structured output
 canonical_reading:
-- title: LangChain — Introduction
-  url: https://python.langchain.com/docs/introduction/
-- title: LlamaIndex — High-level concepts
-  url: https://docs.llamaindex.ai/en/stable/getting_started/concepts/
+- title: LangChain — overview
+  url: https://docs.langchain.com/oss/python/langchain/overview
+- title: LlamaIndex — high-level concepts
+  url: https://developers.llamaindex.ai/python/framework/getting_started/concepts/
 - title: DSPy — documentation
   url: https://dspy.ai/
-did_you_know:
-- LangChain started as a weekend project by Harrison Chase in October 2022, weeks before ChatGPT launched.
-- DSPy treats prompts like a program a compiler optimizes, rather than strings you tune by hand.
-- Most production LLM apps use an orchestrator plus a separate model gateway (like LiteLLM) underneath.
 tags:
 - llm
 - orchestration
 - frameworks
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://python.langchain.com/docs/introduction/
-  title: LangChain documentation
+- url: https://github.com/langchain-ai/langchain
+  title: LangChain repository
   trust: 0.9
-- url: https://docs.llamaindex.ai/en/stable/
-  title: LlamaIndex documentation
+- url: https://github.com/run-llama/llama_index
+  title: LlamaIndex repository
   trust: 0.9
-- url: https://dspy.ai/
-  title: DSPy documentation
-  trust: 0.85
+- url: https://github.com/stanfordnlp/dspy
+  title: DSPy repository
+  trust: 0.9
+- url: https://github.com/deepset-ai/haystack
+  title: Haystack repository
+  trust: 0.9
+- url: https://github.com/microsoft/semantic-kernel
+  title: Semantic Kernel repository
+  trust: 0.9
+- url: https://github.com/BerriAI/litellm
+  title: LiteLLM repository
+  trust: 0.9
 ---
-
-## Overview
-
-LLM frameworks are the application layer over a language model. They wire together prompt templates,
-retrieval, memory, tool calls, and control flow so you write app logic instead of glue code, and they
-standardize the patterns (RAG, agents, structured output) that would otherwise be reinvented per project.
-
-## Landscape
-
-LangChain is the default by adoption and integration breadth, with LangGraph handling stateful,
-multi-step apps. LlamaIndex leads when the problem is data — ingestion, indexing, and retrieval. DSPy
-is a different philosophy: optimize prompts programmatically. Haystack and Semantic Kernel serve
-production and enterprise/.NET niches. Underneath most of them sits a gateway like LiteLLM.
-
-## Notes
-
-These frameworks move fast and their APIs churn — pin versions and expect breaking changes. The right
-choice depends on the job: retrieval-heavy → LlamaIndex, agentic/stateful → LangGraph, prompt
-optimization → DSPy.

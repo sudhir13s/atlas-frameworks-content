@@ -11,17 +11,17 @@ short_description: Tooling for retrieval-augmented generation — ingest, chunk,
 why_it_matters: RAG is how you give a model fresh, private, or domain knowledge without retraining it.
 defacto:
   framework_id: framework/llamaindex
-  reason: 'Data-first framework purpose-built for RAG: loaders, indices, retrievers, and query engines out of the box.'
+  reason: Open-source framework for retrieval over your data, with data connectors, indices, retrievers and query engines.
 rising:
 - framework_id: framework/langchain
-  reason: Broadest integrations; its retriever + chain abstractions are a common RAG starting point.
+  reason: Interoperable components and third-party integrations, including document loaders, embeddings and vector stores for retrieval.
 - framework_id: framework/haystack
-  reason: Production-grade retrieval pipelines from deepset, strong on hybrid search and evaluation.
+  reason: Modular pipelines with built-in components for retrieval, indexing and evaluation.
 alternatives:
 - framework_id: framework/dspy
-  reason: Optimizes the retrieve-then-generate program end to end instead of hand-tuning prompts.
+  reason: Optimizes the prompts and weights of a modular program, such as a RAG pipeline, instead of hand-written prompts.
 - framework_id: framework/sentence-transformers
-  reason: The embedding + reranking workhorse most RAG stacks depend on underneath.
+  reason: Computes embeddings and reranker (Cross-Encoder) scores for semantic search and retrieval.
 key_concepts:
 - chunking
 - embeddings
@@ -32,46 +32,34 @@ canonical_reading:
 - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
   url: https://arxiv.org/abs/2005.11401
 - title: LlamaIndex — high-level concepts
-  url: https://docs.llamaindex.ai/en/stable/getting_started/concepts/
-- title: LangChain — RAG tutorial
-  url: https://python.langchain.com/docs/tutorials/rag/
-did_you_know:
-- The original RAG paper (Lewis et al., 2020) predates ChatGPT by two years.
-- Hybrid search (dense + BM25) usually beats pure vector search on real corpora.
-- Rerankers can recover more quality than a 10x larger embedding model.
+  url: https://developers.llamaindex.ai/python/framework/getting_started/concepts/
+- title: LangChain — RAG with Deep Agents
+  url: https://docs.langchain.com/oss/python/deepagents/rag
 tags:
 - rag
 - retrieval
 - embeddings
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://docs.llamaindex.ai/en/stable/
-  title: LlamaIndex documentation
+- url: https://github.com/run-llama/llama_index
+  title: LlamaIndex repository
+  trust: 0.9
+- url: https://github.com/langchain-ai/langchain
+  title: LangChain repository
+  trust: 0.9
+- url: https://docs.langchain.com/oss/python/deepagents/retrieval
+  title: LangChain — Retrieval
+  trust: 0.9
+- url: https://github.com/deepset-ai/haystack
+  title: Haystack repository
+  trust: 0.9
+- url: https://github.com/stanfordnlp/dspy
+  title: DSPy repository
+  trust: 0.9
+- url: https://github.com/huggingface/sentence-transformers
+  title: Sentence Transformers repository
   trust: 0.9
 - url: https://arxiv.org/abs/2005.11401
   title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
-  trust: 0.95
-- url: https://haystack.deepset.ai/
-  title: Haystack documentation
-  trust: 0.85
+  trust: 0.9
 ---
-
-## Overview
-
-RAG grounds an LLM in retrieved context: you index a corpus, retrieve the most relevant chunks per
-query, and pass them to the model. It is the standard cure for stale knowledge and hallucination when
-the answer lives in documents you control.
-
-## Landscape
-
-LlamaIndex is the RAG-first choice, with the richest set of loaders, indices, and query engines.
-LangChain is the broad, integration-heavy alternative many teams start with. Haystack targets
-production retrieval with strong hybrid search and evaluation. DSPy optimizes the whole
-retrieve-then-generate program, and Sentence-Transformers is the embedding/reranking layer underneath
-most stacks.
-
-## Notes
-
-Quality comes from retrieval, not the model — invest in chunking, hybrid search, and a reranker before
-reaching for a bigger LLM. Always keep a small labelled question set; "it looks right" is not a metric,
-and RAG systems earn trust through traceable citations.

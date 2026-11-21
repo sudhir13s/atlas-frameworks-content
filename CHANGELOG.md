@@ -5,6 +5,23 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Content (category accuracy pass)
+
+- **Changed** the default pick reason and every rising and alternative reason in the ten
+  categories that name frameworks: each now states only what the framework's own repository or
+  documentation says it is or does. Popularity, speed multiples and adoption claims are gone.
+- **Changed** `description` and "when you need it" text in those categories to plain statements;
+  the fine-tuning and inference lines cite the QLoRA and PagedAttention papers for their figures.
+- **Removed** `framework/autogen` from the agents category's rising picks: its repository is
+  archived and points new users to Microsoft Agent Framework. The semantic-kernel reason now names
+  that successor.
+- **Removed** every `did_you_know` list and every `Overview`, `Landscape` and `Notes` body section
+  from the category records. The site shows none of them and they cited no source. All are
+  optional in the schema and the registry.
+- **Changed** further-reading links that had moved to their current pages (LangGraph, CrewAI,
+  LangChain, LlamaIndex, vLLM, PyTorch, JAX, Lightning, Weights & Biases), and set `sources` to the
+  pages each record now relies on.
+
 ### Schema 2.2 (fine-tuning methods as options)
 
 - **Changed** `use-case` option `record` also accepts `fine-tuning-method/<slug>` (a record of the

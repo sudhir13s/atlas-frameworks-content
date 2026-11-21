@@ -11,19 +11,19 @@ short_description: Platforms that package, deploy, scale, and observe models as 
 why_it_matters: An inference engine generates tokens; a serving platform turns it into a versioned, autoscaling, observable API.
 defacto:
   framework_id: framework/bentoml
-  reason: Packages any model as a versioned, containerizable service with a typed API, autoscaling, and simple deploys.
+  reason: Python library that turns a model inference script into a REST API server using type hints, and builds Docker images for deployment.
 rising:
 - framework_id: framework/ray-serve
-  reason: Python-native serving that scales from a laptop to a cluster and composes multi-model pipelines.
+  reason: Framework-agnostic serving built on Ray, suited to model composition and multi-model services, and scaling to many machines.
 - framework_id: framework/kserve
-  reason: Kubernetes-native serving with autoscaling (to zero), canary rollout, and standard inference protocols.
+  reason: Kubernetes inference platform with request-based autoscaling (scale-to-zero for predictive models), canary rollouts and an OpenAI-compatible protocol.
 alternatives:
 - framework_id: framework/triton-inference-server
-  reason: NVIDIA's high-performance server for ONNX/TensorRT/PyTorch with dynamic batching.
+  reason: NVIDIA's open-source server for models from TensorRT, PyTorch, ONNX, OpenVINO and other frameworks, with dynamic batching and concurrent model execution.
 - framework_id: framework/seldon-core
-  reason: Kubernetes-native serving with advanced routing and explainability.
+  reason: Seldon Core 2 deploys models and pipelines on Kubernetes, with experiments that route traffic between candidates for A/B tests and shadow deployments.
 - framework_id: framework/tf-serving
-  reason: The battle-tested server for TensorFlow SavedModels.
+  reason: Serving system for production with out-of-the-box TensorFlow model support, versioned models and canary releases.
 key_concepts:
 - model packaging
 - autoscaling
@@ -37,44 +37,29 @@ canonical_reading:
   url: https://kserve.github.io/website/docs/intro
 - title: Ray Serve — documentation
   url: https://docs.ray.io/en/latest/serve/index.html
-did_you_know:
-- Triton started as TensorRT Inference Server before rebranding.
-- Cold start is often the silent killer of serverless LLM deployments.
-- Continuous batching can 2-5x throughput versus static batching.
 tags:
 - serving
 - deployment
 - mlops
 - kubernetes
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://docs.bentoml.com/
-  title: BentoML documentation
-  trust: 0.9
-- url: https://kserve.github.io/website/docs/intro
-  title: KServe documentation
+- url: https://github.com/bentoml/BentoML
+  title: BentoML repository
   trust: 0.9
 - url: https://docs.ray.io/en/latest/serve/index.html
-  title: Ray Serve documentation
+  title: Ray Serve — documentation
+  trust: 0.9
+- url: https://github.com/kserve/kserve
+  title: KServe repository
+  trust: 0.9
+- url: https://github.com/triton-inference-server/server
+  title: Triton Inference Server repository
+  trust: 0.9
+- url: https://github.com/SeldonIO/seldon-core
+  title: Seldon Core repository
+  trust: 0.9
+- url: https://github.com/tensorflow/serving
+  title: TensorFlow Serving repository
   trust: 0.9
 ---
-
-## Overview
-
-Deployment and serving is the layer above the inference engine: it packages a model as a service,
-exposes a stable API, scales with traffic, rolls out safely, and emits the metrics you operate on.
-Where an engine like vLLM maximizes tokens per GPU, this layer makes the whole thing a dependable
-production endpoint.
-
-## Landscape
-
-BentoML is a strong default for packaging and deploying any model with a typed API. Ray Serve scales
-Python-native serving from laptop to cluster and composes multi-model pipelines. KServe is the
-Kubernetes-native choice with autoscaling and canary rollout. Triton, TorchServe, Seldon Core, and
-TF-Serving cover high-performance, PyTorch, advanced-routing, and TensorFlow niches respectively.
-
-## Notes
-
-Pick based on where you run: standalone/containers → BentoML; Kubernetes → KServe/Seldon; multi-model
-Python pipelines → Ray Serve; NVIDIA-heavy mixed models → Triton. Whatever you choose, track p95/p99
-(not averages) and budget for cold starts on serverless paths.

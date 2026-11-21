@@ -7,25 +7,25 @@ title: Vector Databases
 label: Vector Databases
 layer: build
 order: 8
-short_description: Stores that index embeddings for fast approximate nearest-neighbour search — the retrieval backbone of RAG and semantic search.
-why_it_matters: They turn embeddings into a queryable index at scale; the wrong choice caps recall, latency, or how far you can grow.
+short_description: Stores that index embeddings for fast approximate nearest-neighbour search, used for retrieval in RAG and semantic search.
+why_it_matters: They keep nearest-neighbour search over embeddings fast as a collection grows, together with filtering on metadata.
 defacto:
   framework_id: framework/chromadb
-  reason: The zero-config, embedded default for development — runs in-process so there is no server to operate while you prototype.
+  reason: Open-source; its getting-started guide runs an in-memory client inside your program, with a persistent client or client-server mode when data must persist.
 rising:
 - framework_id: framework/qdrant
-  reason: Rust-based, high-performance, with rich filtering; a common production graduation from Chroma.
+  reason: Vector database written in Rust that stores a payload with each vector and has extended filtering support.
 - framework_id: framework/lancedb
-  reason: Embedded, on-disk vector store built on the Lance columnar format; scales locally without a server.
+  reason: Built on the Lance columnar format; the open-source edition is embedded in your application's process, with data on local disk or in object storage.
 alternatives:
 - framework_id: framework/weaviate
-  reason: Feature-rich vector database with hybrid search and modules.
+  reason: Vector database that stores objects and vectors, combining vector search with keyword filtering, RAG and reranking in one query interface.
 - framework_id: framework/milvus
-  reason: Built for billion-scale vector search in production.
+  reason: Distributed, Kubernetes-native vector database built for search over billions of vectors, with a standalone mode and Milvus Lite.
 - framework_id: framework/faiss
-  reason: Meta's ANN library — not a database, but the engine inside many of them.
+  reason: Meta's library for similarity search and clustering of dense vectors, in C++ with Python wrappers and GPU implementations; a library, not a database.
 - framework_id: framework/pinecone
-  reason: Fully managed, hosted vector DB when you would rather not run infrastructure.
+  reason: Fully managed vector database, used through its client SDKs.
 key_concepts:
 - embeddings
 - approximate nearest neighbour
@@ -39,43 +39,35 @@ canonical_reading:
   url: https://qdrant.tech/documentation/quickstart/
 - title: Faiss — wiki
   url: https://github.com/facebookresearch/faiss/wiki
-did_you_know:
-- FAISS was released by Meta in 2017 and still powers many commercial vector DBs internally.
-- HNSW is the dominant ANN index; it has been the default for a decade.
-- Qdrant is written in Rust; its query engine runs without a Python dependency.
 tags:
 - vector-db
 - retrieval
 - ann
 - embeddings
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://docs.trychroma.com/
-  title: Chroma documentation
+- url: https://github.com/chroma-core/chroma
+  title: Chroma repository
   trust: 0.9
-- url: https://qdrant.tech/documentation/
-  title: Qdrant documentation
+- url: https://docs.trychroma.com/docs/overview/getting-started
+  title: Chroma — getting started
   trust: 0.9
-- url: https://github.com/facebookresearch/faiss/wiki
-  title: Faiss wiki
+- url: https://github.com/qdrant/qdrant
+  title: Qdrant repository
+  trust: 0.9
+- url: https://github.com/lancedb/lancedb
+  title: LanceDB repository
+  trust: 0.9
+- url: https://github.com/weaviate/weaviate
+  title: Weaviate repository
+  trust: 0.9
+- url: https://github.com/milvus-io/milvus
+  title: Milvus repository
+  trust: 0.9
+- url: https://github.com/facebookresearch/faiss
+  title: Faiss repository
+  trust: 0.9
+- url: https://www.pinecone.io/
+  title: Pinecone
   trust: 0.9
 ---
-
-## Overview
-
-A vector database indexes embeddings and answers nearest-neighbour queries fast. It is the retrieval
-backbone under RAG, semantic search, recommendations, and deduplication — anywhere you compare meaning
-rather than exact text.
-
-## Landscape
-
-Chroma is the zero-config embedded default for prototyping. Qdrant (Rust, strong filtering) and LanceDB
-(embedded, on-disk) are the common next steps. Weaviate and Milvus target feature-rich and
-billion-scale production respectively. Faiss is not a database but the ANN engine inside many of them,
-and Pinecone is the fully managed option when you would rather not run infrastructure.
-
-## Notes
-
-Start embedded (Chroma/LanceDB) and graduate to a server (Qdrant/Weaviate/Milvus) when the corpus or
-QPS demands it. Two things dominate quality: metadata filtering (to scope retrieval) and hybrid search
-(dense + keyword), which usually beats pure vector search on real corpora.

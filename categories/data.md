@@ -8,20 +8,20 @@ label: Data & ETL
 layer: data
 order: 6
 short_description: Tools that move, transform, validate, and serve the data and features models train and infer on.
-why_it_matters: Model quality is capped by data quality; this layer decides whether your features are clean, reproducible, and consistent.
+why_it_matters: Models are trained and served on this data, so its quality, and whether training and serving see the same features, carries into the model.
 defacto:
   framework_id: framework/spark-mllib
-  reason: Apache Spark is the incumbent for large-scale distributed ETL and batch feature computation.
+  reason: Apache Spark is a unified analytics engine for large-scale data processing, with Spark SQL, DataFrames, a pandas API, MLlib and Structured Streaming.
 rising:
 - framework_id: framework/polars
-  reason: A multi-threaded, Arrow-backed dataframe that is 5-30x faster than pandas on a single machine.
+  reason: Analytical query engine written in Rust, with multi-threaded vectorized execution, the Apache Arrow columnar format and spill-to-disk for data larger than memory.
 - framework_id: framework/dask
-  reason: Scales familiar dataframe/array APIs across cores and clusters when data outgrows memory.
+  reason: Parallelizes pandas and NumPy, with larger-than-memory execution on one machine and distributed computation on a cluster.
 alternatives:
 - framework_id: framework/feast
-  reason: Feature store that serves the same definitions to training and online inference, killing skew.
+  reason: Open-source feature store that makes the same features available for training and online serving, with point-in-time correct joins.
 - framework_id: framework/great-expectations
-  reason: Declarative data-quality gates that fail a pipeline before bad data reaches the model.
+  reason: Expectations are expressive, extensible unit tests for data, with generated documentation of each validation result.
 key_concepts:
 - columnar / Parquet
 - data quality
@@ -35,43 +35,29 @@ canonical_reading:
   url: https://docs.feast.dev/
 - title: Hidden Technical Debt in Machine Learning Systems
   url: https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
-did_you_know:
-- Polars can be 5-30x faster than pandas on the same hardware.
-- Parquet's columnar layout is why it dominates ML data storage.
-- Feature stores exist because training-serving skew causes silent model failures.
 tags:
 - data
 - etl
 - feature-store
 - data-quality
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://docs.pola.rs/
-  title: Polars documentation
+- url: https://github.com/apache/spark
+  title: Apache Spark repository
   trust: 0.9
-- url: https://docs.feast.dev/
-  title: Feast documentation
+- url: https://github.com/pola-rs/polars
+  title: Polars repository
   trust: 0.9
-- url: https://spark.apache.org/docs/latest/ml-guide.html
-  title: Apache Spark MLlib guide
+- url: https://docs.dask.org/en/stable/
+  title: Dask documentation
+  trust: 0.9
+- url: https://github.com/feast-dev/feast
+  title: Feast repository
+  trust: 0.9
+- url: https://github.com/fivetran/great_expectations
+  title: Great Expectations (GX Core) repository
+  trust: 0.9
+- url: https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
+  title: Hidden Technical Debt in Machine Learning Systems
   trust: 0.9
 ---
-
-## Overview
-
-The data and ETL layer turns raw sources into clean, validated, versioned features. It is the least
-glamorous and most consequential part of an ML system — most production failures trace back to data,
-not the model.
-
-## Landscape
-
-Spark remains the default for large distributed ETL and batch feature computation. Polars is the fast
-rising single-machine dataframe, and Dask scales dataframe APIs when data outgrows RAM. Feast (feature
-store) and Great Expectations (data quality) are the pieces teams skip early and regret later — they
-are what make features consistent and trustworthy across training and serving.
-
-## Notes
-
-Three habits separate a real pipeline from a toy: validation (fail on bad data), idempotency (re-runs
-produce identical output), and versioning (any model's inputs are reproducible). Prefer Parquet, and
-define features once in a feature store to avoid training/serving skew.

@@ -7,21 +7,21 @@ title: Inference Engines
 label: Inference
 layer: run
 order: 3
-short_description: Runtimes that make LLM generation fast and cheap — batching, KV-cache management, and quantization.
-why_it_matters: Inference is where most production cost lives; the engine you choose can change throughput per GPU several-fold.
+short_description: Runtimes that generate tokens from LLMs efficiently, through request batching, KV-cache management and quantization.
+why_it_matters: The engine decides how many requests one GPU can serve at once; the PagedAttention paper reports 2-4x the throughput of earlier serving systems at the same latency.
 defacto:
   framework_id: framework/vllm
-  reason: PagedAttention plus continuous batching set the throughput bar for open LLMs, with an OpenAI-compatible server.
+  reason: Library for LLM inference and serving with PagedAttention memory management, continuous batching and an OpenAI-compatible API server.
 rising:
 - framework_id: framework/tensorrt-llm
-  reason: NVIDIA's compiled engine can beat raw vLLM by 1.5-3x on specific models and hardware.
+  reason: NVIDIA's library that optimizes LLM inference with specialized kernels and an efficient runtime.
 - framework_id: framework/llama-cpp
-  reason: The reference for quantized, CPU/edge-friendly inference — a 7B on a laptop or Raspberry Pi.
+  reason: LLM inference in C/C++ with minimal setup on a wide range of hardware, locally and in the cloud.
 alternatives:
 - framework_id: framework/ollama
-  reason: The easiest local runtime; wraps llama.cpp with one-command model management.
+  reason: Runs open models locally through a command line and a REST API; its README lists llama.cpp as its backend.
 - framework_id: framework/onnx-runtime
-  reason: Portable, dependency-light runtime for smaller or non-LLM models across hardware.
+  reason: Cross-platform model accelerator for models trained in different frameworks, with an interface for hardware-specific libraries.
 key_concepts:
 - continuous batching
 - KV cache
@@ -30,48 +30,34 @@ key_concepts:
 - throughput vs latency
 canonical_reading:
 - title: vLLM — quickstart
-  url: https://docs.vllm.ai/en/latest/getting_started/quickstart.html
-- title: Efficient Memory Management for LLM Serving with PagedAttention
+  url: https://docs.vllm.ai/en/latest/getting_started/quickstart/
+- title: Efficient Memory Management for Large Language Model Serving with PagedAttention
   url: https://arxiv.org/abs/2309.06180
 - title: llama.cpp — repository
   url: https://github.com/ggml-org/llama.cpp
-did_you_know:
-- vLLM's PagedAttention borrows virtual-memory paging ideas from operating systems.
-- TensorRT-LLM can beat raw vLLM on NVIDIA hardware by 1.5-3x on specific models.
-- llama.cpp runs 7B models on a Raspberry Pi with 4-bit quantization.
 tags:
 - inference
 - serving
 - throughput
 - quantization
-updated: '2026-11-19'
+updated: '2026-11-21'
 sources:
-- url: https://docs.vllm.ai/
-  title: vLLM documentation
+- url: https://github.com/vllm-project/vllm
+  title: vLLM repository
   trust: 0.9
 - url: https://arxiv.org/abs/2309.06180
-  title: Efficient Memory Management for LLM Serving with PagedAttention
-  trust: 0.95
+  title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+  trust: 0.9
+- url: https://github.com/NVIDIA/TensorRT-LLM
+  title: TensorRT LLM repository
+  trust: 0.9
 - url: https://github.com/ggml-org/llama.cpp
-  title: llama.cpp
+  title: llama.cpp repository
+  trust: 0.9
+- url: https://github.com/ollama/ollama
+  title: Ollama repository
+  trust: 0.9
+- url: https://onnxruntime.ai/docs/
+  title: ONNX Runtime documentation
   trust: 0.9
 ---
-
-## Overview
-
-Inference engines execute a trained model efficiently. For LLMs the hard problems are managing the
-KV-cache and keeping the GPU busy across many concurrent requests — which is why a purpose-built engine
-can dramatically outperform a naive `model.generate()` loop.
-
-## Landscape
-
-vLLM sets the throughput bar with PagedAttention and continuous batching, and its OpenAI-compatible
-server drops into existing clients. TensorRT-LLM squeezes out more on NVIDIA hardware at the cost of a
-compile step. llama.cpp owns quantized CPU/edge inference, and Ollama wraps it for painless local use.
-ONNX Runtime is the portable choice for smaller or non-LLM models.
-
-## Notes
-
-The single biggest lever is continuous batching — never ship static batching for a busy endpoint.
-Match the engine to the target: datacenter GPU throughput → vLLM/TensorRT-LLM; local or edge →
-llama.cpp/Ollama; small portable models → ONNX Runtime.
