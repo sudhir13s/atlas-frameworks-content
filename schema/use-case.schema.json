@@ -22,7 +22,7 @@
       "properties": {
         "record": {
           "type": "string",
-          "pattern": "^(framework|model|benchmark)/[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "pattern": "^(framework|model|benchmark|fine-tuning-method)/[a-z0-9]+(?:-[a-z0-9]+)*$",
           "description": "ID of the Atlas record this option is"
         },
         "name": { "type": "string", "minLength": 1, "description": "only when the Atlas has no record yet" },

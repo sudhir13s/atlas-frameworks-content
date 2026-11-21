@@ -5,6 +5,16 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 2.2 (fine-tuning methods as options)
+
+- **Changed** `use-case` option `record` also accepts `fine-tuning-method/<slug>` (a record of the
+  models content repo), so a block can point at a method such as LoRA. This loosens a rule, so no
+  record was converted; records authored against 2.1 stay valid.
+- **Changed** the "Adaptation method" block of `use-case/fine-tune`: its LoRA, QLoRA and full
+  fine-tuning options now name `fine-tuning-method/lora`, `fine-tuning-method/qlora` and
+  `fine-tuning-method/full-fine-tuning` instead of an outside link; the LoRA text now says
+  "selected linear layers", as the method record does.
+
 ### Content (observability category)
 
 - **Added** the `observability` category ("Observability & Tracing", layer `operate`).
@@ -81,6 +91,7 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## Schema versions
 
+- **2.2** — `use-case` options may name a `fine-tuning-method/` record.
 - **2.0** — `use-case` rebuilt as stages and building blocks with options (breaking).
 - **1.0** — initial schema for the two frameworks content types (`use-case`, `framework-category`).
 - **1.2** — `kind` of a `framework` record is optional; `framework-category/other`.

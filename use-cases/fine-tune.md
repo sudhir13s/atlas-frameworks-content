@@ -71,16 +71,13 @@ blocks:
   name: Adaptation method
   purpose: Decides which weights change, either all of them or small adapters on a frozen base.
   options:
-  - name: Low-rank adaptation (LoRA)
-    url: https://arxiv.org/abs/2106.09685
+  - record: fine-tuning-method/lora
     choice: default
-    when: Freezes the pretrained weights and trains low-rank matrices in each layer; Biderman et al. measured that it forgets less of the base model's abilities than full fine-tuning.
-  - name: Quantized LoRA (QLoRA)
-    url: https://arxiv.org/abs/2305.14314
+    when: Freezes the pretrained weights and trains low-rank matrices in selected linear layers; Biderman et al. measured that it forgets less of the base model's abilities than full fine-tuning.
+  - record: fine-tuning-method/qlora
     choice: alternative
     when: When the base model does not fit in GPU memory at 16-bit precision; it backpropagates through a frozen 4-bit base into LoRA adapters.
-  - name: Full fine-tuning
-    url: https://huggingface.co/docs/transformers/training
+  - record: fine-tuning-method/full-fine-tuning
     choice: alternative
     when: When the target domain needs more change than adapters give and the GPUs can hold every weight, gradient and optimizer state.
   how_to_choose:
