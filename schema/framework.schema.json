@@ -8,7 +8,7 @@
     "kind": {
       "type": "string",
       "enum": ["framework", "library", "tool"],
-      "description": "framework: code you build inside; library: code you call; tool: a program or service you run"
+      "description": "framework: code you build inside; library: code you call; tool: a program or service you run; absent when nobody has judged it (a record copied from GitHub facts alone)"
     },
     "category": {
       "type": "string",
@@ -98,6 +98,6 @@
       }
     }
   },
-  "required": ["kind", "category"],
+  "required": ["category"],
   "anyOf": [{ "required": ["license_spdx"] }, { "required": ["license_note"] }]
 }

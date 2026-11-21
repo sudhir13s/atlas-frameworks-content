@@ -36,7 +36,7 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - `tags`: lowercase, hyphen-separated.
 - `updated`: ISO date (`YYYY-MM-DD`).
 - `sources[]`: `{ url, title, trust }` — `trust` in `[0,1]`. Open-source-first; cite, do not copy.
-- `schema_version`: the `major.minor` the file was authored against (currently `1.1`).
+- `schema_version`: the `major.minor` the file was authored against (currently `1.2`; a file authored against `1.1` stays valid).
 
 ## Body sections
 
@@ -58,7 +58,8 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
   section heading; `order` controls display order and a category without `order` or `defacto` is
   not listed by the site. All body sections (Overview → Landscape → Notes) are optional.
 - **framework** — one framework, library or tool. `kind` is `framework` (code you build inside),
-  `library` (code you call) or `tool` (a program or service you run). `category` is a
+  `library` (code you call) or `tool` (a program or service you run); it is absent on a record
+  copied from GitHub facts alone, because no fact says which it is. `category` is a
   `framework-category/<slug>` ID. Authored fields: `tagline`, `description`, `best_for`,
   `not_ideal_for`, `key_features`, `use_cases`, `pros`, `cons`, `language`, `languages_supported`,
   `subcategory`, the three URLs, `first_release`, `maintained_by`, `gpu_support`, `learning_curve`,

@@ -5,6 +5,14 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 1.2 (framework discovery)
+
+- **Changed** `framework`: `kind` is optional. A record copied from GitHub facts alone cannot say
+  whether the project is a framework, a library or a tool, so it carries no `kind`. This loosens a
+  rule, so no record was converted; records authored against 1.1 stay valid.
+- **Added** the `framework-category/other` record, for repositories whose GitHub topics match no
+  other category yet.
+
 ### Schema 1.1 (migration of the framework snapshot)
 
 - **Added** the `framework` type (`frameworks/`, `framework/<slug>`): `kind` (framework, library,
@@ -42,5 +50,6 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 ## Schema versions
 
 - **1.0** — initial schema for the two frameworks content types (`use-case`, `framework-category`).
+- **1.2** — `kind` of a `framework` record is optional; `framework-category/other`.
 - **1.1** — `framework` type, `snake_case` keys, ID references for frameworks, shared `aliases`
   and `locked`, optional `defacto` and optional category body sections.

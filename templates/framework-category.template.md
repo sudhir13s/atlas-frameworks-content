@@ -2,7 +2,7 @@
 id: framework-category/<slug>
 type: framework-category
 slug: <slug>
-schema_version: 1.1
+schema_version: 1.2
 title: "<Human Readable Title>"
 label: "<Category name for the section heading>"
 order: <int>                       # display order on the categories page; omit for a category the page does not list

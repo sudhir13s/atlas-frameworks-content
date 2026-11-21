@@ -2,7 +2,7 @@
 id: use-case/<slug>
 type: use-case
 slug: <slug>
-schema_version: 1.1
+schema_version: 1.2
 title: "<Human Readable Title>"
 label: "<Short label for tabs/cards>"
 order: <int>                       # display order on the getting-started page

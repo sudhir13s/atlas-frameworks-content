@@ -41,7 +41,7 @@ languages_supported:
 maintained_by: Microsoft Research
 first_release: '2020-02-01'
 license_spdx: Apache-2.0
-github_url: https://github.com/microsoft/DeepSpeed
+github_url: https://github.com/deepspeedai/DeepSpeed
 docs_url: https://www.deepspeed.ai/getting-started/
 website_url: https://www.deepspeed.ai/
 gpu_support:
@@ -72,7 +72,7 @@ registry_signals:
   latest_version: 0.20.0
   latest_release_date: '2026-11-12'
   observed_at: '2026-11-20'
-  source: https://github.com/microsoft/DeepSpeed
+  source: https://github.com/deepspeedai/DeepSpeed
 aliases:
 - microsoft/DeepSpeed
 tags:
@@ -80,9 +80,9 @@ tags:
 - optimization
 - large-models
 - zero
-updated: '2026-11-20'
+updated: '2026-11-21'
 sources:
-- url: https://github.com/microsoft/DeepSpeed
+- url: https://github.com/deepspeedai/DeepSpeed
   title: GitHub repository
 - url: https://www.deepspeed.ai/getting-started/
   title: Documentation

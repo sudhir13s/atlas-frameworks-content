@@ -2,9 +2,9 @@
 id: framework/<slug>
 type: framework
 slug: <slug>
-schema_version: 1.1
+schema_version: 1.2
 title: "<Project name>"
-kind: framework                    # framework | library | tool
+kind: framework                    # framework | library | tool; omit until someone has judged it
 category: framework-category/<slug>
 subcategory: <finer-grouping>
 tagline: "<one line>"
