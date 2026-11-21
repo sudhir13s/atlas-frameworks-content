@@ -18,20 +18,15 @@ cons: ["<con>"]
 language: <main implementation language>
 languages_supported: [<language>]
 maintained_by: "<who maintains it>"
-first_release: "<YYYY-MM-DD>"
 license_spdx: Apache-2.0           # or `license_note: "<licence text as the source gives it>"` when compound or proprietary
 github_url: "<url>"
 docs_url: "<url>"
 website_url: "<url>"
 gpu_support: { nvidia_cuda: true, amd_rocm: false, apple_mps: false, intel_oneapi: false, google_tpu: false }
-learning_curve: medium             # very-low | low | low-medium | medium | medium-high | high | very-high
-community_size: large              # none | minimal | small | small-medium | medium | large | massive
 maturity: production               # experimental | stable | production
-signal_strength: medium            # high | medium | low
 backing:
   type: corporate                  # corporate | foundation | community
   orgs: ["<organization>"]
-  funding_or_parent: "<who funds or owns it>"
 alternatives: [framework/<slug>]
 ecosystem_connections: [framework/<slug>]
 registry_signals:                  # owned by the jobs; numbers that change

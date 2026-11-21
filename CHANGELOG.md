@@ -5,6 +5,12 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 2.3 (framework fields without a source)
+
+- **Removed** `first_release`, `learning_curve`, `community_size`, `signal_strength` and
+  `backing.funding_or_parent` from `framework`, its template and the conventions: no record carries
+  them. No record was converted; records authored against 1.1 or 1.2 stay valid.
+
 ### Content (category accuracy pass)
 
 - **Changed** the default pick reason and every rising and alternative reason in the ten
@@ -128,6 +134,8 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## Schema versions
 
+- **2.3** — `framework` loses `first_release`, `learning_curve`, `community_size`, `signal_strength`
+  and `backing.funding_or_parent`.
 - **2.2** — `use-case` options may name a `fine-tuning-method/` record.
 - **2.0** — `use-case` rebuilt as stages and building blocks with options (breaking).
 - **1.0** — initial schema for the two frameworks content types (`use-case`, `framework-category`).
