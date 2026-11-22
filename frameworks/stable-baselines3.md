@@ -38,12 +38,6 @@ license_spdx: MIT
 github_url: https://github.com/DLR-RM/stable-baselines3
 docs_url: https://stable-baselines3.readthedocs.io/
 website_url: https://stable-baselines3.readthedocs.io/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 alternatives:
 - framework/rllib

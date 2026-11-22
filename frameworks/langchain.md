@@ -34,12 +34,6 @@ license_spdx: MIT
 github_url: https://github.com/langchain-ai/langchain
 docs_url: https://docs.langchain.com/oss/python/langchain/overview
 website_url: https://www.langchain.com/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

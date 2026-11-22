@@ -5,6 +5,15 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 2.4 (GPU support moves to the sourced hardware records)
+
+- **Removed** `gpu_support` from `framework`, its template and the conventions, and from the 83
+  records that carried it: its flags cited no source. Which compute platforms a framework supports
+  is stated, with the source page of each, by the `framework-support` record of the hardware
+  content repo whose `framework` field names the framework record. Six frameworks have one
+  (PyTorch, TensorFlow, JAX, ONNX Runtime, vLLM, DeepSpeed); the others show no GPU support.
+  Records keep the `schema_version` they were authored against and stay valid.
+
 ### Schema 2.3 (framework fields without a source)
 
 - **Removed** `first_release`, `learning_curve`, `community_size`, `signal_strength` and
@@ -134,6 +143,7 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## Schema versions
 
+- **2.4** — `framework` loses `gpu_support`.
 - **2.3** — `framework` loses `first_release`, `learning_curve`, `community_size`, `signal_strength`
   and `backing.funding_or_parent`.
 - **2.2** — `use-case` options may name a `fine-tuning-method/` record.

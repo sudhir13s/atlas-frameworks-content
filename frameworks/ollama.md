@@ -33,12 +33,6 @@ license_spdx: MIT
 github_url: https://github.com/ollama/ollama
 docs_url: https://docs.ollama.com/
 website_url: https://ollama.com/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

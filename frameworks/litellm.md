@@ -37,12 +37,6 @@ maintained_by: Berri AI
 github_url: https://github.com/BerriAI/litellm
 docs_url: https://docs.litellm.ai/
 website_url: https://www.litellm.ai/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

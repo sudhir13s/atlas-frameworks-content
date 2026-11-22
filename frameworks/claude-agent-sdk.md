@@ -42,12 +42,6 @@ maintained_by: Anthropic
 github_url: https://github.com/anthropics/claude-agent-sdk-python
 docs_url: https://code.claude.com/docs/en/agent-sdk/overview
 website_url: https://code.claude.com/docs/en/agent-sdk/overview
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 backing:
   type: corporate

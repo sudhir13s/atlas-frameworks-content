@@ -37,12 +37,6 @@ license_note: 'LangSmith Python client: MIT'
 github_url: https://github.com/langchain-ai/langsmith-python
 docs_url: https://docs.langchain.com/langsmith/observability
 website_url: https://smith.langchain.com/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

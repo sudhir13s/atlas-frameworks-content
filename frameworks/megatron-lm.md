@@ -34,12 +34,6 @@ maintained_by: NVIDIA
 github_url: https://github.com/NVIDIA/Megatron-LM
 docs_url: https://github.com/NVIDIA/Megatron-LM
 website_url: https://github.com/NVIDIA/Megatron-LM
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

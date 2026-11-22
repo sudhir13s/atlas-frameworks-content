@@ -33,12 +33,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/automl/auto-sklearn
 docs_url: https://automl.github.io/auto-sklearn/
 website_url: https://automl.github.io/auto-sklearn/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 alternatives:
 - framework/flaml
 registry_signals:

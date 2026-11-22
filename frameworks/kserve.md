@@ -41,12 +41,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/kserve/kserve
 docs_url: https://kserve.github.io/website/
 website_url: https://kserve.github.io/kserve/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: foundation
   orgs:

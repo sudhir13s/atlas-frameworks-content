@@ -32,12 +32,6 @@ license_spdx: MIT
 github_url: https://github.com/flairNLP/flair
 docs_url: https://flairnlp.github.io/flair/
 website_url: https://flairnlp.github.io/flair/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 alternatives:
 - framework/spacy
 - framework/hugging-face-transformers

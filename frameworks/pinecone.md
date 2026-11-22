@@ -36,12 +36,6 @@ license_note: 'Pinecone Python SDK: Apache-2.0'
 github_url: https://github.com/pinecone-io/python-sdk
 docs_url: https://docs.pinecone.io/guides/get-started/overview
 website_url: https://www.pinecone.io/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

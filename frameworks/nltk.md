@@ -32,12 +32,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/nltk/nltk
 docs_url: https://www.nltk.org/
 website_url: https://www.nltk.org/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: community

@@ -36,12 +36,6 @@ license_spdx: MIT
 github_url: https://github.com/promptfoo/promptfoo
 docs_url: https://www.promptfoo.dev/docs/
 website_url: https://www.promptfoo.dev/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

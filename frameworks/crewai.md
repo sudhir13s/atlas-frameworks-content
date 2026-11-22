@@ -40,12 +40,6 @@ license_spdx: MIT
 github_url: https://github.com/crewAIInc/crewAI
 docs_url: https://docs.crewai.com/
 website_url: https://www.crewai.com/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: corporate

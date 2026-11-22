@@ -35,12 +35,6 @@ license_spdx: MIT
 github_url: https://github.com/guidance-ai/guidance
 docs_url: https://github.com/guidance-ai/guidance
 website_url: https://github.com/guidance-ai/guidance
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 alternatives:
 - framework/outlines
 - framework/dspy

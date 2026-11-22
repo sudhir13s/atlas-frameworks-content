@@ -34,12 +34,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/dask/dask
 docs_url: https://docs.dask.org/
 website_url: https://www.dask.org/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: foundation

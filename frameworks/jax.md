@@ -38,12 +38,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/jax-ml/jax
 docs_url: https://docs.jax.dev/en/latest/
 website_url: https://github.com/jax-ml/jax
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: true
 alternatives:
 - framework/pytorch
 - framework/tensorflow

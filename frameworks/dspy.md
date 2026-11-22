@@ -33,12 +33,6 @@ license_spdx: MIT
 github_url: https://github.com/stanfordnlp/dspy
 docs_url: https://dspy.ai/
 website_url: https://dspy-docs.vercel.app/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 alternatives:
 - framework/langchain

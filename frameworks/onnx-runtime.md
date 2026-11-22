@@ -40,12 +40,6 @@ maintained_by: Microsoft
 license_spdx: MIT
 docs_url: https://onnxruntime.ai/docs/
 website_url: https://onnxruntime.ai/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

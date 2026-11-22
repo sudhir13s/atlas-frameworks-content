@@ -35,12 +35,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/executorch
 docs_url: https://docs.pytorch.org/executorch/
 website_url: https://docs.pytorch.org/executorch/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: true
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: corporate

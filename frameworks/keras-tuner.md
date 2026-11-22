@@ -32,12 +32,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/keras-team/keras-tuner
 docs_url: https://keras.io/keras_tuner/
 website_url: https://keras.io/keras_tuner/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: true
 alternatives:
 - framework/optuna
 - framework/ray-tune

@@ -36,12 +36,6 @@ license_spdx: MIT
 github_url: https://github.com/ggml-org/llama.cpp
 docs_url: https://github.com/ggml-org/llama.cpp/blob/master/README.md
 website_url: https://github.com/ggml-org/llama.cpp
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: false
 backing:
   type: community
 alternatives:

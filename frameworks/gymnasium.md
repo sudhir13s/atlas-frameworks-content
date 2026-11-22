@@ -32,12 +32,6 @@ license_spdx: MIT
 github_url: https://github.com/Farama-Foundation/Gymnasium
 docs_url: https://gymnasium.farama.org/
 website_url: https://gymnasium.farama.org/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: foundation

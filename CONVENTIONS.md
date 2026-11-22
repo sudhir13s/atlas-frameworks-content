@@ -37,7 +37,7 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - `tags`: lowercase, hyphen-separated.
 - `updated`: ISO date (`YYYY-MM-DD`).
 - `sources[]`: `{ url, title, trust }` — `trust` in `[0,1]`. Open-source-first; cite, do not copy.
-- `schema_version`: the `major.minor` the file was authored against (currently `2.3`; `framework` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0` or newer, a `framework-category` must be `2.1`).
+- `schema_version`: the `major.minor` the file was authored against (currently `2.4`; `framework` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0` or newer, a `framework-category` must be `2.1`).
 
 ## Body sections
 
@@ -68,8 +68,10 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
   copied from GitHub facts alone, because no fact says which it is. `category` is a
   `framework-category/<slug>` ID. Authored fields: `tagline`, `description`, `best_for`,
   `not_ideal_for`, `key_features`, `use_cases`, `pros`, `cons`, `language`, `languages_supported`,
-  `subcategory`, the three URLs, `maintained_by`, `gpu_support`, `maturity`, `backing`. The licence is `license_spdx` (one
-  SPDX identifier) or, when compound or proprietary, `license_note` (the original text).
+  `subcategory`, the three URLs, `maintained_by`, `maturity`, `backing`. The licence is `license_spdx` (one
+  SPDX identifier) or, when compound or proprietary, `license_note` (the original text). GPU
+  support is not a field here: it lives, with its source pages, in the `framework-support` record
+  of the hardware content repo whose `framework` names this record.
   `alternatives` and `ecosystem_connections` are lists of `framework/<slug>` IDs. The agent-owned
   block `registry_signals` holds the numbers that change (`github_stars`, `downloads_monthly`,
   `latest_version`, `latest_release_date`) with `observed_at` and `source`; an unknown value is

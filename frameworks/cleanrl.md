@@ -39,12 +39,6 @@ license_spdx: MIT
 github_url: https://github.com/vwxyzjn/cleanrl
 docs_url: https://docs.cleanrl.dev/
 website_url: https://docs.cleanrl.dev/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: community
 alternatives:

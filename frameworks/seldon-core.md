@@ -36,12 +36,6 @@ license_note: Business Source License 1.1 (Seldon Core v2); each version changes
 github_url: https://github.com/SeldonIO/seldon-core
 docs_url: https://docs.seldon.ai/seldon-core-2
 website_url: https://docs.seldon.ai/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

@@ -35,12 +35,6 @@ license_spdx: LGPL-2.1-only
 github_url: https://github.com/piskvorky/gensim
 docs_url: https://radimrehurek.com/gensim/
 website_url: https://radimrehurek.com/gensim/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: community

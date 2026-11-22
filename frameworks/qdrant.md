@@ -42,12 +42,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/qdrant/qdrant
 docs_url: https://qdrant.tech/documentation/
 website_url: https://qdrant.tech/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

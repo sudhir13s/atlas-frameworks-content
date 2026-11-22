@@ -36,12 +36,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/pytorch
 docs_url: https://docs.pytorch.org/docs/stable/
 website_url: https://pytorch.org/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: false
 maturity: production
 backing:
   type: foundation

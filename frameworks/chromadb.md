@@ -36,12 +36,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/chroma-core/chroma
 docs_url: https://docs.trychroma.com/
 website_url: https://www.trychroma.com/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

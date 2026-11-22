@@ -32,12 +32,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/apple/coremltools
 docs_url: https://coremltools.readme.io/
 website_url: https://developer.apple.com/machine-learning/core-ml/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: true
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

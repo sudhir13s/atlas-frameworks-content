@@ -35,12 +35,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/hyperopt/hyperopt
 docs_url: http://hyperopt.github.io/hyperopt/
 website_url: http://hyperopt.github.io/hyperopt/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 backing:
   type: community

@@ -41,12 +41,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/keras-team/keras
 docs_url: https://keras.io/api/
 website_url: https://keras.io/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: true
 ecosystem_connections:
 - framework/tensorflow
 - framework/jax

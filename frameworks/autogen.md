@@ -40,12 +40,6 @@ license_spdx: MIT
 github_url: https://github.com/microsoft/autogen
 docs_url: https://microsoft.github.io/autogen/
 website_url: https://microsoft.github.io/autogen/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 backing:
   type: corporate

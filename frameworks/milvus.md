@@ -41,12 +41,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/milvus-io/milvus
 docs_url: https://milvus.io/docs
 website_url: https://milvus.io/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: foundation
   orgs:

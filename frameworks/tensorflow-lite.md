@@ -43,12 +43,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/google-ai-edge/LiteRT
 docs_url: https://developers.google.com/edge/litert
 website_url: https://developers.google.com/edge/litert
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: true
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

@@ -38,12 +38,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/triton-inference-server/server
 docs_url: https://docs.nvidia.com/deeplearning/triton-inference-server/
 website_url: https://developer.nvidia.com/triton-inference-server
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

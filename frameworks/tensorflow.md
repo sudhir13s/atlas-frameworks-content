@@ -43,12 +43,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/tensorflow/tensorflow
 docs_url: https://www.tensorflow.org/api_docs
 website_url: https://www.tensorflow.org/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: true
 maturity: production
 backing:
   type: corporate

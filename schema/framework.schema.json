@@ -39,17 +39,6 @@
     "github_url": { "type": "string", "format": "uri" },
     "docs_url": { "type": "string", "format": "uri" },
     "website_url": { "type": "string", "format": "uri" },
-    "gpu_support": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "nvidia_cuda": { "type": "boolean" },
-        "amd_rocm": { "type": "boolean" },
-        "apple_mps": { "type": "boolean" },
-        "intel_oneapi": { "type": "boolean" },
-        "google_tpu": { "type": "boolean" }
-      }
-    },
     "maturity": { "type": "string", "enum": ["experimental", "stable", "production"] },
     "backing": {
       "type": "object",

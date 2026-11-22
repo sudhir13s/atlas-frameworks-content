@@ -38,12 +38,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/mlflow/mlflow
 docs_url: https://mlflow.org/docs/latest/
 website_url: https://mlflow.org/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: foundation

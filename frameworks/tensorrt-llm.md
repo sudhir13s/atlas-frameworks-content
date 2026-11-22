@@ -37,12 +37,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/NVIDIA/TensorRT-LLM
 docs_url: https://nvidia.github.io/TensorRT-LLM/
 website_url: https://developer.nvidia.com/tensorrt
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 backing:
   type: corporate

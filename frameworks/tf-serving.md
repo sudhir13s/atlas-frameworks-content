@@ -33,12 +33,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/tensorflow/serving
 docs_url: https://www.tensorflow.org/tfx/guide/serving
 website_url: https://www.tensorflow.org/tfx/guide/serving
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

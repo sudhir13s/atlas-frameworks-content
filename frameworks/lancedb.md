@@ -39,12 +39,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/lancedb/lancedb
 docs_url: https://lancedb.github.io/lancedb/
 website_url: https://lancedb.com/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: true
-  intel_oneapi: false
-  google_tpu: false
 maturity: experimental
 backing:
   type: corporate

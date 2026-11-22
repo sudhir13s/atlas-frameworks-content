@@ -42,12 +42,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/hpcaitech/ColossalAI
 docs_url: https://colossalai.org/docs/get_started/installation/
 website_url: https://colossalai.org/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

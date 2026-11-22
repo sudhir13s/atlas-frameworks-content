@@ -36,12 +36,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/vllm-project/vllm
 docs_url: https://docs.vllm.ai/
 website_url: https://vllm.ai/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: false
-  intel_oneapi: true
-  google_tpu: true
 backing:
   type: foundation
   orgs:

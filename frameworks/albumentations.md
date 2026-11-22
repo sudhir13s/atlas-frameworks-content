@@ -36,12 +36,6 @@ license_spdx: AGPL-3.0-only
 github_url: https://github.com/albumentations-team/AlbumentationsX
 docs_url: https://albumentations.ai/docs/
 website_url: https://albumentations.ai/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: community

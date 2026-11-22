@@ -33,12 +33,6 @@ license_spdx: MIT
 github_url: https://github.com/optuna/optuna
 docs_url: https://optuna.readthedocs.io/
 website_url: https://optuna.org/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

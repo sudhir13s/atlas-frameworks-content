@@ -38,12 +38,6 @@ license_spdx: MIT
 github_url: https://github.com/pola-rs/polars
 docs_url: https://docs.pola.rs/
 website_url: https://www.pola.rs/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

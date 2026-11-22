@@ -37,12 +37,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/pytorch/vision
 docs_url: https://docs.pytorch.org/vision/stable/
 website_url: https://docs.pytorch.org/vision/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: foundation
   orgs:

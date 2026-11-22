@@ -33,12 +33,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/Tencent/ncnn
 docs_url: https://github.com/Tencent/ncnn/wiki
 website_url: https://github.com/Tencent/ncnn
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

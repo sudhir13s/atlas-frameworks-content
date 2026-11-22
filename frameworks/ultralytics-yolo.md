@@ -35,12 +35,6 @@ license_spdx: AGPL-3.0-only
 github_url: https://github.com/ultralytics/ultralytics
 docs_url: https://docs.ultralytics.com/
 website_url: https://ultralytics.com/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

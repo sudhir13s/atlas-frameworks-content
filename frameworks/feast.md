@@ -37,12 +37,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/feast-dev/feast
 docs_url: https://docs.feast.dev/
 website_url: https://feast.dev/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: community
 registry_signals:

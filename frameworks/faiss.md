@@ -32,12 +32,6 @@ license_spdx: MIT
 github_url: https://github.com/facebookresearch/faiss
 docs_url: https://faiss.ai/
 website_url: https://faiss.ai/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

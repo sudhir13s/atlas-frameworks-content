@@ -37,12 +37,6 @@ license_note: 'comet_ml Python client: MIT'
 github_url: https://github.com/comet-ml/comet-examples
 docs_url: https://www.comet.com/docs/v2/
 website_url: https://www.comet.com/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

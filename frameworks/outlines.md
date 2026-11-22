@@ -33,12 +33,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/dottxt-ai/outlines
 docs_url: https://dottxt-ai.github.io/outlines/
 website_url: https://dottxt.co/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: corporate

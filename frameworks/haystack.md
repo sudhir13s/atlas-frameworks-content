@@ -35,12 +35,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/deepset-ai/haystack
 docs_url: https://docs.haystack.deepset.ai/
 website_url: https://haystack.deepset.ai/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

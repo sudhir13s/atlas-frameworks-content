@@ -22,7 +22,6 @@ license_spdx: Apache-2.0           # or `license_note: "<licence text as the sou
 github_url: "<url>"
 docs_url: "<url>"
 website_url: "<url>"
-gpu_support: { nvidia_cuda: true, amd_rocm: false, apple_mps: false, intel_oneapi: false, google_tpu: false }
 maturity: production               # experimental | stable | production
 backing:
   type: corporate                  # corporate | foundation | community

@@ -30,12 +30,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/google/flax
 docs_url: https://flax.readthedocs.io/
 website_url: https://flax.readthedocs.io/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: true
 maturity: experimental
 backing:
   type: corporate

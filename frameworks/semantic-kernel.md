@@ -40,12 +40,6 @@ license_spdx: MIT
 github_url: https://github.com/microsoft/semantic-kernel
 docs_url: https://learn.microsoft.com/en-us/semantic-kernel/
 website_url: https://learn.microsoft.com/en-us/semantic-kernel/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: corporate

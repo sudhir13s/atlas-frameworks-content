@@ -38,12 +38,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/Giskard-AI/giskard-oss
 docs_url: https://docs.giskard.ai/
 website_url: https://giskard.ai/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 backing:
   type: corporate
   orgs:

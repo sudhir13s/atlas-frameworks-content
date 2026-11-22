@@ -41,12 +41,6 @@ maintained_by: Weaviate B.V.
 github_url: https://github.com/weaviate/weaviate
 docs_url: https://docs.weaviate.io/weaviate
 website_url: https://weaviate.io/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

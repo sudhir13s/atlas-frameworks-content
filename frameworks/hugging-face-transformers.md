@@ -41,12 +41,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/huggingface/transformers
 docs_url: https://huggingface.co/docs/transformers/
 website_url: https://huggingface.co/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: true
-  intel_oneapi: true
-  google_tpu: true
 maturity: production
 backing:
   type: corporate

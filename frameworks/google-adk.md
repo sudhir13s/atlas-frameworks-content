@@ -39,12 +39,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/google/adk-python
 docs_url: https://adk.dev/
 website_url: https://adk.dev/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: stable
 backing:
   type: corporate

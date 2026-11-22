@@ -32,12 +32,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/fivetran/great_expectations
 docs_url: https://docs.greatexpectations.io/
 website_url: https://greatexpectations.io/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

@@ -35,12 +35,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/deepspeedai/DeepSpeed
 docs_url: https://www.deepspeed.ai/getting-started/
 website_url: https://www.deepspeed.ai/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: true
-  apple_mps: false
-  intel_oneapi: true
-  google_tpu: false
 backing:
   type: foundation
   orgs:

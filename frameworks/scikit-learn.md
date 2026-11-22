@@ -39,12 +39,6 @@ license_spdx: BSD-3-Clause
 github_url: https://github.com/scikit-learn/scikit-learn
 docs_url: https://scikit-learn.org/stable/
 website_url: https://scikit-learn.org/
-gpu_support:
-  nvidia_cuda: false
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: foundation

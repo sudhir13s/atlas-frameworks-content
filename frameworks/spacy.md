@@ -38,12 +38,6 @@ license_spdx: MIT
 github_url: https://github.com/explosion/spaCy
 docs_url: https://spacy.io/api
 website_url: https://spacy.io/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 backing:
   type: corporate

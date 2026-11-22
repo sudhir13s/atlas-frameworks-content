@@ -34,12 +34,6 @@ license_spdx: Apache-2.0
 github_url: https://github.com/open-mmlab/mmdetection
 docs_url: https://mmdetection.readthedocs.io/
 website_url: https://openmmlab.com/
-gpu_support:
-  nvidia_cuda: true
-  amd_rocm: false
-  apple_mps: false
-  intel_oneapi: false
-  google_tpu: false
 maturity: production
 alternatives:
 - framework/detectron2
