@@ -2,7 +2,7 @@
 id: framework-category/observability
 type: framework-category
 slug: observability
-schema_version: 2.1
+schema_version: 3.0
 title: Observability & Tracing
 label: Observability & Tracing
 layer: operate
@@ -43,3 +43,5 @@ sources:
   title: LangSmith documentation
   trust: 0.9
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/faiss
 type: framework
 slug: faiss
-schema_version: 1.1
+schema_version: 3.0
 title: Faiss
+status: curated
 kind: library
 category: framework-category/vector-dbs
 subcategory: search-library
@@ -35,7 +36,7 @@ website_url: https://faiss.ai/
 backing:
   type: corporate
   orgs:
-  - Meta
+  - organization/meta
 registry_signals:
   github_stars: 41831
   downloads_monthly: 5000000
@@ -63,6 +64,4 @@ sources:
   title: faiss-cpu — PyPI
 ---
 
-## Overview
 
-Faiss is a library for efficient similarity search and clustering of dense vectors, including vector sets that may not fit in RAM. It is written in C++ with complete wrappers for Python/numpy, and some of its algorithms are implemented on the GPU. It is developed primarily at Meta's Fundamental AI Research group.

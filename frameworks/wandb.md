@@ -2,8 +2,9 @@
 id: framework/wandb
 type: framework
 slug: wandb
-schema_version: 1.1
+schema_version: 3.0
 title: Weights & Biases
+status: curated
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
@@ -83,6 +84,4 @@ sources:
   title: wandb — PyPI
 ---
 
-## Overview
 
-Weights & Biases tracks, visualizes and compares machine learning experiments, and W&B Weave traces and evaluates LLM applications alongside it. The wandb Python library and CLI log runs, metrics and hyperparameters to the platform, which also provides sweeps, artifacts, reports and automations. It is available as a managed cloud service or as a self-managed server on your own infrastructure.

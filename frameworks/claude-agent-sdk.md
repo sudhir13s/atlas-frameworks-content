@@ -2,8 +2,9 @@
 id: framework/claude-agent-sdk
 type: framework
 slug: claude-agent-sdk
-schema_version: 1.1
+schema_version: 3.0
 title: Claude Agent SDK
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: agent-framework
@@ -78,6 +79,4 @@ sources:
 license_note: Use is governed by Anthropic's Commercial Terms of Service, except components covered by their own LICENSE file (the repository LICENSE file is MIT)
 ---
 
-## Overview
 
-The Claude Agent SDK gives you the same tools, agent loop and context management that power Claude Code, programmable in Python and TypeScript. It is a library that runs the Claude Code binary inside your own application, with built-in tools, permissions, sessions and hooks. It replaces the earlier Claude Code SDK packages.

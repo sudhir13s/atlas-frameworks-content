@@ -2,8 +2,9 @@
 id: framework/easyocr
 type: framework
 slug: easyocr
-schema_version: 1.2
+schema_version: 3.0
 title: EasyOCR
+status: discovered
 category: framework-category/computer-vision
 tagline: Ready-to-use OCR with 80+ supported languages and writing scripts including Latin, Chinese, Arabic, Devanagari and Cyrillic.
 language: Python

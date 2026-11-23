@@ -2,8 +2,9 @@
 id: framework/flaml
 type: framework
 slug: flaml
-schema_version: 1.1
+schema_version: 3.0
 title: FLAML
+status: curated
 kind: library
 category: framework-category/automl
 subcategory: automl-framework
@@ -35,7 +36,7 @@ website_url: https://microsoft.github.io/FLAML/
 backing:
   type: corporate
   orgs:
-  - Microsoft
+  - organization/microsoft
 alternatives:
 - framework/optuna
 - framework/auto-sklearn
@@ -63,6 +64,4 @@ sources:
   title: FLAML — PyPI
 ---
 
-## Overview
 
-FLAML is a lightweight Python library for efficient automation of machine learning and AI operations. It performs model selection and hyperparameter optimization under resource constraints and finds quality models for tasks like classification and regression with low computational resources. Its tuning tool also handles generic functions, such as inference hyperparameters for foundation models.

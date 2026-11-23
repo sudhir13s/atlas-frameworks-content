@@ -2,8 +2,9 @@
 id: framework/stable-baselines3
 type: framework
 slug: stable-baselines3
-schema_version: 1.1
+schema_version: 3.0
 title: Stable Baselines3
+status: curated
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
@@ -76,6 +77,4 @@ sources:
   title: DLR-RM on GitHub
 ---
 
-## Overview
 
-Stable Baselines3 (SB3) is a set of reliable implementations of reinforcement learning algorithms in PyTorch and the next major version of Stable Baselines. It implements algorithms including PPO, A2C, SAC, TD3, DDPG, DQN and HER behind a common interface. Development now focuses on bug fixes and maintenance, and newer algorithms are added in the separate SB3 Contrib repository.

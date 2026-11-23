@@ -2,8 +2,9 @@
 id: framework/cleanrl
 type: framework
 slug: cleanrl
-schema_version: 1.1
+schema_version: 3.0
 title: CleanRL
+status: curated
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
@@ -74,6 +75,4 @@ sources:
   title: cleanrl — PyPI
 ---
 
-## Overview
 
-CleanRL is a deep reinforcement learning library that provides single-file implementations with research-friendly features, putting every detail of an algorithm variant into one standalone file. It is not a modular library and is not meant to be imported. Its implementations are benchmarked and support TensorBoard logging, seeding for local reproducibility and experiment tracking with Weights and Biases.

@@ -2,8 +2,9 @@
 id: framework/pytorch
 type: framework
 slug: pytorch
-schema_version: 1.1
+schema_version: 3.0
 title: PyTorch
+status: curated
 kind: framework
 category: framework-category/training
 subcategory: core-framework
@@ -76,6 +77,4 @@ sources:
   title: torch — PyPI
 ---
 
-## Overview
 
-PyTorch is a Python package that provides tensor computation with GPU acceleration and deep neural networks built on a tape-based autograd system. It executes imperatively, works with Python libraries such as NumPy and SciPy, and includes torch.compile, torch.export and distributed training. The PyTorch Foundation, hosted by the Linux Foundation, supports the project.

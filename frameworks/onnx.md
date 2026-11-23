@@ -2,8 +2,9 @@
 id: framework/onnx
 type: framework
 slug: onnx
-schema_version: 1.2
+schema_version: 3.0
 title: ONNX
+status: discovered
 category: framework-category/inference
 tagline: Open standard for machine learning interoperability
 language: Python

@@ -2,8 +2,9 @@
 id: framework/gymnasium
 type: framework
 slug: gymnasium
-schema_version: 1.1
+schema_version: 3.0
 title: Gymnasium
+status: curated
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: environment
@@ -62,6 +63,4 @@ sources:
   title: gymnasium — PyPI
 ---
 
-## Overview
 
-Open-source Python library for developing and comparing reinforcement learning algorithms. It provides a standard API between learning algorithms and environments and a set of reference environments compliant with that API. It is a maintained fork of OpenAI's Gym.

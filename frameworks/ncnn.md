@@ -2,8 +2,9 @@
 id: framework/ncnn
 type: framework
 slug: ncnn
-schema_version: 1.1
+schema_version: 3.0
 title: ncnn
+status: curated
 kind: framework
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
@@ -36,7 +37,7 @@ website_url: https://github.com/Tencent/ncnn
 backing:
   type: corporate
   orgs:
-  - Tencent
+  - organization/tencent
 alternatives:
 - framework/tensorflow-lite
 registry_signals:
@@ -63,6 +64,4 @@ sources:
   title: ncnn — PyPI
 ---
 
-## Overview
 
-ncnn is a neural network inference framework optimized for mobile, embedded and desktop deployment. It is a pure C++ implementation with no third-party runtime dependencies, runs on CPU and Vulkan GPU backends, and converts PyTorch and ONNX models to ncnn through its pnnx tool.

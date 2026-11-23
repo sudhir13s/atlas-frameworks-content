@@ -2,8 +2,9 @@
 id: framework/xgboost
 type: framework
 slug: xgboost
-schema_version: 1.2
+schema_version: 3.0
 title: XGBoost
+status: discovered
 category: framework-category/training
 tagline: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow.
 language: C++

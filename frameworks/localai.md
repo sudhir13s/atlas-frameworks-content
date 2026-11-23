@@ -2,8 +2,9 @@
 id: framework/localai
 type: framework
 slug: localai
-schema_version: 1.2
+schema_version: 3.0
 title: LocalAI
+status: discovered
 category: framework-category/llm-serving
 tagline: LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.
 language: Go

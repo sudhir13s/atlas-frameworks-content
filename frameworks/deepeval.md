@@ -2,8 +2,9 @@
 id: framework/deepeval
 type: framework
 slug: deepeval
-schema_version: 1.1
+schema_version: 3.0
 title: DeepEval
+status: curated
 kind: framework
 category: framework-category/evaluation
 subcategory: llm-evaluation
@@ -70,6 +71,4 @@ sources:
   title: deepeval — PyPI
 ---
 
-## Overview
 
-DeepEval is an open-source framework for evaluating LLM applications such as AI agents, voice agents, multi-turn chatbots and RAG pipelines. It is similar to Pytest but specialized for unit testing LLM apps, with metrics such as G-Eval, task completion, answer relevancy and hallucination that use LLM-as-a-judge and NLP models. Evals run in CI/CD or as Python scripts.

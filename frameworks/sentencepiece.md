@@ -2,8 +2,9 @@
 id: framework/sentencepiece
 type: framework
 slug: sentencepiece
-schema_version: 1.2
+schema_version: 3.0
 title: SentencePiece
+status: discovered
 kind: library
 category: framework-category/nlp
 tagline: Unsupervised text tokenizer and detokenizer that trains byte-pair encoding (BPE) and unigram subword models directly from raw sentences.
@@ -34,3 +35,5 @@ sources:
 - url: https://google.github.io/sentencepiece/
   title: SentencePiece documentation
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/langextract
 type: framework
 slug: langextract
-schema_version: 1.2
+schema_version: 3.0
 title: LangExtract
+status: discovered
 category: framework-category/nlp
 tagline: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 language: Python

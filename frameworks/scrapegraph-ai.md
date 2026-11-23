@@ -2,8 +2,9 @@
 id: framework/scrapegraph-ai
 type: framework
 slug: scrapegraph-ai
-schema_version: 1.2
+schema_version: 3.0
 title: ScrapeGraphAI
+status: discovered
 category: framework-category/rag
 tagline: Python scraper based on AI
 language: Python

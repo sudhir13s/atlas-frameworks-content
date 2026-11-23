@@ -2,8 +2,9 @@
 id: framework/colossalai
 type: framework
 slug: colossalai
-schema_version: 1.1
+schema_version: 3.0
 title: Colossal-AI
+status: curated
 kind: framework
 category: framework-category/distributed-training
 subcategory: training-framework
@@ -81,6 +82,4 @@ sources:
   title: colossalai — PyPI
 ---
 
-## Overview
 
-Colossal-AI is a unified system that provides an integrated set of training skills and utilities for large models. It offers data, pipeline, tensor and sequence parallelism, the Zero Redundancy Optimizer (ZeRO), auto-parallelism and heterogeneous memory management, and injects these features into a PyTorch model and optimizer through its Booster.

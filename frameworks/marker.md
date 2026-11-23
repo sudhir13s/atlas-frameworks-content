@@ -2,8 +2,9 @@
 id: framework/marker
 type: framework
 slug: marker
-schema_version: 1.2
+schema_version: 3.0
 title: Marker
+status: discovered
 category: framework-category/computer-vision
 tagline: Convert PDF to markdown + JSON.
 language: Python

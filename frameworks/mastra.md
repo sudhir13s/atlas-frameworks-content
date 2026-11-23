@@ -2,8 +2,9 @@
 id: framework/mastra
 type: framework
 slug: mastra
-schema_version: 1.2
+schema_version: 3.0
 title: Mastra
+status: discovered
 category: framework-category/agents
 tagline: Mastra is a TypeScript framework for AI-powered applications and agents.
 language: TypeScript

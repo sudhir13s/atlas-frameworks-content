@@ -2,8 +2,9 @@
 id: framework/llamaindex
 type: framework
 slug: llamaindex
-schema_version: 1.1
+schema_version: 3.0
 title: LlamaIndex
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
@@ -79,6 +80,4 @@ sources:
   title: llama-index-core — PyPI
 ---
 
-## Overview
 
-LlamaIndex Framework is an open-source Python toolkit for building LLM-powered agents and applications over your own data. It provides data connectors, indexes, query and chat engines, agents and event-driven workflows, built from a core package and separate integration packages for LLM, embedding and vector store providers. The company behind it says its primary focus has shifted to LlamaParse, while the framework remains available as an open toolkit.

@@ -2,7 +2,7 @@
 id: framework-category/inference
 type: framework-category
 slug: inference
-schema_version: 2.1
+schema_version: 3.0
 title: Inference Engines
 label: Inference
 layer: run
@@ -61,3 +61,5 @@ sources:
   title: ONNX Runtime documentation
   trust: 0.9
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/openhands
 type: framework
 slug: openhands
-schema_version: 1.2
+schema_version: 3.0
 title: OpenHands
+status: discovered
 category: framework-category/agents
 tagline: The self-hosted developer control center for coding agents and automations.
 language: TypeScript

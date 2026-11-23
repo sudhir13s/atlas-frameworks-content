@@ -2,8 +2,9 @@
 id: framework/clearml
 type: framework
 slug: clearml
-schema_version: 1.1
+schema_version: 3.0
 title: ClearML
+status: curated
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
@@ -74,6 +75,4 @@ sources:
   title: clearml — PyPI
 ---
 
-## Overview
 
-ClearML is an ML/DL development and production suite with modules for experiment management, MLOps and LLMOps orchestration and pipelines, data management and version control on object storage, model serving, and reports. The ClearML Server stores experiment, model and workflow data and is available as a hosted service or as open source to deploy yourself.

@@ -2,8 +2,9 @@
 id: framework/optuna
 type: framework
 slug: optuna
-schema_version: 1.1
+schema_version: 3.0
 title: Optuna
+status: curated
 kind: framework
 category: framework-category/automl
 subcategory: hyperparameter-tuning
@@ -73,6 +74,4 @@ sources:
   title: optuna — PyPI
 ---
 
-## Overview
 
-Optuna is an automatic hyperparameter optimization software framework designed for machine learning. Its define-by-run API lets users construct search spaces dynamically with Python conditionals and loops, and it provides sampling algorithms, pruning of unpromising trials, parallel studies and visualization.

@@ -2,8 +2,9 @@
 id: framework/langchain
 type: framework
 slug: langchain
-schema_version: 1.1
+schema_version: 3.0
 title: LangChain
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
@@ -79,6 +80,4 @@ sources:
   title: langchain — PyPI
 ---
 
-## Overview
 
-LangChain is a framework for building agents and LLM-powered applications by chaining together interoperable components and third-party integrations. It provides a standard interface for models, embeddings, vector stores and more, and its agents are built on top of LangGraph.

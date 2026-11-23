@@ -2,8 +2,9 @@
 id: framework/detectron2
 type: framework
 slug: detectron2
-schema_version: 1.1
+schema_version: 3.0
 title: Detectron2
+status: curated
 kind: framework
 category: framework-category/computer-vision
 subcategory: detection-segmentation
@@ -72,6 +73,4 @@ sources:
   title: Detectron2 Model Zoo
 ---
 
-## Overview
 
-Detectron2 is Facebook AI Research's library of detection and segmentation algorithms and the successor of Detectron and maskrcnn-benchmark. It runs on PyTorch and includes panoptic segmentation, DensePose, Cascade R-CNN, rotated bounding boxes and PointRend. Models can be exported to TorchScript or Caffe2 format for deployment.

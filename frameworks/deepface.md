@@ -2,8 +2,9 @@
 id: framework/deepface
 type: framework
 slug: deepface
-schema_version: 1.2
+schema_version: 3.0
 title: DeepFace
+status: discovered
 category: framework-category/computer-vision
 tagline: A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python
 language: Python

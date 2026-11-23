@@ -2,8 +2,9 @@
 id: framework/graphrag
 type: framework
 slug: graphrag
-schema_version: 1.2
+schema_version: 3.0
 title: GraphRAG
+status: discovered
 category: framework-category/rag
 tagline: A modular graph-based Retrieval-Augmented Generation (RAG) system
 language: Python

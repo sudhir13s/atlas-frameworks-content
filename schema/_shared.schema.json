@@ -19,7 +19,7 @@
       "description": "FK → framework/<slug>: the id of a framework record, e.g. framework/langchain"
     },
     "framework_ref": {
-      "type": "object",
+      "type": "object", "unevaluatedProperties": false,
       "required": ["framework_id", "reason"],
       "properties": {
         "framework_id": { "$ref": "#/$defs/framework_id" },
@@ -27,7 +27,7 @@
       }
     },
     "reading_item": {
-      "type": "object",
+      "type": "object", "unevaluatedProperties": false,
       "required": ["title", "url"],
       "properties": {
         "title": { "type": "string", "minLength": 1 },
@@ -35,7 +35,7 @@
       }
     },
     "source": {
-      "type": "object",
+      "type": "object", "unevaluatedProperties": false,
       "required": ["url", "title"],
       "properties": {
         "url": { "type": "string", "format": "uri" },

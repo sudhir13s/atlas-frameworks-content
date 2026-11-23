@@ -2,8 +2,9 @@
 id: framework/deepspeed
 type: framework
 slug: deepspeed
-schema_version: 1.1
+schema_version: 3.0
 title: DeepSpeed
+status: curated
 kind: library
 category: framework-category/distributed-training
 subcategory: training-optimization
@@ -76,6 +77,4 @@ sources:
   title: deepspeed — PyPI
 ---
 
-## Overview
 
-DeepSpeed is a deep learning optimization library for distributed training and inference. Its API is a lightweight wrapper on PyTorch, and its system innovations include ZeRO, ZeRO-Infinity, 3D-Parallelism, Ulysses Sequence Parallelism and DeepSpeed-MoE. DeepSpeed-Inference serves transformer-based PyTorch models with model parallelism and inference-customized kernels.

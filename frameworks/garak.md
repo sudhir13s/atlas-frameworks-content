@@ -2,8 +2,9 @@
 id: framework/garak
 type: framework
 slug: garak
-schema_version: 1.2
+schema_version: 3.0
 title: garak
+status: discovered
 kind: tool
 category: framework-category/guardrails
 tagline: Vulnerability scanner for large language models (LLMs) that probes for prompt injection, jailbreaks, data leakage, hallucination and toxic output.
@@ -37,3 +38,5 @@ sources:
 - url: https://docs.garak.ai/
   title: garak documentation
 ---
+
+

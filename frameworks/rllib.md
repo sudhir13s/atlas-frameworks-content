@@ -2,8 +2,9 @@
 id: framework/rllib
 type: framework
 slug: rllib
-schema_version: 1.1
+schema_version: 3.0
 title: RLlib
+status: curated
 kind: library
 category: framework-category/reinforcement-learning
 subcategory: algorithm-library
@@ -75,6 +76,4 @@ aliases:
 - RLlib (Ray)
 ---
 
-## Overview
 
-RLlib is an open source reinforcement learning library built on Ray. It supports production-grade, scalable and fault-tolerant RL workloads with simple, unified APIs. It covers multi-agent training, learning from historic offline data and externally connected simulators.

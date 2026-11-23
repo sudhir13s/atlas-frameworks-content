@@ -2,8 +2,9 @@
 id: framework/gensim
 type: framework
 slug: gensim
-schema_version: 1.1
+schema_version: 3.0
 title: Gensim
+status: curated
 kind: library
 category: framework-category/nlp
 subcategory: topic-modeling
@@ -66,6 +67,4 @@ sources:
   title: gensim — PyPI
 ---
 
-## Overview
 
-Python library for topic modelling, document indexing and similarity retrieval with large corpora, aimed at the natural language processing and information retrieval community. Its algorithms are memory-independent of corpus size and can stream input larger than RAM. Implementations include Latent Semantic Analysis, Latent Dirichlet Allocation, Random Projections, Hierarchical Dirichlet Process and word2vec.

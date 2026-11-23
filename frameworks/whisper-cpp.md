@@ -2,8 +2,9 @@
 id: framework/whisper-cpp
 type: framework
 slug: whisper-cpp
-schema_version: 1.2
+schema_version: 3.0
 title: whisper.cpp
+status: discovered
 category: framework-category/inference
 tagline: Port of OpenAI's Whisper model in C/C++
 language: C++

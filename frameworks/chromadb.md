@@ -2,8 +2,9 @@
 id: framework/chromadb
 type: framework
 slug: chromadb
-schema_version: 1.1
+schema_version: 3.0
 title: Chroma
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: embedded
@@ -78,6 +79,4 @@ sources:
   title: chromadb — PyPI
 ---
 
-## Overview
 
-Chroma is open-source data infrastructure for AI that stores documents with their embeddings and metadata and queries them by similarity. It handles embedding and indexing automatically or accepts your own embeddings. It runs in-memory, with a persistent client, in client-server mode, or as the hosted Chroma Cloud.

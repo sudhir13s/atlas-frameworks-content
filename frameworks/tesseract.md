@@ -2,8 +2,9 @@
 id: framework/tesseract
 type: framework
 slug: tesseract
-schema_version: 1.2
+schema_version: 3.0
 title: Tesseract OCR
+status: discovered
 category: framework-category/computer-vision
 tagline: Tesseract Open Source OCR Engine (main repository)
 language: C++

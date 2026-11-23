@@ -2,8 +2,9 @@
 id: framework/guardrails-ai
 type: framework
 slug: guardrails-ai
-schema_version: 1.2
+schema_version: 3.0
 title: Guardrails AI
+status: discovered
 category: framework-category/guardrails
 tagline: Adding guardrails to large language models.
 language: Python
@@ -33,3 +34,5 @@ sources:
 - url: https://pypi.org/project/guardrails-ai/
   title: guardrails-ai — PyPI package
 ---
+
+

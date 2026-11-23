@@ -37,7 +37,8 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
 - `tags`: lowercase, hyphen-separated.
 - `updated`: ISO date (`YYYY-MM-DD`).
 - `sources[]`: `{ url, title, trust }` — `trust` in `[0,1]`. Open-source-first; cite, do not copy.
-- `schema_version`: the `major.minor` the file was authored against (currently `2.4`; `framework` records authored against `1.1` or `1.2` stay valid, a `use-case` must be `2.0` or newer, a `framework-category` must be `2.1`).
+- `schema_version`: the version of the type's schema. Every schema fixes the value (`3.0`) and a record with any other is refused; a breaking change raises it and converts every record.
+- **No unknown fields** on any type, at the top level or inside a block of fixed shape.
 
 ## Body sections
 
@@ -58,12 +59,14 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
   Body section: Overview.
 - **framework-category** — a per-category landscape. Carries `short_description`, `why_it_matters`,
   an optional single `defacto` framework (absent until someone has judged it), `rising[]`,
-  `alternatives[]`, `key_concepts[]`, `canonical_reading[]`, and `did_you_know[]`. `label` is the
+  `alternatives[]`, `key_concepts[]` and `canonical_reading[]`. `label` is the
   category name; `layer` (required: `build`, `train`, `data`, `run`, `operate`, `domain` or `other`)
   files it under a layer of the AI stack and `order` sorts it within the layer. Every category is
   listed by the site; one without `defacto` simply shows no default pick. All body sections
   (Overview → Landscape → Notes) are optional.
-- **framework** — one framework, library or tool. `kind` is `framework` (code you build inside),
+- **framework** — one framework, library or tool. `status` says who wrote the record: `curated`
+  (a person; `subcategory`, `description`, `best_for`, `key_features`, `use_cases` and `pros` are
+  then required) or `discovered` (the discovery step, from repository facts alone). `kind` is `framework` (code you build inside),
   `library` (code you call) or `tool` (a program or service you run); it is absent on a record
   copied from GitHub facts alone, because no fact says which it is. `category` is a
   `framework-category/<slug>` ID. Authored fields: `tagline`, `description`, `best_for`,
@@ -75,7 +78,9 @@ own fields — see `schema/<type>.schema.json`. Put **structured/reference data 
   `alternatives` and `ecosystem_connections` are lists of `framework/<slug>` IDs. The agent-owned
   block `registry_signals` holds the numbers that change (`github_stars`, `downloads_monthly`,
   `latest_version`, `latest_release_date`) with `observed_at` and `source`; an unknown value is
-  absent, never `0`. Optional body section: Overview (the `description`).
+  absent, never `0`. `backing.orgs` names each organization by the ID of its record in the
+  models repository (`organization/<slug>`) when it has one, else by name. No body section: the
+  prose is `description`, stored once.
 
 ## Sourcing
 

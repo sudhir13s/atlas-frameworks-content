@@ -2,8 +2,9 @@
 id: framework/nemo-guardrails
 type: framework
 slug: nemo-guardrails
-schema_version: 1.2
+schema_version: 3.0
 title: NeMo Guardrails
+status: discovered
 kind: library
 category: framework-category/guardrails
 tagline: Open-source library for applying programmable safety and security controls to large language model (LLM) and agentic applications.
@@ -39,3 +40,5 @@ sources:
 - url: https://docs.nvidia.com/nemo/guardrails/latest/index.html
   title: NeMo Guardrails documentation
 ---
+
+

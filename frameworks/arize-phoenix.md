@@ -2,8 +2,9 @@
 id: framework/arize-phoenix
 type: framework
 slug: arize-phoenix
-schema_version: 1.2
+schema_version: 3.0
 title: Arize Phoenix
+status: discovered
 kind: tool
 category: framework-category/observability
 tagline: Open-source AI observability platform designed for experimentation, evaluation and troubleshooting.
@@ -40,3 +41,5 @@ sources:
 - url: https://arize.com/docs/phoenix
   title: Arize Phoenix documentation
 ---
+
+

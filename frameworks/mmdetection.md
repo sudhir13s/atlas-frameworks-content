@@ -2,8 +2,9 @@
 id: framework/mmdetection
 type: framework
 slug: mmdetection
-schema_version: 1.1
+schema_version: 3.0
 title: MMDetection
+status: curated
 kind: framework
 category: framework-category/computer-vision
 subcategory: detection-segmentation
@@ -66,6 +67,4 @@ sources:
   title: mmdet — PyPI
 ---
 
-## Overview
 
-MMDetection is an open source object detection toolbox based on PyTorch and part of the OpenMMLab project. Its modular design decomposes the detection framework into components that can be combined into customized detectors, and it supports object detection, instance segmentation, panoptic segmentation and semi-supervised object detection, with pre-trained models in a model zoo.

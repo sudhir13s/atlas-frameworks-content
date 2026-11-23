@@ -2,8 +2,9 @@
 id: framework/gradio
 type: framework
 slug: gradio
-schema_version: 1.2
+schema_version: 3.0
 title: Gradio
+status: discovered
 category: framework-category/other
 tagline: Build and share machine learning apps, all in Python.
 language: Python

@@ -2,8 +2,9 @@
 id: framework/agentscope
 type: framework
 slug: agentscope
-schema_version: 1.2
+schema_version: 3.0
 title: AgentScope
+status: discovered
 category: framework-category/agents
 tagline: Build and run agents you can see, understand and trust.
 language: Python

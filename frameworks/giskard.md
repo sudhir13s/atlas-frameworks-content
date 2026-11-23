@@ -2,8 +2,9 @@
 id: framework/giskard
 type: framework
 slug: giskard
-schema_version: 1.1
+schema_version: 3.0
 title: Giskard
+status: curated
 kind: library
 category: framework-category/evaluation
 subcategory: ml-testing
@@ -73,6 +74,4 @@ sources:
   title: giskard — PyPI
 ---
 
-## Overview
 
-Open-source Python library for testing and evaluating agentic systems, from a single LLM to a black-box agent or a multi-step pipeline. It ships as modular packages, with giskard-checks for evals that range from simple assertions to LLM-as-judge checks and giskard-scan for red teaming, vulnerability scanning and RAG quality evaluation. The automatic scan for tabular ML models exists only in the previous major version, which is no longer actively maintained.

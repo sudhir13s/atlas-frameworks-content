@@ -2,8 +2,9 @@
 id: framework/langsmith
 type: framework
 slug: langsmith
-schema_version: 1.1
+schema_version: 3.0
 title: LangSmith
+status: curated
 kind: tool
 category: framework-category/observability
 subcategory: llm-observability
@@ -77,6 +78,4 @@ sources:
   title: langsmith — PyPI
 ---
 
-## Overview
 
-LangSmith is a platform from LangChain for observability, evaluation, prompt engineering and deployment of LLM applications and agents. It records traces of what an application did, supports datasets and evaluations built from those traces, and works with many frameworks and providers, with or without LangChain code.

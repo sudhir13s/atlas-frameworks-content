@@ -2,7 +2,7 @@
 id: framework-category/rag
 type: framework-category
 slug: rag
-schema_version: 2.1
+schema_version: 3.0
 title: RAG Frameworks
 label: RAG
 layer: build
@@ -63,3 +63,5 @@ sources:
   title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
   trust: 0.9
 ---
+
+

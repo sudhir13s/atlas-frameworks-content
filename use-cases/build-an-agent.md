@@ -2,7 +2,7 @@
 id: use-case/build-an-agent
 type: use-case
 slug: build-an-agent
-schema_version: 2.0
+schema_version: 3.0
 title: Build an Agent
 label: Build an agent
 order: 2

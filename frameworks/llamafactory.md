@@ -2,8 +2,9 @@
 id: framework/llamafactory
 type: framework
 slug: llamafactory
-schema_version: 1.2
+schema_version: 3.0
 title: LlamaFactory
+status: discovered
 category: framework-category/fine-tuning
 tagline: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 language: Python

@@ -2,7 +2,7 @@
 id: use-case/deploy-on-device
 type: use-case
 slug: deploy-on-device
-schema_version: 2.0
+schema_version: 3.0
 title: Deploy a Model On-Device
 label: Deploy on-device
 order: 6

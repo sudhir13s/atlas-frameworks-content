@@ -2,8 +2,9 @@
 id: framework/unsloth
 type: framework
 slug: unsloth
-schema_version: 1.2
+schema_version: 3.0
 title: Unsloth
+status: discovered
 category: framework-category/fine-tuning
 tagline: Local UI to run and train LLMs and diffusion models.
 language: Python

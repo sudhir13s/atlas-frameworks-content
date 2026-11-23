@@ -2,8 +2,9 @@
 id: framework/torchvision
 type: framework
 slug: torchvision
-schema_version: 1.1
+schema_version: 3.0
 title: torchvision
+status: curated
 kind: library
 category: framework-category/computer-vision
 subcategory: pytorch-ecosystem
@@ -73,6 +74,4 @@ sources:
   title: torchvision — PyPI
 ---
 
-## Overview
 
-torchvision is the computer vision library of the PyTorch project. It provides popular datasets, model architectures with pre-trained weights, and common image transformations. Its models cover image classification, semantic segmentation, object detection, instance segmentation, keypoint detection, video classification and optical flow.

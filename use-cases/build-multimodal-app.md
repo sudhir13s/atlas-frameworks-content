@@ -2,7 +2,7 @@
 id: use-case/build-multimodal-app
 type: use-case
 slug: build-multimodal-app
-schema_version: 2.0
+schema_version: 3.0
 title: Build a Multimodal App
 label: Build a multimodal app
 order: 8

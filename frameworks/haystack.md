@@ -2,8 +2,9 @@
 id: framework/haystack
 type: framework
 slug: haystack
-schema_version: 1.1
+schema_version: 3.0
 title: Haystack
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
@@ -39,7 +40,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - deepset
+  - organization/deepset
 alternatives:
 - framework/langchain
 - framework/llamaindex
@@ -75,6 +76,4 @@ sources:
   title: haystack-ai — PyPI
 ---
 
-## Overview
 
-Open-source AI orchestration framework by deepset for building production-ready LLM applications in Python. Applications are built as modular pipelines and agent workflows with explicit control over retrieval, routing, memory and generation. Documented uses include RAG systems, multimodal applications, semantic search, question answering and agents.

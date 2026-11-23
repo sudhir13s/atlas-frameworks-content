@@ -2,8 +2,9 @@
 id: framework/bentoml
 type: framework
 slug: bentoml
-schema_version: 1.1
+schema_version: 3.0
 title: BentoML
+status: curated
 kind: framework
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -73,6 +74,4 @@ sources:
   title: bentoml — PyPI
 ---
 
-## Overview
 
-BentoML is a Python library for building online serving systems for AI apps and model inference. It turns a model inference script into a REST API server, packages code, models and dependency configs into a Bento as the deployable artifact, and generates Docker images for deployment with Docker or Kubernetes.

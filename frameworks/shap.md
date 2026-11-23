@@ -2,8 +2,9 @@
 id: framework/shap
 type: framework
 slug: shap
-schema_version: 1.2
+schema_version: 3.0
 title: SHAP
+status: discovered
 category: framework-category/other
 tagline: A game theoretic approach to explain the output of any machine learning model.
 language: Jupyter Notebook

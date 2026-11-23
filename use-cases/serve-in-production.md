@@ -2,7 +2,7 @@
 id: use-case/serve-in-production
 type: use-case
 slug: serve-in-production
-schema_version: 2.0
+schema_version: 3.0
 title: Serve a Model in Production
 label: Serve in production
 order: 4

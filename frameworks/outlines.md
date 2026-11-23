@@ -2,8 +2,9 @@
 id: framework/outlines
 type: framework
 slug: outlines
-schema_version: 1.1
+schema_version: 3.0
 title: Outlines
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: structured-generation
@@ -69,6 +70,4 @@ sources:
   title: outlines — PyPI
 ---
 
-## Overview
 
-Outlines is a Python library that constrains LLM output during generation to a requested type such as a set of choices, a Pydantic model or JSON schema, a regular expression or a context-free grammar. The same code runs across model providers and inference engines, including transformers, llama.cpp, vLLM, Ollama, OpenAI and Gemini.

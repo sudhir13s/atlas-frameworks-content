@@ -2,8 +2,9 @@
 id: framework/guidance
 type: framework
 slug: guidance
-schema_version: 1.1
+schema_version: 3.0
 title: Guidance
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: structured-generation
@@ -62,6 +63,4 @@ sources:
   title: guidance — PyPI
 ---
 
-## Overview
 
-Python programming paradigm for steering language models. It constrains generation with regular expressions, context-free grammars and JSON schemas, and interleaves generation with control flow such as conditionals, loops and tool use. Backends include Transformers, llama.cpp and OpenAI.

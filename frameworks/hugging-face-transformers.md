@@ -2,8 +2,9 @@
 id: framework/hugging-face-transformers
 type: framework
 slug: hugging-face-transformers
-schema_version: 1.1
+schema_version: 3.0
 title: Hugging Face Transformers
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: model-library
@@ -45,7 +46,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - Hugging Face
+  - organization/hugging-face
 alternatives:
 - framework/vllm
 - framework/llama-cpp
@@ -83,6 +84,4 @@ sources:
   title: transformers — PyPI
 ---
 
-## Overview
 
-Model-definition framework from Hugging Face for machine learning models in text, computer vision, audio, video and multimodal tasks, for both inference and training. It centralizes model definitions so that they work across training frameworks, inference engines and adjacent modeling libraries. It runs on PyTorch and loads Transformers model checkpoints from the Hugging Face Hub.

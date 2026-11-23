@@ -2,7 +2,7 @@
 id: use-case/make-llm-app-safe-and-accurate
 type: use-case
 slug: make-llm-app-safe-and-accurate
-schema_version: 2.0
+schema_version: 3.0
 title: Make an LLM App Safe and Accurate
 label: Make an LLM app safe and accurate
 order: 9

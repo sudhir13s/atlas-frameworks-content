@@ -2,8 +2,9 @@
 id: framework/autogen
 type: framework
 slug: autogen
-schema_version: 1.1
+schema_version: 3.0
 title: AutoGen
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: agent-framework
@@ -44,7 +45,7 @@ maturity: experimental
 backing:
   type: corporate
   orgs:
-  - Microsoft
+  - organization/microsoft
 alternatives:
 - framework/crewai
 registry_signals:
@@ -76,6 +77,4 @@ sources:
   title: autogen-agentchat — PyPI
 ---
 
-## Overview
 
-AutoGen is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans. Its layered design has a Core API for message passing and event-driven agents, an AgentChat API for common multi-agent patterns, and an Extensions API for LLM clients and capabilities such as code execution. The project has been archived and is no longer actively maintained by Microsoft, which points new users to Microsoft Agent Framework.

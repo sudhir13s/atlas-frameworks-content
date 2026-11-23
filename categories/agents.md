@@ -2,7 +2,7 @@
 id: framework-category/agents
 type: framework-category
 slug: agents
-schema_version: 2.1
+schema_version: 3.0
 title: Agent Frameworks
 label: Agents
 layer: build
@@ -66,3 +66,5 @@ sources:
   title: 'ReAct: Synergizing Reasoning and Acting in Language Models'
   trust: 0.9
 ---
+
+

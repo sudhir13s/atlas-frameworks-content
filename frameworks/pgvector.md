@@ -2,8 +2,9 @@
 id: framework/pgvector
 type: framework
 slug: pgvector
-schema_version: 1.2
+schema_version: 3.0
 title: pgvector
+status: discovered
 category: framework-category/vector-dbs
 tagline: Open-source vector similarity search for Postgres.
 language: C
@@ -24,3 +25,5 @@ sources:
 - url: https://github.com/pgvector/pgvector
   title: pgvector/pgvector — GitHub repository
 ---
+
+

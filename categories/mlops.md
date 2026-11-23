@@ -2,7 +2,7 @@
 id: framework-category/mlops
 type: framework-category
 slug: mlops
-schema_version: 2.1
+schema_version: 3.0
 title: Experiment Tracking & MLOps
 label: Experiment Tracking & MLOps
 layer: operate
@@ -58,3 +58,5 @@ sources:
   title: Comet examples repository
   trust: 0.9
 ---
+
+

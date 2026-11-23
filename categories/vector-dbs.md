@@ -2,7 +2,7 @@
 id: framework-category/vector-dbs
 type: framework-category
 slug: vector-dbs
-schema_version: 2.1
+schema_version: 3.0
 title: Vector Databases
 label: Vector Databases
 layer: build
@@ -71,3 +71,5 @@ sources:
   title: Pinecone
   trust: 0.9
 ---
+
+

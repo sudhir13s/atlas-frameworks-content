@@ -2,8 +2,9 @@
 id: framework/ai
 type: framework
 slug: ai
-schema_version: 1.2
+schema_version: 3.0
 title: AI SDK
+status: discovered
 category: framework-category/llm-frameworks
 tagline: The AI Toolkit for TypeScript. The AI SDK is a free open-source library for building AI-powered applications and agents.
 language: TypeScript

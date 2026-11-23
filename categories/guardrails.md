@@ -2,7 +2,7 @@
 id: framework-category/guardrails
 type: framework-category
 slug: guardrails
-schema_version: 2.1
+schema_version: 3.0
 title: Guardrails & Safety
 label: Guardrails & Safety
 layer: operate
@@ -51,3 +51,5 @@ sources:
   title: PyRIT repository
   trust: 0.9
 ---
+
+

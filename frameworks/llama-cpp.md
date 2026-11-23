@@ -2,8 +2,9 @@
 id: framework/llama-cpp
 type: framework
 slug: llama-cpp
-schema_version: 1.1
+schema_version: 3.0
 title: llama.cpp
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: inference-engine
@@ -74,6 +75,4 @@ sources:
   title: ggml organisation
 ---
 
-## Overview
 
-llama.cpp is a C/C++ project for LLM and multimodal LLM inference with minimal setup on a wide range of hardware, locally and in the cloud. It is built on the ggml library, runs models in the GGUF format, and includes a command-line tool and an HTTP server with OpenAI-compatible routes.

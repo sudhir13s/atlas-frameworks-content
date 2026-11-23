@@ -2,8 +2,9 @@
 id: framework/ray-serve
 type: framework
 slug: ray-serve
-schema_version: 1.1
+schema_version: 3.0
 title: Ray Serve
+status: curated
 kind: library
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -78,6 +79,4 @@ sources:
   title: Website
 ---
 
-## Overview
 
-Ray Serve is a framework-agnostic model serving library built on top of Ray. It supports model composition and multi-model serving, combining multiple ML models and business logic in Python code. For large language models it offers response streaming, dynamic request batching and multi-node, multi-GPU serving.

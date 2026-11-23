@@ -2,8 +2,9 @@
 id: framework/comet-ml
 type: framework
 slug: comet-ml
-schema_version: 1.1
+schema_version: 3.0
 title: Comet
+status: curated
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
@@ -71,6 +72,4 @@ sources:
   title: comet-ml — PyPI
 ---
 
-## Overview
 
-Comet is an AI developer platform that gives teams experiment tracking for their datasets, code changes, experiment history and production models. Teams use it to track, compare, explain and optimize models, from experiment management through production monitoring. Comet also makes Opik, an open-source LLM observability and evaluation platform.

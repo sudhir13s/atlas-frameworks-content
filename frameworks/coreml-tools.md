@@ -2,8 +2,9 @@
 id: framework/coreml-tools
 type: framework
 slug: coreml-tools
-schema_version: 1.1
+schema_version: 3.0
 title: Core ML Tools
+status: curated
 kind: library
 category: framework-category/edge-mobile
 subcategory: apple-ecosystem
@@ -36,7 +37,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - Apple
+  - organization/apple
 alternatives:
 - framework/tensorflow-lite
 ecosystem_connections:
@@ -71,6 +72,4 @@ sources:
   title: coremltools — PyPI
 ---
 
-## Overview
 
-Core ML Tools (coremltools) is a Python package that converts machine learning models from third-party libraries such as TensorFlow, PyTorch, scikit-learn, XGBoost and LibSVM to the Core ML format. It also reads, writes and optimizes Core ML models, and verifies conversions on macOS by making predictions with Core ML. Converted models are integrated into apps with Xcode.

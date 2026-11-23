@@ -2,8 +2,9 @@
 id: framework/seldon-core
 type: framework
 slug: seldon-core
-schema_version: 1.1
+schema_version: 3.0
 title: Seldon Core
+status: curated
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -76,6 +77,4 @@ sources:
   title: Licence
 ---
 
-## Overview
 
-Seldon Core 2 is an MLOps and LLMOps framework for deploying, managing and scaling AI systems in Kubernetes, from single models to modular, data-centric applications. Pipelines connect models, processing steps and custom logic, streaming data between components through Kafka. Experiments route traffic between candidate models or pipelines for A/B tests and shadow deployments.

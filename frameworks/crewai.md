@@ -2,8 +2,9 @@
 id: framework/crewai
 type: framework
 slug: crewai
-schema_version: 1.1
+schema_version: 3.0
 title: CrewAI
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: agent-framework
@@ -75,6 +76,4 @@ sources:
   title: crewai — PyPI
 ---
 
-## Overview
 
-CrewAI is an open-source Python framework with high-level abstractions and low-level APIs for building multi-agent workflows. Crews are teams of role-based AI agents that collaborate and delegate tasks, and Flows are event-driven workflows with state, branching and routing for precise control. It is a standalone framework with its own primitives for agents, tasks, crews, flows, tools and orchestration.

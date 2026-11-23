@@ -2,7 +2,7 @@
 id: use-case/<slug>
 type: use-case
 slug: <slug>
-schema_version: 2.0
+schema_version: 3.0              # the schema's current version; the schema refuses any other
 title: "<Human Readable Title>"
 label: "<Short label for the goal list>"
 order: <int>                       # display order on the getting-started page

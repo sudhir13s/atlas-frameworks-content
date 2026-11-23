@@ -2,8 +2,9 @@
 id: framework/spark-mllib
 type: framework
 slug: spark-mllib
-schema_version: 1.1
+schema_version: 3.0
 title: Apache Spark MLlib
+status: curated
 kind: library
 category: framework-category/data
 subcategory: distributed-ml
@@ -68,6 +69,4 @@ sources:
   title: pyspark — PyPI
 ---
 
-## Overview
 
-MLlib is Apache Spark's machine learning library, built to make practical machine learning scalable. It provides common learning algorithms for classification, regression, clustering and collaborative filtering, together with featurization, ML Pipelines, model persistence and utilities. Its primary API is DataFrame-based; the older RDD-based API is in maintenance mode.

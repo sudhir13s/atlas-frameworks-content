@@ -2,8 +2,9 @@
 id: framework/executorch
 type: framework
 slug: executorch
-schema_version: 1.1
+schema_version: 3.0
 title: ExecuTorch
+status: curated
 kind: framework
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
@@ -39,7 +40,7 @@ maturity: stable
 backing:
   type: corporate
   orgs:
-  - Meta
+  - organization/meta
 alternatives:
 - framework/tensorflow-lite
 ecosystem_connections:
@@ -72,6 +73,4 @@ sources:
   title: executorch — PyPI
 ---
 
-## Overview
 
-ExecuTorch is PyTorch's end-to-end solution for on-device inference on mobile and edge devices, including wearables, embedded devices and microcontrollers. It is part of the PyTorch Edge ecosystem and uses the same toolchain and SDK from PyTorch model authoring and conversion to debugging and deployment. Backends delegate execution to CPUs, GPUs, NPUs and DSPs.

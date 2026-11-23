@@ -2,8 +2,9 @@
 id: framework/pytorch-geometric
 type: framework
 slug: pytorch-geometric
-schema_version: 1.2
+schema_version: 3.0
 title: PyG (PyTorch Geometric)
+status: discovered
 category: framework-category/training
 tagline: Graph Neural Network Library for PyTorch
 language: Python

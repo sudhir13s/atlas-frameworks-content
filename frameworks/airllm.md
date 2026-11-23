@@ -2,8 +2,9 @@
 id: framework/airllm
 type: framework
 slug: airllm
-schema_version: 1.2
+schema_version: 3.0
 title: AirLLM
+status: discovered
 category: framework-category/inference
 tagline: Reduces inference memory usage so that 70B large language models run on a single 4GB GPU card, without quantization, distillation or pruning.
 language: Jupyter Notebook

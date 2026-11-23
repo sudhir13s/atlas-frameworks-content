@@ -2,8 +2,9 @@
 id: framework/ragas
 type: framework
 slug: ragas
-schema_version: 1.1
+schema_version: 3.0
 title: Ragas
+status: curated
 kind: framework
 category: framework-category/evaluation
 subcategory: rag-evaluation
@@ -77,6 +78,4 @@ sources:
   title: ragas — PyPI
 ---
 
-## Overview
 
-Ragas is a toolkit for evaluating and optimizing LLM applications. It provides LLM-based and traditional metrics for retrieval augmented generation (RAG), agents and tool use, SQL and general-purpose evaluation, and it generates test datasets for RAG and agent scenarios.

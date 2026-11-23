@@ -2,8 +2,9 @@
 id: framework/paddleocr
 type: framework
 slug: paddleocr
-schema_version: 1.2
+schema_version: 3.0
 title: PaddleOCR
+status: discovered
 category: framework-category/computer-vision
 tagline: Turn any PDF or image document into structured data for your AI. A lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 language: Python

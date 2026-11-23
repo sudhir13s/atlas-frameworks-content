@@ -2,8 +2,9 @@
 id: framework/tf-serving
 type: framework
 slug: tf-serving
-schema_version: 1.1
+schema_version: 3.0
 title: TensorFlow Serving
+status: curated
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -68,6 +69,4 @@ sources:
   title: tensorflow-serving-api — PyPI
 ---
 
-## Overview
 
-TensorFlow Serving is a serving system for machine learning models, designed for production environments. It manages trained models and gives clients versioned access over gRPC and HTTP endpoints. It integrates with TensorFlow models out of the box and can be extended to serve other types of models and data.

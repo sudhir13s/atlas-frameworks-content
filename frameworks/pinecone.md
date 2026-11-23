@@ -2,8 +2,9 @@
 id: framework/pinecone
 type: framework
 slug: pinecone
-schema_version: 1.1
+schema_version: 3.0
 title: Pinecone
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: managed-service
@@ -75,6 +76,4 @@ sources:
   title: pinecone — PyPI
 ---
 
-## Overview
 
-Pinecone Database is a search engine for AI agents and applications that serves full-text, semantic, sparse-vector and hybrid search from one index. Applications write JSON documents through its Documents API, and Pinecone can generate embeddings from text server-side. The Pinecone Python SDK creates and manages indexes, upserts and queries records, and runs inference operations.

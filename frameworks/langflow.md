@@ -2,8 +2,9 @@
 id: framework/langflow
 type: framework
 slug: langflow
-schema_version: 1.2
+schema_version: 3.0
 title: Langflow
+status: discovered
 category: framework-category/llm-frameworks
 tagline: Langflow is a tool for building and deploying AI-powered agents and workflows.
 language: Python

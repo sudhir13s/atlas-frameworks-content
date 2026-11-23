@@ -2,8 +2,9 @@
 id: framework/firecrawl
 type: framework
 slug: firecrawl
-schema_version: 1.2
+schema_version: 3.0
 title: Firecrawl
+status: discovered
 category: framework-category/rag
 tagline: Search, scrape and access 550+ data providers through one API.
 language: TypeScript

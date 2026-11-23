@@ -2,8 +2,9 @@
 id: framework/sentence-transformers
 type: framework
 slug: sentence-transformers
-schema_version: 1.1
+schema_version: 3.0
 title: Sentence Transformers
+status: curated
 kind: library
 category: framework-category/nlp
 subcategory: embeddings
@@ -40,7 +41,7 @@ website_url: https://www.sbert.net/
 backing:
   type: corporate
   orgs:
-  - Hugging Face
+  - organization/hugging-face
 ecosystem_connections:
 - framework/hugging-face-transformers
 - framework/faiss
@@ -74,6 +75,4 @@ sources:
   title: sentence-transformers — PyPI
 ---
 
-## Overview
 
-Sentence Transformers (SBERT) is a Python module for using and training embedding and reranker models. It computes embeddings from text, images, audio or video, scores pairs of texts with Cross-Encoder (reranker) models, and produces sparse and multi-vector late-interaction embeddings. Pre-trained models are available on Hugging Face, and custom models can be trained or fine-tuned with the library.

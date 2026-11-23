@@ -2,8 +2,9 @@
 id: framework/dask
 type: framework
 slug: dask
-schema_version: 1.1
+schema_version: 3.0
 title: Dask
+status: curated
 kind: library
 category: framework-category/data
 subcategory: distributed-computing
@@ -75,6 +76,4 @@ sources:
   title: dask — PyPI
 ---
 
-## Overview
 
-Dask is a Python library for parallel and distributed computing. Dask DataFrames and Dask Arrays parallelize pandas and NumPy, Dask Bags process Python objects in parallel, and Dask Futures parallelize arbitrary Python code. It runs on a single machine, including larger-than-memory data, or on distributed clusters.

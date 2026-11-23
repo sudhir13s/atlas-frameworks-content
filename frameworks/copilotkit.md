@@ -2,8 +2,9 @@
 id: framework/copilotkit
 type: framework
 slug: copilotkit
-schema_version: 1.2
+schema_version: 3.0
 title: CopilotKit
+status: discovered
 category: framework-category/agents
 tagline: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.
 language: TypeScript

@@ -2,8 +2,9 @@
 id: framework/lancedb
 type: framework
 slug: lancedb
-schema_version: 1.1
+schema_version: 3.0
 title: LanceDB
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: embedded
@@ -80,6 +81,4 @@ sources:
   title: lancedb — PyPI
 ---
 
-## Overview
 
-LanceDB is an open-source retrieval library built on the Lance columnar format that runs inside your application, with data on local disk or in object storage. It supports vector similarity search, full-text search and SQL over vectors, metadata and multimodal data such as text, images and video.

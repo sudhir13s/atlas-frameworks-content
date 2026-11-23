@@ -2,8 +2,9 @@
 id: framework/ray-tune
 type: framework
 slug: ray-tune
-schema_version: 1.1
+schema_version: 3.0
 title: Ray Tune
+status: curated
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
@@ -74,6 +75,4 @@ sources:
   title: Website
 ---
 
-## Overview
 
-Ray Tune is a Python library for experiment execution and hyperparameter tuning, part of Ray. It runs algorithms such as Population Based Training and HyperBand/ASHA and integrates with hyperparameter optimization tools including Ax, BayesOpt, BOHB, Nevergrad and Optuna. It parallelizes tuning across multiple GPUs and multiple nodes.

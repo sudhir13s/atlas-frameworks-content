@@ -2,8 +2,9 @@
 id: framework/promptfoo
 type: framework
 slug: promptfoo
-schema_version: 1.1
+schema_version: 3.0
 title: Promptfoo
+status: curated
 kind: tool
 category: framework-category/evaluation
 subcategory: prompt-testing
@@ -39,7 +40,7 @@ website_url: https://www.promptfoo.dev/
 backing:
   type: corporate
   orgs:
-  - OpenAI
+  - organization/openai
 alternatives:
 - framework/deepeval
 - framework/ragas
@@ -72,6 +73,4 @@ sources:
   title: promptfoo — PyPI
 ---
 
-## Overview
 
-Promptfoo is an open-source CLI and library for evaluating and red-teaming LLM apps. It runs declarative test cases against prompts, models and RAG pipelines, scores outputs with defined metrics, compares models side by side and scans applications for security vulnerabilities, from the command line, a library or CI/CD.

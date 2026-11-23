@@ -2,8 +2,9 @@
 id: framework/dspy
 type: framework
 slug: dspy
-schema_version: 1.1
+schema_version: 3.0
 title: DSPy
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: prompt-optimization
@@ -66,6 +67,4 @@ sources:
   title: dspy — PyPI
 ---
 
-## Overview
 
-DSPy is a Python framework for programming, rather than prompting, language models. Tasks are declared as signatures with typed inputs and outputs, modules control how a signature executes, and optimizers tune prompts and weights against a metric. It is used to build modular AI systems from simple classifiers to RAG pipelines and agent loops.

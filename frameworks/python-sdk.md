@@ -2,8 +2,9 @@
 id: framework/python-sdk
 type: framework
 slug: python-sdk
-schema_version: 1.2
+schema_version: 3.0
 title: MCP Python SDK
+status: discovered
 category: framework-category/agents
 tagline: The official Python SDK for Model Context Protocol servers and clients
 language: Python

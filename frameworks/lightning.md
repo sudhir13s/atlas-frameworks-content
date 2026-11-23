@@ -2,8 +2,9 @@
 id: framework/lightning
 type: framework
 slug: lightning
-schema_version: 1.1
+schema_version: 3.0
 title: PyTorch Lightning
+status: curated
 kind: framework
 category: framework-category/training
 subcategory: training-framework
@@ -75,6 +76,4 @@ sources:
   title: pytorch-lightning — PyPI
 ---
 
-## Overview
 
-PyTorch Lightning is a deep learning framework to pretrain and finetune AI models that organizes PyTorch code to decouple the science from the engineering. It automates backpropagation, mixed precision, multi-GPU and distributed training while keeping full control over model logic, and scales from CPU to multi-node GPUs without changes to the core code. Lightning Fabric offers expert-level control over the training loop and scaling strategy.

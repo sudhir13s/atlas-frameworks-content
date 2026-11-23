@@ -2,8 +2,9 @@
 id: framework/streamlit
 type: framework
 slug: streamlit
-schema_version: 1.2
+schema_version: 3.0
 title: Streamlit
+status: discovered
 category: framework-category/other
 tagline: The agent-native framework for data apps and dashboards.
 language: Python

@@ -2,7 +2,7 @@
 id: use-case/build-a-rag-app
 type: use-case
 slug: build-a-rag-app
-schema_version: 2.0
+schema_version: 3.0
 title: Build a RAG App
 label: Build a RAG app
 order: 1
@@ -28,7 +28,7 @@ blocks:
     when: MIT-licensed code hosted by the LF AI & Data Foundation that parses PDF, office, HTML and image files into one document model and exports Markdown or lossless JSON, with integrations for LangChain, LlamaIndex and Haystack.
   - record: framework/marker
     choice: alternative
-    when: 'Pick it for PDFs heavy in tables, equations and code blocks; its code is Apache-2.0 but its model weights use a modified OpenRAIL-M licence that limits commercial use above a funding or revenue threshold.'
+    when: Pick it for PDFs heavy in tables, equations and code blocks; its code is Apache-2.0 but its model weights use a modified OpenRAIL-M licence that limits commercial use above a funding or revenue threshold.
   - record: framework/paddleocr
     choice: alternative
     when: Pick it for scanned pages and images, where its PP-StructureV3 pipeline converts PDFs and images to Markdown or JSON under Apache-2.0.

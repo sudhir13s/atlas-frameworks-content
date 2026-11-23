@@ -2,7 +2,7 @@
 id: use-case/ml-data-pipeline
 type: use-case
 slug: ml-data-pipeline
-schema_version: 2.0
+schema_version: 3.0
 title: Build a Data Pipeline for ML
 label: ML data pipeline
 order: 7

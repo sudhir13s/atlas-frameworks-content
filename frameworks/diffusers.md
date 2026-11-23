@@ -2,8 +2,9 @@
 id: framework/diffusers
 type: framework
 slug: diffusers
-schema_version: 1.2
+schema_version: 3.0
 title: Diffusers
+status: discovered
 category: framework-category/other
 tagline: Diffusion models for image, video, and audio generation in PyTorch.
 language: Python

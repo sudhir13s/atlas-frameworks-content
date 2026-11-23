@@ -2,8 +2,9 @@
 id: framework/lm-evaluation-harness
 type: framework
 slug: lm-evaluation-harness
-schema_version: 1.2
+schema_version: 3.0
 title: Language Model Evaluation Harness
+status: discovered
 category: framework-category/evaluation
 tagline: A framework for few-shot evaluation of language models.
 language: Python
@@ -34,3 +35,5 @@ sources:
 - url: https://github.com/EleutherAI/lm-evaluation-harness/tree/main/docs
   title: Language Model Evaluation Harness documentation
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/litellm
 type: framework
 slug: litellm
-schema_version: 1.1
+schema_version: 3.0
 title: LiteLLM
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: llm-gateway
@@ -69,6 +70,4 @@ sources:
 license_note: MIT, except content under litellm/enterprise/, which is under the licence in litellm/enterprise/LICENSE
 ---
 
-## Overview
 
-LiteLLM is an open source AI gateway that gives a single, unified interface to call LLM providers such as OpenAI, Anthropic, Gemini, Bedrock and Azure using the OpenAI format. It can be used as a Python SDK inside an application or deployed as an AI Gateway (proxy server) for a team or organization, with virtual keys, spend tracking, guardrails and load balancing.

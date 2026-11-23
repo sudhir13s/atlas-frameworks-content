@@ -2,8 +2,9 @@
 id: framework/auto-sklearn
 type: framework
 slug: auto-sklearn
-schema_version: 1.1
+schema_version: 3.0
 title: auto-sklearn
+status: curated
 kind: library
 category: framework-category/automl
 subcategory: automl-framework
@@ -63,6 +64,4 @@ sources:
   title: auto-sklearn — PyPI
 ---
 
-## Overview
 
-auto-sklearn is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator. It takes algorithm selection and hyperparameter tuning off the user, using Bayesian optimization, meta-learning and ensemble construction.

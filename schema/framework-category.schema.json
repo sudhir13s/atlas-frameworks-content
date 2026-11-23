@@ -2,9 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://theaiatlas.dev/schema/frameworks/framework-category.schema.json",
   "title": "framework-category",
+  "unevaluatedProperties": false,
   "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
   "properties": {
     "type": { "const": "framework-category" },
+    "schema_version": { "const": 3.0 },
     "label": { "type": "string", "minLength": 1, "description": "category name shown as the section heading" },
     "layer": {
       "enum": ["build", "train", "data", "run", "operate", "domain", "other"],
@@ -20,8 +22,7 @@
     "rising": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
     "alternatives": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/framework_ref" } },
     "key_concepts": { "type": "array", "items": { "type": "string" } },
-    "canonical_reading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } },
-    "did_you_know": { "type": "array", "items": { "type": "string" } }
+    "canonical_reading": { "type": "array", "items": { "$ref": "_shared.schema.json#/$defs/reading_item" } }
   },
   "required": ["label", "layer", "short_description"]
 }

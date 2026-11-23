@@ -2,8 +2,9 @@
 id: framework/qdrant
 type: framework
 slug: qdrant
-schema_version: 1.1
+schema_version: 3.0
 title: Qdrant
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
@@ -82,6 +83,4 @@ sources:
   title: Website
 ---
 
-## Overview
 
-Qdrant is a vector similarity search engine and vector database written in Rust. It stores points, which are vectors with a JSON payload, and searches them through REST and gRPC APIs with payload filtering, dense, sparse and multivector search, hybrid queries, quantization and distributed deployment. It runs self-hosted, in Qdrant Cloud, or inside an application process as Qdrant Edge.

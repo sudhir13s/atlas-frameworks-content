@@ -2,7 +2,7 @@
 id: use-case/train-llm
 type: use-case
 slug: train-llm
-schema_version: 2.0
+schema_version: 3.0
 title: Train an LLM from Scratch
 label: Train from scratch
 order: 5

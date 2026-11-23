@@ -2,8 +2,9 @@
 id: framework/composio
 type: framework
 slug: composio
-schema_version: 1.2
+schema_version: 3.0
 title: Composio
+status: discovered
 category: framework-category/agents
 tagline: Composio powers 1000+ toolkits, tool search, context management, authentication and a sandboxed workbench to help you build AI agents.
 language: TypeScript

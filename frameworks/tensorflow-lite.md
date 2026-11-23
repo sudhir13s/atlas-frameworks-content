@@ -2,8 +2,9 @@
 id: framework/tensorflow-lite
 type: framework
 slug: tensorflow-lite
-schema_version: 1.1
+schema_version: 3.0
 title: LiteRT
+status: curated
 kind: library
 category: framework-category/edge-mobile
 subcategory: mobile-runtime
@@ -81,6 +82,4 @@ sources:
   title: ai-edge-litert — PyPI
 ---
 
-## Overview
 
-LiteRT is Google's on-device runtime for ML and GenAI deployment on edge platforms and continues TensorFlow Lite. It converts PyTorch, TensorFlow and JAX models to the .tflite format, quantizes them after training, and runs them with CPU, GPU and NPU acceleration on Android, iOS, the web, desktop and IoT devices.

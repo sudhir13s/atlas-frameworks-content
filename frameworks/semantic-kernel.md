@@ -2,8 +2,9 @@
 id: framework/semantic-kernel
 type: framework
 slug: semantic-kernel
-schema_version: 1.1
+schema_version: 3.0
 title: Semantic Kernel
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: orchestration-framework
@@ -44,7 +45,7 @@ maturity: stable
 backing:
   type: corporate
   orgs:
-  - Microsoft
+  - organization/microsoft
 alternatives:
 - framework/langchain
 - framework/llamaindex
@@ -75,6 +76,4 @@ sources:
   title: semantic-kernel — PyPI
 ---
 
-## Overview
 
-Semantic Kernel is a model-agnostic, open-source SDK from Microsoft for building, orchestrating and deploying AI agents and multi-agent systems in C#, Python or Java. It connects to models from providers such as OpenAI, Azure OpenAI and Hugging Face, and extends agents with plugins built from native code, prompt templates, OpenAPI specs or the Model Context Protocol. Its README names Microsoft Agent Framework as its successor.

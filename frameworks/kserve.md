@@ -2,8 +2,9 @@
 id: framework/kserve
 type: framework
 slug: kserve
-schema_version: 1.1
+schema_version: 3.0
 title: KServe
+status: curated
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -75,6 +76,4 @@ sources:
   title: kserve — PyPI
 ---
 
-## Overview
 
-Standardized distributed inference platform for generative and predictive AI models on Kubernetes. It serves LLMs through vLLM and llm-d backends with an OpenAI-compatible protocol, and predictive models from TensorFlow, PyTorch, scikit-learn, XGBoost, ONNX and other frameworks. It provides request-based autoscaling, scale-to-zero, canary rollouts and inference pipelines with InferenceGraph, and is a CNCF incubating project.

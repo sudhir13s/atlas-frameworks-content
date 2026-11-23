@@ -2,8 +2,9 @@
 id: framework/crawl4ai
 type: framework
 slug: crawl4ai
-schema_version: 1.2
+schema_version: 3.0
 title: Crawl4AI
+status: discovered
 category: framework-category/rag
 tagline: Apache-2.0 web crawler that turns pages into clean Markdown for RAG and extracts structured JSON, as a Python library or a self-hosted server.
 language: Python

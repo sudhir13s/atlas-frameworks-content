@@ -2,8 +2,9 @@
 id: framework/nltk
 type: framework
 slug: nltk
-schema_version: 1.1
+schema_version: 3.0
 title: NLTK
+status: curated
 kind: library
 category: framework-category/nlp
 subcategory: core-library
@@ -65,6 +66,4 @@ sources:
   title: nltk — PyPI
 ---
 
-## Overview
 
-NLTK is a suite of open source Python modules, data sets and tutorials supporting research and development in natural language processing. It provides interfaces to corpora and lexical resources such as WordNet, along with text processing libraries for classification, tokenization, stemming, tagging, parsing and semantic reasoning.

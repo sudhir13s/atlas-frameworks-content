@@ -2,8 +2,9 @@
 id: framework/fastai
 type: framework
 slug: fastai
-schema_version: 1.2
+schema_version: 3.0
 title: fastai
+status: discovered
 category: framework-category/training
 tagline: The fastai deep learning library
 language: Jupyter Notebook

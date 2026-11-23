@@ -2,8 +2,9 @@
 id: framework/datasets
 type: framework
 slug: datasets
-schema_version: 1.2
+schema_version: 3.0
 title: Hugging Face Datasets
+status: discovered
 category: framework-category/data
 tagline: Lightweight library with one-line dataloaders for public datasets on the Hugging Face Hub and efficient data pre-processing.
 language: Python

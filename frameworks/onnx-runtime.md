@@ -2,8 +2,9 @@
 id: framework/onnx-runtime
 type: framework
 slug: onnx-runtime
-schema_version: 1.1
+schema_version: 3.0
 title: ONNX Runtime
+status: curated
 kind: library
 category: framework-category/llm-serving
 subcategory: inference-runtime
@@ -44,7 +45,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - Microsoft
+  - organization/microsoft
 alternatives:
 - framework/tensorrt-llm
 - framework/triton-inference-server
@@ -82,6 +83,4 @@ sources:
   title: onnxruntime — PyPI
 ---
 
-## Overview
 
-ONNX Runtime is a cross-platform machine-learning model accelerator with an interface for integrating hardware-specific libraries as execution providers. It runs models from PyTorch, TensorFlow/Keras, TFLite, scikit-learn and other frameworks once they are exported to the ONNX format, and it also supports on-device training.

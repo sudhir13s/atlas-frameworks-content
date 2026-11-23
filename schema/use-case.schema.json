@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://theaiatlas.dev/schema/frameworks/use-case.schema.json",
   "title": "use-case",
+  "unevaluatedProperties": false,
   "description": "A goal (\"Build a RAG app\") and the building blocks the system needs, by where they sit in it. Checks JSON Schema cannot express (the block's stage exists, one default per block, unique block ids) run in the loader.",
   "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
   "$defs": {
@@ -65,6 +66,7 @@
   },
   "properties": {
     "type": { "const": "use-case" },
+    "schema_version": { "const": 3.0 },
     "label": { "type": "string", "minLength": 1, "description": "short human label shown in the goal list" },
     "order": { "type": "integer", "description": "display order on the getting-started page" },
     "goal": { "type": "string", "minLength": 1, "description": "one sentence: what the finished system does" },
@@ -73,7 +75,7 @@
     "learn_next": {
       "type": "array",
       "items": {
-        "type": "object",
+        "type": "object", "unevaluatedProperties": false,
         "required": ["title", "url"],
         "properties": {
           "title": { "type": "string" },

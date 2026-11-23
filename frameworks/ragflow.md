@@ -2,8 +2,9 @@
 id: framework/ragflow
 type: framework
 slug: ragflow
-schema_version: 1.2
+schema_version: 3.0
 title: RAGFlow
+status: discovered
 category: framework-category/rag
 tagline: 'RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.'
 language: Go

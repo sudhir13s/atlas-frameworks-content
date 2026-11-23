@@ -2,8 +2,9 @@
 id: framework/polars
 type: framework
 slug: polars
-schema_version: 1.1
+schema_version: 3.0
 title: Polars
+status: curated
 kind: library
 category: framework-category/data
 subcategory: dataframe
@@ -71,6 +72,4 @@ sources:
   title: polars — PyPI
 ---
 
-## Overview
 
-Polars is an analytical query engine for DataFrames written in Rust, with APIs for Python, Rust, Node.js and R. Queries written with the DataFrame API or in SQL run through the same optimizer and engine, with multi-threaded vectorized execution, a streaming API for data that does not fit in memory and optional NVIDIA GPU acceleration.

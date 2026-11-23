@@ -5,6 +5,31 @@ All notable changes to `ai-frameworks-content`. Grouped by schema version / rele
 
 ## [Unreleased]
 
+### Schema 3.0 (a stated `status`, strict schemas, a real version; breaking)
+
+All 180 records were converted by the consumer's `atlas migrate frameworks-restructure`. The
+conversion only moved, renamed, derived or deleted; `updated` was left alone.
+
+- **Added** `framework.status`: `curated` (a person wrote the record; `subcategory`,
+  `description`, `best_for`, `key_features`, `use_cases` and `pros` are then required) or
+  `discovered` (the discovery step copied it from repository facts; none of them is required).
+  The version number used to say this: the 83 records at `1.1` are `curated`, the 68 at `1.2`
+  `discovered`.
+- **Changed** `schema_version` to a constant of each schema (`3.0`); a record with any other
+  value is refused.
+- **Changed** to strict: no unknown field at the top level of any type, in `sources[]`,
+  `learn_next[]`, a framework reference or a reading item. No record held an undeclared field.
+- **Changed** `framework.backing.orgs`: an organization with a record under exactly that title
+  in the models repository is named by its ID (17 entries, 10 organizations: Apple, Google
+  DeepMind, Hugging Face, Meta, Microsoft, NVIDIA, OpenAI, Tencent, Ultralytics, deepset); the
+  other 57 stay names.
+- **Removed** the Overview body section of the 83 curated frameworks: each was a word-for-word
+  copy of `description`, which is now its only home. `framework` has no body section.
+- **Removed** `framework-category.did_you_know`, which no record held.
+- **Kept** as written: the 282 `framework.use_cases` phrases (none names a `use-case` record),
+  and both `language` (the implementation language) and `languages_supported` (the languages
+  it can be used from): they differ in meaning, and on one record in value.
+
 ### Schema 2.4 (GPU support moves to the sourced hardware records)
 
 - **Removed** `gpu_support` from `framework`, its template and the conventions, and from the 83

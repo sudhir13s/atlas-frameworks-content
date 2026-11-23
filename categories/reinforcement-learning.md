@@ -2,7 +2,7 @@
 id: framework-category/reinforcement-learning
 type: framework-category
 slug: reinforcement-learning
-schema_version: 2.1
+schema_version: 3.0
 title: Reinforcement Learning
 label: Reinforcement Learning
 layer: train
@@ -11,3 +11,5 @@ tags: []
 updated: '2026-11-21'
 sources: []
 ---
+
+

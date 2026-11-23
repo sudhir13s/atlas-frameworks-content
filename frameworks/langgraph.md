@@ -2,8 +2,9 @@
 id: framework/langgraph
 type: framework
 slug: langgraph
-schema_version: 1.2
+schema_version: 3.0
 title: LangGraph
+status: discovered
 category: framework-category/agents
 tagline: Low-level orchestration framework for building, managing, and deploying long-running, stateful agents.
 language: Python

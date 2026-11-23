@@ -2,8 +2,9 @@
 id: framework/mediapipe
 type: framework
 slug: mediapipe
-schema_version: 1.2
+schema_version: 3.0
 title: MediaPipe
+status: discovered
 category: framework-category/edge-mobile
 tagline: Cross-platform, customizable ML solutions for live and streaming media.
 language: C++

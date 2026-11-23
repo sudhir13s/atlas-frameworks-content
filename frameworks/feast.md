@@ -2,8 +2,9 @@
 id: framework/feast
 type: framework
 slug: feast
-schema_version: 1.1
+schema_version: 3.0
 title: Feast
+status: curated
 kind: tool
 category: framework-category/data
 subcategory: feature-store
@@ -62,6 +63,4 @@ sources:
   title: feast — PyPI
 ---
 
-## Overview
 
-Feast is an open source feature store for machine learning. It makes features consistently available for training and serving by managing an offline store for historical data, a low-latency online store for real-time prediction and a feature server. It generates point-in-time correct feature sets and provides a single data access layer over existing data infrastructure.

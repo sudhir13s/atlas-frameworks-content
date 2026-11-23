@@ -2,8 +2,9 @@
 id: framework/tensorflow
 type: framework
 slug: tensorflow
-schema_version: 1.1
+schema_version: 3.0
 title: TensorFlow
+status: curated
 kind: framework
 category: framework-category/training
 subcategory: core-framework
@@ -93,6 +94,4 @@ sources:
   title: tensorflow — PyPI
 ---
 
-## Overview
 
-TensorFlow is an end-to-end open source platform for machine learning. It provides stable Python and C++ APIs and the high-level Keras API for building and training models, with TensorFlow Lite for mobile and edge devices, TensorFlow.js for JavaScript environments and TFX for production ML pipelines.

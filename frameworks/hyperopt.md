@@ -2,8 +2,9 @@
 id: framework/hyperopt
 type: framework
 slug: hyperopt
-schema_version: 1.1
+schema_version: 3.0
 title: Hyperopt
+status: curated
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
@@ -64,6 +65,4 @@ sources:
   title: hyperopt — PyPI
 ---
 
-## Overview
 
-Python library for serial and parallel optimization over awkward search spaces, which may include real-valued, discrete and conditional dimensions. It implements Random Search, Tree of Parzen Estimators (TPE) and Adaptive TPE. All algorithms can be parallelized with Apache Spark or MongoDB.

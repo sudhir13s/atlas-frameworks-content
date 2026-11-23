@@ -2,8 +2,9 @@
 id: framework/spacy
 type: framework
 slug: spacy
-schema_version: 1.1
+schema_version: 3.0
 title: spaCy
+status: curated
 kind: library
 category: framework-category/nlp
 subcategory: core-library
@@ -77,6 +78,4 @@ sources:
   title: spacy — PyPI
 ---
 
-## Overview
 
-spaCy is a library for natural language processing in Python and Cython, designed to be used in real products. It provides trained pipelines and components for tokenization, part-of-speech tagging, dependency parsing, named entity recognition, text classification and more. It includes a training system, model packaging and multi-task learning with pretrained transformers such as BERT.

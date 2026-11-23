@@ -2,8 +2,9 @@
 id: framework/agno
 type: framework
 slug: agno
-schema_version: 1.2
+schema_version: 3.0
 title: Agno
+status: discovered
 category: framework-category/agents
 tagline: The self-managing agent platform
 language: Python

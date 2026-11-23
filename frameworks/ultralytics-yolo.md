@@ -2,8 +2,9 @@
 id: framework/ultralytics-yolo
 type: framework
 slug: ultralytics-yolo
-schema_version: 1.1
+schema_version: 3.0
 title: Ultralytics YOLO
+status: curated
 kind: library
 category: framework-category/computer-vision
 subcategory: detection-segmentation
@@ -39,7 +40,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - Ultralytics
+  - organization/ultralytics
 alternatives:
 - framework/detectron2
 - framework/mmdetection
@@ -75,6 +76,4 @@ sources:
   title: ultralytics — PyPI
 ---
 
-## Overview
 
-Ultralytics YOLO is a family of real-time computer vision models available through one Python package and CLI. It covers object detection, instance and semantic segmentation, depth estimation, classification, pose estimation and oriented bounding boxes, and can track detected objects across video frames. Models can be trained, validated, run and exported to deployment formats such as ONNX, TensorRT and OpenVINO.

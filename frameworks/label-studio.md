@@ -2,8 +2,9 @@
 id: framework/label-studio
 type: framework
 slug: label-studio
-schema_version: 1.2
+schema_version: 3.0
 title: Label Studio
+status: discovered
 category: framework-category/data
 tagline: Label Studio is a multi-type data labeling and annotation tool with standardized output format
 language: TypeScript

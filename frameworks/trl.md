@@ -2,8 +2,9 @@
 id: framework/trl
 type: framework
 slug: trl
-schema_version: 1.2
+schema_version: 3.0
 title: TRL
+status: discovered
 kind: library
 category: framework-category/fine-tuning
 tagline: Library for post-training foundation models with supervised fine-tuning (SFT), Group Relative Policy Optimization (GRPO), Direct Preference Optimization (DPO) and other trainers, built on Transformers.
@@ -32,3 +33,5 @@ sources:
 - url: https://huggingface.co/docs/trl/index
   title: TRL documentation
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/stagehand
 type: framework
 slug: stagehand
-schema_version: 1.2
+schema_version: 3.0
 title: Stagehand
+status: discovered
 category: framework-category/agents
 tagline: The SDK to extract data and interact with any site on the web.
 language: TypeScript

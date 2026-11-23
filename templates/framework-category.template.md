@@ -2,7 +2,7 @@
 id: framework-category/<slug>
 type: framework-category
 slug: <slug>
-schema_version: 2.1
+schema_version: 3.0              # the schema's current version; the schema refuses any other
 title: "<Human Readable Title>"
 label: "<Category name for the section heading>"
 layer: <build|train|data|run|operate|domain|other>   # the layer of the AI stack; the categories page groups by it
@@ -23,8 +23,6 @@ key_concepts:
 canonical_reading:
   - title: "<canonical doc/paper title>"
     url: "<url>"
-did_you_know:
-  - "<a surprising, true, cited-elsewhere fact>"
 aliases: ["<other written name>"]
 tags: [<tag>]
 updated: <YYYY-MM-DD>

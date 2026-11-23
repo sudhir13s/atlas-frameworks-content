@@ -2,8 +2,9 @@
 id: framework/vllm
 type: framework
 slug: vllm
-schema_version: 1.1
+schema_version: 3.0
 title: vLLM
+status: curated
 kind: tool
 category: framework-category/llm-frameworks
 subcategory: inference-engine
@@ -78,6 +79,4 @@ sources:
   title: vllm — PyPI
 ---
 
-## Overview
 
-vLLM is a community-maintained library for LLM inference and serving. It manages attention key and value memory with PagedAttention, batches incoming requests continuously, and serves models through an OpenAI-compatible API server. It runs on NVIDIA, AMD and Intel GPUs and on x86, ARM and PowerPC CPUs, with plugins for other hardware such as Google TPUs.

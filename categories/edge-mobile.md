@@ -2,7 +2,7 @@
 id: framework-category/edge-mobile
 type: framework-category
 slug: edge-mobile
-schema_version: 2.1
+schema_version: 3.0
 title: Edge and Mobile
 label: Edge and Mobile
 layer: run
@@ -11,3 +11,5 @@ tags: []
 updated: '2026-11-21'
 sources: []
 ---
+
+

@@ -2,7 +2,7 @@
 id: framework-category/evaluation
 type: framework-category
 slug: evaluation
-schema_version: 2.1
+schema_version: 3.0
 title: Evaluation
 label: Evaluation
 layer: operate
@@ -11,3 +11,5 @@ tags: []
 updated: '2026-11-21'
 sources: []
 ---
+
+

@@ -2,8 +2,9 @@
 id: framework/browser-use
 type: framework
 slug: browser-use
-schema_version: 1.2
+schema_version: 3.0
 title: Browser Use
+status: discovered
 category: framework-category/agents
 tagline: Open-source Python library for AI browser agents.
 language: Python

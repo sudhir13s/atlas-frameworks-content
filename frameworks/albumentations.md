@@ -2,8 +2,9 @@
 id: framework/albumentations
 type: framework
 slug: albumentations
-schema_version: 1.1
+schema_version: 3.0
 title: AlbumentationsX
+status: curated
 kind: library
 category: framework-category/computer-vision
 subcategory: augmentation
@@ -66,6 +67,4 @@ sources:
   title: albumentationsx — PyPI
 ---
 
-## Overview
 
-AlbumentationsX is a Python library for image augmentation, which creates new training samples from existing data. One consistent interface covers RGB, grayscale and multispectral images, masks, bounding boxes and keypoints, and the library also has 3D and medical-imaging transforms.

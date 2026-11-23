@@ -2,8 +2,9 @@
 id: framework/mlflow
 type: framework
 slug: mlflow
-schema_version: 1.1
+schema_version: 3.0
 title: MLflow
+status: curated
 kind: tool
 category: framework-category/mlops
 subcategory: experiment-tracking
@@ -77,6 +78,4 @@ sources:
   title: mlflow — PyPI
 ---
 
-## Overview
 
-MLflow is an open source platform for agents, LLMs and ML models that helps teams debug, evaluate, monitor and optimize AI applications. For LLM and agent work it provides tracing, evaluation, prompt management, prompt optimization and an AI Gateway; for model training it provides experiment tracking, model evaluation, a model registry and deployment. It runs locally, on-premises, on cloud platforms or as a managed service.

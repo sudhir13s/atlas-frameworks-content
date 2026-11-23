@@ -2,8 +2,9 @@
 id: framework/pyrit
 type: framework
 slug: pyrit
-schema_version: 1.2
+schema_version: 3.0
 title: PyRIT
+status: discovered
 category: framework-category/guardrails
 tagline: Open-source AI red teaming toolkit from Microsoft. Test generative AI systems with automated scans, adaptive multi-turn attacks, and a web UI.
 language: Python
@@ -39,3 +40,5 @@ sources:
 - url: https://microsoft.github.io/PyRIT/
   title: PyRIT documentation
 ---
+
+

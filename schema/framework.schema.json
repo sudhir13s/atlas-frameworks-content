@@ -2,9 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://theaiatlas.dev/schema/frameworks/framework.schema.json",
   "title": "framework",
-  "allOf": [{ "$ref": "_shared.schema.json#/$defs/base" }],
+  "unevaluatedProperties": false,
+  "allOf": [
+    { "$ref": "_shared.schema.json#/$defs/base" },
+    {
+      "description": "a curated record carries the hand-written fields; a discovered one holds repository facts only, so none of them is required of it",
+      "if": { "properties": { "status": { "const": "curated" } }, "required": ["status"] },
+      "then": { "required": ["subcategory", "description", "best_for", "key_features", "use_cases", "pros"] }
+    }
+  ],
   "properties": {
     "type": { "const": "framework" },
+    "schema_version": { "const": 3.0 },
+    "status": {
+      "type": "string",
+      "enum": ["curated", "discovered"],
+      "description": "curated: a person wrote the record's prose and judgements; discovered: the discovery step copied it from repository and registry facts and nobody has written it yet"
+    },
     "kind": {
       "type": "string",
       "enum": ["framework", "library", "tool"],
@@ -17,7 +31,7 @@
     },
     "subcategory": { "type": "string", "description": "finer grouping inside the category, as the source names it" },
     "tagline": { "type": "string" },
-    "description": { "type": "string", "description": "absent means the record has no prose yet" },
+    "description": { "type": "string", "description": "what the project is, in prose; its only home (the body does not repeat it); required of a curated record" },
     "best_for": { "type": "string" },
     "not_ideal_for": { "type": "string" },
     "key_features": { "type": "array", "items": { "type": "string" } },
@@ -46,7 +60,16 @@
       "additionalProperties": false,
       "properties": {
         "type": { "type": "string", "enum": ["corporate", "foundation", "community"] },
-        "orgs": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        "orgs": {
+          "type": "array",
+          "description": "who backs the project, each entry in one of two shapes: the ID of an organization record (models repository), or the organization's name when it has no record",
+          "items": {
+            "oneOf": [
+              { "type": "string", "pattern": "^organization/[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "FK → organization/<slug>" },
+              { "type": "string", "minLength": 1, "not": { "pattern": "^[a-z0-9-]+/[a-z0-9]+(?:-[a-z0-9]+)*$" }, "description": "a name, as the source writes it" }
+            ]
+          }
+        }
       }
     },
     "alternatives": {
@@ -76,6 +99,6 @@
       }
     }
   },
-  "required": ["category"],
+  "required": ["status", "category"],
   "anyOf": [{ "required": ["license_spdx"] }, { "required": ["license_note"] }]
 }

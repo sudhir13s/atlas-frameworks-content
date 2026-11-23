@@ -2,8 +2,9 @@
 id: framework/face-recognition
 type: framework
 slug: face-recognition
-schema_version: 1.2
+schema_version: 3.0
 title: Face Recognition
+status: discovered
 category: framework-category/computer-vision
 tagline: Facial recognition API for Python and the command line.
 language: Python

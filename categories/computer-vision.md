@@ -2,7 +2,7 @@
 id: framework-category/computer-vision
 type: framework-category
 slug: computer-vision
-schema_version: 2.1
+schema_version: 3.0
 title: Computer Vision
 label: Computer Vision
 layer: domain
@@ -11,3 +11,5 @@ tags: []
 updated: '2026-11-21'
 sources: []
 ---
+
+

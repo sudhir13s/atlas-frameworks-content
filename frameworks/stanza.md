@@ -2,8 +2,9 @@
 id: framework/stanza
 type: framework
 slug: stanza
-schema_version: 1.1
+schema_version: 3.0
 title: Stanza
+status: curated
 kind: library
 category: framework-category/nlp
 subcategory: core-library
@@ -69,6 +70,4 @@ sources:
   title: stanza — PyPI
 ---
 
-## Overview
 
-Stanza is the Stanford NLP Group's official Python library for linguistic analysis of many human languages. Its neural pipeline, built on PyTorch, covers tokenization, multi-word token expansion, lemmatization, part-of-speech and morphological tagging, dependency parsing and named entity recognition using the Universal Dependencies formalism. It also includes the official Python interface to the Java Stanford CoreNLP package.

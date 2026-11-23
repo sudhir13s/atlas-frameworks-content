@@ -2,8 +2,9 @@
 id: framework/weaviate
 type: framework
 slug: weaviate
-schema_version: 1.1
+schema_version: 3.0
 title: Weaviate
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
@@ -78,6 +79,4 @@ sources:
 license_note: BSD-3-Clause outside the wl directory; code in the wl directory is under a separate Weaviate enterprise licence
 ---
 
-## Overview
 
-Weaviate is an open-source, cloud-native vector database that stores both objects and vectors. It combines vector similarity search with keyword filtering, retrieval-augmented generation (RAG) and reranking in a single query interface. Vectors can be created at import time by integrated model providers or imported as pre-computed embeddings, and it runs self-hosted with Docker or Kubernetes or as Weaviate Cloud.

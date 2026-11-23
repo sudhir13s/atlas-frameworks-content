@@ -2,8 +2,9 @@
 id: framework/peft
 type: framework
 slug: peft
-schema_version: 1.2
+schema_version: 3.0
 title: PEFT
+status: discovered
 category: framework-category/fine-tuning
 tagline: Parameter-Efficient Fine-Tuning (PEFT) methods adapt large pretrained models to downstream applications by fine-tuning only a small number of (extra) model parameters.
 language: Python

@@ -2,8 +2,9 @@
 id: framework/ollama
 type: framework
 slug: ollama
-schema_version: 1.1
+schema_version: 3.0
 title: Ollama
+status: curated
 kind: tool
 category: framework-category/llm-frameworks
 subcategory: inference-runtime
@@ -71,6 +72,4 @@ sources:
   title: OpenAI compatibility
 ---
 
-## Overview
 
-Ollama runs open models on your own computer or through Ollama's cloud models, from a CLI, a REST API and official Python and JavaScript libraries. It uses llama.cpp as its supported backend and can connect models to desktop apps and coding agents.

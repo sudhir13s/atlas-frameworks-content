@@ -2,8 +2,9 @@
 id: framework/instructor
 type: framework
 slug: instructor
-schema_version: 1.2
+schema_version: 3.0
 title: Instructor
+status: discovered
 kind: library
 category: framework-category/llm-frameworks
 tagline: Structured outputs for large language models (LLMs), validated with Pydantic models.
@@ -37,3 +38,5 @@ sources:
 - url: https://python.useinstructor.com/
   title: Instructor documentation
 ---
+
+

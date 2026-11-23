@@ -2,8 +2,9 @@
 id: framework/milvus
 type: framework
 slug: milvus
-schema_version: 1.1
+schema_version: 3.0
 title: Milvus
+status: curated
 kind: tool
 category: framework-category/vector-dbs
 subcategory: self-hosted
@@ -79,6 +80,4 @@ sources:
   title: pymilvus — PyPI
 ---
 
-## Overview
 
-Milvus is an open-source vector database written in Go and C++ for organizing and searching unstructured data such as text, images and multi-modal information. It has a distributed, Kubernetes-native architecture that separates compute and storage, and also runs as a single-machine Standalone server or as Milvus Lite, a Python library. The project is hosted by the LF AI & Data Foundation, with Zilliz as its major contributor.

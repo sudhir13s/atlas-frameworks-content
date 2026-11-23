@@ -2,8 +2,9 @@
 id: framework/rasa
 type: framework
 slug: rasa
-schema_version: 1.2
+schema_version: 3.0
 title: Rasa Open Source
+status: discovered
 category: framework-category/nlp
 tagline: 'Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more.'
 language: Python

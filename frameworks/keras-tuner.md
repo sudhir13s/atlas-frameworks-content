@@ -2,8 +2,9 @@
 id: framework/keras-tuner
 type: framework
 slug: keras-tuner
-schema_version: 1.1
+schema_version: 3.0
 title: KerasTuner
+status: curated
 kind: library
 category: framework-category/automl
 subcategory: hyperparameter-tuning
@@ -66,6 +67,4 @@ sources:
   title: keras-tuner — PyPI
 ---
 
-## Overview
 
-Hyperparameter optimization framework for Keras models. Search spaces are configured with a define-by-run syntax inside the function that builds the model. It includes Bayesian Optimization, Hyperband and Random Search and is designed to be extended with new search algorithms.

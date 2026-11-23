@@ -2,8 +2,9 @@
 id: framework/flax
 type: framework
 slug: flax
-schema_version: 1.1
+schema_version: 3.0
 title: Flax
+status: curated
 kind: library
 category: framework-category/training
 subcategory: high-level-api
@@ -34,7 +35,7 @@ maturity: experimental
 backing:
   type: corporate
   orgs:
-  - Google DeepMind
+  - organization/google-deepmind
 ecosystem_connections:
 - framework/jax
 registry_signals:
@@ -61,6 +62,4 @@ sources:
   title: flax — PyPI
 ---
 
-## Overview
 
-Flax is a neural network library and ecosystem for JAX designed for flexibility, developed in close collaboration with the JAX team. Its current API, Flax NNX, adds first class support for Python reference semantics so models are regular Python objects, and it evolved from the Flax Linen API, which is not being deprecated. It ships a neural network API, utilities for replicated training, serialization, checkpointing and metrics, and educational examples.

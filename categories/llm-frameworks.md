@@ -2,7 +2,7 @@
 id: framework-category/llm-frameworks
 type: framework-category
 slug: llm-frameworks
-schema_version: 2.1
+schema_version: 3.0
 title: LLM Frameworks
 label: LLM Frameworks
 layer: build
@@ -62,3 +62,5 @@ sources:
   title: LiteLLM repository
   trust: 0.9
 ---
+
+

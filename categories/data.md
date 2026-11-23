@@ -2,7 +2,7 @@
 id: framework-category/data
 type: framework-category
 slug: data
-schema_version: 2.1
+schema_version: 3.0
 title: Data & ETL Frameworks
 label: Data & ETL
 layer: data
@@ -61,3 +61,5 @@ sources:
   title: Hidden Technical Debt in Machine Learning Systems
   trust: 0.9
 ---
+
+

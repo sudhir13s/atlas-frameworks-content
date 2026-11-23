@@ -2,8 +2,9 @@
 id: framework/opencv
 type: framework
 slug: opencv
-schema_version: 1.1
+schema_version: 3.0
 title: OpenCV
+status: curated
 kind: library
 category: framework-category/computer-vision
 subcategory: core-library
@@ -72,6 +73,4 @@ sources:
   title: opencv-python — PyPI
 ---
 
-## Overview
 
-OpenCV is an open-source computer vision and machine learning software library with both classic and modern algorithms. They detect and recognise faces, identify objects, classify human actions in video, track camera and object motion, extract 3D models and stitch images into panoramas. It has interfaces for C++, Python, Java and JavaScript and runs on Windows, Linux, macOS, Android and iOS.

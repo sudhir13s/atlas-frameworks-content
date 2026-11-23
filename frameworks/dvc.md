@@ -2,8 +2,9 @@
 id: framework/dvc
 type: framework
 slug: dvc
-schema_version: 1.1
+schema_version: 3.0
 title: DVC (Data Version Control)
+status: curated
 kind: tool
 category: framework-category/mlops
 subcategory: data-versioning
@@ -69,6 +70,4 @@ sources:
   title: dvc — PyPI
 ---
 
-## Overview
 
-DVC is a command line tool and VS Code extension for developing reproducible machine learning projects. It stores data and models in cloud or on-premise storage while keeping their version information in a Git repository. DVC pipelines connect code and data, and experiments are tracked in the local Git repo and compared by parameters and metrics.

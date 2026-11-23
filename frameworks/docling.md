@@ -2,8 +2,9 @@
 id: framework/docling
 type: framework
 slug: docling
-schema_version: 1.2
+schema_version: 3.0
 title: Docling
+status: discovered
 category: framework-category/rag
 tagline: Document processing that parses diverse formats, including advanced PDF understanding, with integrations for the generative AI ecosystem.
 language: Python
@@ -38,3 +39,5 @@ sources:
 - url: https://docling-project.github.io/docling/
   title: Docling documentation
 ---
+
+

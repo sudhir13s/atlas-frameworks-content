@@ -2,8 +2,9 @@
 id: framework/keras
 type: framework
 slug: keras
-schema_version: 1.1
+schema_version: 3.0
 title: Keras
+status: curated
 kind: framework
 category: framework-category/training
 subcategory: high-level-api
@@ -74,6 +75,4 @@ sources:
   title: keras — PyPI
 ---
 
-## Overview
 
-Multi-backend deep learning framework that runs on JAX, TensorFlow and PyTorch, with OpenVINO as an inference-only backend. It is used to build and train models for computer vision, natural language processing, audio processing, timeseries forecasting and recommender systems. It is intended as a drop-in replacement for tf.keras when using the TensorFlow backend.

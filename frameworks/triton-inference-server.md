@@ -2,8 +2,9 @@
 id: framework/triton-inference-server
 type: framework
 slug: triton-inference-server
-schema_version: 1.1
+schema_version: 3.0
 title: Triton Inference Server
+status: curated
 kind: tool
 category: framework-category/llm-serving
 subcategory: model-serving
@@ -42,7 +43,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - NVIDIA
+  - organization/nvidia
 alternatives:
 - framework/bentoml
 - framework/ray-serve
@@ -82,6 +83,4 @@ sources:
   title: tritonclient — PyPI
 ---
 
-## Overview
 
-Triton Inference Server is open source inference serving software from NVIDIA. It deploys models from multiple deep learning and machine learning frameworks, including TensorRT, PyTorch, ONNX, OpenVINO, Python and RAPIDS FIL, across cloud, data center, edge and embedded devices on NVIDIA GPUs, x86 and ARM CPUs, or AWS Inferentia.

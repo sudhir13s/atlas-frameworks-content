@@ -2,7 +2,7 @@
 id: framework-category/fine-tuning
 type: framework-category
 slug: fine-tuning
-schema_version: 2.1
+schema_version: 3.0
 title: Fine-tuning & PEFT
 label: Fine-tuning & PEFT
 layer: train
@@ -63,3 +63,5 @@ sources:
   title: 'QLoRA: Efficient Finetuning of Quantized LLMs'
   trust: 0.9
 ---
+
+

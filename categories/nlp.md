@@ -2,7 +2,7 @@
 id: framework-category/nlp
 type: framework-category
 slug: nlp
-schema_version: 2.1
+schema_version: 3.0
 title: Natural Language Processing
 label: Natural Language Processing
 layer: domain

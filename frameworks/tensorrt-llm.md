@@ -2,8 +2,9 @@
 id: framework/tensorrt-llm
 type: framework
 slug: tensorrt-llm
-schema_version: 1.1
+schema_version: 3.0
 title: TensorRT LLM
+status: curated
 kind: library
 category: framework-category/llm-frameworks
 subcategory: inference-engine
@@ -41,7 +42,7 @@ maturity: experimental
 backing:
   type: corporate
   orgs:
-  - NVIDIA
+  - organization/nvidia
 alternatives:
 - framework/vllm
 - framework/llama-cpp
@@ -81,6 +82,4 @@ sources:
   title: tensorrt-llm — PyPI
 ---
 
-## Overview
 
-TensorRT LLM is NVIDIA's open-source library for optimizing LLM and visual generation inference on NVIDIA GPUs. It is architected on PyTorch and provides a high-level Python LLM API for single-GPU, multi-GPU and multi-node deployments, with custom kernels for attention, GEMM and MoE operations and runtime optimizations such as speculative decoding and disaggregated serving.

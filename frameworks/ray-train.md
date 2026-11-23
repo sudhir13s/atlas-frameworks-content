@@ -2,8 +2,9 @@
 id: framework/ray-train
 type: framework
 slug: ray-train
-schema_version: 1.1
+schema_version: 3.0
 title: Ray Train
+status: curated
 kind: library
 category: framework-category/distributed-training
 subcategory: training-framework
@@ -72,6 +73,4 @@ sources:
   title: Website
 ---
 
-## Overview
 
-Ray Train is a library for distributed training and fine-tuning built on Ray. It scales model training code from a single machine to a cluster of machines. It supports PyTorch, PyTorch Lightning, Hugging Face Transformers, JAX, TensorFlow, Keras, XGBoost, LightGBM, DeepSpeed and Horovod.

@@ -2,8 +2,9 @@
 id: framework/metagpt
 type: framework
 slug: metagpt
-schema_version: 1.2
+schema_version: 3.0
 title: MetaGPT
+status: discovered
 category: framework-category/agents
 tagline: 'The Multi-Agent Framework: assign different roles to GPTs to form a collaborative entity for complex tasks.'
 language: Python

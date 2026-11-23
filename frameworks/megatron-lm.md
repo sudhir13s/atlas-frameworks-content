@@ -2,8 +2,9 @@
 id: framework/megatron-lm
 type: framework
 slug: megatron-lm
-schema_version: 1.1
+schema_version: 3.0
 title: Megatron-LM
+status: curated
 kind: framework
 category: framework-category/distributed-training
 subcategory: training-framework
@@ -38,7 +39,7 @@ maturity: production
 backing:
   type: corporate
   orgs:
-  - NVIDIA
+  - organization/nvidia
 alternatives:
 - framework/deepspeed
 - framework/colossalai
@@ -73,6 +74,4 @@ sources:
 license_note: BSD-3-Clause for NVIDIA code per the LICENSE file, with Apache-2.0 and other licences for included third-party code (the README badge and the megatron-core PyPI licence field say Apache 2.0)
 ---
 
-## Overview
 
-Megatron-LM is a GPU-optimized library from NVIDIA for training transformer models at scale. The repository contains Megatron Core, a composable library of transformer building blocks, parallelism strategies and mixed precision support for custom training frameworks, and Megatron-LM, a reference example with pre-configured training scripts.

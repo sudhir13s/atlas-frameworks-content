@@ -2,8 +2,9 @@
 id: framework/surya
 type: framework
 slug: surya
-schema_version: 1.2
+schema_version: 3.0
 title: Surya
+status: discovered
 category: framework-category/computer-vision
 tagline: OCR, layout analysis, reading order, table recognition in 90+ languages
 language: Python

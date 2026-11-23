@@ -2,8 +2,9 @@
 id: framework/sglang
 type: framework
 slug: sglang
-schema_version: 1.2
+schema_version: 3.0
 title: SGLang
+status: discovered
 category: framework-category/llm-serving
 tagline: SGLang is a serving framework for large language models and multimodal models.
 language: Python

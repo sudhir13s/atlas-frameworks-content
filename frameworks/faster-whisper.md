@@ -2,8 +2,9 @@
 id: framework/faster-whisper
 type: framework
 slug: faster-whisper
-schema_version: 1.2
+schema_version: 3.0
 title: faster-whisper
+status: discovered
 category: framework-category/inference
 tagline: Faster Whisper transcription with CTranslate2
 language: Python

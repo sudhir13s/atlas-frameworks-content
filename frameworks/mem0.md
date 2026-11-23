@@ -2,8 +2,9 @@
 id: framework/mem0
 type: framework
 slug: mem0
-schema_version: 1.2
+schema_version: 3.0
 title: Mem0
+status: discovered
 category: framework-category/agents
 tagline: 'The Memory Layer for AI Agents: drop-in memory infrastructure for AI agents and apps.'
 language: Python

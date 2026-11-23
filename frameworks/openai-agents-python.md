@@ -2,8 +2,9 @@
 id: framework/openai-agents-python
 type: framework
 slug: openai-agents-python
-schema_version: 1.2
+schema_version: 3.0
 title: OpenAI Agents SDK
+status: discovered
 category: framework-category/agents
 tagline: A lightweight framework for multi-agent workflows.
 language: Python

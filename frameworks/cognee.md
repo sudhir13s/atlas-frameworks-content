@@ -2,8 +2,9 @@
 id: framework/cognee
 type: framework
 slug: cognee
-schema_version: 1.2
+schema_version: 3.0
 title: Cognee
+status: discovered
 category: framework-category/rag
 tagline: Cognee is the open-source AI memory platform for agents.
 language: Python

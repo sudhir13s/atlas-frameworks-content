@@ -2,8 +2,9 @@
 id: framework/great-expectations
 type: framework
 slug: great-expectations
-schema_version: 1.1
+schema_version: 3.0
 title: Great Expectations
+status: curated
 kind: framework
 category: framework-category/data
 subcategory: data-quality
@@ -66,6 +67,4 @@ sources:
   title: great-expectations — PyPI
 ---
 
-## Overview
 
-GX Core is a Python library for data quality testing built on Expectations, which are expressive and extensible unit tests for data. Expectations are grouped into suites and run against data sources such as SQL tables and Spark DataFrames through validation definitions and Checkpoints. Data Docs turn Expectation Suites and validation results into human-readable documentation.

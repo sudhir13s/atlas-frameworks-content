@@ -2,8 +2,9 @@
 id: framework/supervision
 type: framework
 slug: supervision
-schema_version: 1.2
+schema_version: 3.0
 title: supervision
+status: discovered
 category: framework-category/computer-vision
 tagline: We write your reusable computer vision tools.
 language: Python

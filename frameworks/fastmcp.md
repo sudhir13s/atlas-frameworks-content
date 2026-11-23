@@ -2,8 +2,9 @@
 id: framework/fastmcp
 type: framework
 slug: fastmcp
-schema_version: 1.2
+schema_version: 3.0
 title: FastMCP
+status: discovered
 category: framework-category/agents
 tagline: The fast, Pythonic way to build MCP servers and clients.
 language: Python

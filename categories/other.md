@@ -2,7 +2,7 @@
 id: framework-category/other
 type: framework-category
 slug: other
-schema_version: 2.1
+schema_version: 3.0
 title: Other
 label: Other
 layer: other
@@ -11,3 +11,5 @@ tags: []
 updated: '2026-11-21'
 sources: []
 ---
+
+

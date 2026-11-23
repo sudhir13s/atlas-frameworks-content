@@ -2,8 +2,9 @@
 id: framework/jax
 type: framework
 slug: jax
-schema_version: 1.1
+schema_version: 3.0
 title: JAX
+status: curated
 kind: library
 category: framework-category/training
 subcategory: core-framework
@@ -68,6 +69,4 @@ sources:
   title: jax — PyPI
 ---
 
-## Overview
 
-Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning. It automatically differentiates native Python and NumPy functions and uses XLA to compile programs for TPUs, GPUs and other accelerators. Its transformations, including grad, jit and vmap, compose arbitrarily.

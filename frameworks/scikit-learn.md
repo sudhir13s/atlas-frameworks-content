@@ -2,8 +2,9 @@
 id: framework/scikit-learn
 type: framework
 slug: scikit-learn
-schema_version: 1.1
+schema_version: 3.0
 title: scikit-learn
+status: curated
 kind: library
 category: framework-category/training
 subcategory: classical-ml
@@ -76,6 +77,4 @@ sources:
   title: scikit-learn — PyPI
 ---
 
-## Overview
 
-scikit-learn is a Python module for machine learning built on top of SciPy. It provides tools for classification, regression, clustering, dimensionality reduction, model selection and preprocessing. Deep learning and reinforcement learning are outside its scope.

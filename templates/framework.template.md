@@ -2,18 +2,19 @@
 id: framework/<slug>
 type: framework
 slug: <slug>
-schema_version: 1.2
+schema_version: 3.0              # the schema's current version; the schema refuses any other
 title: "<Project name>"
+status: curated                    # curated (a person wrote it; the six fields marked * are required) | discovered (repository facts only)
 kind: framework                    # framework | library | tool; omit until someone has judged it
 category: framework-category/<slug>
-subcategory: <finer-grouping>
+subcategory: <finer-grouping>     # *
 tagline: "<one line>"
-description: "<what it is>"        # omit description and the body for a record with no prose yet
-best_for: "<who should pick it>"
+description: "<what it is>"        # * the prose, stored once: the record has no body
+best_for: "<who should pick it>"   # *
 not_ideal_for: "<who should not>"
-key_features: ["<feature>"]
-use_cases: ["<use case>"]
-pros: ["<pro>"]
+key_features: ["<feature>"]       # *
+use_cases: ["<use case>"]         # *
+pros: ["<pro>"]                   # *
 cons: ["<con>"]
 language: <main implementation language>
 languages_supported: [<language>]
@@ -25,7 +26,7 @@ website_url: "<url>"
 maturity: production               # experimental | stable | production
 backing:
   type: corporate                  # corporate | foundation | community
-  orgs: ["<organization>"]
+  orgs: [organization/<slug>, "<name of an organization with no record>"]
 alternatives: [framework/<slug>]
 ecosystem_connections: [framework/<slug>]
 registry_signals:                  # owned by the jobs; numbers that change
@@ -42,6 +43,3 @@ updated: <YYYY-MM-DD>
 sources:
   - { url: "<url>", title: "<title>" }
 ---
-
-## Overview
-<What the project is and what it is for; the description, verbatim.>

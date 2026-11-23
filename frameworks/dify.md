@@ -2,8 +2,9 @@
 id: framework/dify
 type: framework
 slug: dify
-schema_version: 1.2
+schema_version: 3.0
 title: Dify
+status: discovered
 category: framework-category/llm-frameworks
 tagline: Build agentic workflows and RAG pipelines, with AI model and tool support, on one collaborative workspace. Deploy on cloud, VPC, or self-hosted.
 language: Python

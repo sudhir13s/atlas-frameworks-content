@@ -2,7 +2,7 @@
 id: framework-category/llm-serving
 type: framework-category
 slug: llm-serving
-schema_version: 2.1
+schema_version: 3.0
 title: Deployment & Serving
 label: Deployment & Serving
 layer: run
@@ -63,3 +63,5 @@ sources:
   title: TensorFlow Serving repository
   trust: 0.9
 ---
+
+

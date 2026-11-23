@@ -2,8 +2,9 @@
 id: framework/google-adk
 type: framework
 slug: google-adk
-schema_version: 1.1
+schema_version: 3.0
 title: Agent Development Kit (ADK)
+status: curated
 kind: framework
 category: framework-category/llm-frameworks
 subcategory: agent-framework
@@ -77,6 +78,4 @@ sources:
   title: google-adk — PyPI
 ---
 
-## Overview
 
-Open-source, code-first framework from Google for building, evaluating and deploying AI agents. It provides a graph-based workflow runtime, multi-agent hierarchies, agent-to-agent task delegation, and tools from custom functions, OpenAPI specs or MCP. It is optimized for Gemini but is model-agnostic and deployment-agnostic.

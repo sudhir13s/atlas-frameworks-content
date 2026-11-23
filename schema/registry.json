@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.4",
+  "schema_version": "3.0",
   "shared": "schema/_shared.schema.json",
   "types": {
     "use-case": {
@@ -19,8 +19,7 @@
       "folder": "frameworks",
       "schema": "schema/framework.schema.json",
       "id_prefix": "framework/",
-      "sections": [],
-      "optional_sections": ["Overview"]
+      "sections": []
     }
   }
 }

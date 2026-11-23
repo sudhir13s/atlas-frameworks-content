@@ -2,8 +2,9 @@
 id: framework/lightrag
 type: framework
 slug: lightrag
-schema_version: 1.2
+schema_version: 3.0
 title: LightRAG
+status: discovered
 category: framework-category/rag
 tagline: Simple and Fast Retrieval-Augmented Generation (EMNLP 2025).
 language: Python

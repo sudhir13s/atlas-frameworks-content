@@ -2,8 +2,9 @@
 id: framework/flair
 type: framework
 slug: flair
-schema_version: 1.1
+schema_version: 3.0
 title: Flair
+status: curated
 kind: framework
 category: framework-category/nlp
 subcategory: sequence-labeling
@@ -66,6 +67,4 @@ sources:
   title: Documentation — Transformer embeddings
 ---
 
-## Overview
 
-Flair is an NLP framework built directly on PyTorch and developed by Humboldt University of Berlin. It applies pre-trained models for named entity recognition, sentiment analysis, part-of-speech tagging, sense disambiguation and classification, with special support for biomedical texts. Its interfaces combine word and document embeddings, including Flair embeddings and transformers.

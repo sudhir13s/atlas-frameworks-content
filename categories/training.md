@@ -2,7 +2,7 @@
 id: framework-category/training
 type: framework-category
 slug: training
-schema_version: 2.1
+schema_version: 3.0
 title: Training Frameworks
 label: Training
 layer: train
@@ -62,3 +62,5 @@ sources:
   title: Flax repository
   trust: 0.9
 ---
+
+

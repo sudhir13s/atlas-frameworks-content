@@ -2,8 +2,9 @@
 id: framework/graphiti
 type: framework
 slug: graphiti
-schema_version: 1.2
+schema_version: 3.0
 title: Graphiti
+status: discovered
 category: framework-category/rag
 tagline: Build real-time knowledge graphs for AI agents.
 language: Python

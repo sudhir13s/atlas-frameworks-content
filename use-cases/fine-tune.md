@@ -2,7 +2,7 @@
 id: use-case/fine-tune
 type: use-case
 slug: fine-tune
-schema_version: 2.0
+schema_version: 3.0
 title: Fine-tune an LLM
 label: Fine-tune an LLM
 order: 3

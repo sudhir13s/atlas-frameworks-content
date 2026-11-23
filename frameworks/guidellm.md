@@ -2,8 +2,9 @@
 id: framework/guidellm
 type: framework
 slug: guidellm
-schema_version: 1.2
+schema_version: 3.0
 title: GuideLLM
+status: discovered
 kind: tool
 category: framework-category/llm-serving
 tagline: Platform for evaluating how language models perform under real workloads and configurations, by simulating traffic against OpenAI-compatible and vLLM servers.
@@ -31,3 +32,5 @@ sources:
 - url: https://vllm-project.github.io/guidellm/stable/
   title: GuideLLM documentation
 ---
+
+

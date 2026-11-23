@@ -2,8 +2,9 @@
 id: framework/e2b
 type: framework
 slug: e2b
-schema_version: 1.2
+schema_version: 3.0
 title: E2B
+status: discovered
 category: framework-category/agents
 tagline: Open-source infrastructure that runs AI-generated code in isolated sandboxes in the cloud, controlled through Python and JavaScript SDKs.
 language: Python
@@ -39,3 +40,5 @@ sources:
 - url: https://e2b.dev/docs
   title: E2B documentation
 ---
+
+
