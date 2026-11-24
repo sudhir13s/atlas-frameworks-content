@@ -106,9 +106,6 @@ blocks:
   how_to_choose:
   - Start on one machine with Polars.
   - Move to Dask, Spark or Ray Data only when one machine cannot hold or finish the job.
-  browse:
-    label: All data tools
-    record: framework-category/data
 - id: labeling
   stage: process
   name: Labelling
@@ -219,7 +216,7 @@ tags:
 - lineage
 - feature-store
 - orchestration
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://airflow.apache.org/
   title: Apache Airflow

@@ -60,9 +60,6 @@ blocks:
   how_to_choose:
   - Reuse the deduplication and filtering choices the FineWeb authors ablated before designing new filters.
   - Run the same pipeline on a small sample first and read the output by hand.
-  browse:
-    label: All data tools
-    record: framework-category/data
 - id: tokenizer
   stage: data
   name: Tokenizer
@@ -192,7 +189,7 @@ tags:
 - distributed-training
 - tokenizer
 - evaluation
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://huggingface.co/datasets/HuggingFaceFW/fineweb
   title: HuggingFaceFW/fineweb, dataset card

@@ -32,9 +32,6 @@ blocks:
   how_to_choose:
   - 'A demo or internal tool in Python: one of these; a product front end: your own web app calling the same API.'
   - Restrict accepted file types at the interface so later steps only see formats they handle.
-  browse:
-    label: All app and UI tools
-    record: framework-category/other
 - id: speech-to-text
   stage: input
   name: Speech recognition
@@ -62,22 +59,23 @@ blocks:
   options:
   - record: framework/paddleocr
     choice: default
-    when: Apache-2.0 toolkit that recognises text in many languages and converts PDFs and images to Markdown or JSON with table and text coordinates.
+    when: Apache-2.0 toolkit that runs OCR in many languages, analyses the layout of skewed, warped and scanned pages, and converts PDFs and images to Markdown or JSON with table cell and text coordinates.
   - record: model/paddleocr-vl
     choice: alternative
     when: Pick it for a lightweight vision-language model built for document parsing, from the same project and licence.
   - record: framework/surya
     choice: alternative
-    when: Pick it for layout, reading order, HTML tables and inline LaTeX; its code is Apache-2.0 but its weights carry a modified OpenRAIL-M licence with commercial limits.
+    when: Pick it for OCR with layout analysis, reading order, tables as HTML with merged cells and inline LaTeX, written to a JSON results file; its code is Apache-2.0 but its weights carry a modified OpenRAIL-M licence with commercial limits.
   - record: framework/tesseract
     choice: alternative
-    when: Pick it for an Apache-2.0 library and command-line engine that reads many languages out of the box and outputs plain text, hOCR, PDF, TSV and ALTO.
+    when: Pick it for an Apache-2.0 library and command-line engine that reads PNG, JPEG and TIFF images in many languages and outputs plain text, hOCR, PDF, TSV, ALTO or PAGE.
   how_to_choose:
   - 'Need exact text, coordinates or tables for search and citation: run OCR; need only a question answered about the image: send it to the vision-language model.'
+  - 'Check the features your files need: OCR of scanned pages, table extraction, layout analysis with reading order, and an output format (Markdown, JSON, HTML or hOCR) the next step reads.'
   - Check model-weight licences before commercial use.
   browse:
-    label: All OCR models
-    record: task/ocr
+    label: All document parsing and OCR tools
+    record: framework-category/document-parsing
 - id: multimodal-embeddings
   stage: input
   name: Multimodal embeddings
@@ -110,8 +108,8 @@ blocks:
   - 'Need speech out of the same model: an omni model; need text out: a vision-language model.'
   - Compare candidates on the multimodal benchmarks below, then on your own files.
   browse:
-    label: All vision-language models
-    record: task/vision-language-models
+    label: All multimodal models
+    record: task-group/multimodal
 - id: model-serving
   stage: model
   name: Model serving
@@ -130,8 +128,8 @@ blocks:
   - Check that the engine lists your exact model before choosing it.
   - Send media in the same OpenAI-style request format so engines stay swappable.
   browse:
-    label: All serving tools
-    record: framework-category/llm-serving
+    label: All inference engines
+    record: framework-category/inference
 - id: text-to-speech
   stage: model
   name: Speech output
@@ -219,6 +217,9 @@ blocks:
   how_to_choose:
   - Log references to stored media rather than raw files, to keep traces small.
   - Prefer a tool that accepts OpenTelemetry so you can switch backends later.
+  browse:
+    label: All observability and tracing tools
+    record: framework-category/observability
 learn_next:
 - title: vLLM multimodal inputs
   url: https://docs.vllm.ai/en/latest/features/multimodal_inputs.html
@@ -239,7 +240,7 @@ tags:
 - speech
 - ocr
 - embeddings
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://github.com/gradio-app/gradio
   title: Gradio repository
@@ -270,6 +271,15 @@ sources:
   trust: 0.9
 - url: https://github.com/tesseract-ocr/tesseract
   title: Tesseract repository
+  trust: 0.9
+- url: https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/HEAD/README.md
+  title: PaddleOCR README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/datalab-to/surya/HEAD/README.md
+  title: Surya README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/tesseract-ocr/tesseract/HEAD/README.md
+  title: Tesseract README
   trust: 0.9
 - url: https://huggingface.co/google/siglip-so400m-patch14-384
   title: google/siglip-so400m-patch14-384 model card

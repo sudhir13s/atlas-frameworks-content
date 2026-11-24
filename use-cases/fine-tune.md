@@ -36,9 +36,6 @@ blocks:
   - Supervised fine-tuning (SFT) takes language-modelling or prompt-completion rows; Direct Preference Optimization (DPO) takes preference rows with a chosen and a rejected answer.
   - Use the conversational format (messages with a role and content) for chat models so their chat template is applied.
   - Split off the evaluation examples before training and never train on them.
-  browse:
-    label: All data tools
-    record: framework-category/data
 - id: base-model
   stage: prepare
   name: Base model
@@ -237,8 +234,8 @@ blocks:
   - Choose vLLM for GPU serving of one base model with several adapters.
   - Choose llama.cpp or Ollama when no data-centre GPU is available.
   browse:
-    label: All LLM serving frameworks
-    record: framework-category/llm-serving
+    label: All inference engines
+    record: framework-category/inference
 - id: monitoring
   stage: release
   name: Tracing and monitoring
@@ -256,6 +253,9 @@ blocks:
   how_to_choose:
   - Turn sampled production traces into evaluation examples so the next fine-tune is tested on real traffic.
   - Self-host when prompts and outputs may not leave your infrastructure.
+  browse:
+    label: All observability and tracing tools
+    record: framework-category/observability
 learn_next:
 - title: 'LoRA: Low-Rank Adaptation of Large Language Models'
   url: https://arxiv.org/abs/2106.09685
@@ -283,7 +283,7 @@ tags:
 - peft
 - evaluation
 - safety
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://huggingface.co/docs/trl/dataset_formats
   title: TRL documentation, dataset formats and types

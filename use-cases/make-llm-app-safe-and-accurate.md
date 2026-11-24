@@ -55,9 +55,6 @@ blocks:
   how_to_choose:
   - Use local rules for patterns that can be matched exactly and model-backed checks for meaning; NeMo Guardrails combines both in one policy.
   - Mask personal data in retrieved documents as well as in user messages.
-  browse:
-    label: All guardrail and safety tools
-    record: framework-category/guardrails
 - id: structured-output
   stage: model
   name: Structured output
@@ -157,9 +154,6 @@ blocks:
   how_to_choose:
   - Treat the model as an untrusted user and test the trust boundaries and access controls around it, as OWASP recommends.
   - Rerun the scan after every change to prompts, models or guardrails.
-  browse:
-    label: All guardrail and safety tools
-    record: framework-category/guardrails
 - id: safety-benchmarks
   stage: quality
   name: Safety benchmarks
@@ -222,7 +216,7 @@ tags:
 - evaluation
 - red-teaming
 - llm
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
   title: OWASP LLM01:2025 Prompt Injection

@@ -25,20 +25,27 @@ blocks:
   options:
   - record: framework/docling
     choice: default
-    when: MIT-licensed code hosted by the LF AI & Data Foundation that parses PDF, office, HTML and image files into one document model and exports Markdown or lossless JSON, with integrations for LangChain, LlamaIndex and Haystack.
+    when: MIT-licensed code hosted by the LF AI & Data Foundation that parses PDF, office, HTML and image files into one document model; it reads page layout, reading order and table structure, runs OCR on scanned PDFs and images, and exports Markdown, HTML or lossless JSON.
+  - record: framework/pymupdf
+    choice: alternative
+    when: Pick it for local PDF extraction without a GPU; it finds tables and exports them as Markdown, runs layout analysis that produces Markdown for RAG, outputs JSON or Markdown, and runs OCR through Tesseract; it is dual-licensed AGPL-3.0 or commercial.
+  - record: framework/unstructured
+    choice: alternative
+    when: Pick it when you want typed elements (Title, NarrativeText, Table) and built-in chunking; its hi_res strategy detects layout and extracts tables as HTML, and its ocr_only strategy runs Tesseract on scanned PDFs, under Apache-2.0.
   - record: framework/marker
     choice: alternative
-    when: Pick it for PDFs heavy in tables, equations and code blocks; its code is Apache-2.0 but its model weights use a modified OpenRAIL-M licence that limits commercial use above a funding or revenue threshold.
+    when: Pick it for PDFs heavy in tables and equations; it detects layout and reading order, sends scanned pages to the Surya OCR model and outputs Markdown, JSON, HTML or chunks; its code is Apache-2.0 but its model weights use a modified OpenRAIL-M licence that limits commercial use above a funding or revenue threshold.
   - record: framework/paddleocr
     choice: alternative
-    when: Pick it for scanned pages and images, where its PP-StructureV3 pipeline converts PDFs and images to Markdown or JSON under Apache-2.0.
+    when: Pick it for scanned pages and images; its layout model handles skewed, warped and scanned pages, PP-StructureV3 returns table cell coordinates, and results come out as Markdown or JSON under Apache-2.0.
   how_to_choose:
-  - Born-digital PDFs and office files need layout parsing; scanned pages also need optical character recognition (OCR).
-  - Check the model-weight licence, not only the code licence, before commercial use.
+  - 'Check the features your files need: OCR for scanned PDFs, table extraction, layout analysis with reading order, and an output format (Markdown, JSON or HTML) your chunker reads.'
+  - Born-digital PDFs and office files need layout parsing only; scanned pages also need optical character recognition (OCR).
+  - 'Check the code licence and any model-weight licence before commercial use: PyMuPDF is AGPL-3.0 or commercial, and Marker''s weights carry their own licence.'
   - Keep the source file and page for every parsed element so answers can cite it.
   browse:
-    label: All RAG data tools
-    record: framework-category/rag
+    label: All document parsing and OCR tools
+    record: framework-category/document-parsing
 - id: chunking
   stage: indexing
   name: Chunking
@@ -53,6 +60,12 @@ blocks:
   - record: framework/haystack
     choice: alternative
     when: Pick it when the rest of the system is a Haystack pipeline, which ships built-in indexing components.
+  - record: framework/chonkie
+    choice: alternative
+    when: Pick it for a standalone MIT-licensed chunking library with token, sentence, recursive, semantic, code and table chunkers, whose pipeline can also add embeddings and write the chunks to a vector database.
+  - record: framework/semantic-chunkers
+    choice: alternative
+    when: Pick it to split text, video or audio where embedding similarity changes, using an encoder from semantic-router; it is MIT-licensed.
   how_to_choose:
   - Split by document structure (headings, sections) first; fall back to length only when there is no structure.
   - Measure chunk size against retrieval metrics instead of fixing it once.
@@ -85,26 +98,55 @@ blocks:
   options:
   - record: framework/qdrant
     choice: default
-    when: Apache-2.0, fuses dense and sparse queries for hybrid search, filters on payload fields, and its Python client runs the same API in local mode without a server.
-  - record: framework/chromadb
+    when: Apache-2.0; it stores sparse vectors, runs BM25 full-text search on indexed payload fields, fuses dense and sparse results with RRF or DBSF in hybrid queries, filters on payload fields, and its Python client runs the same API in local mode without a server.
+  - record: framework/lancedb
     choice: alternative
-    when: Pick it for prototypes; it runs in-process in Python with metadata filters and moves to client-server mode later.
+    when: Pick it for prototypes and embedded use; it runs inside your process, ranks full-text search with BM25, merges it with vector search using reciprocal rank fusion by default and an optional reranker, and prefilters on metadata.
   - record: framework/pgvector
     choice: alternative
-    when: Pick it when your data already lives in Postgres; vectors sit next to the rest of your rows with ACID transactions and joins.
+    when: Pick it when your data already lives in Postgres; it stores sparse vectors, indexes queries with a WHERE clause, and pairs with Postgres full-text search for hybrid search, with reciprocal rank fusion or a cross-encoder applied in your own query or code.
   - record: framework/milvus
     choice: alternative
-    when: Pick it for horizontally scaled deployments; it runs as Lite, Standalone or distributed on Kubernetes and supports BM25 full-text and sparse vectors.
+    when: Pick it for horizontally scaled deployments as Lite, Standalone or distributed on Kubernetes; it turns text into sparse vectors for BM25 full-text search, merges hybrid search results with an RRF ranker, and filters on metadata.
   - record: framework/pinecone
     choice: alternative
-    when: Pick it when you want a service that serves full-text, semantic and hybrid search from one index, with embedding and reranking models hosted by Pinecone.
+    when: Pick it for a managed service; it serves BM25 full-text, sparse-vector and dense search in hybrid queries, filters by metadata, and reranks results with models hosted by Pinecone.
   how_to_choose:
   - Need metadata filtering (tenant, date, access rights) in the same query as similarity search.
-  - Need hybrid search when users type exact names, codes or identifiers.
+  - 'Need hybrid search when users type exact names, codes or identifiers: check for BM25 full-text search or sparse vectors next to dense vectors.'
+  - Check how hybrid results are merged, by built-in rank fusion such as reciprocal rank fusion (RRF) or by fusion you write yourself.
   - 'Already run Postgres and the corpus fits it: start with pgvector before adding a new system.'
   browse:
     label: All vector databases
     record: framework-category/vector-dbs
+- id: lexical-search
+  stage: query
+  name: Lexical search
+  purpose: Finds the chunks that contain the query's exact words, scored with BM25, so names, codes and identifiers that embeddings miss are still retrieved.
+  options:
+  - record: framework/bm25s
+    choice: default
+    when: MIT-licensed Python library that implements BM25 on Numpy sparse matrices, without Java or PyTorch dependencies, and returns the top-k documents with their scores.
+  - record: framework/opensearch
+    choice: alternative
+    when: Pick it for an Apache-2.0 search server; it scores keyword queries with Okapi BM25 by default, combines keyword and semantic results in hybrid queries with reciprocal rank fusion, filters vector search and reranks hits with a rerank processor.
+  - record: framework/elasticsearch
+    choice: alternative
+    when: Pick it when you already run Elastic; it runs full-text and vector search in one hybrid request with reciprocal rank fusion, filters approximate kNN search and reorders results with semantic re-rankers, under AGPL-3.0, SSPL or the Elastic License 2.0.
+  - record: framework/vespa
+    choice: alternative
+    when: Pick it for large corpora with ranking you define yourself; it has a bm25 rank feature, combines keyword and nearest-neighbour operators in one query, offers a reciprocal_rank_fusion function, filters nearest-neighbour search and re-ranks in phases, under Apache-2.0.
+  - record: framework/tantivy
+    choice: alternative
+    when: Pick it to embed full-text search in a Rust application, or in Python through tantivy-py; it is an MIT-licensed library with BM25 scoring, not a search server.
+  how_to_choose:
+  - Add lexical search when users type exact names, codes or identifiers; check that the tool scores with BM25.
+  - For hybrid search, check whether the tool merges keyword and vector results itself, and with which rank fusion method, such as reciprocal rank fusion (RRF).
+  - Check for metadata filtering (tenant, date, access rights) in the same query.
+  - If your vector database already offers BM25 and hybrid queries, use it before adding a second system.
+  browse:
+    label: All search engines and lexical search tools
+    record: framework-category/search-engines
 - id: retrieval-orchestration
   stage: query
   name: Retrieval and orchestration
@@ -112,19 +154,17 @@ blocks:
   options:
   - record: framework/llamaindex
     choice: default
-    when: MIT-licensed toolkit built around RAG, with data connectors, indexes, query engines, BM25, fusion and router retrievers, node postprocessors and rerankers in one place.
+    when: MIT-licensed toolkit built around RAG, with a BM25 retriever, Reciprocal Rerank Fusion and relative score fusion retrievers, metadata filters, and rerankers such as LLMRerank, SentenceTransformerRerank and CohereRerank as node postprocessors.
   - record: framework/langchain
     choice: alternative
-    when: Pick it when you need its integration library across model providers, vector stores and retrievers, or plan to grow into LangGraph agents.
+    when: Pick it when you need its integration library across model providers, vector stores and retrievers, or plan to grow into LangGraph agents; its EnsembleRetriever combines retrievers with rank fusion, and reranking comes through integrations such as CohereRerank.
   - record: framework/haystack
     choice: alternative
-    when: Pick it for explicit, inspectable pipelines with branches and loops that control retrieval, ranking, filtering and routing.
+    when: Pick it for explicit, inspectable pipelines; it has a BM25 retriever, a DocumentJoiner with reciprocal rank fusion, ranker components and metadata filters at query time.
   how_to_choose:
   - Pick one framework and keep the vector database, embedding model and model provider swappable behind it.
+  - Check for BM25 retrievers, fusion of several retrievers (such as reciprocal rank fusion) and reranker components, so hybrid retrieval needs no custom code.
   - Prefer explicit pipelines when you must audit exactly which chunks reached the prompt.
-  browse:
-    label: All LLM frameworks
-    record: framework-category/llm-frameworks
 - id: reranker
   stage: query
   name: Reranker
@@ -139,9 +179,16 @@ blocks:
   - record: model/jina-reranker-v2-base-multilingual
     choice: alternative
     when: Pick it for research and evaluation only; it is a multilingual cross-encoder licensed CC-BY-NC-4.0.
+  - record: framework/rerankers
+    choice: alternative
+    when: Pick it to call cross-encoder, T5, ColBERT, LLM and hosted API rerankers through one Apache-2.0 Python API, so the reranking model can be swapped without rewriting code.
+  - record: framework/flashrank
+    choice: alternative
+    when: Pick it to rerank on CPU without PyTorch or Transformers; it is an Apache-2.0 library that runs small cross-encoder models or listwise LLM rerankers after keyword, vector or hybrid retrieval.
   how_to_choose:
   - Add a reranker when the right chunk is retrieved but not ranked near the top.
   - Retrieve a wider candidate set, then rerank down to what fits the prompt.
+  - Use a library that wraps several cross-encoder reranking models when you expect to compare or swap them.
   browse:
     label: All reranking models
     record: task/reranking-models
@@ -183,8 +230,8 @@ blocks:
   - Use the same OpenAI-compatible API in development and production so only the base URL changes.
   - 'Match the engine to the hardware: GPU servers for vLLM or SGLang, developer machines for Ollama or llama.cpp.'
   browse:
-    label: All serving tools
-    record: framework-category/llm-serving
+    label: All inference engines
+    record: framework-category/inference
 - id: grounding-checks
   stage: quality
   name: Grounding and hallucination checks
@@ -217,6 +264,9 @@ blocks:
   - record: framework/promptfoo
     choice: alternative
     when: Pick it for MIT-licensed declarative test configs that run locally and in CI, with red teaming of the same app.
+  - record: framework/trulens
+    choice: alternative
+    when: Pick it to trace each step of the app and score it with LLM judges for the RAG triad of context relevance, groundedness and answer relevance; it is MIT-licensed.
   - name: MTEB leaderboard
     url: https://huggingface.co/spaces/mteb/leaderboard
     choice: alternative
@@ -267,6 +317,9 @@ blocks:
   how_to_choose:
   - Log the IDs of the retrieved chunks with every answer; that is what makes a wrong answer debuggable.
   - Prefer a tool that accepts OpenTelemetry so you can switch backends later.
+  browse:
+    label: All observability and tracing tools
+    record: framework-category/observability
 learn_next:
 - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
   url: https://arxiv.org/abs/2005.11401
@@ -292,7 +345,7 @@ tags:
 - vector-search
 - evaluation
 - llm
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://arxiv.org/abs/2005.11401
   title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (arXiv)
@@ -329,9 +382,6 @@ sources:
   trust: 0.9
 - url: https://github.com/qdrant/qdrant-client
   title: Qdrant Python client repository
-  trust: 0.9
-- url: https://github.com/chroma-core/chroma
-  title: Chroma repository
   trust: 0.9
 - url: https://github.com/pgvector/pgvector
   title: pgvector repository
@@ -417,10 +467,151 @@ sources:
 - url: https://github.com/Arize-ai/phoenix
   title: Arize Phoenix repository
   trust: 0.9
+- url: https://raw.githubusercontent.com/docling-project/docling/HEAD/README.md
+  title: Docling README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/pymupdf/PyMuPDF/HEAD/README.md
+  title: PyMuPDF README
+  trust: 0.9
+- url: https://docs.unstructured.io/open-source/core-functionality/partitioning
+  title: Unstructured partitioning
+  trust: 0.9
+- url: https://raw.githubusercontent.com/datalab-to/marker/HEAD/README.md
+  title: Marker README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/HEAD/README.md
+  title: PaddleOCR README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/feyninc/chonkie/HEAD/README.md
+  title: Chonkie README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/aurelio-labs/semantic-chunkers/HEAD/README.md
+  title: Semantic Chunkers README
+  trust: 0.9
+- url: https://qdrant.tech/documentation/concepts/vectors/
+  title: Qdrant vectors
+  trust: 0.9
+- url: https://docs.lancedb.com/search/full-text-search
+  title: LanceDB full-text search
+  trust: 0.9
+- url: https://docs.lancedb.com/search/hybrid-search
+  title: LanceDB hybrid search
+  trust: 0.9
+- url: https://docs.lancedb.com/search/filtering
+  title: LanceDB filtering
+  trust: 0.9
+- url: https://raw.githubusercontent.com/pgvector/pgvector/HEAD/README.md
+  title: pgvector README
+  trust: 0.9
+- url: https://milvus.io/docs/full-text-search.md
+  title: Milvus full text search
+  trust: 0.9
+- url: https://milvus.io/docs/multi-vector-search.md
+  title: Milvus multi-vector hybrid search
+  trust: 0.9
+- url: https://milvus.io/docs/filtered-search.md
+  title: Milvus filtered search
+  trust: 0.9
+- url: https://docs.pinecone.io/guides/search/hybrid-search
+  title: Pinecone hybrid search
+  trust: 0.9
+- url: https://docs.pinecone.io/guides/search/sparse-vector-search
+  title: Pinecone sparse-vector search
+  trust: 0.9
+- url: https://docs.pinecone.io/guides/search/rerank-results
+  title: Pinecone rerank results
+  trust: 0.9
+- url: https://docs.pinecone.io/guides/search/filter-by-metadata
+  title: Pinecone filter by metadata
+  trust: 0.9
+- url: https://raw.githubusercontent.com/xhluca/bm25s/HEAD/README.md
+  title: BM25S README
+  trust: 0.9
+- url: https://docs.opensearch.org/latest/search-plugins/keyword-search/
+  title: OpenSearch keyword search
+  trust: 0.9
+- url: https://docs.opensearch.org/latest/vector-search/ai-search/hybrid-search/index/
+  title: OpenSearch hybrid search
+  trust: 0.9
+- url: https://docs.opensearch.org/latest/search-plugins/search-relevance/reranking-search-results/
+  title: OpenSearch reranking search results
+  trust: 0.9
+- url: https://docs.opensearch.org/latest/vector-search/filter-search-knn/index/
+  title: OpenSearch filtering vector search
+  trust: 0.9
+- url: https://www.elastic.co/docs/solutions/search/full-text
+  title: Elasticsearch full-text search
+  trust: 0.9
+- url: https://www.elastic.co/docs/solutions/search/hybrid-search
+  title: Elasticsearch hybrid search
+  trust: 0.9
+- url: https://www.elastic.co/docs/solutions/search/vector/knn/filtered-knn-search
+  title: Elasticsearch filtered kNN search
+  trust: 0.9
+- url: https://www.elastic.co/docs/solutions/search/ranking/semantic-reranking
+  title: Elasticsearch semantic reranking
+  trust: 0.9
+- url: https://docs.vespa.ai/en/ranking/bm25.html
+  title: Vespa BM25 rank feature
+  trust: 0.9
+- url: https://docs.vespa.ai/en/querying/nearest-neighbor-search-guide.html
+  title: Vespa nearest neighbor search guide
+  trust: 0.9
+- url: https://docs.vespa.ai/en/ranking/phased-ranking.html
+  title: Vespa phased ranking
+  trust: 0.9
+- url: https://raw.githubusercontent.com/quickwit-oss/tantivy/HEAD/README.md
+  title: Tantivy README
+  trust: 0.9
+- url: https://developers.llamaindex.ai/python/examples/retrievers/bm25_retriever/
+  title: LlamaIndex BM25 retriever
+  trust: 0.9
+- url: https://developers.llamaindex.ai/python/examples/retrievers/reciprocal_rerank_fusion/
+  title: LlamaIndex Reciprocal Rerank Fusion retriever
+  trust: 0.9
+- url: https://developers.llamaindex.ai/python/examples/retrievers/relative_score_dist_fusion/
+  title: LlamaIndex relative score and distribution-based fusion
+  trust: 0.9
+- url: https://developers.llamaindex.ai/python/framework/module_guides/querying/node_postprocessors/node_postprocessors/
+  title: LlamaIndex node postprocessors
+  trust: 0.9
+- url: https://developers.llamaindex.ai/python/framework/module_guides/querying/retriever/retrievers/
+  title: LlamaIndex retriever modules
+  trust: 0.9
+- url: https://reference.langchain.com/python/langchain-classic/retrievers/ensemble/EnsembleRetriever
+  title: LangChain EnsembleRetriever reference
+  trust: 0.9
+- url: https://docs.langchain.com/oss/python/integrations/retrievers/cohere-reranker
+  title: LangChain Cohere reranker integration
+  trust: 0.9
+- url: https://docs.haystack.deepset.ai/docs/inmemorybm25retriever
+  title: Haystack InMemoryBM25Retriever
+  trust: 0.9
+- url: https://docs.haystack.deepset.ai/docs/documentjoiner
+  title: Haystack DocumentJoiner
+  trust: 0.9
+- url: https://docs.haystack.deepset.ai/docs/rankers
+  title: Haystack rankers
+  trust: 0.9
+- url: https://docs.haystack.deepset.ai/docs/metadata-filtering
+  title: Haystack metadata filtering
+  trust: 0.9
+- url: https://raw.githubusercontent.com/AnswerDotAI/rerankers/HEAD/README.md
+  title: rerankers README
+  trust: 0.9
+- url: https://raw.githubusercontent.com/PrithivirajDamodaran/FlashRank/HEAD/README.md
+  title: FlashRank README
+  trust: 0.9
+- url: https://www.trulens.org/getting_started/core_concepts/rag_triad/
+  title: TruLens RAG triad
+  trust: 0.9
+- url: https://raw.githubusercontent.com/truera/trulens/HEAD/README.md
+  title: TruLens README
+  trust: 0.9
 ---
 
 ## Overview
 
 A retrieval-augmented generation (RAG) app answers from your documents instead of from what a model memorised. **Indexing** runs offline: parse, chunk, embed, and store chunks in a vector database.
 
-At **query** time the orchestration layer retrieves candidates, reranks them, and passes the best to the generating model. **Quality** blocks check grounding, measure each change, filter unsafe input and output, and trace every request.
+At **query** time the orchestration layer retrieves candidates by vector search and, where exact words matter, by **lexical (BM25) search**, reranks them, and passes the best to the generating model. **Quality** blocks check grounding, measure each change, filter unsafe input and output, and trace every request.

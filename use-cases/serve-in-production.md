@@ -29,9 +29,6 @@ blocks:
   how_to_choose:
   - Deploy by alias or version, never by a file path that can change underneath.
   - Record the evaluation results with the version they belong to.
-  browse:
-    label: All MLOps tools
-    record: framework-category/mlops
 - id: model-optimisation
   stage: build
   name: Model format and optimisation
@@ -49,9 +46,6 @@ blocks:
   how_to_choose:
   - 'Classic and vision models: export to ONNX; large language models: use the engine''s own format and quantization.'
   - Re-run evaluation after every conversion or quantization step.
-  browse:
-    label: All inference engines
-    record: framework-category/inference
 - id: llm-engine
   stage: serve
   name: Language model inference engine
@@ -70,8 +64,8 @@ blocks:
   - Expose an OpenAI-compatible API so clients do not change when the engine does.
   - Benchmark engines on your own model, hardware and traffic shape before choosing.
   browse:
-    label: All serving tools
-    record: framework-category/llm-serving
+    label: All inference engines
+    record: framework-category/inference
 - id: model-server
   stage: serve
   name: Model server
@@ -106,6 +100,9 @@ blocks:
   how_to_choose:
   - 'Need canary rollouts and scale to zero on KServe: use its serverless installation.'
   - Read Seldon Core's Business Source License before production use.
+  browse:
+    label: All deployment and serving platforms
+    record: framework-category/llm-serving
 - id: gateway
   stage: serve
   name: API gateway
@@ -161,6 +158,9 @@ blocks:
     when: Pick it for self-hosted OpenTelemetry tracing; it is licensed under the Elastic License 2.0.
   how_to_choose:
   - Instrument with OpenTelemetry so traces and metrics share one pipeline.
+  browse:
+    label: All observability and tracing tools
+    record: framework-category/observability
 - id: load-testing
   stage: operate
   name: Load and performance testing
@@ -217,7 +217,7 @@ tags:
 - kubernetes
 - observability
 - mlops
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://mlflow.org/docs/latest/ml/model-registry/
   title: MLflow Model Registry documentation

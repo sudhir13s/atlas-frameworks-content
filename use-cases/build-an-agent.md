@@ -92,10 +92,11 @@ blocks:
     when: Apache-2.0 memory layer that keeps user, session and agent state, available as a library, a self-hosted server or a hosted platform.
   - record: framework/graphiti
     choice: alternative
-    when: Pick it when facts change over time; it builds a temporal context graph that marks superseded facts invalid instead of deleting them.
+    when: Pick it when facts change over time; it builds a temporal context graph that marks superseded facts invalid instead of deleting them, and retrieves with semantic embeddings, keyword (BM25) search and graph traversal combined.
   how_to_choose:
   - Use the framework's own conversation state for a single session; add a memory layer only for recall across sessions.
   - 'Facts that change and need history: a temporal graph; preferences and profile facts: a memory layer.'
+  - Check how memories are retrieved, by embeddings alone or combined with keyword (BM25) search, when users recall exact names or terms.
 - id: tool-protocol
   stage: tools
   name: Tool interface
@@ -113,9 +114,6 @@ blocks:
   how_to_choose:
   - Write tools as MCP servers so any MCP-capable framework can use them.
   - Use hosted integrations when per-user authentication to third-party apps is the hard part.
-  browse:
-    label: All agent tools
-    record: framework-category/agents
 - id: web-actions
   stage: tools
   name: Browser actions
@@ -184,9 +182,6 @@ blocks:
   - Treat every tool result as untrusted; indirect injection arrives through web pages and files.
   - Mark untrusted content apart from instructions in the prompt.
   - A classifier lowers risk but does not remove it; keep sandboxing and approval in place.
-  browse:
-    label: All guardrail and safety tools
-    record: framework-category/guardrails
 - id: evaluation
   stage: quality
   name: Evaluation
@@ -244,6 +239,9 @@ blocks:
   how_to_choose:
   - Trace tool arguments and results, not only model prompts.
   - Prefer a tool that accepts OpenTelemetry so you can switch backends later.
+  browse:
+    label: All observability and tracing tools
+    record: framework-category/observability
 learn_next:
 - title: Building effective agents
   url: https://www.anthropic.com/engineering/building-effective-agents
@@ -269,7 +267,7 @@ tags:
 - orchestration
 - prompt-injection
 - llm
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://www.anthropic.com/engineering/building-effective-agents
   title: Building effective agents (Anthropic)
@@ -312,6 +310,9 @@ sources:
   trust: 0.9
 - url: https://github.com/getzep/graphiti
   title: Graphiti repository
+  trust: 0.9
+- url: https://raw.githubusercontent.com/getzep/graphiti/HEAD/README.md
+  title: Graphiti README
   trust: 0.9
 - url: https://modelcontextprotocol.io/docs/getting-started/intro
   title: What is the Model Context Protocol (MCP)?

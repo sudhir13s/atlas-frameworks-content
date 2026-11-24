@@ -65,9 +65,6 @@ blocks:
   how_to_choose:
   - Choose the export path by the runtime you will ship, since each path here pairs with one runtime below.
   - A PyTorch model shipped to several platforms points to ExecuTorch; an Apple-only app points to Core ML.
-  browse:
-    label: All edge and mobile frameworks
-    record: framework-category/edge-mobile
 - id: quantise
   stage: optimise
   name: Quantisation and compression
@@ -184,7 +181,7 @@ tags:
 - mobile
 - quantization
 - executorch
-updated: '2026-11-21'
+updated: '2026-11-24'
 sources:
 - url: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
   title: meta-llama/Llama-3.2-1B-Instruct, model card
