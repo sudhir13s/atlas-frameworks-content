@@ -11,6 +11,7 @@ subcategory: ocr
 tagline: OCR, layout analysis, reading order, table recognition in 90+ languages.
 description: Surya is a 689M-parameter document OCR and layout vision-language model with a lightweight Python client and command-line tools. It takes images or PDFs and returns JSON blocks with layout labels, reading order, bounding boxes and HTML content, tables as HTML with merged cells, and math as LaTeX. The model runs behind vLLM, llama.cpp or mlx_vlm, and it is the OCR engine Marker uses for full document conversion.
 best_for: Multilingual document OCR, Layout analysis and reading order, Table recognition to HTML
+not_ideal_for: Photos and natural scenes (the project states performance there is not the goal)
 key_features:
 - Full-page and block-level OCR
 - Layout analysis with labels such as Table, Picture, SectionHeader, Equation and Form

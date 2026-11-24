@@ -11,6 +11,7 @@ subcategory: document-conversion
 tagline: Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.
 description: MinerU is a document parsing tool that converts PDFs, scanned images, Office, OpenDocument, EPUB, OFD, HTML and CSV files into Markdown and JSON. It handles OCR, tables with cross-page merging, formulas and complex layouts, and renders one document model to Markdown, HTML, LaTeX, DOCX, EPUB, PDF or structured content lists. It runs as a command-line reader for agents with page and block locators for citation, a Python SDK, an HTTP API and a WebUI.
 best_for: Converting PDFs and scans to Markdown or JSON, Documents with tables and formulas, Agent reading of long documents with citations
+not_ideal_for: Model-based parsing of Office, HTML, EPUB or OFD files (these are parsed at the flash tier only), Standard or advanced tiers on machines without a GPU or MPS with 8 GB+ VRAM
 key_features:
 - Input from PDF, images, DOC/DOCX, PPT/PPTX, XLS/XLSX, RTF, OpenDocument, EPUB, OFD, HTML and CSV
 - Four parsing tiers, flash, basic, standard and advanced
@@ -31,6 +32,7 @@ pros:
 - VLM served through llama.cpp, vLLM or LMDeploy
 cons:
 - Flash tier has the lowest quality
+- Requires Python 3.11 to 3.14
 - Doclib telemetry is enabled by default
 - Commercial licence required above 100 million monthly active users or USD 20 million monthly revenue
 language: Python

@@ -11,6 +11,7 @@ subcategory: pdf-parsing
 tagline: Community maintained fork of pdfminer - we fathom PDF.
 description: pdfminer.six is a community-maintained fork of PDFMiner, written in Python, for extracting and analyzing text in PDF documents. It reads text directly from the PDF source with its exact location, font and colour, runs automatic layout analysis, and outputs text, images, HTML or hOCR through a Python API or the pdf2txt.py command. Its components are modular, so the interpreter or rendering device can be replaced.
 best_for: Text extraction from digital PDFs, Layout analysis of text positions, Building custom PDF parsers
+not_ideal_for: Scanned or image-only PDFs (text is read from the PDF source), Python versions below 3.10
 key_features:
 - Text extraction with location, font and colour
 - Automatic layout analysis
@@ -30,6 +31,8 @@ pros:
 - Command-line tool pdf2txt.py included
 cons:
 - Community-maintained with limited maintainer availability
+- PDFs with incomplete Unicode mappings yield raw (cid:x) values instead of text
+- Image extraction needs the optional image extra
 language: Python
 languages_supported:
 - Python
@@ -60,6 +63,8 @@ sources:
   title: GitHub repository
 - url: https://raw.githubusercontent.com/pdfminer/pdfminer.six/HEAD/README.md
   title: README
+- url: https://github.com/pdfminer/pdfminer.six/blob/master/docs/source/faq.rst
+  title: Frequently asked questions
 - url: https://pypi.org/project/pdfminer.six/
   title: pdfminer.six — PyPI
 - url: https://pypistats.org/api/packages/pdfminer.six/recent

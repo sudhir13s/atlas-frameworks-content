@@ -11,6 +11,7 @@ subcategory: content-extraction
 tagline: The Apache Tika toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).
 description: Apache Tika is a Java toolkit that detects file types and extracts metadata and text from over a thousand formats, used as a Java library, a command-line app or tika-server. Since 4.0.0 it emits Markdown by default, with plain text or structured recursive JSON that covers the document and anything embedded in it. It parses in crash-isolated forked processes and adds vision-language-model parsers for documents OCR cannot read.
 best_for: Text and metadata extraction across many file types, Java document pipelines, Converting files to Markdown for RAG
+not_ideal_for: Java 8 environments (Tika 2.x and Java 8 support reached end of life in April 2025)
 key_features:
 - File-type detection
 - Text and metadata extraction from over a thousand file types
@@ -18,6 +19,7 @@ key_features:
 - Structured recursive JSON for embedded documents
 - Crash-isolated forked parsing
 - Vision-language-model parsers using Claude, Gemini or OpenAI
+- OCR of images and rendered PDF pages through Tesseract
 - Java API, command-line app and tika-server
 use_cases:
 - Converting documents to Markdown for LLM and RAG pipelines
@@ -29,6 +31,8 @@ pros:
 - Reproducible builds
 cons:
 - Requires Java 17
+- OCR runs the tesseract command-line program, which must be installed
+- Upgrading from 3.x requires code and configuration changes
 language: Java
 languages_supported:
 - Java
@@ -63,6 +67,8 @@ sources:
   title: README
 - url: https://tika.apache.org/
   title: Website
+- url: https://github.com/apache/tika/blob/main/docs/modules/ROOT/pages/configuration/parsers/tesseract-ocr-parser.adoc
+  title: TesseractOCRParser configuration
 ---
 
 

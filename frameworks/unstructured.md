@@ -11,6 +11,7 @@ subcategory: document-partitioning
 tagline: Open-Source Pre-Processing Tools for Unstructured Data.
 description: Unstructured is a Python library for ingesting and pre-processing documents such as PDFs, HTML, Word, PowerPoint, Excel, email and images for LLM workflows. Its partition functions detect the file type and break a document into typed elements such as Title, NarrativeText, ListItem and Table, and its chunking functions combine those elements into chunks for RAG. PDFs and images are processed with fast text extraction, a hi_res layout model or Tesseract OCR.
 best_for: Turning mixed document types into elements for RAG, Chunking documents by section, Partitioning PDFs and images with OCR
+not_ideal_for: Multi-column documents without extractable text under hi_res (the docs recommend ocr_only for them)
 key_features:
 - Automatic file-type detection and routing with partition
 - Partitioning of PDF, DOCX, PPTX, XLSX, HTML, EML, MSG, EPUB, images and more
@@ -31,7 +32,7 @@ pros:
 - Runs locally, against a self-hosted API or through the hosted API
 cons:
 - hi_res has difficulty ordering elements in multi-column documents
-- PDF and image processing need system packages such as Tesseract and Poppler
+- PDF, image and Office processing need system packages such as Tesseract, Poppler and LibreOffice
 - Sends usage telemetry by default unless DO_NOT_TRACK or SCARF_NO_ANALYTICS is set
 language: Python
 languages_supported:

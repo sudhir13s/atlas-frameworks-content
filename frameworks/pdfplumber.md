@@ -9,15 +9,16 @@ kind: library
 category: framework-category/document-parsing
 subcategory: pdf-parsing
 tagline: Plumb a PDF for detailed information about each char, rectangle, line, et cetera — and easily extract text and tables.
-description: pdfplumber is a Python library and command-line tool, built on pdfminer.six, that exposes every character, rectangle, line and curve of a PDF page with its position. It extracts text, with an optional layout-preserving mode, words with bounding boxes, tables and form values, and the CLI writes CSV, JSON or text. Visual debugging draws detected objects and tables on page images; it works best on machine-generated rather than scanned PDFs.
+description: pdfplumber is a Python library and command-line tool, built on pdfminer.six, that exposes every character, rectangle, line and curve of a PDF page with its position. It extracts text, with an optional layout-preserving mode, words with bounding boxes and tables, reaches form values through its pdfminer.six wrappers, and the CLI writes CSV, JSON or text. Visual debugging draws detected objects and tables on page images; it works best on machine-generated rather than scanned PDFs.
 best_for: Table extraction from machine-generated PDFs, Position-aware text extraction, Inspecting PDF structure
+not_ideal_for: Scanned PDFs (it works best on machine-generated ones), Creating or modifying PDFs
 key_features:
 - Access to each character, rectangle, line and curve with coordinates
 - Text extraction with an experimental layout mode
 - Word extraction with bounding boxes
 - Table detection from ruling lines and word alignment
 - Visual debugging of objects and the table finder
-- Form field value extraction
+- Form field values through its pdfminer.six wrappers
 - Command-line output as CSV, JSON or text
 - Regex search with match positions
 use_cases:
@@ -27,11 +28,13 @@ use_cases:
 pros:
 - Visual debugging integrated with extraction
 - Customizable table-extraction settings and strategies
-- Pure Python on top of pdfminer.six
+- Crop-box filtering of page objects
 cons:
 - No OCR
 - No PDF generation or modification
 - Weak support for tables in OCR'ed documents
+- No direct reconstruction of image content
+- No dedicated interface for form data
 language: Python
 languages_supported:
 - Python

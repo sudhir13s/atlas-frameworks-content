@@ -11,6 +11,7 @@ subcategory: ocr
 tagline: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.
 description: EasyOCR is a Python OCR library built on PyTorch that reads text from images in 80+ languages and scripts. It takes a file path, URL, bytes or a NumPy image and returns a list of bounding boxes with the detected text and a confidence score, or plain text. Detection uses the CRAFT algorithm and recognition a CRNN model, and both can be replaced with custom-trained models.
 best_for: Text recognition in images, Multilingual OCR from Python
+not_ideal_for: Handwritten text (support is listed as coming next), Recovering document layout or table structure (results are text boxes only)
 key_features:
 - 80+ languages and scripts including Latin, Chinese, Arabic, Devanagari and Cyrillic
 - Several languages read in one pass
@@ -31,6 +32,8 @@ pros:
 cons:
 - Handwritten text is not yet supported
 - Not every language combination can be used together
+- No release since version 1.7.2 in September 2024
+- Issues older than six months are closed automatically
 language: Python
 languages_supported:
 - Python

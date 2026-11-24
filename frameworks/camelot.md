@@ -11,6 +11,7 @@ subcategory: pdf-tables
 tagline: A Python library to extract tabular data from PDFs.
 description: Camelot is a Python library and command-line tool that extracts tables from PDFs. It takes a file path, URL or bytes and returns each table as a pandas DataFrame with accuracy and whitespace metrics, exportable to CSV, JSON, Excel, HTML, Markdown or SQLite. Its parsers cover ruled, whitespace-separated and borderless tables, with an optional Table Transformer model and OCR for scanned PDFs.
 best_for: Extracting tables from PDFs into DataFrames, Ruled and borderless tables, Table export to CSV, JSON or Excel
+not_ideal_for: Extracting running text or converting whole documents (it extracts tables only), Input files other than PDF
 key_features:
 - Five parsers, lattice, stream, network, hybrid and ml, plus automatic selection
 - Optional Table Transformer model for borderless tables
@@ -31,6 +32,7 @@ pros:
 cons:
 - Built-in parsers need a text-based PDF; scanned PDFs need the ml and ocr extras
 - The ml extra pulls in PyTorch
+- The ocr extra pulls in the full opencv-python package alongside the headless build
 language: Python
 languages_supported:
 - Python

@@ -11,6 +11,7 @@ subcategory: document-conversion
 tagline: Convert PDF to markdown + JSON quickly with high accuracy.
 description: Marker converts PDF, image, PPTX, DOCX, XLSX, HTML and EPUB files to Markdown, JSON, HTML or flat chunks for RAG. It extracts the PDF text layer, detects page layout and reading order, reconstructs tables and sends scanned pages, equations and complex tables to the Surya OCR model, with an optional LLM pass to improve accuracy. It runs as a command-line tool, a Python library or a local API server.
 best_for: Converting PDFs to Markdown or JSON, Preparing document chunks for RAG, Table and equation extraction
+not_ideal_for: Documents built around forms or nested tables (known limitations), Commercial use of the model weights beyond the free terms without a paid licence
 key_features:
 - Input from PDF, image, PPTX, DOCX, XLSX, HTML and EPUB
 - Output as Markdown, JSON, HTML or chunks
@@ -33,6 +34,9 @@ pros:
 cons:
 - Very complex layouts with nested tables and forms may not work
 - Forms may not be rendered well
+- Requires Python 3.10+ and PyTorch
+- balanced and vllm modes need a Surya inference server, vLLM in Docker on NVIDIA GPUs or llama.cpp elsewhere
+- With OCR disabled, equations and scanned pages are skipped
 - Model weights use a modified AI Pubs Open Rail-M licence; commercial use beyond research, personal use and startups under $5M funding or revenue needs a paid licence
 language: Python
 languages_supported:

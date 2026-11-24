@@ -11,6 +11,7 @@ subcategory: ocr
 tagline: OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched.
 description: OCRmyPDF is a command-line program and Python package that adds an OCR text layer to scanned PDF files so they can be searched or copy-pasted. It takes a PDF or an image and produces a validated, searchable PDF, PDF/A by default, placing the text below the original image without changing its resolution. Recognition uses the Tesseract engine, and plugins can replace it.
 best_for: Making scanned PDFs searchable, Producing PDF/A archives, Batch OCR from the command line
+not_ideal_for: Getting text, tables or Markdown as the end result (its output is a searchable PDF)
 key_features:
 - Searchable PDF/A output from scanned PDFs or images
 - OCR text placed below the image for copy and paste
@@ -30,6 +31,8 @@ pros:
 - Plugins for EasyOCR, PaddleOCR and Apple Vision
 cons:
 - Requires Ghostscript and Tesseract installed separately
+- Languages beyond the defaults need Tesseract language packs
+- MPL-2.0 asks you to publish source-level modifications to OCRmyPDF
 language: Python
 languages_supported:
 - Python

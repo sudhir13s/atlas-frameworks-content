@@ -11,6 +11,7 @@ subcategory: ocr
 tagline: Turn any PDF or image document into structured data for your AI. A lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 description: PaddleOCR is an OCR and document parsing toolkit that converts PDF documents and images into structured JSON or Markdown for LLM applications. It offers PP-OCR models for text detection and recognition in 100+ languages, PP-StructureV3 for structure-aware conversion with table and text coordinates, and the PaddleOCR-VL vision-language models for parsing text, tables, formulas and charts. It sits at the start of a RAG pipeline, before chunking and indexing.
 best_for: Multilingual OCR, Converting PDFs and images to Markdown or JSON, Scene text recognition
+not_ideal_for: PDF editing or manipulation, Training models in an environment that already holds Transformers (the docs recommend a clean environment)
 key_features:
 - PP-OCR text detection and recognition in 100+ languages
 - PP-StructureV3 conversion to Markdown or JSON with table cell coordinates
@@ -30,6 +31,10 @@ pros:
 - Model tiers from 1.5M to 34.5M parameters for edge, mobile and server
 - Integrated with Dify and RAGFlow
 - Browser inference through PaddleOCR.js
+cons:
+- Document parsing, information extraction and translation need optional dependency groups beyond the default install
+- An inference engine such as PaddlePaddle or Transformers is installed separately
+- Training and model export depend on the PaddlePaddle framework
 language: Python
 languages_supported:
 - Python
@@ -69,6 +74,8 @@ sources:
   title: README
 - url: https://www.paddleocr.ai/latest/en/index.html
   title: Documentation
+- url: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.en.md
+  title: Installation
 - url: https://pypi.org/project/paddleocr/
   title: paddleocr — PyPI
 - url: https://pypistats.org/api/packages/paddleocr/recent

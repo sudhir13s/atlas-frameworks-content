@@ -11,6 +11,7 @@ subcategory: pdf-parsing
 tagline: Layout-aware document engine for AI and a feature-rich Python toolkit for extracting, rendering and editing PDFs and other documents.
 description: PyMuPDF is a Python library built on the MuPDF C engine for extracting, rendering and editing PDFs and other documents such as XPS, EPUB and images. It returns plain text, text with font and position metadata, tables, images, Markdown or JSON with bounding boxes, and since version 2.0 its layout analysis turns PDFs and Office files into Markdown for RAG and agents. It runs locally without a GPU, with Tesseract or RapidOCR for scanned pages.
 best_for: Extracting text and tables from PDFs, Converting PDFs to Markdown or JSON for RAG, Editing, merging and redacting PDFs
+not_ideal_for: Multithreaded use (not supported, even with free-threaded Python), Proprietary applications without an Artifex commercial licence (the open-source build is AGPL v3)
 key_features:
 - Text extraction with font, size, colour and bounding boxes
 - Table detection and export to Markdown or pandas
@@ -33,6 +34,8 @@ cons:
 - Not usable from multiple threads; the project recommends multiprocessing
 - Office formats need the separately licensed PyMuPDF Office add-on
 - Scanned PDFs return no text without OCR
+- Requires Python 3.11 to 3.15 as of version 2.0
+- Tesseract OCR needs the Tesseract language data files available
 language: Python
 languages_supported:
 - Python

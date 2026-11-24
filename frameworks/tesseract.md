@@ -11,6 +11,7 @@ subcategory: ocr
 tagline: Tesseract Open Source OCR Engine (main repository).
 description: Tesseract is an open-source OCR engine, shipped as the libtesseract library and the tesseract command-line program. It reads images such as PNG, JPEG and TIFF and writes plain text, hOCR (HTML), PDF, invisible-text-only PDF, TSV, ALTO or PAGE output. Since version 4 it includes an LSTM-based engine focused on line recognition, alongside the legacy character-pattern engine, and it recognizes more than 100 languages.
 best_for: Command-line OCR of images, Embedding OCR in C and C++ applications, Producing searchable PDFs from images
+not_ideal_for: Reading PDF files directly (not supported; the docs point to OCRmyPDF), HEIC, AVIF or JPEG-XL images (not supported)
 key_features:
 - LSTM-based line recognition engine
 - Legacy Tesseract 3 engine mode
@@ -29,6 +30,7 @@ pros:
 cons:
 - No GUI application included
 - Image quality often has to be improved for better results
+- Legacy engine mode needs traineddata files that support it
 language: C++
 languages_supported:
 - C
@@ -62,6 +64,8 @@ sources:
   title: README
 - url: https://tesseract-ocr.github.io/tessdoc/
   title: Documentation
+- url: https://tesseract-ocr.github.io/tessdoc/InputFormats.html
+  title: Input formats
 - url: https://github.com/tesseract-ocr/tesseract/releases/latest
   title: Latest release
 ---

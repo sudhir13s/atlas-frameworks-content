@@ -11,6 +11,7 @@ subcategory: document-conversion
 tagline: Get your documents ready for gen AI.
 description: Docling is a Python library and command-line tool that parses documents in many formats, including PDF, DOCX, PPTX, XLSX, HTML, images and audio, into a unified DoclingDocument representation. Its PDF understanding covers page layout, reading order, table structure, code and formulas, with OCR for scanned PDFs and images. It exports Markdown, HTML, DocTags or lossless JSON, which RAG and agent frameworks then chunk, embed and index.
 best_for: Converting PDFs and office files to Markdown or JSON for RAG, Parsing scanned documents with OCR, Local processing of sensitive documents
+not_ideal_for: Extracting title, author and reference metadata (listed as coming soon), Python 3.9 environments (support dropped in version 2.70.0)
 key_features:
 - Parsing of PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio and more
 - PDF layout, reading order and table structure understanding
@@ -29,6 +30,9 @@ pros:
 - Runs locally, including in air-gapped environments
 - Integrations with LangChain, LlamaIndex, Crew AI and Haystack
 - Works on macOS, Linux and Windows for x86_64 and arm64
+cons:
+- Requires Python 3.10 or higher
+- Models carry their own licences, separate from the MIT-licensed codebase
 language: Python
 languages_supported:
 - Python

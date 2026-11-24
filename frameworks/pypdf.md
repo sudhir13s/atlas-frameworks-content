@@ -11,6 +11,7 @@ subcategory: pdf-manipulation
 tagline: A pure-python PDF library capable of splitting, merging, cropping, and transforming the pages of PDF files.
 description: pypdf is a pure-Python library for reading and writing PDF files. It splits, merges, crops and transforms pages, adds custom data, viewing options and passwords, and retrieves text and metadata from PDFs, with a layout extraction mode that mimics the page layout. It reads the text layer only; it is not OCR software, so scanned pages return little or no text.
 best_for: Splitting, merging and transforming PDFs, Text and metadata extraction from digital PDFs, Pure-Python environments
+not_ideal_for: Scanned or image-only PDFs (it is not OCR software), Extracting table structure
 key_features:
 - Splitting and merging PDFs
 - Cropping and transforming pages
@@ -24,12 +25,13 @@ use_cases:
 - Extracting text from digitally created PDFs
 - Password-protecting PDFs
 pros:
-- Pure Python with no system dependencies
+- Pure Python
 - Optional extra for AES encryption
 - Companion CLI application pdfly
 cons:
 - Not OCR software; image-only or scanned pages yield minimal text
 - Tables come out as positioned text, not table structure
+- Extracting a page with a large uncompressed content stream can need a lot of memory
 language: Python
 languages_supported:
 - Python
